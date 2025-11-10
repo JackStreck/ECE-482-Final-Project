@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: libManager version 23.1 - CAT38 08/20/2024 18:26 (cpgsrv14) $
 \o Sub version:		sub-version  s091 
-\o Arguments:		-unmapped -mpssession virtuoso1711709 -mpshost fastx3-36.ews.illinois.edu -masterPID 1711709 -ADVM 
+\o Arguments:		-unmapped -mpssession virtuoso1749013 -mpshost fastx3-36.ews.illinois.edu -masterPID 1749013 -ADVM 
 \o Working Directory:	fastx3-36.ews.illinois.edu:/home/jstreck2/ece482.work/482Final_Project/ECE-482-Final-Project
 \o 64-bit offsets
 \o Qt version: 		5.15.9
@@ -15,9 +15,6 @@
 \o Library Manager customization server connected.
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrResizeWindow(cdsLibManager list(764 230 602 491))
-\a cdsLibManager->editLibraryPathButton->value = t
-\o Starting the cdsLibEditor...
-\a nrSetCurrentWindow(cdsLibManager)
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a _lmgrCloseIconify("cdsLibManager" 1)
 \o MPS service: shutdown
