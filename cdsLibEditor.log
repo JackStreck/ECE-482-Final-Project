@@ -1,0 +1,18 @@
+\o Program:		@(#)$CDS: cdsLibEditor version 23.1 - CAT38 08/20/2024 18:28 (cpgsrv14) $
+\o Sub version:		sub-version  s091 
+\o Arguments:		-display :116 -mpssession virtuoso1711709 -mpshost fastx3-36.ews.illinois.edu -mpsversion 23.1 -namespace CDBA -cdslib /software/cadence-2024-08/IC231/share/cdssetup/cds.lib 
+\o Working Directory:	fastx3-36.ews.illinois.edu:/home/jstreck2/ece482.work/482Final_Project/ECE-482-Final-Project
+\o 64-bit offsets
+\a nrSetWindowVisibility(cdsLibEditor "show")
+\o Qt version: 		5.15.9
+\o WARNING (CLE-120): The file "/software/cadence-2024-08/IC231/share/cdssetup/cds.lib" is read only. 
+\a nrSetWindowVisibility(errorDialog "show")
+\a nrSetCurrentWindow(errorDialog)
+\a nrResizeWindow(cdsLibEditor list(0 32 500 400))
+\a nrResizeWindow(errorDialog list(9 171 482 122))
+\a errorDialog->errorOkButton->value = t
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrListItemAction(cdsLibEditor->mainTable 0 0)
+\o Active cell: 0 0 "cdsDefTechLib"
+\a nrResizeWindow(errorDialog list(9 150 482 122))
+\a exit(0)
