@@ -24,7 +24,7 @@
 						<value>hspiceD</value>
 					</option>
 					<option>view
-						<value>schematic</value>
+						<value>av_extracted</value>
 					</option>
 					<option>state
 						<value>active</value>

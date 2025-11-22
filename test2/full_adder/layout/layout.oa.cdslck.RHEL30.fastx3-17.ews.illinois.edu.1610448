@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      yunchic2
+HostName                       fastx3-17.ews.illinois.edu
+ProcessIdentifier              1610448
+ProcessCreationTime_UTC        1763806215
+ProcessCreationTime_Readable   Sat Nov 22 04:10:15 2025 CST
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/yunchic2/ece482.work/482FinalProject/ECE-482-Final-Project/test2/full_adder/layout/layout.oa.cdslck
+TimeEditLocked                 Sat Nov 22 04:10:25 2025 CST
