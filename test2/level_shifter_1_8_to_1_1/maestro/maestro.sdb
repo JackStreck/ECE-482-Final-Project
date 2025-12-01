@@ -8,11 +8,11 @@
 		<sharedvarinfo></sharedvarinfo>
 		<overwritehistory>0</overwritehistory>
 		<tests>
-			<test>test2_C2MOS_register_1
+			<test>test2_level_shifter_1_8_to_1_1_1
 				<tool>ADE</tool>
 				<tooloptions>
 					<option>cell
-						<value>C2MOS_register</value>
+						<value>level_shifter_1_8_to_1_1</value>
 					</option>
 					<option>lib
 						<value>test2</value>
@@ -30,35 +30,6 @@
 						<value>active</value>
 					</option>
 				</tooloptions>
-				<vars>
-					<var>Wp_q
-						<value></value>
-					</var>
-					<var>Wp_clk
-						<value></value>
-					</var>
-					<var>Wp_d
-						<value></value>
-					</var>
-					<var>Wp_rst
-						<value></value>
-					</var>
-					<var>Wn_q
-						<value></value>
-					</var>
-					<var>Wn_clk
-						<value></value>
-					</var>
-					<var>Wn_d
-						<value></value>
-					</var>
-					<var>C2
-						<value></value>
-					</var>
-					<var>C1
-						<value></value>
-					</var>
-				</vars>
 			</test>
 		</tests>
 		<extensions>
@@ -70,7 +41,7 @@
 		</extensions>
 		<currentmode>Single Run, Sweeps and Corners</currentmode>
 		<checksasserts netlist="0">
-			<test netlist="0" netlistscope="all">test2_C2MOS_register_1</test>
+			<test netlist="0" netlistscope="all">test2_level_shifter_1_8_to_1_1_1</test>
 		</checksasserts>
 		<plottingoptions>
 			<plottingoption>waveformtemplate
