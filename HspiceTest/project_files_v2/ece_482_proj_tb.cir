@@ -167,8 +167,8 @@ xi0 net1 out vdd vss inverter_minsize
 .subckt level_shifter_1_8_to_1_1 aio aio_bar a_core a_core_bar vdd vss
 m1 a_core aio_bar vss vss g45n2svt L=150e-9 W=320e-9 AD=48e-15 AS=48e-15 PD=940e-9 PS=940e-9 NRD=468.75e-3 NRS=468.75e-3 M=1
 m0 a_core_bar aio vss vss g45n2svt L=150e-9 W=320e-9 AD=48e-15 AS=48e-15 PD=940e-9 PS=940e-9 NRD=468.75e-3 NRS=468.75e-3 M=1
-mpm1 a_core a_core_bar vdd vdd g45p1svt L=45e-9 W=640e-9 AD=89.6e-15 AS=89.6e-15 PD=1.56e-6 PS=1.56e-6 NRD=218.75e-3 NRS=218.75e-3 M=1
-mpm0 a_core_bar a_core vdd vdd g45p1svt L=45e-9 W=640e-9 AD=89.6e-15 AS=89.6e-15 PD=1.56e-6 PS=1.56e-6 NRD=218.75e-3 NRS=218.75e-3 M=1
+mpm1 a_core a_core_bar vdd vdd g45p1svt L=45e-9 W=360e-9 AD=50.4e-15 AS=50.4e-15 PD=1e-6 PS=1e-6 NRD=388.889e-3 NRS=388.889e-3 M=1
+mpm0 a_core_bar a_core vdd vdd g45p1svt L=45e-9 W=360e-9 AD=50.4e-15 AS=50.4e-15 PD=1e-6 PS=1e-6 NRD=388.889e-3 NRS=388.889e-3 M=1
 .ends level_shifter_1_8_to_1_1
 ** End of subcircuit definition.
 
@@ -217,23 +217,23 @@ xi1 rst net8 vdd vss inverter_minsize
 ** Library name: test2
 ** Cell name: multiplier
 ** View name: schematic
-xi117 p7 p7_bar p7_1_1 net59 vdd vss level_shifter_1_1_to_1_8
-xi116 p6 p6_bar p6_1_1 net53 vdd vss level_shifter_1_1_to_1_8
-xi115 p5 p5_bar p5_1_1 net47 vdd vss level_shifter_1_1_to_1_8
-xi114 p4 p4_bar p4_1_1 net38 vdd vss level_shifter_1_1_to_1_8
-xi113 p3 p3_bar p3_1_1 net30 vdd vss level_shifter_1_1_to_1_8
-xi112 p2 p2_bar p2_1_1 net24 vdd vss level_shifter_1_1_to_1_8
-xi111 p1 p1_bar p1_1_1 net16 vdd vss level_shifter_1_1_to_1_8
-xi110 p0 p0_bar p0_1_1 net7 vdd vss level_shifter_1_1_to_1_8
-xi134 vddio vss decap3x3x2
+xi117 p7 p7_bar p7_1_1 net59 vddio vss level_shifter_1_1_to_1_8
+xi116 p6 p6_bar p6_1_1 net53 vddio vss level_shifter_1_1_to_1_8
+xi115 p5 p5_bar p5_1_1 net47 vddio vss level_shifter_1_1_to_1_8
+xi114 p4 p4_bar p4_1_1 net38 vddio vss level_shifter_1_1_to_1_8
+xi113 p3 p3_bar p3_1_1 net30 vddio vss level_shifter_1_1_to_1_8
+xi112 p2 p2_bar p2_1_1 net24 vddio vss level_shifter_1_1_to_1_8
+xi111 p1 p1_bar p1_1_1 net16 vddio vss level_shifter_1_1_to_1_8
+xi110 p0 p0_bar p0_1_1 net7 vddio vss level_shifter_1_1_to_1_8
+xi126 vddio vss decap3x3x2
 xi133 vddio vss decap3x3x2
-xi132 vddio vss decap3x3x2
+xi134 vddio vss decap3x3x2
 xi131 vddio vss decap3x3x2
+xi132 vddio vss decap3x3x2
 xi130 vddio vss decap3x3x2
 xi129 vddio vss decap3x3x2
 xi128 vddio vss decap3x3x2
 xi127 vddio vss decap3x3x2
-xi126 vddio vss decap3x3x2
 xi29 s_1_1_reg net6 p_3 c_2_0 vdd vss half_adder
 xi20 s_0_1_reg net5 c_1_0 p_2 vdd vss half_adder
 xi15 c_0_2 net41 c_0_3 s_0_3 vdd vss half_adder
@@ -280,15 +280,15 @@ xi70 a0 a0_bar a_0 a_0_bar vdd vss level_shifter_1_8_to_1_1
 xi69 a1 a1_bar a_1 a_1_bar vdd vss level_shifter_1_8_to_1_1
 xi68 a2 a2_bar a_2 a_2_bar vdd vss level_shifter_1_8_to_1_1
 xi67 a3 a3_bar a_3 a_3_bar vdd vss level_shifter_1_8_to_1_1
-xi84 reset reset_bar vddio vssio inverter_1_8_v
-xi83 b0 b0_bar vddio vssio inverter_1_8_v
-xi82 b1 b1_bar vddio vssio inverter_1_8_v
-xi81 b2 b2_bar vddio vssio inverter_1_8_v
-xi80 b3 b3_bar vddio vssio inverter_1_8_v
-xi79 a0 a0_bar vddio vssio inverter_1_8_v
-xi78 a1 a1_bar vddio vssio inverter_1_8_v
-xi77 a2 a2_bar vddio vssio inverter_1_8_v
-xi76 a3 a3_bar vddio vssio inverter_1_8_v
+xi84 reset reset_bar vddio vss inverter_1_8_v
+xi83 b0 b0_bar vddio vss inverter_1_8_v
+xi82 b1 b1_bar vddio vss inverter_1_8_v
+xi81 b2 b2_bar vddio vss inverter_1_8_v
+xi80 b3 b3_bar vddio vss inverter_1_8_v
+xi79 a0 a0_bar vddio vss inverter_1_8_v
+xi78 a1 a1_bar vddio vss inverter_1_8_v
+xi77 a2 a2_bar vddio vss inverter_1_8_v
+xi76 a3 a3_bar vddio vss inverter_1_8_v
 xi109 clk clk_bar c_1_3 c_1_3_reg rst vdd vss C2MOS_register
 xi108 clk clk_bar s_1_3 s_1_3_reg rst vdd vss C2MOS_register
 xi107 clk clk_bar s_1_2 s_1_2_reg rst vdd vss C2MOS_register
@@ -328,6 +328,7 @@ xi4 clk clk_bar b_2 b_2_reg rst vdd vss C2MOS_register
 xi3 clk clk_bar a_0 a_0_reg rst vdd vss C2MOS_register
 xi2 clk clk_bar a_1 a_1_reg rst vdd vss C2MOS_register
 xi1 clk clk_bar a_2 a_2_reg rst vdd vss C2MOS_register
+xi0 clk clk_bar a_3 a_3_reg rst vdd vss C2MOS_register
 
 *Put your extracted netlist above this comment
 

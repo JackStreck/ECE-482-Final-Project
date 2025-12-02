@@ -1,4 +1,15 @@
-ScopeSigMgr:loadpffile /home/crjung2/ece482.work/HspiceTest/project_files_v2/ece_482_proj_tb.tr0 1 openonly
+Mdi:ArrangeIcons
+wm geometry . 900x785+0+32
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 1920x958+0+32
+ScopeSigMgr:loadpffile /home/jstreck2/ece482.work/ECE-482-Final-Project/ECE-482-Final-Project/HspiceTest/project_files_v2/ece_482_proj_tb.tr0 1 openonly
 # PF:1
 wm geometry .sigmgr._PF:1 290x358+960+540
 pf:read PF:1 v(a1)
@@ -9,36 +20,654 @@ pf:read PF:1 v(a_1)
 # WF:1:2
 Graph addsignal WF:1:2 -region new -yview real(y) -xview real(x) -tracehi 2
 # Signal1
-wm geometry .sigmgr 467x236+427+185
-wm geometry .sigmgr 467x236+457+194
-wm geometry .sigmgr 467x236+513+212
-wm geometry .sigmgr 467x236+565+224
-wm geometry .sigmgr 467x236+607+234
-wm geometry .sigmgr 467x236+624+240
-wm geometry .sigmgr 467x236+626+241
+Mdi:FullSize
+Graph:DSel
 Graph:Select Graph0
+wm geometry .sigmgr 467x236+1433+130
+wm geometry .sigmgr 467x236+1433+143
+wm geometry .sigmgr 467x236+1435+164
+wm geometry .sigmgr 467x236+1435+197
+wm geometry .sigmgr 467x236+1439+281
+wm geometry .sigmgr 467x236+1441+337
+wm geometry .sigmgr 467x236+1441+376
+wm geometry .sigmgr 467x236+1441+409
+wm geometry .sigmgr 467x236+1441+437
+wm geometry .sigmgr 467x236+1442+456
+wm geometry .sigmgr 467x236+1442+477
+wm geometry .sigmgr 467x236+1440+505
+wm geometry .sigmgr 467x236+1431+546
+wm geometry .sigmgr 467x236+1427+590
+wm geometry .sigmgr 467x236+1427+610
+wm geometry .sigmgr 467x236+1427+614
+wm geometry .sigmgr 467x236+1421+610
+wm geometry .sigmgr 467x236+1417+607
+wm geometry .sigmgr 467x236+1407+594
+wm geometry .sigmgr 467x236+1384+560
+wm geometry .sigmgr 467x236+1350+518
+wm geometry .sigmgr 467x236+1304+478
+wm geometry .sigmgr 467x236+1234+442
+wm geometry .sigmgr 467x236+1138+416
+wm geometry .sigmgr 467x236+1032+398
+wm geometry .sigmgr 467x236+995+392
+wm geometry .sigmgr 467x236+986+394
+wm geometry .sigmgr 467x236+955+400
+wm geometry .sigmgr 467x236+893+402
+wm geometry .sigmgr 467x236+821+400
+wm geometry .sigmgr 467x236+753+410
+wm geometry .sigmgr 467x236+751+410
+wm geometry .sigmgr 467x236+732+404
+wm geometry .sigmgr 467x236+692+397
+wm geometry .sigmgr 467x236+586+371
+wm geometry .sigmgr 467x236+484+347
+wm geometry .sigmgr 467x236+384+323
+wm geometry .sigmgr 467x236+310+307
+wm geometry .sigmgr 467x236+270+295
+wm geometry .sigmgr 467x236+258+290
+wm geometry .sigmgr 467x236+241+284
+wm geometry .sigmgr 467x236+226+279
+wm geometry .sigmgr 467x236+212+272
+wm geometry .sigmgr 467x236+205+269
+wm geometry .sigmgr 467x236+203+268
+wm geometry .sigmgr 467x236+200+267
+wm geometry .sigmgr 467x236+194+262
+wm geometry .sigmgr 467x236+175+255
+wm geometry .sigmgr 467x236+143+245
+wm geometry .sigmgr 467x236+97+233
+wm geometry .sigmgr 467x236+53+221
+wm geometry .sigmgr 467x236+11+209
+wm geometry .sigmgr 467x236+-10+195
+wm geometry .sigmgr 467x236+-10+189
+wm geometry .sigmgr 467x236+-10+184
+wm geometry .sigmgr 467x236+-10+181
+wm geometry .sigmgr 467x236+-10+179
+wm geometry .sigmgr 467x236+-10+178
+wm geometry .sigmgr 467x236+-10+177
+wm geometry .sigmgr 467x236+-10+174
+wm geometry .sigmgr 467x236+-10+172
+wm geometry .sigmgr 467x236+-10+169
+wm geometry .sigmgr 467x236+-10+165
+wm geometry .sigmgr 467x236+-10+159
+wm geometry .sigmgr 467x236+-10+156
+wm geometry .sigmgr 467x236+-10+154
+wm geometry .sigmgr 467x236+-10+152
+wm geometry .sigmgr 467x236+-10+149
+wm geometry .sigmgr 467x236+-10+147
+wm geometry .sigmgr 467x236+-9+144
+wm geometry .sigmgr 467x236+-4+142
+wm geometry .sigmgr 467x236+5+138
+wm geometry .sigmgr 467x236+12+133
+wm geometry .sigmgr 467x236+14+131
+wm geometry .sigmgr 467x236+16+129
+wm geometry .sigmgr 467x236+21+126
+wm geometry .sigmgr 467x236+30+124
+wm geometry .sigmgr 467x236+35+121
+wm geometry .sigmgr 467x236+36+121
+wm geometry .sigmgr 467x236+37+121
+wm geometry .sigmgr 467x236+40+118
+wm geometry .sigmgr 467x236+42+117
+wm geometry .sigmgr 467x236+44+116
+wm geometry .sigmgr 467x236+45+114
+wm geometry .sigmgr 467x236+49+111
+wm geometry .sigmgr 467x236+50+110
+wm geometry .sigmgr._PF:1 290x358+949+532
+wm geometry .sigmgr._PF:1 290x358+913+532
+wm geometry .sigmgr._PF:1 290x358+823+532
+wm geometry .sigmgr._PF:1 290x358+685+520
+wm geometry .sigmgr._PF:1 290x358+531+496
+wm geometry .sigmgr._PF:1 290x358+391+468
+wm geometry .sigmgr._PF:1 290x358+289+442
+wm geometry .sigmgr._PF:1 290x358+235+425
+wm geometry .sigmgr._PF:1 290x358+231+423
+wm geometry .sigmgr._PF:1 290x358+231+422
+wm geometry .sigmgr._PF:1 290x358+230+421
+wm geometry .sigmgr._PF:1 290x358+229+418
+wm geometry .sigmgr._PF:1 290x358+228+416
+wm geometry .sigmgr._PF:1 290x358+227+415
+wm geometry .sigmgr._PF:1 290x358+226+414
+wm geometry .sigmgr._PF:1 290x358+223+411
+wm geometry .sigmgr._PF:1 290x358+219+408
+wm geometry .sigmgr._PF:1 290x358+214+405
+wm geometry .sigmgr._PF:1 290x358+209+403
+wm geometry .sigmgr._PF:1 290x358+200+399
+wm geometry .sigmgr._PF:1 290x358+190+395
+wm geometry .sigmgr._PF:1 290x358+160+390
+wm geometry .sigmgr._PF:1 290x358+114+380
+wm geometry .sigmgr._PF:1 290x358+66+370
+wm geometry .sigmgr._PF:1 290x358+29+360
+wm geometry .sigmgr._PF:1 290x358+7+354
+wm geometry .sigmgr._PF:1 290x358+-1+353
+wm geometry .sigmgr._PF:1 290x358+-5+351
+wm geometry .sigmgr._PF:1 290x358+-7+351
+wm geometry .sigmgr._PF:1 290x358+-8+351
 Graph:DSel
 Graph itemselect Signal1 add
 # Signal1
 Graph sigconfig Signal1 -region 0 -rgnindex 1
 Graph:DSel
-Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{0.30470537849025 -0.17778557591252} {13.46n 37.484n}}
-Graph:DSel
+pf:read PF:1 v(p1)
+# WF:1:3
+Graph addsignal WF:1:3 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal2
+pf:read PF:1 v(a_1_reg)
+# WF:1:4
+Graph addsignal WF:1:4 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal3
+pf:read PF:1 v(clk)
+# WF:1:5
+Graph addsignal WF:1:5 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal4
+pf:read PF:1 v(clk_bar)
+# WF:1:6
+Graph addsignal WF:1:6 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal5
+wm geometry .sigmgr._PF:1 290x358+11+371
+wm geometry .sigmgr._PF:1 290x358+55+415
+wm geometry .sigmgr._PF:1 290x358+107+469
+wm geometry .sigmgr._PF:1 290x358+147+515
+wm geometry .sigmgr._PF:1 290x358+183+561
+wm geometry .sigmgr._PF:1 290x358+219+603
+wm geometry .sigmgr._PF:1 290x358+236+625
+wm geometry .sigmgr._PF:1 290x358+241+632
+wm geometry .sigmgr._PF:1 290x358+243+637
+wm geometry .sigmgr._PF:1 290x358+243+638
+wm geometry .sigmgr._PF:1 290x358+243+639
+wm geometry .sigmgr._PF:1 290x358+243+640
+wm geometry .sigmgr._PF:1 290x358+243+641
+wm geometry .sigmgr._PF:1 290x358+243+642
+wm geometry .sigmgr._PF:1 290x358+246+641
+Graph addsignal WF:2:1 -region 0 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill green -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(a1) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal6
+Graph addsignal WF:2:2 -region 0 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill magenta -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(a_1) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal7
+Graph addsignal WF:2:6 -region 1 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill cyan -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(p1) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal8
+Graph addsignal WF:2:3 -region 2 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill yellow -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(a_1_reg) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal9
+Graph addsignal WF:2:4 -region 3 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill #FF8000 -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(clk) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal10
+Graph addsignal WF:2:5 -region 4 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill #89ffbb -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(clk_bar) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal11
+Graph itemselect all rem
+Graph itemselect Signal0 add
+# Signal0
 Graph itemselect Signal1 add
 # Signal1
-Graph sigconfig Signal1 -region 0 -rgnindex 2
-Graph itemselect Signal1 add
-# Signal1
-Graph sigconfig Signal1 -regswap 2
-Graph:DSel
-Graph axisconfig {AxisY(1,0) AxisX(0)} -range {{0.066101140356427 -0.043358815582118} {14.42756897n 24.66013403n}}
-Graph:DSel
-Graph axisconfig {AxisY(1,0) AxisX(0)} -range {{0.073861452485488 -0.043417071734382} {17.12442321n 24.20167689n}}
+Graph itemselect Signal2 add
+# Signal2
+Graph itemselect Signal3 add
+# Signal3
+Graph itemselect Signal4 add
+# Signal4
+Graph itemselect Signal5 add
+# Signal5
+Graph delsignal selected
 Graph:DSel
 Graph:Select Graph0
+Graph axisconfig {AxisY(0,0) AxisX(0) AxisY(1,0) AxisY(2,0) AxisY(3,0) AxisY(4,0)} -range {{0.325 1.15 } {14.52n 29.04n } {0.0013 0.0046 } {0.16 0.82 } {0.16 0.82 } {0.16 0.82 }}
+Graph axisconfig {AxisX(0) AxisY(0,0) AxisY(1,0) AxisY(2,0) AxisY(3,0) AxisY(4,0)} -range {all all all all all all} -zoomed {0 0 0 0 0 0}
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{-0.4015489565316 2.2274604587681} {16.4501n 24.4579n}}
+wm geometry .sigmgr._PF:1 290x358+249+640
+wm geometry .sigmgr._PF:1 290x358+290+626
+wm geometry .sigmgr._PF:1 290x358+366+608
+wm geometry .sigmgr._PF:1 290x358+478+578
+wm geometry .sigmgr._PF:1 290x358+590+538
+wm geometry .sigmgr._PF:1 290x358+694+494
+wm geometry .sigmgr._PF:1 290x358+780+450
+wm geometry .sigmgr._PF:1 290x358+834+414
+wm geometry .sigmgr._PF:1 290x358+874+380
+wm geometry .sigmgr._PF:1 290x358+902+348
+wm geometry .sigmgr._PF:1 290x358+916+331
+wm geometry .sigmgr._PF:1 290x358+926+318
+wm geometry .sigmgr._PF:1 290x358+937+308
+wm geometry .sigmgr._PF:1 290x358+944+299
+wm geometry .sigmgr._PF:1 290x358+951+294
+wm geometry .sigmgr._PF:1 290x358+955+289
+wm geometry .sigmgr._PF:1 290x358+962+282
+wm geometry .sigmgr._PF:1 290x358+969+275
+wm geometry .sigmgr._PF:1 290x358+974+271
+wm geometry .sigmgr._PF:1 290x358+981+263
+wm geometry .sigmgr._PF:1 290x358+993+253
+wm geometry .sigmgr._PF:1 290x358+1009+240
+wm geometry .sigmgr._PF:1 290x358+1014+236
+wm geometry .sigmgr._PF:1 290x358+1017+233
+wm geometry .sigmgr._PF:1 290x358+1019+231
+wm geometry .sigmgr._PF:1 290x358+1020+229
+wm geometry .sigmgr._PF:1 290x358+1020+228
+wm geometry .sigmgr 467x236+49+110
+wm geometry .sigmgr 467x236+104+122
+wm geometry .sigmgr 467x236+188+136
+wm geometry .sigmgr 467x236+278+144
+wm geometry .sigmgr 467x236+346+148
+wm geometry .sigmgr 467x236+402+152
+wm geometry .sigmgr 467x236+448+154
+wm geometry .sigmgr 467x236+498+158
+wm geometry .sigmgr 467x236+533+160
+wm geometry .sigmgr 467x236+538+160
+wm geometry .sigmgr 467x236+539+160
+GrXY:NewGraph
+# Graph1
+pf:read PF:2 v(a1)
+# WF:2:1
+Graph addsignal WF:2:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:2 v(a_1)
+# WF:2:2
+Graph addsignal WF:2:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+Graph:Select Graph1
 Graph:DSel
 Graph itemselect Signal1 add
 # Signal1
 Graph sigconfig Signal1 -region 0 -rgnindex 1
+Mdi:FullSize
+wm geometry .sigmgr 467x236+537+160
+wm geometry .sigmgr 467x236+495+163
+wm geometry .sigmgr 467x236+407+163
+wm geometry .sigmgr 467x236+293+163
+wm geometry .sigmgr 467x236+193+163
+wm geometry .sigmgr 467x236+135+165
+wm geometry .sigmgr 467x236+121+167
+wm geometry .sigmgr 467x236+119+168
+wm geometry .sigmgr 467x236+115+169
+wm geometry .sigmgr 467x236+106+171
+wm geometry .sigmgr 467x236+95+174
+wm geometry .sigmgr 467x236+91+175
+wm geometry .sigmgr 467x236+90+175
+wm geometry .sigmgr._PF:1 290x358+1021+228
+wm geometry .sigmgr._PF:1 290x358+1057+220
+wm geometry .sigmgr._PF:1 290x358+1109+210
+wm geometry .sigmgr._PF:1 290x358+1155+202
+wm geometry .sigmgr._PF:1 290x358+1227+194
+wm geometry .sigmgr._PF:1 290x358+1287+188
+wm geometry .sigmgr._PF:1 290x358+1351+180
+wm geometry .sigmgr._PF:1 290x358+1392+174
+wm geometry .sigmgr._PF:1 290x358+1407+170
+wm geometry .sigmgr._PF:1 290x358+1409+169
+wm geometry .sigmgr._PF:1 290x358+1411+167
+wm geometry .sigmgr._PF:1 290x358+1411+166
+wm geometry .sigmgr._PF:1 290x358+1411+165
+wm geometry .sigmgr._PF:1 290x358+1413+164
 Graph:DSel
-Graph axisconfig {AxisX(0) AxisY(0,0)} -range {all all} -zoomed {0 0}
+pf:read PF:2 v(p1)
+# WF:2:6
+Graph addsignal WF:2:6 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal2
+wm geometry .sigmgr._PF:1 290x358+1408+166
+wm geometry .sigmgr._PF:1 290x358+1404+168
+wm geometry .sigmgr._PF:1 290x358+1395+170
+wm geometry .sigmgr._PF:1 290x358+1384+174
+wm geometry .sigmgr._PF:1 290x358+1372+176
+wm geometry .sigmgr._PF:1 290x358+1340+184
+wm geometry .sigmgr._PF:1 290x358+1314+187
+wm geometry .sigmgr._PF:1 290x358+1265+187
+wm geometry .sigmgr._PF:1 290x358+1197+187
+wm geometry .sigmgr._PF:1 290x358+1115+181
+wm geometry .sigmgr._PF:1 290x358+1037+177
+wm geometry .sigmgr._PF:1 290x358+975+177
+wm geometry .sigmgr._PF:1 290x358+940+181
+wm geometry .sigmgr._PF:1 290x358+930+183
+wm geometry .sigmgr._PF:1 290x358+927+184
+wm geometry .sigmgr._PF:1 290x358+923+184
+wm geometry .sigmgr._PF:1 290x358+917+184
+wm geometry .sigmgr._PF:1 290x358+889+184
+wm geometry .sigmgr._PF:1 290x358+857+188
+wm geometry .sigmgr._PF:1 290x358+829+193
+wm geometry .sigmgr._PF:1 290x358+802+200
+wm geometry .sigmgr._PF:1 290x358+786+204
+wm geometry .sigmgr._PF:1 290x358+775+206
+wm geometry .sigmgr._PF:1 290x358+772+207
+wm geometry .sigmgr._PF:1 290x358+771+207
+wm geometry .sigmgr._PF:1 290x358+769+209
+wm geometry .sigmgr._PF:1 290x358+766+210
+wm geometry .sigmgr._PF:1 290x358+765+211
+wm geometry .sigmgr._PF:1 290x358+764+211
+wm geometry .sigmgr._PF:1 290x358+763+211
+wm geometry .sigmgr._PF:1 290x358+761+213
+wm geometry .sigmgr._PF:1 290x358+759+215
+wm geometry .sigmgr._PF:1 290x358+758+216
+pf:read PF:2 v(a_1_reg)
+# WF:2:3
+Graph addsignal WF:2:3 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal3
+wm geometry .sigmgr._PF:1 290x358+753+226
+wm geometry .sigmgr._PF:1 290x358+740+258
+wm geometry .sigmgr._PF:1 290x358+730+283
+wm geometry .sigmgr._PF:1 290x358+721+312
+wm geometry .sigmgr._PF:1 290x358+709+339
+wm geometry .sigmgr._PF:1 290x358+699+362
+wm geometry .sigmgr._PF:1 290x358+693+381
+wm geometry .sigmgr._PF:1 290x358+688+394
+wm geometry .sigmgr._PF:1 290x358+683+401
+wm geometry .sigmgr._PF:1 290x358+681+404
+wm geometry .sigmgr._PF:1 290x358+680+406
+wm geometry .sigmgr._PF:1 290x358+679+406
+wm geometry .sigmgr 467x236+91+204
+wm geometry .sigmgr 467x236+97+272
+wm geometry .sigmgr 467x236+105+334
+wm geometry .sigmgr 467x236+113+376
+wm geometry .sigmgr 467x236+118+405
+wm geometry .sigmgr 467x236+118+421
+wm geometry .sigmgr 467x236+118+427
+wm geometry .sigmgr 467x236+118+431
+wm geometry .sigmgr 467x236+118+432
+wm geometry .sigmgr 467x236+117+432
+pf:read PF:2 v(p_0)
+# WF:2:7
+Graph addsignal WF:2:7 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal4
+wm geometry .sigmgr._PF:1 290x358+677+406
+wm geometry .sigmgr._PF:1 290x358+664+405
+wm geometry .sigmgr._PF:1 290x358+650+403
+wm geometry .sigmgr._PF:1 290x358+627+400
+wm geometry .sigmgr._PF:1 290x358+603+395
+wm geometry .sigmgr._PF:1 290x358+587+390
+wm geometry .sigmgr._PF:1 290x358+582+389
+wm geometry .sigmgr._PF:1 290x358+579+388
+pf:read PF:2 v(p_1)
+# WF:2:8
+Graph addsignal WF:2:8 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal5
+pf:read PF:2 v(p_1_reg)
+# WF:2:9
+Graph addsignal WF:2:9 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal6
+pf:read PF:2 v(clk)
+# WF:2:4
+Graph addsignal WF:2:4 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal7
+wm geometry .sigmgr._PF:1 290x358+578+396
+wm geometry .sigmgr._PF:1 290x358+578+404
+wm geometry .sigmgr._PF:1 290x358+578+443
+wm geometry .sigmgr._PF:1 290x358+580+493
+wm geometry .sigmgr._PF:1 290x358+584+537
+wm geometry .sigmgr._PF:1 290x358+589+560
+wm geometry .sigmgr._PF:1 290x358+592+571
+wm geometry .sigmgr._PF:1 290x358+593+575
+wm geometry .sigmgr._PF:1 290x358+593+577
+wm geometry .sigmgr._PF:1 290x358+594+580
+wm geometry .sigmgr._PF:1 290x358+594+584
+wm geometry .sigmgr._PF:1 290x358+594+586
+wm geometry .sigmgr._PF:1 290x358+594+587
+wm geometry .sigmgr._PF:1 290x358+594+588
+wm geometry .sigmgr._PF:1 290x358+594+587
+wm geometry .sigmgr._PF:1 290x358+594+584
+wm geometry .sigmgr._PF:1 290x358+594+580
+wm geometry .sigmgr._PF:1 290x358+593+575
+wm geometry .sigmgr._PF:1 290x358+593+572
+wm geometry .sigmgr._PF:1 290x358+592+570
+wm geometry .sigmgr._PF:1 290x358+592+567
+wm geometry .sigmgr._PF:1 290x358+592+566
+wm geometry .sigmgr._PF:1 290x358+592+568
+wm geometry .sigmgr._PF:1 290x358+589+574
+wm geometry .sigmgr._PF:1 290x358+584+577
+wm geometry .sigmgr._PF:1 290x358+576+580
+wm geometry .sigmgr._PF:1 290x358+575+581
+pf:read PF:2 v(p_1_reg_reg)
+# WF:2:10
+Graph addsignal WF:2:10 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal8
+pf:read PF:2 v(p1_1_1)
+# WF:2:11
+Graph addsignal WF:2:11 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal9
+Graph:Select Graph1
+Graph:DSel
+Graph itemselect Signal2 add
+# Signal2
+Graph itemselect Signal2 add
+# Signal2
+Graph sigconfig Signal2 -regswap 10
+Graph:DSel
+Graph itemselect Signal9 add
+# Signal9
+Graph sigconfig {Signal9 Signal2} -region {8 8} -rgnindex {0 1}
+Graph itemselect Signal9 add
+# Signal9
+Graph sigconfig Signal9 -region 7 -rgnindex 2
+Graph itemselect Signal9 add
+# Signal9
+Graph sigconfig Signal9 -region 7 -rgnindex 2
+Graph:DSel
+Graph itemselect Signal2 add
+# Signal2
+Graph itemselect Signal2 add
+# Signal2
+Graph sigconfig {Signal2 Signal9} -regswap {7 8}
+Graph:DSel
+Graph axisconfig {AxisY(8,0) AxisX(0)} -range {{1.9530893464211 -0.48367351896691} {24.6835n 26.1411n}}
+Graph axisconfig {AxisY(0,0) AxisX(0) AxisY(1,0) AxisY(2,0) AxisY(3,0) AxisY(4,0) AxisY(5,0) AxisY(6,0) AxisY(7,0) AxisY(8,0)} -gridvis {yes yes yes yes yes yes yes yes yes yes}
+Graph config -grid yes
+Graph axisconfig {AxisX(0) AxisY(0,0) AxisY(1,0) AxisY(2,0) AxisY(3,0) AxisY(4,0) AxisY(5,0) AxisY(6,0) AxisY(7,0) AxisY(8,0)} -range {all all all all all all all all all all} -zoomed {0 0 0 0 0 0 0 0 0 0}
+Graph axisconfig {AxisY(0,0) AxisX(0) AxisY(1,0) AxisY(2,0) AxisY(3,0) AxisY(4,0) AxisY(5,0) AxisY(6,0) AxisY(7,0) AxisY(8,0)} -gridvis {no no no no no no no no no no}
+Graph config -grid no
+Graph axisconfig {AxisY(0,0) AxisX(0) AxisY(1,0) AxisY(2,0) AxisY(3,0) AxisY(4,0) AxisY(5,0) AxisY(6,0) AxisY(7,0) AxisY(8,0)} -gridvis {yes yes yes yes yes yes yes yes yes yes}
+Graph config -grid yes
+Graph axisconfig {AxisY(0,0) AxisX(0) AxisY(1,0) AxisY(2,0) AxisY(3,0) AxisY(4,0) AxisY(5,0) AxisY(6,0) AxisY(7,0) AxisY(8,0)} -gridvis {no no no no no no no no no no}
+Graph config -grid no
+Graph axisconfig {AxisY(0,0) AxisX(0) AxisY(1,0) AxisY(2,0) AxisY(3,0) AxisY(4,0) AxisY(5,0) AxisY(6,0) AxisY(7,0) AxisY(8,0)} -gridvis {yes yes yes yes yes yes yes yes yes yes}
+Graph config -grid yes
+Graph axisconfig {AxisY(0,0) AxisX(0) AxisY(1,0) AxisY(2,0) AxisY(3,0) AxisY(4,0) AxisY(5,0) AxisY(6,0) AxisY(7,0) AxisY(8,0)} -gridvis {no no no no no no no no no no}
+Graph config -grid no
+Graph axisconfig {AxisY(0,0) AxisX(0) AxisY(1,0) AxisY(2,0) AxisY(3,0) AxisY(4,0) AxisY(5,0) AxisY(6,0) AxisY(7,0) AxisY(8,0)} -gridvis {yes yes yes yes yes yes yes yes yes yes}
+Graph config -grid yes
+Graph axisconfig {AxisY(0,0) AxisX(0) AxisY(1,0) AxisY(2,0) AxisY(3,0) AxisY(4,0) AxisY(5,0) AxisY(6,0) AxisY(7,0) AxisY(8,0)} -gridvis {no no no no no no no no no no}
+Graph config -grid no
+Graph axisconfig {AxisY(0,0) AxisX(0) AxisY(1,0) AxisY(2,0) AxisY(3,0) AxisY(4,0) AxisY(5,0) AxisY(6,0) AxisY(7,0) AxisY(8,0)} -gridvis {yes yes yes yes yes yes yes yes yes yes}
+Graph config -grid yes
+Graph:DSel
+wm geometry .sigmgr 467x236+127+436
+wm geometry .sigmgr 467x236+134+437
+wm geometry .sigmgr 467x236+145+441
+wm geometry .sigmgr 467x236+151+443
+wm geometry .sigmgr 467x236+159+446
+wm geometry .sigmgr 467x236+167+451
+wm geometry .sigmgr 467x236+176+458
+wm geometry .sigmgr 467x236+185+463
+wm geometry .sigmgr 467x236+192+468
+wm geometry .sigmgr 467x236+210+488
+wm geometry .sigmgr 467x236+238+514
+wm geometry .sigmgr 467x236+270+550
+wm geometry .sigmgr 467x236+300+584
+wm geometry .sigmgr 467x236+330+614
+wm geometry .sigmgr 467x236+354+639
+wm geometry .sigmgr 467x236+379+664
+wm geometry .sigmgr 467x236+392+678
+wm geometry .sigmgr 467x236+398+684
+wm geometry .sigmgr 467x236+402+688
+wm geometry .sigmgr 467x236+411+693
+wm geometry .sigmgr 467x236+421+698
+wm geometry .sigmgr 467x236+426+700
+wm geometry .sigmgr 467x236+427+700
+wm geometry .sigmgr 467x236+429+700
+Graph addsignal WF:3:1 -region 0 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill green -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(a1) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal10
+Graph addsignal WF:3:2 -region 0 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill magenta -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(a_1) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal11
+Graph addsignal WF:3:3 -region 1 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill yellow -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(a_1_reg) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal12
+Graph addsignal WF:3:7 -region 2 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill #FF8000 -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(p_0) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal13
+Graph addsignal WF:3:8 -region 3 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill #89ffbb -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(p_1) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal14
+Graph addsignal WF:3:9 -region 4 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill #edbfff -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(p_1_reg) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal15
+Graph addsignal WF:3:4 -region 5 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill #0080FF -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(clk) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal16
+Graph addsignal WF:3:10 -region 6 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill #ffd016 -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(p_1_reg_reg) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal17
+Graph addsignal WF:3:5 -region 7 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill cyan -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(p1) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal18
+Graph addsignal WF:3:6 -region 8 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill #ff74bd -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(p1_1_1) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal19
+Graph itemselect all rem
+Graph itemselect Signal0 add
+# Signal0
+Graph itemselect Signal1 add
+# Signal1
+Graph itemselect Signal3 add
+# Signal3
+Graph itemselect Signal4 add
+# Signal4
+Graph itemselect Signal5 add
+# Signal5
+Graph itemselect Signal6 add
+# Signal6
+Graph itemselect Signal7 add
+# Signal7
+Graph itemselect Signal8 add
+# Signal8
+Graph itemselect Signal2 add
+# Signal2
+Graph itemselect Signal9 add
+# Signal9
+Graph delsignal selected
+Graph:Select Graph1
+Graph:DSel
+Graph itemselect Signal18 add
+# Signal18
+Graph sigconfig Signal18 -region 8 -rgnindex 1
+Graph itemselect Signal18 add
+# Signal18
+Graph sigconfig Signal18 -region 6 -rgnindex 1
+Graph axisconfig {AxisY(0,0) AxisX(0) AxisY(1,0) AxisY(2,0) AxisY(3,0) AxisY(4,0) AxisY(5,0) AxisY(6,0) AxisY(7,0)} -gridvis {no no no no no no no no no}
+Graph config -grid no
+Graph itemselect Signal18 add
+# Signal18
+Graph sigconfig {Signal18 Signal19} -regswap {7 8}
+Graph:DSel
+Graph addsignal WF:4:1 -region 0 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill green -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(a1) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal20
+Graph addsignal WF:4:2 -region 0 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill magenta -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(a_1) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal21
+Graph addsignal WF:4:3 -region 1 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill yellow -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(a_1_reg) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal22
+Graph addsignal WF:4:7 -region 2 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill #FF8000 -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(p_0) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal23
+Graph addsignal WF:4:8 -region 3 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill #89ffbb -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(p_1) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal24
+Graph addsignal WF:4:9 -region 4 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill #edbfff -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(p_1_reg) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal25
+Graph addsignal WF:4:4 -region 5 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill #0080FF -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(clk) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal26
+Graph addsignal WF:4:10 -region 6 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill #ffd016 -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(p_1_reg_reg) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal27
+Graph addsignal WF:4:5 -region 7 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill cyan -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(p1) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal28
+Graph addsignal WF:4:6 -region 8 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill #ff74bd -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(p1_1_1) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal29
+Graph itemselect all rem
+Graph itemselect Signal10 add
+# Signal10
+Graph itemselect Signal11 add
+# Signal11
+Graph itemselect Signal12 add
+# Signal12
+Graph itemselect Signal13 add
+# Signal13
+Graph itemselect Signal14 add
+# Signal14
+Graph itemselect Signal15 add
+# Signal15
+Graph itemselect Signal16 add
+# Signal16
+Graph itemselect Signal17 add
+# Signal17
+Graph itemselect Signal18 add
+# Signal18
+Graph itemselect Signal19 add
+# Signal19
+Graph delsignal selected
+Graph addsignal WF:5:1 -region 0 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill green -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(a1) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal30
+Graph addsignal WF:5:2 -region 0 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill magenta -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(a_1) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal31
+Graph addsignal WF:5:3 -region 1 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill yellow -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(a_1_reg) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal32
+Graph addsignal WF:5:7 -region 2 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill #FF8000 -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(p_0) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal33
+Graph addsignal WF:5:8 -region 3 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill #89ffbb -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(p_1) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal34
+Graph addsignal WF:5:9 -region 4 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill #edbfff -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(p_1_reg) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal35
+Graph addsignal WF:5:4 -region 5 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill #0080FF -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(clk) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal36
+Graph addsignal WF:5:10 -region 6 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill #ffd016 -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(p_1_reg_reg) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal37
+Graph addsignal WF:5:5 -region 7 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill cyan -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(p1) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal38
+Graph addsignal WF:5:6 -region 8 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill #ff74bd -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(p1_1_1) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal39
+Graph itemselect all rem
+Graph itemselect Signal20 add
+# Signal20
+Graph itemselect Signal21 add
+# Signal21
+Graph itemselect Signal22 add
+# Signal22
+Graph itemselect Signal23 add
+# Signal23
+Graph itemselect Signal24 add
+# Signal24
+Graph itemselect Signal25 add
+# Signal25
+Graph itemselect Signal26 add
+# Signal26
+Graph itemselect Signal27 add
+# Signal27
+Graph itemselect Signal28 add
+# Signal28
+Graph itemselect Signal29 add
+# Signal29
+Graph delsignal selected
+Graph:Select Graph1
+Graph:DSel
+Graph itemselect Signal38 add
+# Signal38
+Graph sigconfig {Signal38 Signal39} -region {8 8} -rgnindex {0 1}
+Graph itemselect Signal38 add
+# Signal38
+Graph sigconfig {Signal38 Signal39} -regswap {7 8}
+Graph:DSel
+Graph addsignal WF:6:1 -region 0 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill green -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(a1) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal40
+Graph addsignal WF:6:2 -region 0 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill magenta -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(a_1) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal41
+Graph addsignal WF:6:3 -region 1 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill yellow -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(a_1_reg) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal42
+Graph addsignal WF:6:7 -region 2 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill #FF8000 -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(p_0) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal43
+Graph addsignal WF:6:8 -region 3 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill #89ffbb -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(p_1) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal44
+Graph addsignal WF:6:9 -region 4 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill #edbfff -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(p_1_reg) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal45
+Graph addsignal WF:6:4 -region 5 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill #0080FF -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(clk) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal46
+Graph addsignal WF:6:10 -region 6 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill #ffd016 -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(p_1_reg_reg) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal47
+Graph addsignal WF:6:5 -region 7 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill cyan -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(p1) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal48
+Graph addsignal WF:6:6 -region 8 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill #ff74bd -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(p1_1_1) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal49
+Graph itemselect all rem
+Graph itemselect Signal30 add
+# Signal30
+Graph itemselect Signal31 add
+# Signal31
+Graph itemselect Signal32 add
+# Signal32
+Graph itemselect Signal33 add
+# Signal33
+Graph itemselect Signal34 add
+# Signal34
+Graph itemselect Signal35 add
+# Signal35
+Graph itemselect Signal36 add
+# Signal36
+Graph itemselect Signal37 add
+# Signal37
+Graph itemselect Signal38 add
+# Signal38
+Graph itemselect Signal39 add
+# Signal39
+Graph delsignal selected
