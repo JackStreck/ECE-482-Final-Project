@@ -1,0 +1,25 @@
+* "simulator" "PrimeSim HSPICE"
+* "version" "T-2022.06-SP1 linux64"
+* "format" "HSP"
+* "rundate" "17:46:09 11/19/2025 "
+* "netlist" "register.cir "
+* "runtitle" "* =========================================================="
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ clk =   0.            
++ clk_bar =   1.1000        
++ d =   0.            
++ net17 =   1.1000        
++ net21 =   6.6330u       
++ net4 = 912.8171m       
++ net9 =  73.4205m       
++ q =  22.3973n       
++ rst =   1.1000        
++ vdd =   1.1000        
++ vss =   0.            
++ x =  73.4205m       
+***   END: Saved Operating Point ***                     

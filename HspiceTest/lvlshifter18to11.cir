@@ -1,0 +1,62 @@
+* ================================================
+* 1.8V → 1.1V Level Shifter Testbench
+* ================================================
+
+.lib '/class/ece482/gpdk045_mos' TT
+.OPTION POST
+.TEMP 25
+
+**************************************************
+* DUT: 1.8V to 1.1V level shifter
+**************************************************
+* a_core / a_core_bar are 1.1 V domain outputs
+* aio / aio_bar are 1.8 V domain inputs
+
+* NMOS pair (thick-oxide IO devices)
+m1    a_core     aio_bar  vss vss g45n2svt L=150e-9 W=320e-9 AD=48e-15 AS=48e-15 PD=940e-9 PS=940e-9 NRD=468.75e-3 NRS=468.75e-3 M=1
+m0    a_core_bar aio     vss vss g45n2svt L=150e-9 W=320e-9 AD=48e-15 AS=48e-15 PD=940e-9 PS=940e-9 NRD=468.75e-3 NRS=468.75e-3 M=1
+
+* Cross-coupled PMOS latch (1.1 V domain)
+mpm1  a_core     a_core_bar vdd vdd g45p1svt L=45e-9 W=120e-9 AD=16.8e-15 AS=16.8e-15 PD=520e-9 PS=520e-9 NRD=1.16667 NRS=1.16667 M=1
+mpm0  a_core_bar a_core     vdd vdd g45p1svt L=45e-9 W=120e-9 AD=16.8e-15 AS=16.8e-15 PD=520e-9 PS=520e-9 NRD=1.16667 NRS=1.16667 M=1
+
+**************************************************
+* Power supplies
+**************************************************
+* 1.1 V core domain
+VDD   vdd  0  1.1
+* Ground
+VSS   vss  0  0
+
+**************************************************
+* Input stimulus (1.8 V domain)
+**************************************************
+* aio toggles 0 ↔ 1.8 V
+* aio_bar is its complement
+
+* Period = 10 ns, 50% duty
+* First half: aio = 0 → 1.8, aio_bar = 1.8 → 0
+
+VAIO    aio     0  PULSE(0 1.8 0 50p 50p 5n 10n)
+VAIOBAR aio_bar 0  PULSE(1.8 0 0 50p 50p 5n 10n)
+
+**************************************************
+* Output loading (simple capacitive load)
+**************************************************
+* Small loads on the 1.1 V outputs
+Cload_core     a_core     vss  5f
+Cload_corebar  a_core_bar vss  5f
+
+**************************************************
+* Simulation control
+**************************************************
+.tran 1p 50n
+
+* Probes for waveform viewing in CosmosScope
+.probe tran v(aio) v(aio_bar) v(a_core) v(a_core_bar) v(vdd)
+
+* (Optional) delay measurements — rising/falling edges
+*.measure tran tPHL  TRIG v(aio)     VAL=0.9 RISE=1  TARG v(a_core)     VAL=0.55 FALL=1
+*.measure tran tPLH  TRIG v(aio)     VAL=0.9 FALL=1  TARG v(a_core)     VAL=0.55 RISE=1
+
+.end

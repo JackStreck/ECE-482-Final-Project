@@ -1,0 +1,19 @@
+* "simulator" "PrimeSim HSPICE"
+* "version" "T-2022.06-SP1 linux64"
+* "format" "HSP"
+* "rundate" "17:32:17 12/01/2025 "
+* "netlist" "lvlshifter18to11.cir "
+* "runtitle" "* ================================================"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a_core =  19.0317n       
++ a_core_bar =   1.1000        
++ aio =   0.            
++ aio_bar =   1.8000        
++ vdd =   1.1000        
++ vss =   0.            
+***   END: Saved Operating Point ***                     

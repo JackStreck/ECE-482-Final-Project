@@ -1,0 +1,12 @@
+Mdi:ArrangeIcons
+wm geometry . 900x785+-10+88
+Mdi:ArrangeIcons
+wm geometry . 900x785+-10+99
+Mdi:ArrangeIcons
+wm geometry . 900x785+-10+106
+Mdi:ArrangeIcons
+wm geometry . 900x785+-10+109
+Mdi:ArrangeIcons
+wm geometry . 960x958+-10+24
+ScopeSigMgr:loadpffile /home/crjung2/ece482.work/HspiceTest/lvlshifter18to11.tr0 1 openonly
+# {}

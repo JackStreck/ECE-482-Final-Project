@@ -1,0 +1,41 @@
+ScopeSigMgr:loadpffile /home/crjung2/ece482.work/HspiceTest/project_files_v2/ece_482_proj_tb.tr0 1 openonly
+# PF:1
+wm geometry .sigmgr._PF:1 290x358+960+540
+pf:read PF:1 v(a_1)
+# WF:1:1
+Graph addsignal WF:1:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:1 v(a1)
+# WF:1:2
+Graph addsignal WF:1:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+wm geometry .sigmgr 467x236+414+181
+wm geometry .sigmgr 467x236+427+186
+wm geometry .sigmgr 467x236+490+208
+wm geometry .sigmgr 467x236+548+222
+wm geometry .sigmgr 467x236+612+236
+wm geometry .sigmgr 467x236+668+248
+wm geometry .sigmgr 467x236+710+258
+wm geometry .sigmgr 467x236+737+265
+wm geometry .sigmgr 467x236+748+266
+wm geometry .sigmgr 467x236+750+266
+Graph:DSel
+Graph:Select Graph0
+Graph:DSel
+Graph itemselect Signal0 add
+# Signal0
+Graph sigconfig Signal0 -region 1 -rgnindex 1
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{0.7636601887758 -0.4131470170846} {10.938n 46.233n}}
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{0.27591744586046 -0.37721055339206} {14.016n 61.175n}}
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{0.13934873975069 -0.083460091225545} {10.146n 62.347n}}
+Graph:DSel
+Graph itemselect Signal0 add
+# Signal0
+Graph sigconfig {Signal0 Signal1} -regswap {0 1}
+Graph:DSel
+Graph axisconfig {AxisX(0) AxisY(0,0) AxisY(1,0)} -range {all all all} -zoomed {0 0 0}
+Graph axisconfig {AxisX(0) AxisY(0,0) AxisY(1,0)} -range {all all all} -zoomed {0 0 0}
+Graph:DSel

@@ -1,0 +1,52 @@
+****** PrimeSim HSPICE -- T-2022.06-SP1 linux64 (Aug 19 2022 7764626) ******
+Input File: lvlshifter1.cir
+lic:
+lic: FLEXlm: SDK_12.11.1
+lic: USER:   crjung2              HOSTNAME: eceb-2022-20.ews.illinois.edu
+lic: HOSTID: ffffffffae808cbb     PID:      1233720
+lic: Using FLEXlm license file:
+lic: 27005@synopsys.webstore.illinois.edu
+lic: Checkout 1 hspice
+lic: License/Maintenance for hspice will expire on 15-apr-2026/2024.09
+lic: 1(in_use)/150(total) FLOATING license(s) on SERVER 27005@synopsys.webstore.illinois.edu
+lic:
+
+ init: begin read circuit files, cpu clock= 7.35E-02
+       option search = /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/parts/ad
+       option search = /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/parts/behave
+       option search = /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/parts/bjt
+       option search = /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/parts/burr_brn
+       option search = /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/parts/comlinear
+       option search = /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/parts/dio
+       option search = /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/parts/fet
+       option search = /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/parts/lin_tech
+       option search = /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/parts/pci
+       option search = /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/parts/signet
+       option search = /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/parts/ti
+       option search = /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/parts/tline
+       option search = /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/parts/xilinx
+       option post
+ init: end read circuit files, cpu clock= 8.20E-02 peak memory=     433 mb
+ init: begin check errors, cpu clock= 8.20E-02
+ init: end check errors, cpu clock= 8.78E-02 peak memory=     433 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 8.78E-02
+       establish matrix -- done, cpu clock= 8.79E-02 peak memory=     433 mb
+       re-order matrix -- done, cpu clock= 8.91E-02 peak memory=     433 mb
+ init: end setup matrix, cpu clock= 9.07E-02 peak memory=     433 mb
+ dcop: begin dcop, cpu clock= 9.08E-02
+ dcop: end dcop, cpu clock= 9.77E-02 peak memory=     433 mb tot_iter=       4
+ output: lvlshifter1.tr
+ sweep: tran tran0    begin, stop_t=  4.00E-08 #sweeps=**** cpu clock= 1.00E-01
+ tran: time= 5.0200E-09 tot_iter=     100 conv_iter=      44 cpu clock= 1.02E-01
+ tran: time= 9.1274E-09 tot_iter=     195 conv_iter=      85 cpu clock= 1.04E-01
+ tran: time= 1.2029E-08 tot_iter=     280 conv_iter=     123 cpu clock= 1.06E-01
+ tran: time= 1.6014E-08 tot_iter=     332 conv_iter=     147 cpu clock= 1.09E-01
+ tran: time= 2.0000E-08 tot_iter=     382 conv_iter=     168 cpu clock= 1.11E-01
+ tran: time= 2.5020E-08 tot_iter=     471 conv_iter=     208 cpu clock= 1.15E-01
+ tran: time= 2.9118E-08 tot_iter=     565 conv_iter=     249 cpu clock= 1.17E-01
+ tran: time= 3.2027E-08 tot_iter=     650 conv_iter=     287 cpu clock= 1.20E-01
+ tran: time= 3.6014E-08 tot_iter=     702 conv_iter=     311 cpu clock= 1.23E-01
+ tran: time= 4.0000E-08 tot_iter=     752 conv_iter=     332 cpu clock= 1.26E-01
+ sweep: tran tran0    end, cpu clock= 1.27E-01 peak memory=     433 mb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)
