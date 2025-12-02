@@ -1,4 +1,4 @@
-Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice ./ece_482_proj_tb.cir
+Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice ece_482_proj_tb.cir
  ****** PrimeSim HSPICE -- T-2022.06-SP1 linux64 (Aug 19 2022 7764626) ******
   Copyright (c) 1986 - 2025 by Synopsys, Inc. All Rights Reserved.
   This software and the associated documentation are proprietary
@@ -6,13 +6,13 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
   with the terms and conditions of a written license agreement with
   Synopsys, Inc. All other use, reproduction, or distribution of
   this software is strictly prohibited.
-  Input File: ./ece_482_proj_tb.cir                                             
-  Command line options: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice ./ece_482_proj_tb.cir
-  Start time: Mon Dec  1 18:46:43 2025
+  Input File: ece_482_proj_tb.cir                                               
+  Command line options: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice ece_482_proj_tb.cir
+  Start time: Tue Dec  2 15:15:44 2025
  lic:  
  lic: FLEXlm: SDK_12.11.1 
- lic: USER:   jstreck2             HOSTNAME: eceb-2022-32.ews.illinois.edu 
- lic: HOSTID: ffffffffae8098bb     PID:      2596378 
+ lic: USER:   jstreck2             HOSTNAME: gelib-4e-42.ews.illinois.edu 
+ lic: HOSTID: 7e826bf7             PID:      551019 
  lic: Using FLEXlm license file: 
  lic: 27005@synopsys.webstore.illinois.edu 
  lic: Checkout 1 hspice 
@@ -20,7 +20,7 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
  lic: 1(in_use)/150(total) FLOATING license(s) on SERVER 27005@synopsys.webstore.illinois.edu 
  lic:   
   **warning** (/class/ece482/gpdk045_mos_details:124) Model g45n1svt device geometries will not be checked against the limits set by lmin, lmax, wmin and wmax. To enable this check, add a period(.) to the model name(i.e. enable model selector).
-  **warning** (./ece_482_proj_tb.cir:336)   **warning** Found illegal characters s, truncated as number 0n
+  **warning** (ece_482_proj_tb.cir:338)   **warning** Found illegal characters s, truncated as number 0n
 1****** PrimeSim HSPICE -- T-2022.06-SP1 linux64 (Aug 19 2022 7764626) ******
  ******  
  ece 482 project testbench
@@ -54,10 +54,10 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
        15 xi129.                          decap3x3x2         1.00 
        16 xi128.                          decap3x3x2         1.00 
        17 xi127.                          decap3x3x2         1.00 
-       18 xi29.                           half_adder         1.00 
+       18 xi137.                          half_adder         1.00 
        19 xi20.                           half_adder         1.00 
-       20 xi15.                           half_adder         1.00 
-       21 xi12.                           half_adder         1.00 
+       20 xi29.                           half_adder         1.00 
+       21 xi15.                           half_adder         1.00 
        22 xi32.                           full_adder         1.00 
        23 xi31.                           full_adder         1.00 
        24 xi30.                           full_adder         1.00 
@@ -654,7 +654,7 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
       606 xi129.xi1<39>.                  unitcell_decap     1.00 
       607 xi128.xi1<39>.                  unitcell_decap     1.00 
       608 xi127.xi1<39>.                  unitcell_decap     1.00 
-  **warning** (./ece_482_proj_tb.cir:496) TSTEP cannot be zero or negative for Transient Analysis. Reset it to "TSTOP/20.0".
+  **warning** (ece_482_proj_tb.cir:498) TSTEP cannot be zero or negative for Transient Analysis. Reset it to "TSTOP/20.0".
  ******  
  ece 482 project testbench
 
@@ -1979,8 +1979,8 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     LXRCRG2  =      0 
     WXRCRG2  =      0 
     PXRCRG2  =      0 
-  **info** (./ece_482_proj_tb.cir:396) DC voltage reset to initial transient source value in source 0:va0. new dc=0.0000D+00
-  **warning** (./ece_482_proj_tb.cir:484) Capacitance value for element cp1 is 0.000. Capacitance should be a positive, non-zero value.
+  **info** (ece_482_proj_tb.cir:398) DC voltage reset to initial transient source value in source 0:va0. new dc=0.0000D+00
+  **warning** (ece_482_proj_tb.cir:485) Capacitance value for element cp0 is 0.000. Capacitance should be a positive, non-zero value.
   
              
  Warning:'1 connection nodes' occurs 39 times
@@ -2011,7 +2011,7 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
 
 
  **info** although this circuit has failed to converge
- to gmindc=   1.000E-12, it did converge to a gmindc=   1.641E-08
+ to gmindc=   1.000E-12, it did converge to a gmindc=   1.009E-10
 
  no convergence with standard algorithm,  trying damped pseudo-transient
 
@@ -2028,61 +2028,61 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
  +  0:a1_oc   =   0.        0:a1_oc1  =   0.        0:a2      =   0.     
  +  0:a2_bar  =   1.8000    0:a2_oc   =   0.        0:a2_oc1  =   0.     
  +  0:a3      =   0.        0:a3_bar  =   1.8000    0:a3_oc   =   0.     
- +  0:a3_oc1  =   0.        0:a_0     =  83.3961n   0:a_0_bar =   1.1000 
- +  0:a_0_reg = 574.8998m   0:a_0_reg_= 565.0360m   0:a_0_reg_= 501.9622m
- +  0:a_1     =  83.3961n   0:a_1_bar =   1.1000    0:a_1_reg = 574.9001m
- +  0:a_1_reg_= 565.0360m   0:a_1_reg_= 501.9629m   0:a_2     =  83.3961n
- +  0:a_2_bar =   1.1000    0:a_2_reg = 574.9001m   0:a_2_reg_= 565.0362m
- +  0:a_2_reg_= 501.9624m   0:a_3     =  83.3961n   0:a_3_bar =   1.1000 
- +  0:a_3_reg = 574.8998m   0:a_3_reg_= 565.0351m   0:a_3_reg_= 501.9627m
+ +  0:a3_oc1  =   0.        0:a_0     =  51.7158n   0:a_0_bar =   1.1000 
+ +  0:a_0_reg = 574.9000m   0:a_0_reg_= 565.0354m   0:a_0_reg_= 501.9629m
+ +  0:a_1     =  51.7158n   0:a_1_bar =   1.1000    0:a_1_reg = 574.8999m
+ +  0:a_1_reg_= 565.0351m   0:a_1_reg_= 501.9624m   0:a_2     =  51.7158n
+ +  0:a_2_bar =   1.1000    0:a_2_reg = 574.8997m   0:a_2_reg_= 565.0353m
+ +  0:a_2_reg_= 501.9623m   0:a_3     =  51.7158n   0:a_3_bar =   1.1000 
+ +  0:a_3_reg = 574.8998m   0:a_3_reg_= 565.0353m   0:a_3_reg_= 501.9629m
  +  0:b0      =   0.        0:b0_bar  =   1.8000    0:b0_oc   =   0.     
  +  0:b0_oc1  =   0.        0:b1      =   0.        0:b1_bar  =   1.8000 
  +  0:b1_oc   =   0.        0:b1_oc1  =   0.        0:b2      =   0.     
  +  0:b2_bar  =   1.8000    0:b2_oc   =   0.        0:b2_oc1  =   0.     
  +  0:b3      =   0.        0:b3_bar  =   1.8000    0:b3_oc   =   0.     
- +  0:b3_oc1  =   0.        0:b_0     =  83.3961n   0:b_0_bar =   1.1000 
- +  0:b_0_reg = 575.3676m   0:b_1     =  83.3961n   0:b_1_bar =   1.1000 
- +  0:b_1_reg = 575.3680m   0:b_2     =  83.3961n   0:b_2_bar =   1.1000 
- +  0:b_2_reg = 538.1022m   0:b_2_reg_= 584.0270m   0:b_3     =  83.3961n
- +  0:b_3_bar =   1.1000    0:b_3_reg = 538.1022m   0:b_3_reg_= 538.1020m
- +  0:b_3_reg_= 667.5522m   0:c_0_0   =   4.5089m   0:c_0_1   =   4.5095m
- +  0:c_0_2   =   4.5088m   0:c_0_3   =   4.5073m   0:c_0_3_re= 243.7874m
- +  0:c_1_0   = 557.8240u   0:c_1_1   = 557.7359u   0:c_1_2   = 557.8101u
- +  0:c_1_3   = 556.3697u   0:c_1_3_re= 243.3328m   0:c_2_0   =   1.6740u
+ +  0:b3_oc1  =   0.        0:b_0     =  51.7158n   0:b_0_bar =   1.1000 
+ +  0:b_0_reg = 575.3684m   0:b_1     =  51.7158n   0:b_1_bar =   1.1000 
+ +  0:b_1_reg = 575.3680m   0:b_2     =  51.7158n   0:b_2_bar =   1.1000 
+ +  0:b_2_reg = 538.1030m   0:b_2_reg_= 584.0276m   0:b_3     =  51.7158n
+ +  0:b_3_bar =   1.1000    0:b_3_reg = 538.1030m   0:b_3_reg_= 538.1021m
+ +  0:b_3_reg_= 667.5530m   0:c_0_0   =   4.5094m   0:c_0_1   =   4.5089m
+ +  0:c_0_2   =   4.5079m   0:c_0_3   =   4.5075m   0:c_0_3_re= 243.7875m
+ +  0:c_1_0   = 557.7870u   0:c_1_1   = 557.5790u   0:c_1_2   = 557.6406u
+ +  0:c_1_3   = 556.5399u   0:c_1_3_re= 243.3328m   0:c_2_0   =   1.3462u
  +  0:c_2_1   =   1.2940u   0:c_2_2   =   1.2940u   0:clk     =  59.7635n
  +  0:clk_bar =   1.1000    0:clk_in  =   0.        0:clk_oc  =   0.     
- +  0:clk_oc1 =   0.        0:net1    = 896.5261n   0:net11   = 573.6299n
- +  0:net13   =   4.5064m   0:net16   =   1.0355    0:net18   =   4.5057m
- +  0:net2    = 557.4130u   0:net22   = 556.2823u   0:net24   =   1.0355 
- +  0:net3    = 896.5271n   0:net30   =   1.0355    0:net31782=   1.1000 
- +  0:net34   =   4.5085m   0:net35   =   4.5085m   0:net38   =   1.0355 
- +  0:net4    = 557.3387u   0:net41   =   4.5073m   0:net45   =   4.5091m
- +  0:net47   =   1.0355    0:net5    = 557.4463u   0:net53   =   1.0355 
- +  0:net59   =   1.0355    0:net6    = 928.4835n   0:net7    =   1.0355 
- +  0:net8    =   4.5064m   0:p0      =  10.7431n   0:p0_1_1  = 510.9845m
- +  0:p0_bar  =   1.7889    0:p0_oc   =   0.        0:p0_oc1  =   0.     
- +  0:p1      =  10.7431n   0:p1_1_1  = 510.9846m   0:p1_bar  =   1.7889 
- +  0:p1_oc   =   0.        0:p1_oc1  =   0.        0:p2      =  10.7431n
- +  0:p2_1_1  = 510.9842m   0:p2_bar  =   1.7889    0:p2_oc   =   0.     
- +  0:p2_oc1  =   0.        0:p3      =  10.7431n   0:p3_1_1  = 510.9850m
- +  0:p3_bar  =   1.7889    0:p3_oc   =   0.        0:p3_oc1  =   0.     
- +  0:p4      =  10.7431n   0:p4_1_1  = 510.9844m   0:p4_bar  =   1.7889 
- +  0:p4_oc   =   0.        0:p4_oc1  =   0.        0:p5      =  10.7432n
- +  0:p5_1_1  = 510.9853m   0:p5_bar  =   1.7889    0:p5_oc   =   0.     
- +  0:p5_oc1  =   0.        0:p6      =  10.7431n   0:p6_1_1  = 510.9841m
- +  0:p6_bar  =   1.7889    0:p6_oc   =   0.        0:p6_oc1  =   0.     
- +  0:p7      =  10.7431n   0:p7_1_1  = 510.9844m   0:p7_bar  =   1.7889 
- +  0:p7_oc   =   0.        0:p7_oc1  =   0.        0:p_0     =   4.5050m
- +  0:p_0_reg = 538.1023m   0:p_0_reg_= 538.1020m   0:p_1     =   4.5089m
- +  0:p_1_reg = 538.1028m   0:p_1_reg_= 538.1031m   0:p_2     = 557.8814u
- +  0:p_2_reg = 538.1026m   0:p_3     = 996.4442n   0:p_4     =   1.7864u
- +  0:p_5     =   1.4064u   0:p_6     =   1.4064u   0:p_7     = 661.0657n
+ +  0:clk_oc1 =   0.        0:net1    = 896.5260n   0:net10   =   4.5072m
+ +  0:net11   = 573.6301n   0:net13   =   4.5069m   0:net16   =   1.0355 
+ +  0:net18   =   4.5071m   0:net2    = 557.2435u   0:net22   = 556.4525u
+ +  0:net24   =   1.0355    0:net3    = 896.5265n   0:net30   =   1.0355 
+ +  0:net31782=   1.1000    0:net35   =   4.5077m   0:net38   =   1.0355 
+ +  0:net4    = 557.1819u   0:net41   =   4.5074m   0:net45   =   4.5085m
+ +  0:net47   =   1.0355    0:net5    = 557.3900u   0:net53   =   1.0355 
+ +  0:net59   =   1.0355    0:net6    = 948.7698n   0:net7    =   1.0355 
+ +  0:net8    =   4.5090m   0:p0      =   6.3352n   0:p0_1_1  = 510.9844m
+ +  0:p0_bar  =   1.7884    0:p0_oc   =   0.        0:p0_oc1  =   0.     
+ +  0:p1      =   6.3352n   0:p1_1_1  = 510.9841m   0:p1_bar  =   1.7884 
+ +  0:p1_oc   =   0.        0:p1_oc1  =   0.        0:p2      =   6.3353n
+ +  0:p2_1_1  = 510.9850m   0:p2_bar  =   1.7884    0:p2_oc   =   0.     
+ +  0:p2_oc1  =   0.        0:p3      =   6.3352n   0:p3_1_1  = 510.9839m
+ +  0:p3_bar  =   1.7884    0:p3_oc   =   0.        0:p3_oc1  =   0.     
+ +  0:p4      =   6.3352n   0:p4_1_1  = 510.9843m   0:p4_bar  =   1.7884 
+ +  0:p4_oc   =   0.        0:p4_oc1  =   0.        0:p5      =   6.3352n
+ +  0:p5_1_1  = 510.9848m   0:p5_bar  =   1.7884    0:p5_oc   =   0.     
+ +  0:p5_oc1  =   0.        0:p6      =   6.3352n   0:p6_1_1  = 510.9842m
+ +  0:p6_bar  =   1.7884    0:p6_oc   =   0.        0:p6_oc1  =   0.     
+ +  0:p7      =   6.3352n   0:p7_1_1  = 510.9847m   0:p7_bar  =   1.7884 
+ +  0:p7_oc   =   0.        0:p7_oc1  =   0.        0:p_0     =   4.5067m
+ +  0:p_0_reg = 538.1018m   0:p_0_reg_= 538.1036m   0:p_1     =   4.5093m
+ +  0:p_1_reg = 538.1014m   0:p_1_reg_= 538.1025m   0:p_2     = 557.8251u
+ +  0:p_2_reg = 538.1020m   0:p_3     =   1.3843u   0:p_4     =   1.4586u
+ +  0:p_5     =   1.4064u   0:p_6     =   1.4064u   0:p_7     = 661.0659n
  +  0:reset   =   1.8000    0:reset_ba=   6.8848n   0:rst     =   1.1000 
- +  0:rst_bar =  55.9188n   0:rst_oc  =   0.        0:rst_oc1 =   0.     
- +  0:s_0_1   =   4.5090m   0:s_0_1_re= 243.7883m   0:s_0_2   =   4.5096m
- +  0:s_0_2_re= 243.7883m   0:s_0_3   =   4.5076m   0:s_0_3_re= 243.7883m
- +  0:s_1_1   = 557.9363u   0:s_1_1_re= 243.3331m   0:s_1_2   = 557.8482u
- +  0:s_1_2_re= 243.3330m   0:s_1_3   = 557.9224u   0:s_1_3_re= 243.3330m
+ +  0:rst_bar =  37.7890n   0:rst_oc  =   0.        0:rst_oc1 =   0.     
+ +  0:s_0_1   =   4.5095m   0:s_0_1_re= 243.7883m   0:s_0_2   =   4.5090m
+ +  0:s_0_2_re= 243.7881m   0:s_0_3   =   4.5077m   0:s_0_3_re= 243.7882m
+ +  0:s_1_1   = 557.8993u   0:s_1_1_re= 243.3331m   0:s_1_2   = 557.6913u
+ +  0:s_1_2_re= 243.3330m   0:s_1_3   = 557.7529u   0:s_1_3_re= 243.3330m
  +  0:vdd     =   1.1000    0:vdd1    =   1.1000    0:vdd2    =   1.1000 
  +  0:vdd3    =   1.1000    0:vddio   =   1.8000    0:vddio1  =   0.     
  +  0:vddio2  =   0.        0:vddio3  =   0.        0:vss     =   0.     
@@ -2091,27 +2091,27 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
  +  0:vssio3  =   0.       18:a_xor_b_=   1.1000   18:net8    =   1.1000 
  + 19:a_xor_b_=   1.1000   19:net8    =   1.1000   20:a_xor_b_=   1.1000 
  + 20:net8    =   1.1000   21:a_xor_b_=   1.1000   21:net8    =   1.1000 
- + 22:a_xor_b = 958.9523n  22:a_xor_b_=   1.1000   22:net1    =   1.1000 
+ + 22:a_xor_b = 958.9525n  22:a_xor_b_=   1.1000   22:net1    =   1.1000 
  + 22:net4    =   1.1000   23:a_xor_b =   1.2818u  23:a_xor_b_=   1.1000 
  + 23:net1    =   1.1000   23:net4    =   1.1000   24:a_xor_b =   1.2818u
  + 24:a_xor_b_=   1.1000   24:net1    =   1.1000   24:net4    =   1.1000 
- + 25:a_xor_b = 556.6673u  25:a_xor_b_=   1.1000   25:net1    =   1.1000 
- + 25:net4    =   1.1000   26:a_xor_b = 557.7980u  26:a_xor_b_=   1.1000 
- + 26:net1    =   1.1000   26:net4    =   1.1000   27:a_xor_b = 557.7237u
+ + 25:a_xor_b = 556.8375u  25:a_xor_b_=   1.1000   25:net1    =   1.1000 
+ + 25:net4    =   1.1000   26:a_xor_b = 557.6284u  26:a_xor_b_=   1.1000 
+ + 26:net1    =   1.1000   26:net4    =   1.1000   27:a_xor_b = 557.5669u
  + 27:a_xor_b_=   1.1000   27:net1    =   1.1000   27:net4    =   1.1000 
- + 28:a_xor_b =   4.5088m  28:a_xor_b_=   1.1000   28:net1    =   1.1000 
- + 28:net4    =   1.1000   29:a_xor_b =   4.5093m  29:a_xor_b_=   1.1000 
- + 29:net1    =   1.1000   29:net4    =   1.1000   39:net1    = 665.5050m
- + 39:net10   =  58.6888m  40:net1    = 665.5101m  40:net10   =  58.6887m
- + 41:net1    = 665.5102m  41:net10   =  58.6891m  42:net1    = 665.5105m
- + 42:net10   =  58.6887m  43:net1    = 739.9865m  43:net10   =  71.1281m
- + 44:net1    = 740.0043m  44:net10   =  71.1292m  45:net1    = 739.9836m
- + 45:net10   =  71.1279m  46:net1    = 739.9882m  46:net10   =  71.1282m
- + 47:net1    =   1.0690   47:net10   = 184.7019m  48:net1    =   1.0690 
- + 48:net10   = 184.7014m  49:net1    =   1.0690   49:net10   = 184.7017m
- + 50:net1    =   1.0690   50:net10   = 184.7015m  51:net1    = 665.5102m
- + 51:net10   =  58.6891m  52:net1    = 665.5156m  52:net10   =  58.6890m
- + 53:net1    = 665.5047m  53:net10   =  58.6888m  54:net1    = 665.5157m
+ + 28:a_xor_b =   4.5080m  28:a_xor_b_=   1.1000   28:net1    =   1.1000 
+ + 28:net4    =   1.1000   29:a_xor_b =   4.5088m  29:a_xor_b_=   1.1000 
+ + 29:net1    =   1.1000   29:net4    =   1.1000   39:net1    = 665.5092m
+ + 39:net10   =  58.6891m  40:net1    = 665.5059m  40:net10   =  58.6893m
+ + 41:net1    = 665.5073m  41:net10   =  58.6890m  42:net1    = 665.5039m
+ + 42:net10   =  58.6891m  43:net1    = 739.9930m  43:net10   =  71.1291m
+ + 44:net1    = 739.9938m  44:net10   =  71.1291m  45:net1    = 739.9941m
+ + 45:net10   =  71.1291m  46:net1    = 739.9979m  46:net10   =  71.1294m
+ + 47:net1    =   1.0690   47:net10   = 184.7020m  48:net1    =   1.0690 
+ + 48:net10   = 184.7023m  49:net1    =   1.0690   49:net10   = 184.7025m
+ + 50:net1    =   1.0690   50:net10   = 184.7020m  51:net1    = 665.5097m
+ + 51:net10   =  58.6891m  52:net1    = 665.5043m  52:net10   =  58.6892m
+ + 53:net1    = 665.5113m  53:net10   =  58.6892m  54:net1    = 665.5019m
  + 54:net10   =  58.6890m  73:net17   =   1.0717   73:net21   =  19.8235n
  + 73:net4    =   1.1000   73:net5    =  84.1820n  73:net8    =  82.6618n
  + 73:net9    = 949.4557m  73:x       =   1.1000   74:net17   =   1.0717 
@@ -2123,25 +2123,25 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
  + 76:net4    =   1.1000   76:net5    =  84.1820n  76:net8    =  82.6618n
  + 76:net9    = 949.4557m  76:x       =   1.1000   77:net17   =   1.0717 
  + 77:net21   =  19.8326n  77:net4    =   1.1000   77:net5    =  84.1820n
- + 77:net8    =  82.6622n  77:net9    = 949.4557m  77:x       =   1.1000 
+ + 77:net8    =  82.6621n  77:net9    = 949.4557m  77:x       =   1.1000 
  + 78:net17   =   1.0717   78:net21   =  19.8326n  78:net4    =   1.1000 
- + 78:net5    =  84.1820n  78:net8    =  82.6622n  78:net9    = 949.4557m
+ + 78:net5    =  84.1820n  78:net8    =  82.6621n  78:net9    = 949.4557m
  + 78:x       =   1.1000   79:net17   =   1.0717   79:net21   =  19.8326n
- + 79:net4    =   1.1000   79:net5    =  84.1820n  79:net8    =  82.6622n
+ + 79:net4    =   1.1000   79:net5    =  84.1820n  79:net8    =  82.6621n
  + 79:net9    = 949.4557m  79:x       =   1.1000   80:net17   =   1.0717 
  + 80:net21   =  19.8326n  80:net4    =   1.1000   80:net5    =  84.1820n
- + 80:net8    =  82.6622n  80:net9    = 949.4557m  80:x       =   1.1000 
+ + 80:net8    =  82.6621n  80:net9    = 949.4557m  80:x       =   1.1000 
  + 81:net17   =   1.0745   81:net21   =  24.6889n  81:net4    =   1.1000 
- + 81:net5    =  84.1820n  81:net8    =  82.6618n  81:net9    = 949.4557m
+ + 81:net5    =  84.1820n  81:net8    =  82.6617n  81:net9    = 949.4557m
  + 81:x       =   1.1000   82:net17   =   1.0745   82:net21   =  24.6889n
- + 82:net4    =   1.1000   82:net5    =  84.1820n  82:net8    =  82.6618n
+ + 82:net4    =   1.1000   82:net5    =  84.1820n  82:net8    =  82.6617n
  + 82:net9    = 949.4557m  82:x       =   1.1000   83:net17   =   1.0745 
  + 83:net21   =  24.6889n  83:net4    =   1.1000   83:net5    =  84.1820n
- + 83:net8    =  82.6618n  83:net9    = 949.4557m  83:x       =   1.1000 
+ + 83:net8    =  82.6617n  83:net9    = 949.4557m  83:x       =   1.1000 
  + 84:net17   =   1.0745   84:net21   =  24.6889n  84:net4    =   1.1000 
- + 84:net5    =  84.1820n  84:net8    =  82.6618n  84:net9    = 949.4557m
- + 84:x       =   1.1000   85:net17   =   1.0745   85:net21   =  24.6889n
- + 85:net4    =   1.1000   85:net5    =  84.1820n  85:net8    =  82.6618n
+ + 84:net5    =  84.1820n  84:net8    =  82.6617n  84:net9    = 949.4557m
+ + 84:x       =   1.1000   85:net17   =   1.0745   85:net21   =  24.6888n
+ + 85:net4    =   1.1000   85:net5    =  84.1820n  85:net8    =  82.6617n
  + 85:net9    = 949.4557m  85:x       =   1.1000   86:net17   =   1.0748 
  + 86:net21   =  25.1154n  86:net4    =   1.1000   86:net5    =  84.1820n
  + 86:net8    =  82.6618n  86:net9    = 949.4557m  86:x       =   1.1000 
@@ -2153,9 +2153,9 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
  + 89:net21   =  25.1154n  89:net4    =   1.1000   89:net5    =  84.1820n
  + 89:net8    =  83.1060n  89:net9    = 949.4557m  89:x       =   1.1000 
  + 90:net17   =   1.0748   90:net21   =  25.1154n  90:net4    =   1.1000 
- + 90:net5    =  84.1820n  90:net8    =  82.6622n  90:net9    = 949.4557m
+ + 90:net5    =  84.1820n  90:net8    =  82.6621n  90:net9    = 949.4557m
  + 90:x       =   1.1000   91:net17   =   1.0748   91:net21   =  25.1154n
- + 91:net4    =   1.1000   91:net5    =  84.1820n  91:net8    =  82.6622n
+ + 91:net4    =   1.1000   91:net5    =  84.1820n  91:net8    =  82.6621n
  + 91:net9    = 949.4557m  91:x       =   1.1000   92:net17   =   1.0744 
  + 92:net21   =  24.5441n  92:net4    =   1.1000   92:net5    =  84.1820n
  + 92:net8    =  83.1606n  92:net9    = 949.4557m  92:x       =   1.1000 
@@ -2174,60 +2174,60 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
  + 98:net21   =  25.8094n  98:net4    =   1.1000   98:net5    =  84.1820n
  + 98:net8    =  83.1060n  98:net9    = 949.4557m  98:x       =   1.1000 
  + 99:net17   =   1.0751   99:net21   =  25.5266n  99:net4    =   1.1000 
- + 99:net5    =  84.1820n  99:net8    =  83.1818n  99:net9    = 949.4557m
+ + 99:net5    =  84.1820n  99:net8    =  83.1817n  99:net9    = 949.4557m
  + 99:x       =   1.1000  100:net17   =   1.0751  100:net21   =  25.5266n
- +100:net4    =   1.1000  100:net5    =  84.1820n 100:net8    =  83.1818n
+ +100:net4    =   1.1000  100:net5    =  84.1820n 100:net8    =  83.1817n
  +100:net9    = 949.4557m 100:x       =   1.1000  101:net17   =   1.0745 
  +101:net21   =  24.6889n 101:net4    =   1.1000  101:net5    =  84.1820n
  +101:net8    =  83.1060n 101:net9    = 949.4557m 101:x       =   1.1000 
  +102:net17   =   1.0751  102:net21   =  25.5266n 102:net4    =   1.1000 
- +102:net5    =  84.1820n 102:net8    =  83.1818n 102:net9    = 949.4557m
+ +102:net5    =  84.1820n 102:net8    =  83.1817n 102:net9    = 949.4557m
  +102:x       =   1.1000  103:net17   =   1.0751  103:net21   =  25.5266n
- +103:net4    =   1.1000  103:net5    =  84.1820n 103:net8    =  83.1818n
+ +103:net4    =   1.1000  103:net5    =  84.1820n 103:net8    =  83.1817n
  +103:net9    = 949.4557m 103:x       =   1.1000  104:net17   =   1.0745 
  +104:net21   =  24.6889n 104:net4    =   1.1000  104:net5    =  84.1820n
  +104:net8    =  83.1060n 104:net9    = 949.4557m 104:x       =   1.1000 
  +105:net17   =   1.0748  105:net21   =  25.1154n 105:net4    =   1.1000 
- +105:net5    =  84.1820n 105:net8    =  82.6618n 105:net9    = 949.4557m
+ +105:net5    =  84.1820n 105:net8    =  82.6617n 105:net9    = 949.4557m
  +105:x       =   1.1000  106:net17   =   1.0752  106:net21   =  25.6812n
- +106:net4    =   1.1000  106:net5    =  84.1820n 106:net8    =  82.6618n
+ +106:net4    =   1.1000  106:net5    =  84.1820n 106:net8    =  82.6617n
  +106:net9    = 949.4557m 106:x       =   1.1000  107:net17   =   1.0752 
  +107:net21   =  25.6812n 107:net4    =   1.1000  107:net5    =  84.1820n
- +107:net8    =  82.6618n 107:net9    = 949.4557m 107:x       =   1.1000 
+ +107:net8    =  82.6617n 107:net9    = 949.4557m 107:x       =   1.1000 
  +108:net17   =   1.0748  108:net21   =  25.1154n 108:net4    =   1.1000 
- +108:net5    =  84.1820n 108:net8    =  82.6618n 108:net9    = 949.4557m
+ +108:net5    =  84.1820n 108:net8    =  82.6617n 108:net9    = 949.4557m
  +108:x       =   1.1000  109:net17   =   1.0752  109:net21   =  25.6742n
- +109:net4    =   1.1000  109:net5    =  84.1820n 109:net8    =  82.6618n
+ +109:net4    =   1.1000  109:net5    =  84.1820n 109:net8    =  82.6617n
  +109:net9    = 949.4557m 109:x       =   1.1000  110:net17   =   1.0752 
  +110:net21   =  25.6742n 110:net4    =   1.1000  110:net5    =  84.1820n
- +110:net8    =  82.6618n 110:net9    = 949.4557m 110:x       =   1.1000 
+ +110:net8    =  82.6617n 110:net9    = 949.4557m 110:x       =   1.1000 
  +111:net17   =   1.0752  111:net21   =  25.6742n 111:net4    =   1.1000 
- +111:net5    =  84.1820n 111:net8    =  82.6618n 111:net9    = 949.4557m
+ +111:net5    =  84.1820n 111:net8    =  82.6617n 111:net9    = 949.4557m
  +111:x       =   1.1000  112:net17   =   1.0752  112:net21   =  25.6742n
- +112:net4    =   1.1000  112:net5    =  84.1820n 112:net8    =  82.6618n
- +112:net9    = 949.4557m 112:x       =   1.1000  113:net1    =  70.8226p
- +113:net2    =   1.8000  169:net1    =   1.1000  169:net10   =  44.8494m
- +171:net1    =   1.1000  171:net10   =  44.8504m 173:net1    =   1.1000 
- +173:net10   =  44.8503m 175:net1    =   1.1000  175:net10   =  44.8504m
- +177:net1    =   1.1000  177:net10   =  47.3867m 179:net1    =   1.1000 
- +179:net10   =  47.3869m 181:net1    =   1.1000  181:net10   =  47.3882m
- +183:net1    =   1.1000  183:net10   =  47.3878m 185:net1    =   1.1000 
+ +112:net4    =   1.1000  112:net5    =  84.1820n 112:net8    =  82.6617n
+ +112:net9    = 949.4557m 112:x       =   1.1000  113:net1    =  70.8225p
+ +113:net2    =   1.8000  169:net1    =   1.1000  169:net10   =  44.8495m
+ +171:net1    =   1.1000  171:net10   =  44.8502m 173:net1    =   1.1000 
+ +173:net10   =  44.8502m 175:net1    =   1.1000  175:net10   =  44.8503m
+ +177:net1    =   1.1000  177:net10   =  47.3868m 179:net1    =   1.1000 
+ +179:net10   =  47.3870m 181:net1    =   1.1000  181:net10   =  47.3878m
+ +183:net1    =   1.1000  183:net10   =  47.3881m 185:net1    =   1.1000 
  +185:net10   =  44.4970m 187:net1    =   1.1000  187:net10   =  44.4975m
  +189:net1    =   1.1000  189:net10   =  44.4975m 191:net1    =   1.1000 
- +191:net10   =  44.4977m 193:net1    =   1.1000  193:net10   =  44.4972m
+ +191:net10   =  44.4975m 193:net1    =   1.1000  193:net10   =  44.4975m
  +195:net1    =   1.1000  195:net10   =  44.8503m 197:net1    =   1.1000 
- +197:net10   = 468.1731m 199:net1    =   1.1000  199:net10   = 468.1733m
- +201:net1    =   1.1000  201:net10   = 468.1729m 203:net1    =   1.1000 
- +203:net10   =  47.3877m 205:net1    =   1.1000  205:net10   =  47.3852m
- +207:net1    =   1.1000  207:net10   = 490.4877m 209:net1    =   1.1000 
- +209:net10   = 490.4886m 211:net1    =   1.1000  211:net10   = 490.4884m
- +213:net1    =   1.1000  213:net10   = 490.4885m 215:net1    =   1.1000 
- +215:net10   = 468.1726m 217:net1    =   1.1000  217:net10   = 468.1728m
- +219:net1    =   1.1000  219:net10   = 468.1728m 221:net1    =   1.1000 
- +221:net10   = 498.6714m 223:net1    =   1.1000  223:net10   = 498.6716m
- +225:net1    =   1.1000  225:net10   = 468.1736m 227:net1    =   1.1000 
- +227:net10   = 498.6716m 229:net1    =   1.1000  229:net10   = 498.6714m
- +231:net1    =   1.1000  231:net10   = 468.1727m 233:net1    =   1.1000 
+ +197:net10   = 468.1726m 199:net1    =   1.1000  199:net10   = 468.1722m
+ +201:net1    =   1.1000  201:net10   = 468.1725m 203:net1    =   1.1000 
+ +203:net10   =  47.3880m 205:net1    =   1.1000  205:net10   =  47.3863m
+ +207:net1    =   1.1000  207:net10   = 490.4879m 209:net1    =   1.1000 
+ +209:net10   = 490.4879m 211:net1    =   1.1000  211:net10   = 490.4877m
+ +213:net1    =   1.1000  213:net10   = 490.4879m 215:net1    =   1.1000 
+ +215:net10   = 468.1727m 217:net1    =   1.1000  217:net10   = 468.1734m
+ +219:net1    =   1.1000  219:net10   = 468.1734m 221:net1    =   1.1000 
+ +221:net10   = 498.6714m 223:net1    =   1.1000  223:net10   = 498.6713m
+ +225:net1    =   1.1000  225:net10   = 468.1730m 227:net1    =   1.1000 
+ +227:net10   = 498.6714m 229:net1    =   1.1000  229:net10   = 498.6715m
+ +231:net1    =   1.1000  231:net10   = 468.1740m 233:net1    =   1.1000 
  +233:net10   =  44.4966m 235:net1    =   1.1000  235:net10   =  44.4966m
  +237:net1    =   1.1000  237:net10   =  44.4966m 239:net1    =   1.1000 
  +239:net10   =  44.4966m 241:net1    =   1.1000  241:net10   =  44.4966m
@@ -2243,26 +2243,26 @@ x
  time         param     
              vdd_net    
     0.          1.1000  
-    2.20000n  848.7800m 
-    4.40000n    1.2455  
-    6.60000n    1.0019  
-    8.80000n    1.1666  
-   11.00000n    1.0923  
-   13.20000n    1.0493  
-   15.40000n    1.1880  
-   17.60000n  920.8727m 
-   19.80000n    1.3491  
-   22.00000n  799.2954m 
-   24.20000n    1.3907  
-   26.40000n  920.2968m 
-   28.60000n    1.2353  
-   30.80000n    1.0357  
-   33.00000n    1.0910  
-   35.20000n    1.1538  
-   37.40000n  959.2325m 
-   39.60000n    1.2825  
-   41.80000n    1.1055  
-   44.00000n    1.1002  
+    2.20000n  848.6736m 
+    4.40000n    1.2456  
+    6.60000n    1.0012  
+    8.80000n    1.1672  
+   11.00000n    1.0890  
+   13.20000n    1.0487  
+   15.40000n    1.1946  
+   17.60000n  914.5424m 
+   19.80000n    1.3313  
+   22.00000n  755.6396m 
+   24.20000n    1.3796  
+   26.40000n  930.6119m 
+   28.60000n    1.2355  
+   30.80000n    1.0335  
+   33.00000n    1.0888  
+   35.20000n    1.1567  
+   37.40000n  954.9648m 
+   39.60000n    1.2785  
+   41.80000n    1.1207  
+   44.00000n    1.0677  
 y
 x
 
@@ -2290,8 +2290,8 @@ x
    41.80000n    0.      
    44.00000n    0.      
 y
- avg_pwr_vdd= -20.6301m  from=  10.0000f     to=  44.0000n
- avg_pwr_vddio=-240.4012u  from=  10.0000f     to=  44.0000n
+ avg_pwr_vdd= -20.6315m  from=  10.0000f     to=  44.0000n
+ avg_pwr_vddio= -11.9830u  from=  10.0000f     to=  44.0000n
 
           ***** job concluded
  ******  
@@ -2301,20 +2301,20 @@ y
   
  ******  Machine Information  ******
  CPU:
- model name	: Intel(R) Xeon(R) E-2224 CPU @ 3.40GHz
- cpu MHz	: 4200.772
- CPU(s)		: 4
+ model name	: Intel(R) Xeon(R) W-1350 @ 3.30GHz
+ cpu MHz	: 3144.893
+ CPU(s)		: 12
   
  OS:
- Linux version 5.14.0-611.7.1.el9_7.x86_64 (mockbuild@x86-64-04.build.eng.rdu2.redhat.com) (gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-11), GNU ld version 2.35.2-67.el9) #1 SMP PREEMPT_DYNAMIC Thu Oct 30 06:20:35 EDT 2025
+ Linux version 5.14.0-570.60.1.el9_6.x86_64 (mockbuild@x86-64-05.build.eng.rdu2.redhat.com) (gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-5), GNU ld version 2.35.2-63.el9) #1 SMP PREEMPT_DYNAMIC Sat Oct 25 01:08:30 EDT 2025
 
- System loadavg : 0.72 0.43 0.43 5/1176 2596477
+ System loadavg : 0.47 0.30 0.24 4/1061 551092
 
 
   ******  PrimeSim HSPICE Threads Information  ******
 
   Command Line Threads Count :     1
-  Available CPU Count        :     4
+  Available CPU Count        :    12
   Actual Threads Count       :     1
 
 
@@ -2322,12 +2322,12 @@ y
   Inductors       :      21
 
   ******  Circuit Statistics  ******
-  # nodes       =    4845 # elements   =    1814
+  # nodes       =    4861 # elements   =    1822
   # resistors   =       0 # capacitors =      42 # inductors   =      10
   # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
   # cccs        =       0 # ccvs       =       0 # volt_srcs   =      13
   # curr_srcs   =       1 # diodes     =       0 # bjts        =       0
-  # jfets       =       0 # mosfets    =    1748 # U elements  =       0
+  # jfets       =       0 # mosfets    =    1756 # U elements  =       0
   # T elements  =       0 # W elements =       0 # B elements  =       0
   # S elements  =       0 # P elements =       0 # va device   =       0
   # vector_srcs =       0 # N elements =       0
@@ -2336,22 +2336,22 @@ y
   ******  Runtime Statistics (seconds)  ******
 
   analysis           time    # points   tot. iter  conv.iter
-  op point           2.06           1        1076
-  transient          3.95          21        4612        1516 rev=        47
-  readin             0.02
-  errchk             0.13
+  op point           1.67           1        1102
+  transient          3.01          21        4468        1479 rev=        49
+  readin             0.03
+  errchk             0.20
   setup              0.04
   output             0.00
 
 
-           peak memory used        450.46 megabytes
-           total cpu time            6.09 seconds
-           total elapsed time        6.14 seconds
-           job started at     18:46:43 12/01/2025
-           job ended   at     18:46:49 12/01/2025
+           peak memory used        450.50 megabytes
+           total cpu time            4.87 seconds
+           total elapsed time        4.92 seconds
+           job started at     15:15:44 12/02/2025
+           job ended   at     15:15:49 12/02/2025
 
 >info:         ***** hspice job concluded
-           job total runtime         6.14 seconds
+           job total runtime         4.92 seconds
 
 
  lic: Release hspice token(s) 
