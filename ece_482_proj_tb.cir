@@ -1,0 +1,531 @@
+ECE 482 PROJECT TESTBENCH
+.lib '/class/ece482/gpdk045_mos' TT
+.include "resm11_pcell_1.sp"
+
+*The following parameter can be modified.
+.param nom_vdd = 1.1
+*.param nom_vdd = 0.9
+
+*The following parameters cannot be modified.
+.param tstart = 1n
+.param TCK = 4n
+.param trf_ck = 200p
+.param trf_ip_reset = 200p
+.param reset_pw = 7n
+.param CK_pw = 0.5*TCK
+.param reset_delay = 1n
+.param sim_end = 11*TCK
+.param input_delay = 9.5n
+.param input_delay2 = 9.7n
+.param input_delay3 = 9.2n
+.param input_delay4 = 9.8n
+.param input_pw = 1*TCK
+
+*Put your extracted netlist below this comment
+
+** Library name: test2
+** Cell name: level_shifter_1_1_to_1_8
+** View name: schematic
+.subckt level_shifter_1_1_to_1_8 bio bio_bar b_core b_core_bar vdd vss
+m1 bio b_core_bar vss vss g45n2svt L=150e-9 W=640e-9 AD='640e-9/ceil(63.9995e-3)<119.5e-9?(floor(ceil(63.9995e-3)/2.0)*(14.4e-15+(640e-9/ceil(63.9995e-3))*100e-9)+(ceil(63.9995e-3)/2-floor(ceil(63.9995e-3)/2)!=0?14.4e-15+(640e-9/ceil(63.9995e-3))*50e-9:0))/1:(floor(ceil(63.9995e-3)/2.0)*(200e-9*(640e-9/ceil(63.9995e-3)))+(ceil(63.9995e-3)/2-floor(ceil(63.9995e-3)/2)!=0?150e-9*(640e-9/ceil(63.9995e-3)):0))/1' AS='640e-9/ceil(63.9995e-3)<119.5e-9?(((14.4e-15+(640e-9/ceil(63.9995e-3))*50e-9)+floor((ceil(63.9995e-3)-1)/2.0)*(14.4e-15+(640e-9/ceil(63.9995e-3))*100e-9))+(ceil(63.9995e-3)/2-floor(ceil(63.9995e-3)/2)==0?14.4e-15+(640e-9/ceil(63.9995e-3))*50e-9:0))/1:((150e-9*(640e-9/ceil(63.9995e-3))+floor((ceil(63.9995e-3)-1)/2.0)*(200e-9*(640e-9/ceil(63.9995e-3))))+(ceil(63.9995e-3)/2-floor(ceil(63.9995e-3)/2)==0?150e-9*(640e-9/ceil(63.9995e-3)):0))/1'
++PD='640e-9/ceil(63.9995e-3)<119.5e-9?(floor(ceil(63.9995e-3)/2.0)*680e-9+(ceil(63.9995e-3)/2-floor(ceil(63.9995e-3)/2)!=0?580e-9:0))/1:(floor(ceil(63.9995e-3)/2.0)*(400e-9+2*(640e-9/ceil(63.9995e-3)))+(ceil(63.9995e-3)/2-floor(ceil(63.9995e-3)/2)!=0?300e-9+2*(640e-9/ceil(63.9995e-3)):0))/1' PS='640e-9/ceil(63.9995e-3)<119.5e-9?((580e-9+floor((ceil(63.9995e-3)-1)/2.0)*680e-9)+(ceil(63.9995e-3)/2-floor(ceil(63.9995e-3)/2)==0?580e-9:0))/1:(((300e-9+2*(640e-9/ceil(63.9995e-3)))+floor((ceil(63.9995e-3)-1)/2.0)*(400e-9+2*(640e-9/ceil(63.9995e-3))))+(ceil(63.9995e-3)/2-floor(ceil(63.9995e-3)/2)==0?300e-9+2*(640e-9/ceil(63.9995e-3)):0))/1'
++NRD='640e-9/ceil(63.9995e-3)<119.5e-9?(floor(ceil(63.9995e-3)/2.0)*(14.4e-15+(640e-9/ceil(63.9995e-3))*100e-9)+(ceil(63.9995e-3)/2-floor(ceil(63.9995e-3)/2)!=0?14.4e-15+(640e-9/ceil(63.9995e-3))*50e-9:0))/1:((floor(ceil(63.9995e-3)/2.0)*(200e-9*(640e-9/ceil(63.9995e-3)))+(ceil(63.9995e-3)/2-floor(ceil(63.9995e-3)/2)!=0?150e-9*(640e-9/ceil(63.9995e-3)):0))/1)/((((640e-9/ceil(63.9995e-3))*ceil(63.9995e-3))*(640e-9/ceil(63.9995e-3)))*ceil(63.9995e-3))' NRS='640e-9/ceil(63.9995e-3)<119.5e-9?(((14.4e-15+(640e-9/ceil(63.9995e-3))*50e-9)+floor((ceil(63.9995e-3)-1)/2.0)*(14.4e-15+(640e-9/ceil(63.9995e-3))*100e-9))+(ceil(63.9995e-3)/2-floor(ceil(63.9995e-3)/2)==0?14.4e-15+(640e-9/ceil(63.9995e-3))*50e-9:0))/1:(((150e-9*(640e-9/ceil(63.9995e-3))+floor((ceil(63.9995e-3)-1)/2.0)*(200e-9*(640e-9/ceil(63.9995e-3))))+(ceil(63.9995e-3)/2-floor(ceil(63.9995e-3)/2)==0?150e-9*(640e-9/ceil(63.9995e-3)):0))/1)/((((640e-9/ceil(63.9995e-3))*ceil(63.9995e-3))*(640e-9/ceil(63.9995e-3)))*ceil(63.9995e-3))' M=1
+m0 bio_bar b_core vss vss g45n2svt L=150e-9 W=640e-9 AD='640e-9/ceil(63.9995e-3)<119.5e-9?(floor(ceil(63.9995e-3)/2.0)*(14.4e-15+(640e-9/ceil(63.9995e-3))*100e-9)+(ceil(63.9995e-3)/2-floor(ceil(63.9995e-3)/2)!=0?14.4e-15+(640e-9/ceil(63.9995e-3))*50e-9:0))/1:(floor(ceil(63.9995e-3)/2.0)*(200e-9*(640e-9/ceil(63.9995e-3)))+(ceil(63.9995e-3)/2-floor(ceil(63.9995e-3)/2)!=0?150e-9*(640e-9/ceil(63.9995e-3)):0))/1' AS='640e-9/ceil(63.9995e-3)<119.5e-9?(((14.4e-15+(640e-9/ceil(63.9995e-3))*50e-9)+floor((ceil(63.9995e-3)-1)/2.0)*(14.4e-15+(640e-9/ceil(63.9995e-3))*100e-9))+(ceil(63.9995e-3)/2-floor(ceil(63.9995e-3)/2)==0?14.4e-15+(640e-9/ceil(63.9995e-3))*50e-9:0))/1:((150e-9*(640e-9/ceil(63.9995e-3))+floor((ceil(63.9995e-3)-1)/2.0)*(200e-9*(640e-9/ceil(63.9995e-3))))+(ceil(63.9995e-3)/2-floor(ceil(63.9995e-3)/2)==0?150e-9*(640e-9/ceil(63.9995e-3)):0))/1'
++PD='640e-9/ceil(63.9995e-3)<119.5e-9?(floor(ceil(63.9995e-3)/2.0)*680e-9+(ceil(63.9995e-3)/2-floor(ceil(63.9995e-3)/2)!=0?580e-9:0))/1:(floor(ceil(63.9995e-3)/2.0)*(400e-9+2*(640e-9/ceil(63.9995e-3)))+(ceil(63.9995e-3)/2-floor(ceil(63.9995e-3)/2)!=0?300e-9+2*(640e-9/ceil(63.9995e-3)):0))/1' PS='640e-9/ceil(63.9995e-3)<119.5e-9?((580e-9+floor((ceil(63.9995e-3)-1)/2.0)*680e-9)+(ceil(63.9995e-3)/2-floor(ceil(63.9995e-3)/2)==0?580e-9:0))/1:(((300e-9+2*(640e-9/ceil(63.9995e-3)))+floor((ceil(63.9995e-3)-1)/2.0)*(400e-9+2*(640e-9/ceil(63.9995e-3))))+(ceil(63.9995e-3)/2-floor(ceil(63.9995e-3)/2)==0?300e-9+2*(640e-9/ceil(63.9995e-3)):0))/1'
++NRD='640e-9/ceil(63.9995e-3)<119.5e-9?(floor(ceil(63.9995e-3)/2.0)*(14.4e-15+(640e-9/ceil(63.9995e-3))*100e-9)+(ceil(63.9995e-3)/2-floor(ceil(63.9995e-3)/2)!=0?14.4e-15+(640e-9/ceil(63.9995e-3))*50e-9:0))/1:((floor(ceil(63.9995e-3)/2.0)*(200e-9*(640e-9/ceil(63.9995e-3)))+(ceil(63.9995e-3)/2-floor(ceil(63.9995e-3)/2)!=0?150e-9*(640e-9/ceil(63.9995e-3)):0))/1)/((((640e-9/ceil(63.9995e-3))*ceil(63.9995e-3))*(640e-9/ceil(63.9995e-3)))*ceil(63.9995e-3))' NRS='640e-9/ceil(63.9995e-3)<119.5e-9?(((14.4e-15+(640e-9/ceil(63.9995e-3))*50e-9)+floor((ceil(63.9995e-3)-1)/2.0)*(14.4e-15+(640e-9/ceil(63.9995e-3))*100e-9))+(ceil(63.9995e-3)/2-floor(ceil(63.9995e-3)/2)==0?14.4e-15+(640e-9/ceil(63.9995e-3))*50e-9:0))/1:(((150e-9*(640e-9/ceil(63.9995e-3))+floor((ceil(63.9995e-3)-1)/2.0)*(200e-9*(640e-9/ceil(63.9995e-3))))+(ceil(63.9995e-3)/2-floor(ceil(63.9995e-3)/2)==0?150e-9*(640e-9/ceil(63.9995e-3)):0))/1)/((((640e-9/ceil(63.9995e-3))*ceil(63.9995e-3))*(640e-9/ceil(63.9995e-3)))*ceil(63.9995e-3))' M=1
+mpm1 bio bio_bar vdd vdd g45p2svt L=150e-9 W=480e-9 AD='480e-9/ceil(47.9995e-3)<119.5e-9?(floor(ceil(47.9995e-3)/2.0)*(14.4e-15+(480e-9/ceil(47.9995e-3))*100e-9)+(ceil(47.9995e-3)/2-floor(ceil(47.9995e-3)/2)!=0?14.4e-15+(480e-9/ceil(47.9995e-3))*50e-9:0))/1:(floor(ceil(47.9995e-3)/2.0)*(110e-9*(480e-9/ceil(47.9995e-3)))+(ceil(47.9995e-3)/2-floor(ceil(47.9995e-3)/2)!=0?140e-9*(480e-9/ceil(47.9995e-3)):0))/1' AS='480e-9/ceil(47.9995e-3)<119.5e-9?(((14.4e-15+(480e-9/ceil(47.9995e-3))*50e-9)+floor((ceil(47.9995e-3)-1)/2.0)*(14.4e-15+(480e-9/ceil(47.9995e-3))*100e-9))+(ceil(47.9995e-3)/2-floor(ceil(47.9995e-3)/2)==0?14.4e-15+(480e-9/ceil(47.9995e-3))*50e-9:0))/1:((140e-9*(480e-9/ceil(47.9995e-3))+floor((ceil(47.9995e-3)-1)/2.0)*(110e-9*(480e-9/ceil(47.9995e-3))))+(ceil(47.9995e-3)/2-floor(ceil(47.9995e-3)/2)==0?140e-9*(480e-9/ceil(47.9995e-3)):0))/1'
++PD='480e-9/ceil(47.9995e-3)<119.5e-9?(floor(ceil(47.9995e-3)/2.0)*680e-9+(ceil(47.9995e-3)/2-floor(ceil(47.9995e-3)/2)!=0?580e-9:0))/1:(floor(ceil(47.9995e-3)/2.0)*(220e-9+2*(480e-9/ceil(47.9995e-3)))+(ceil(47.9995e-3)/2-floor(ceil(47.9995e-3)/2)!=0?280e-9+2*(480e-9/ceil(47.9995e-3)):0))/1' PS='480e-9/ceil(47.9995e-3)<119.5e-9?((580e-9+floor((ceil(47.9995e-3)-1)/2.0)*680e-9)+(ceil(47.9995e-3)/2-floor(ceil(47.9995e-3)/2)==0?580e-9:0))/1:(((280e-9+2*(480e-9/ceil(47.9995e-3)))+floor((ceil(47.9995e-3)-1)/2.0)*(220e-9+2*(480e-9/ceil(47.9995e-3))))+(ceil(47.9995e-3)/2-floor(ceil(47.9995e-3)/2)==0?280e-9+2*(480e-9/ceil(47.9995e-3)):0))/1'
++NRD='480e-9/ceil(47.9995e-3)<119.5e-9?(floor(ceil(47.9995e-3)/2.0)*(14.4e-15+(480e-9/ceil(47.9995e-3))*100e-9)+(ceil(47.9995e-3)/2-floor(ceil(47.9995e-3)/2)!=0?14.4e-15+(480e-9/ceil(47.9995e-3))*50e-9:0))/1:((floor(ceil(47.9995e-3)/2.0)*(110e-9*(480e-9/ceil(47.9995e-3)))+(ceil(47.9995e-3)/2-floor(ceil(47.9995e-3)/2)!=0?140e-9*(480e-9/ceil(47.9995e-3)):0))/1)/((((480e-9/ceil(47.9995e-3))*ceil(47.9995e-3))*(480e-9/ceil(47.9995e-3)))*ceil(47.9995e-3))' NRS='480e-9/ceil(47.9995e-3)<119.5e-9?(((14.4e-15+(480e-9/ceil(47.9995e-3))*50e-9)+floor((ceil(47.9995e-3)-1)/2.0)*(14.4e-15+(480e-9/ceil(47.9995e-3))*100e-9))+(ceil(47.9995e-3)/2-floor(ceil(47.9995e-3)/2)==0?14.4e-15+(480e-9/ceil(47.9995e-3))*50e-9:0))/1:(((140e-9*(480e-9/ceil(47.9995e-3))+floor((ceil(47.9995e-3)-1)/2.0)*(110e-9*(480e-9/ceil(47.9995e-3))))+(ceil(47.9995e-3)/2-floor(ceil(47.9995e-3)/2)==0?140e-9*(480e-9/ceil(47.9995e-3)):0))/1)/((((480e-9/ceil(47.9995e-3))*ceil(47.9995e-3))*(480e-9/ceil(47.9995e-3)))*ceil(47.9995e-3))' M=1
+mpm0 bio_bar bio vdd vdd g45p2svt L=150e-9 W=480e-9 AD='480e-9/ceil(47.9995e-3)<119.5e-9?(floor(ceil(47.9995e-3)/2.0)*(14.4e-15+(480e-9/ceil(47.9995e-3))*100e-9)+(ceil(47.9995e-3)/2-floor(ceil(47.9995e-3)/2)!=0?14.4e-15+(480e-9/ceil(47.9995e-3))*50e-9:0))/1:(floor(ceil(47.9995e-3)/2.0)*(110e-9*(480e-9/ceil(47.9995e-3)))+(ceil(47.9995e-3)/2-floor(ceil(47.9995e-3)/2)!=0?140e-9*(480e-9/ceil(47.9995e-3)):0))/1' AS='480e-9/ceil(47.9995e-3)<119.5e-9?(((14.4e-15+(480e-9/ceil(47.9995e-3))*50e-9)+floor((ceil(47.9995e-3)-1)/2.0)*(14.4e-15+(480e-9/ceil(47.9995e-3))*100e-9))+(ceil(47.9995e-3)/2-floor(ceil(47.9995e-3)/2)==0?14.4e-15+(480e-9/ceil(47.9995e-3))*50e-9:0))/1:((140e-9*(480e-9/ceil(47.9995e-3))+floor((ceil(47.9995e-3)-1)/2.0)*(110e-9*(480e-9/ceil(47.9995e-3))))+(ceil(47.9995e-3)/2-floor(ceil(47.9995e-3)/2)==0?140e-9*(480e-9/ceil(47.9995e-3)):0))/1'
++PD='480e-9/ceil(47.9995e-3)<119.5e-9?(floor(ceil(47.9995e-3)/2.0)*680e-9+(ceil(47.9995e-3)/2-floor(ceil(47.9995e-3)/2)!=0?580e-9:0))/1:(floor(ceil(47.9995e-3)/2.0)*(220e-9+2*(480e-9/ceil(47.9995e-3)))+(ceil(47.9995e-3)/2-floor(ceil(47.9995e-3)/2)!=0?280e-9+2*(480e-9/ceil(47.9995e-3)):0))/1' PS='480e-9/ceil(47.9995e-3)<119.5e-9?((580e-9+floor((ceil(47.9995e-3)-1)/2.0)*680e-9)+(ceil(47.9995e-3)/2-floor(ceil(47.9995e-3)/2)==0?580e-9:0))/1:(((280e-9+2*(480e-9/ceil(47.9995e-3)))+floor((ceil(47.9995e-3)-1)/2.0)*(220e-9+2*(480e-9/ceil(47.9995e-3))))+(ceil(47.9995e-3)/2-floor(ceil(47.9995e-3)/2)==0?280e-9+2*(480e-9/ceil(47.9995e-3)):0))/1'
++NRD='480e-9/ceil(47.9995e-3)<119.5e-9?(floor(ceil(47.9995e-3)/2.0)*(14.4e-15+(480e-9/ceil(47.9995e-3))*100e-9)+(ceil(47.9995e-3)/2-floor(ceil(47.9995e-3)/2)!=0?14.4e-15+(480e-9/ceil(47.9995e-3))*50e-9:0))/1:((floor(ceil(47.9995e-3)/2.0)*(110e-9*(480e-9/ceil(47.9995e-3)))+(ceil(47.9995e-3)/2-floor(ceil(47.9995e-3)/2)!=0?140e-9*(480e-9/ceil(47.9995e-3)):0))/1)/((((480e-9/ceil(47.9995e-3))*ceil(47.9995e-3))*(480e-9/ceil(47.9995e-3)))*ceil(47.9995e-3))' NRS='480e-9/ceil(47.9995e-3)<119.5e-9?(((14.4e-15+(480e-9/ceil(47.9995e-3))*50e-9)+floor((ceil(47.9995e-3)-1)/2.0)*(14.4e-15+(480e-9/ceil(47.9995e-3))*100e-9))+(ceil(47.9995e-3)/2-floor(ceil(47.9995e-3)/2)==0?14.4e-15+(480e-9/ceil(47.9995e-3))*50e-9:0))/1:(((140e-9*(480e-9/ceil(47.9995e-3))+floor((ceil(47.9995e-3)-1)/2.0)*(110e-9*(480e-9/ceil(47.9995e-3))))+(ceil(47.9995e-3)/2-floor(ceil(47.9995e-3)/2)==0?140e-9*(480e-9/ceil(47.9995e-3)):0))/1)/((((480e-9/ceil(47.9995e-3))*ceil(47.9995e-3))*(480e-9/ceil(47.9995e-3)))*ceil(47.9995e-3))' M=1
+.ends level_shifter_1_1_to_1_8
+** End of subcircuit definition.
+
+** Library name: ece_482_pdn_v2
+** Cell name: unitcell_decap
+** View name: schematic
+.subckt unitcell_decap vddio vss
+m0 net1 net2 vss vss g45n2svt L=150e-9 W=18e-6 AD=1.8e-12 AS=2.1e-12 PD=19.2e-6 PS=25.4e-6 NRD=5.55556e-3 NRS=6.48148e-3 M=1
+m1 net2 net1 vddio vddio g45p2svt L=150e-9 W=18e-6 AD=1.8e-12 AS=2.1e-12 PD=19.2e-6 PS=25.4e-6 NRD=5.55556e-3 NRS=6.48148e-3 M=1
+.ends unitcell_decap
+** End of subcircuit definition.
+
+** Library name: ece_482_pdn_v2
+** Cell name: decap3x3x2
+** View name: schematic
+.subckt decap3x3x2 vddio vss
+xi1<0> vddio vss unitcell_decap
+xi1<1> vddio vss unitcell_decap
+xi1<2> vddio vss unitcell_decap
+xi1<3> vddio vss unitcell_decap
+xi1<4> vddio vss unitcell_decap
+xi1<5> vddio vss unitcell_decap
+xi1<6> vddio vss unitcell_decap
+xi1<7> vddio vss unitcell_decap
+xi1<8> vddio vss unitcell_decap
+xi1<9> vddio vss unitcell_decap
+xi1<10> vddio vss unitcell_decap
+xi1<11> vddio vss unitcell_decap
+xi1<12> vddio vss unitcell_decap
+xi1<13> vddio vss unitcell_decap
+xi1<14> vddio vss unitcell_decap
+xi1<15> vddio vss unitcell_decap
+xi1<16> vddio vss unitcell_decap
+xi1<17> vddio vss unitcell_decap
+xi1<18> vddio vss unitcell_decap
+xi1<19> vddio vss unitcell_decap
+xi1<20> vddio vss unitcell_decap
+xi1<21> vddio vss unitcell_decap
+xi1<22> vddio vss unitcell_decap
+xi1<23> vddio vss unitcell_decap
+xi1<24> vddio vss unitcell_decap
+xi1<25> vddio vss unitcell_decap
+xi1<26> vddio vss unitcell_decap
+xi1<27> vddio vss unitcell_decap
+xi1<28> vddio vss unitcell_decap
+xi1<29> vddio vss unitcell_decap
+xi1<30> vddio vss unitcell_decap
+xi1<31> vddio vss unitcell_decap
+xi1<32> vddio vss unitcell_decap
+xi1<33> vddio vss unitcell_decap
+xi1<34> vddio vss unitcell_decap
+xi1<35> vddio vss unitcell_decap
+xi1<36> vddio vss unitcell_decap
+xi1<37> vddio vss unitcell_decap
+xi1<38> vddio vss unitcell_decap
+xi1<39> vddio vss unitcell_decap
+.ends decap3x3x2
+** End of subcircuit definition.
+
+** Library name: test2
+** Cell name: half_adder
+** View name: schematic
+.subckt half_adder a b c_out s vdd vss
+mnm5 vss s c_out vss g45n1svt L=45e-9 W=120e-9 AD=16.8e-15 AS=16.8e-15 PD=520e-9 PS=520e-9 NRD=1.16667 NRS=1.16667 M=1
+mnm3 a_xor_b_bar s vss vss g45n1svt L=45e-9 W=480e-9 AD=38.4e-15 AS=52.8e-15 PD=1.12e-6 PS=1.6e-6 NRD=166.667e-3 NRS=229.167e-3 M=1
+mnm4 b a_xor_b_bar c_out vss g45n1svt L=45e-9 W=120e-9 AD=16.8e-15 AS=16.8e-15 PD=520e-9 PS=520e-9 NRD=1.16667 NRS=1.16667 M=1
+mnm2 s net8 b vss g45n1svt L=45e-9 W=120e-9 AD=16.8e-15 AS=16.8e-15 PD=520e-9 PS=520e-9 NRD=1.16667 NRS=1.16667 M=1
+mnm0 s b net8 vss g45n1svt L=45e-9 W=240e-9 AD=19.2e-15 AS=33.6e-15 PD=560e-9 PS=1.04e-6 NRD=333.333e-3 NRS=583.333e-3 M=1
+mnm1 net8 a vss vss g45n1svt L=45e-9 W=480e-9 AD=38.4e-15 AS=52.8e-15 PD=1.12e-6 PS=1.6e-6 NRD=166.667e-3 NRS=229.167e-3 M=1
+mpm7 b s c_out vdd g45p1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mpm5 s a b vdd g45p1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mpm8 vss a_xor_b_bar c_out vdd g45p1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mpm6 a_xor_b_bar s vdd vdd g45p1svt L=45e-9 W=960e-9 AD=76.8e-15 AS=105.6e-15 PD=1.6e-6 PS=2.32e-6 NRD=83.3333e-3 NRS=114.583e-3 M=1
+mpm0 s b a vdd g45p1svt L=45e-9 W=480e-9 AD=38.4e-15 AS=67.2e-15 PD=800e-9 PS=1.52e-6 NRD=166.667e-3 NRS=291.667e-3 M=1
+mpm4 net8 a vdd vdd g45p1svt L=45e-9 W=960e-9 AD=76.8e-15 AS=105.6e-15 PD=1.6e-6 PS=2.32e-6 NRD=83.3333e-3 NRS=114.583e-3 M=1
+.ends half_adder
+** End of subcircuit definition.
+
+** Library name: test2
+** Cell name: full_adder
+** View name: schematic
+.subckt full_adder a b c c_out s vdd vss
+mnm6 c a_xor_b_bar s vss g45n1svt L=45e-9 W=120e-9 AD=16.8e-15 AS=16.8e-15 PD=520e-9 PS=520e-9 NRD=1.16667 NRS=1.16667 M=1
+mnm4 b a_xor_b_bar c_out vss g45n1svt L=45e-9 W=120e-9 AD=16.8e-15 AS=16.8e-15 PD=520e-9 PS=520e-9 NRD=1.16667 NRS=1.16667 M=1
+mnm3 a_xor_b_bar a_xor_b vss vss g45n1svt L=45e-9 W=480e-9 AD=38.4e-15 AS=52.8e-15 PD=1.12e-6 PS=1.6e-6 NRD=166.667e-3 NRS=229.167e-3 M=1
+mnm2 net1 c vss vss g45n1svt L=45e-9 W=480e-9 AD=38.4e-15 AS=52.8e-15 PD=1.12e-6 PS=1.6e-6 NRD=166.667e-3 NRS=229.167e-3 M=1
+mnm0 a_xor_b b net4 vss g45n1svt L=45e-9 W=240e-9 AD=19.2e-15 AS=33.6e-15 PD=560e-9 PS=1.04e-6 NRD=333.333e-3 NRS=583.333e-3 M=1
+mnm1 net4 a vss vss g45n1svt L=45e-9 W=480e-9 AD=38.4e-15 AS=52.8e-15 PD=1.12e-6 PS=1.6e-6 NRD=166.667e-3 NRS=229.167e-3 M=1
+mnm8 a_xor_b net4 b vss g45n1svt L=45e-9 W=120e-9 AD=16.8e-15 AS=16.8e-15 PD=520e-9 PS=520e-9 NRD=1.16667 NRS=1.16667 M=1
+mnm5 c a_xor_b c_out vss g45n1svt L=45e-9 W=120e-9 AD=16.8e-15 AS=16.8e-15 PD=520e-9 PS=520e-9 NRD=1.16667 NRS=1.16667 M=1
+mnm7 net1 a_xor_b s vss g45n1svt L=45e-9 W=120e-9 AD=16.8e-15 AS=16.8e-15 PD=520e-9 PS=520e-9 NRD=1.16667 NRS=1.16667 M=1
+mpm8 a_xor_b a b vdd g45p1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mpm7 net1 a_xor_b_bar s vdd g45p1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mpm4 b a_xor_b c_out vdd g45p1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mpm1 net4 a vdd vdd g45p1svt L=45e-9 W=960e-9 AD=76.8e-15 AS=105.6e-15 PD=1.6e-6 PS=2.32e-6 NRD=83.3333e-3 NRS=114.583e-3 M=1
+mpm0 a_xor_b b a vdd g45p1svt L=45e-9 W=480e-9 AD=38.4e-15 AS=67.2e-15 PD=800e-9 PS=1.52e-6 NRD=166.667e-3 NRS=291.667e-3 M=1
+mpm2 net1 c vdd vdd g45p1svt L=45e-9 W=960e-9 AD=76.8e-15 AS=105.6e-15 PD=1.6e-6 PS=2.32e-6 NRD=83.3333e-3 NRS=114.583e-3 M=1
+mpm3 a_xor_b_bar a_xor_b vdd vdd g45p1svt L=45e-9 W=960e-9 AD=76.8e-15 AS=105.6e-15 PD=1.6e-6 PS=2.32e-6 NRD=83.3333e-3 NRS=114.583e-3 M=1
+mpm5 c a_xor_b_bar c_out vdd g45p1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mpm6 c a_xor_b s vdd g45p1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+.ends full_adder
+** End of subcircuit definition.
+
+** Library name: test2
+** Cell name: inverter_minsize
+** View name: schematic
+.subckt inverter_minsize in out vdd vss
+mpm0 out in vdd vdd g45p1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mnm0 out in vss vss g45n1svt L=45e-9 W=120e-9 AD=16.8e-15 AS=16.8e-15 PD=520e-9 PS=520e-9 NRD=1.16667 NRS=1.16667 M=1
+.ends inverter_minsize
+** End of subcircuit definition.
+
+** Library name: test2
+** Cell name: and_minsize
+** View name: schematic
+.subckt and_minsize a b out vdd vss
+mpm1 net1 b vdd vdd g45p1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mpm0 net1 a vdd vdd g45p1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mnm1 net10 b vss vss g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mnm0 net1 a net10 vss g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+xi0 net1 out vdd vss inverter_minsize
+.ends and_minsize
+** End of subcircuit definition.
+
+** Library name: test2
+** Cell name: level_shifter_1_8_to_1_1
+** View name: schematic
+.subckt level_shifter_1_8_to_1_1 aio aio_bar a_core a_core_bar vdd vss
+m1 a_core aio_bar vss vss g45n2svt L=150e-9 W=640e-9 AD=96e-15 AS=96e-15 PD=1.58e-6 PS=1.58e-6 NRD=234.375e-3 NRS=234.375e-3 M=1
+m0 a_core_bar aio vss vss g45n2svt L=150e-9 W=640e-9 AD=96e-15 AS=96e-15 PD=1.58e-6 PS=1.58e-6 NRD=234.375e-3 NRS=234.375e-3 M=1
+mpm1 a_core a_core_bar vdd vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
+mpm0 a_core_bar a_core vdd vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
+.ends level_shifter_1_8_to_1_1
+** End of subcircuit definition.
+
+** Library name: test2
+** Cell name: inverter_1_8_v
+** View name: schematic
+.subckt inverter_1_8_v in out vddio vssio
+m0 out in vssio vssio g45n2svt L=150e-9 W=320e-9 AD=48e-15 AS=48e-15 PD=940e-9 PS=940e-9 NRD=468.75e-3 NRS=468.75e-3 M=1
+m1 out in vddio vddio g45p2svt L=150e-9 W=640e-9 AD=96e-15 AS=96e-15 PD=1.58e-6 PS=1.58e-6 NRD=234.375e-3 NRS=234.375e-3 M=1
+.ends inverter_1_8_v
+** End of subcircuit definition.
+
+** Library name: test2
+** Cell name: C2MOS_register
+** View name: schematic
+.subckt C2MOS_register clk clk_bar d q rst vdd vss
+mpm3 net17 x vdd vdd g45p1svt L=45e-9 W=240e-9 AD='240e-9/ceil(23.9995e-3)<119.5e-9?(floor(ceil(23.9995e-3)/2.0)*(14.4e-15+(240e-9/ceil(23.9995e-3))*100e-9)+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)!=0?14.4e-15+(240e-9/ceil(23.9995e-3))*50e-9:0))/1:(floor(ceil(23.9995e-3)/2.0)*(110e-9*(240e-9/ceil(23.9995e-3)))+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)!=0?140e-9*(240e-9/ceil(23.9995e-3)):0))/1' AS='240e-9/ceil(23.9995e-3)<119.5e-9?(((14.4e-15+(240e-9/ceil(23.9995e-3))*50e-9)+floor((ceil(23.9995e-3)-1)/2.0)*(14.4e-15+(240e-9/ceil(23.9995e-3))*100e-9))+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)==0?14.4e-15+(240e-9/ceil(23.9995e-3))*50e-9:0))/1:((140e-9*(240e-9/ceil(23.9995e-3))+floor((ceil(23.9995e-3)-1)/2.0)*(110e-9*(240e-9/ceil(23.9995e-3))))+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)==0?140e-9*(240e-9/ceil(23.9995e-3)):0))/1'
++PD='240e-9/ceil(23.9995e-3)<119.5e-9?(floor(ceil(23.9995e-3)/2.0)*680e-9+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)!=0?580e-9:0))/1:(floor(ceil(23.9995e-3)/2.0)*(220e-9+2*(240e-9/ceil(23.9995e-3)))+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)!=0?280e-9+2*(240e-9/ceil(23.9995e-3)):0))/1' PS='240e-9/ceil(23.9995e-3)<119.5e-9?((580e-9+floor((ceil(23.9995e-3)-1)/2.0)*680e-9)+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)==0?580e-9:0))/1:(((280e-9+2*(240e-9/ceil(23.9995e-3)))+floor((ceil(23.9995e-3)-1)/2.0)*(220e-9+2*(240e-9/ceil(23.9995e-3))))+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)==0?280e-9+2*(240e-9/ceil(23.9995e-3)):0))/1'
++NRD='240e-9/ceil(23.9995e-3)<119.5e-9?(floor(ceil(23.9995e-3)/2.0)*(14.4e-15+(240e-9/ceil(23.9995e-3))*100e-9)+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)!=0?14.4e-15+(240e-9/ceil(23.9995e-3))*50e-9:0))/1:((floor(ceil(23.9995e-3)/2.0)*(110e-9*(240e-9/ceil(23.9995e-3)))+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)!=0?140e-9*(240e-9/ceil(23.9995e-3)):0))/1)/((((240e-9/ceil(23.9995e-3))*ceil(23.9995e-3))*(240e-9/ceil(23.9995e-3)))*ceil(23.9995e-3))' NRS='240e-9/ceil(23.9995e-3)<119.5e-9?(((14.4e-15+(240e-9/ceil(23.9995e-3))*50e-9)+floor((ceil(23.9995e-3)-1)/2.0)*(14.4e-15+(240e-9/ceil(23.9995e-3))*100e-9))+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)==0?14.4e-15+(240e-9/ceil(23.9995e-3))*50e-9:0))/1:(((140e-9*(240e-9/ceil(23.9995e-3))+floor((ceil(23.9995e-3)-1)/2.0)*(110e-9*(240e-9/ceil(23.9995e-3))))+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)==0?140e-9*(240e-9/ceil(23.9995e-3)):0))/1)/((((240e-9/ceil(23.9995e-3))*ceil(23.9995e-3))*(240e-9/ceil(23.9995e-3)))*ceil(23.9995e-3))' M=1
+mpm2 q clk_bar net17 vdd g45p1svt L=45e-9 W=240e-9 AD='240e-9/ceil(23.9995e-3)<119.5e-9?(floor(ceil(23.9995e-3)/2.0)*(14.4e-15+(240e-9/ceil(23.9995e-3))*100e-9)+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)!=0?14.4e-15+(240e-9/ceil(23.9995e-3))*50e-9:0))/1:(floor(ceil(23.9995e-3)/2.0)*(110e-9*(240e-9/ceil(23.9995e-3)))+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)!=0?140e-9*(240e-9/ceil(23.9995e-3)):0))/1' AS='240e-9/ceil(23.9995e-3)<119.5e-9?(((14.4e-15+(240e-9/ceil(23.9995e-3))*50e-9)+floor((ceil(23.9995e-3)-1)/2.0)*(14.4e-15+(240e-9/ceil(23.9995e-3))*100e-9))+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)==0?14.4e-15+(240e-9/ceil(23.9995e-3))*50e-9:0))/1:((140e-9*(240e-9/ceil(23.9995e-3))+floor((ceil(23.9995e-3)-1)/2.0)*(110e-9*(240e-9/ceil(23.9995e-3))))+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)==0?140e-9*(240e-9/ceil(23.9995e-3)):0))/1'
++PD='240e-9/ceil(23.9995e-3)<119.5e-9?(floor(ceil(23.9995e-3)/2.0)*680e-9+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)!=0?580e-9:0))/1:(floor(ceil(23.9995e-3)/2.0)*(220e-9+2*(240e-9/ceil(23.9995e-3)))+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)!=0?280e-9+2*(240e-9/ceil(23.9995e-3)):0))/1' PS='240e-9/ceil(23.9995e-3)<119.5e-9?((580e-9+floor((ceil(23.9995e-3)-1)/2.0)*680e-9)+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)==0?580e-9:0))/1:(((280e-9+2*(240e-9/ceil(23.9995e-3)))+floor((ceil(23.9995e-3)-1)/2.0)*(220e-9+2*(240e-9/ceil(23.9995e-3))))+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)==0?280e-9+2*(240e-9/ceil(23.9995e-3)):0))/1'
++NRD='240e-9/ceil(23.9995e-3)<119.5e-9?(floor(ceil(23.9995e-3)/2.0)*(14.4e-15+(240e-9/ceil(23.9995e-3))*100e-9)+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)!=0?14.4e-15+(240e-9/ceil(23.9995e-3))*50e-9:0))/1:((floor(ceil(23.9995e-3)/2.0)*(110e-9*(240e-9/ceil(23.9995e-3)))+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)!=0?140e-9*(240e-9/ceil(23.9995e-3)):0))/1)/((((240e-9/ceil(23.9995e-3))*ceil(23.9995e-3))*(240e-9/ceil(23.9995e-3)))*ceil(23.9995e-3))' NRS='240e-9/ceil(23.9995e-3)<119.5e-9?(((14.4e-15+(240e-9/ceil(23.9995e-3))*50e-9)+floor((ceil(23.9995e-3)-1)/2.0)*(14.4e-15+(240e-9/ceil(23.9995e-3))*100e-9))+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)==0?14.4e-15+(240e-9/ceil(23.9995e-3))*50e-9:0))/1:(((140e-9*(240e-9/ceil(23.9995e-3))+floor((ceil(23.9995e-3)-1)/2.0)*(110e-9*(240e-9/ceil(23.9995e-3))))+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)==0?140e-9*(240e-9/ceil(23.9995e-3)):0))/1)/((((240e-9/ceil(23.9995e-3))*ceil(23.9995e-3))*(240e-9/ceil(23.9995e-3)))*ceil(23.9995e-3))' M=1
+mpm1 x clk net4 vdd g45p1svt L=45e-9 W=240e-9 AD='240e-9/ceil(23.9995e-3)<119.5e-9?(floor(ceil(23.9995e-3)/2.0)*(14.4e-15+(240e-9/ceil(23.9995e-3))*100e-9)+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)!=0?14.4e-15+(240e-9/ceil(23.9995e-3))*50e-9:0))/1:(floor(ceil(23.9995e-3)/2.0)*(110e-9*(240e-9/ceil(23.9995e-3)))+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)!=0?140e-9*(240e-9/ceil(23.9995e-3)):0))/1' AS='240e-9/ceil(23.9995e-3)<119.5e-9?(((14.4e-15+(240e-9/ceil(23.9995e-3))*50e-9)+floor((ceil(23.9995e-3)-1)/2.0)*(14.4e-15+(240e-9/ceil(23.9995e-3))*100e-9))+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)==0?14.4e-15+(240e-9/ceil(23.9995e-3))*50e-9:0))/1:((140e-9*(240e-9/ceil(23.9995e-3))+floor((ceil(23.9995e-3)-1)/2.0)*(110e-9*(240e-9/ceil(23.9995e-3))))+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)==0?140e-9*(240e-9/ceil(23.9995e-3)):0))/1'
++PD='240e-9/ceil(23.9995e-3)<119.5e-9?(floor(ceil(23.9995e-3)/2.0)*680e-9+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)!=0?580e-9:0))/1:(floor(ceil(23.9995e-3)/2.0)*(220e-9+2*(240e-9/ceil(23.9995e-3)))+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)!=0?280e-9+2*(240e-9/ceil(23.9995e-3)):0))/1' PS='240e-9/ceil(23.9995e-3)<119.5e-9?((580e-9+floor((ceil(23.9995e-3)-1)/2.0)*680e-9)+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)==0?580e-9:0))/1:(((280e-9+2*(240e-9/ceil(23.9995e-3)))+floor((ceil(23.9995e-3)-1)/2.0)*(220e-9+2*(240e-9/ceil(23.9995e-3))))+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)==0?280e-9+2*(240e-9/ceil(23.9995e-3)):0))/1'
++NRD='240e-9/ceil(23.9995e-3)<119.5e-9?(floor(ceil(23.9995e-3)/2.0)*(14.4e-15+(240e-9/ceil(23.9995e-3))*100e-9)+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)!=0?14.4e-15+(240e-9/ceil(23.9995e-3))*50e-9:0))/1:((floor(ceil(23.9995e-3)/2.0)*(110e-9*(240e-9/ceil(23.9995e-3)))+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)!=0?140e-9*(240e-9/ceil(23.9995e-3)):0))/1)/((((240e-9/ceil(23.9995e-3))*ceil(23.9995e-3))*(240e-9/ceil(23.9995e-3)))*ceil(23.9995e-3))' NRS='240e-9/ceil(23.9995e-3)<119.5e-9?(((14.4e-15+(240e-9/ceil(23.9995e-3))*50e-9)+floor((ceil(23.9995e-3)-1)/2.0)*(14.4e-15+(240e-9/ceil(23.9995e-3))*100e-9))+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)==0?14.4e-15+(240e-9/ceil(23.9995e-3))*50e-9:0))/1:(((140e-9*(240e-9/ceil(23.9995e-3))+floor((ceil(23.9995e-3)-1)/2.0)*(110e-9*(240e-9/ceil(23.9995e-3))))+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)==0?140e-9*(240e-9/ceil(23.9995e-3)):0))/1)/((((240e-9/ceil(23.9995e-3))*ceil(23.9995e-3))*(240e-9/ceil(23.9995e-3)))*ceil(23.9995e-3))' M=1
+mpm0 net4 net5 vdd vdd g45p1svt L=45e-9 W=240e-9 AD='240e-9/ceil(23.9995e-3)<119.5e-9?(floor(ceil(23.9995e-3)/2.0)*(14.4e-15+(240e-9/ceil(23.9995e-3))*100e-9)+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)!=0?14.4e-15+(240e-9/ceil(23.9995e-3))*50e-9:0))/1:(floor(ceil(23.9995e-3)/2.0)*(110e-9*(240e-9/ceil(23.9995e-3)))+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)!=0?140e-9*(240e-9/ceil(23.9995e-3)):0))/1' AS='240e-9/ceil(23.9995e-3)<119.5e-9?(((14.4e-15+(240e-9/ceil(23.9995e-3))*50e-9)+floor((ceil(23.9995e-3)-1)/2.0)*(14.4e-15+(240e-9/ceil(23.9995e-3))*100e-9))+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)==0?14.4e-15+(240e-9/ceil(23.9995e-3))*50e-9:0))/1:((140e-9*(240e-9/ceil(23.9995e-3))+floor((ceil(23.9995e-3)-1)/2.0)*(110e-9*(240e-9/ceil(23.9995e-3))))+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)==0?140e-9*(240e-9/ceil(23.9995e-3)):0))/1'
++PD='240e-9/ceil(23.9995e-3)<119.5e-9?(floor(ceil(23.9995e-3)/2.0)*680e-9+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)!=0?580e-9:0))/1:(floor(ceil(23.9995e-3)/2.0)*(220e-9+2*(240e-9/ceil(23.9995e-3)))+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)!=0?280e-9+2*(240e-9/ceil(23.9995e-3)):0))/1' PS='240e-9/ceil(23.9995e-3)<119.5e-9?((580e-9+floor((ceil(23.9995e-3)-1)/2.0)*680e-9)+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)==0?580e-9:0))/1:(((280e-9+2*(240e-9/ceil(23.9995e-3)))+floor((ceil(23.9995e-3)-1)/2.0)*(220e-9+2*(240e-9/ceil(23.9995e-3))))+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)==0?280e-9+2*(240e-9/ceil(23.9995e-3)):0))/1'
++NRD='240e-9/ceil(23.9995e-3)<119.5e-9?(floor(ceil(23.9995e-3)/2.0)*(14.4e-15+(240e-9/ceil(23.9995e-3))*100e-9)+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)!=0?14.4e-15+(240e-9/ceil(23.9995e-3))*50e-9:0))/1:((floor(ceil(23.9995e-3)/2.0)*(110e-9*(240e-9/ceil(23.9995e-3)))+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)!=0?140e-9*(240e-9/ceil(23.9995e-3)):0))/1)/((((240e-9/ceil(23.9995e-3))*ceil(23.9995e-3))*(240e-9/ceil(23.9995e-3)))*ceil(23.9995e-3))' NRS='240e-9/ceil(23.9995e-3)<119.5e-9?(((14.4e-15+(240e-9/ceil(23.9995e-3))*50e-9)+floor((ceil(23.9995e-3)-1)/2.0)*(14.4e-15+(240e-9/ceil(23.9995e-3))*100e-9))+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)==0?14.4e-15+(240e-9/ceil(23.9995e-3))*50e-9:0))/1:(((140e-9*(240e-9/ceil(23.9995e-3))+floor((ceil(23.9995e-3)-1)/2.0)*(110e-9*(240e-9/ceil(23.9995e-3))))+(ceil(23.9995e-3)/2-floor(ceil(23.9995e-3)/2)==0?140e-9*(240e-9/ceil(23.9995e-3)):0))/1)/((((240e-9/ceil(23.9995e-3))*ceil(23.9995e-3))*(240e-9/ceil(23.9995e-3)))*ceil(23.9995e-3))' M=1
+mnm3 net21 x vss vss g45n1svt L=45e-9 W=120e-9 AD='120e-9/ceil(11.9995e-3)<119.5e-9?(floor(ceil(11.9995e-3)/2.0)*(14.4e-15+(120e-9/ceil(11.9995e-3))*100e-9)+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)!=0?14.4e-15+(120e-9/ceil(11.9995e-3))*50e-9:0))/1:(floor(ceil(11.9995e-3)/2.0)*(110e-9*(120e-9/ceil(11.9995e-3)))+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)!=0?140e-9*(120e-9/ceil(11.9995e-3)):0))/1' AS='120e-9/ceil(11.9995e-3)<119.5e-9?(((14.4e-15+(120e-9/ceil(11.9995e-3))*50e-9)+floor((ceil(11.9995e-3)-1)/2.0)*(14.4e-15+(120e-9/ceil(11.9995e-3))*100e-9))+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)==0?14.4e-15+(120e-9/ceil(11.9995e-3))*50e-9:0))/1:((140e-9*(120e-9/ceil(11.9995e-3))+floor((ceil(11.9995e-3)-1)/2.0)*(110e-9*(120e-9/ceil(11.9995e-3))))+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)==0?140e-9*(120e-9/ceil(11.9995e-3)):0))/1'
++PD='120e-9/ceil(11.9995e-3)<119.5e-9?(floor(ceil(11.9995e-3)/2.0)*680e-9+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)!=0?580e-9:0))/1:(floor(ceil(11.9995e-3)/2.0)*(220e-9+2*(120e-9/ceil(11.9995e-3)))+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)!=0?280e-9+2*(120e-9/ceil(11.9995e-3)):0))/1' PS='120e-9/ceil(11.9995e-3)<119.5e-9?((580e-9+floor((ceil(11.9995e-3)-1)/2.0)*680e-9)+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)==0?580e-9:0))/1:(((280e-9+2*(120e-9/ceil(11.9995e-3)))+floor((ceil(11.9995e-3)-1)/2.0)*(220e-9+2*(120e-9/ceil(11.9995e-3))))+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)==0?280e-9+2*(120e-9/ceil(11.9995e-3)):0))/1'
++NRD='120e-9/ceil(11.9995e-3)<119.5e-9?(floor(ceil(11.9995e-3)/2.0)*(14.4e-15+(120e-9/ceil(11.9995e-3))*100e-9)+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)!=0?14.4e-15+(120e-9/ceil(11.9995e-3))*50e-9:0))/1:((floor(ceil(11.9995e-3)/2.0)*(110e-9*(120e-9/ceil(11.9995e-3)))+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)!=0?140e-9*(120e-9/ceil(11.9995e-3)):0))/1)/((((120e-9/ceil(11.9995e-3))*ceil(11.9995e-3))*(120e-9/ceil(11.9995e-3)))*ceil(11.9995e-3))' NRS='120e-9/ceil(11.9995e-3)<119.5e-9?(((14.4e-15+(120e-9/ceil(11.9995e-3))*50e-9)+floor((ceil(11.9995e-3)-1)/2.0)*(14.4e-15+(120e-9/ceil(11.9995e-3))*100e-9))+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)==0?14.4e-15+(120e-9/ceil(11.9995e-3))*50e-9:0))/1:(((140e-9*(120e-9/ceil(11.9995e-3))+floor((ceil(11.9995e-3)-1)/2.0)*(110e-9*(120e-9/ceil(11.9995e-3))))+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)==0?140e-9*(120e-9/ceil(11.9995e-3)):0))/1)/((((120e-9/ceil(11.9995e-3))*ceil(11.9995e-3))*(120e-9/ceil(11.9995e-3)))*ceil(11.9995e-3))' M=1
+mnm2 q clk net21 vss g45n1svt L=45e-9 W=120e-9 AD='120e-9/ceil(11.9995e-3)<119.5e-9?(floor(ceil(11.9995e-3)/2.0)*(14.4e-15+(120e-9/ceil(11.9995e-3))*100e-9)+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)!=0?14.4e-15+(120e-9/ceil(11.9995e-3))*50e-9:0))/1:(floor(ceil(11.9995e-3)/2.0)*(110e-9*(120e-9/ceil(11.9995e-3)))+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)!=0?140e-9*(120e-9/ceil(11.9995e-3)):0))/1' AS='120e-9/ceil(11.9995e-3)<119.5e-9?(((14.4e-15+(120e-9/ceil(11.9995e-3))*50e-9)+floor((ceil(11.9995e-3)-1)/2.0)*(14.4e-15+(120e-9/ceil(11.9995e-3))*100e-9))+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)==0?14.4e-15+(120e-9/ceil(11.9995e-3))*50e-9:0))/1:((140e-9*(120e-9/ceil(11.9995e-3))+floor((ceil(11.9995e-3)-1)/2.0)*(110e-9*(120e-9/ceil(11.9995e-3))))+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)==0?140e-9*(120e-9/ceil(11.9995e-3)):0))/1'
++PD='120e-9/ceil(11.9995e-3)<119.5e-9?(floor(ceil(11.9995e-3)/2.0)*680e-9+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)!=0?580e-9:0))/1:(floor(ceil(11.9995e-3)/2.0)*(220e-9+2*(120e-9/ceil(11.9995e-3)))+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)!=0?280e-9+2*(120e-9/ceil(11.9995e-3)):0))/1' PS='120e-9/ceil(11.9995e-3)<119.5e-9?((580e-9+floor((ceil(11.9995e-3)-1)/2.0)*680e-9)+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)==0?580e-9:0))/1:(((280e-9+2*(120e-9/ceil(11.9995e-3)))+floor((ceil(11.9995e-3)-1)/2.0)*(220e-9+2*(120e-9/ceil(11.9995e-3))))+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)==0?280e-9+2*(120e-9/ceil(11.9995e-3)):0))/1'
++NRD='120e-9/ceil(11.9995e-3)<119.5e-9?(floor(ceil(11.9995e-3)/2.0)*(14.4e-15+(120e-9/ceil(11.9995e-3))*100e-9)+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)!=0?14.4e-15+(120e-9/ceil(11.9995e-3))*50e-9:0))/1:((floor(ceil(11.9995e-3)/2.0)*(110e-9*(120e-9/ceil(11.9995e-3)))+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)!=0?140e-9*(120e-9/ceil(11.9995e-3)):0))/1)/((((120e-9/ceil(11.9995e-3))*ceil(11.9995e-3))*(120e-9/ceil(11.9995e-3)))*ceil(11.9995e-3))' NRS='120e-9/ceil(11.9995e-3)<119.5e-9?(((14.4e-15+(120e-9/ceil(11.9995e-3))*50e-9)+floor((ceil(11.9995e-3)-1)/2.0)*(14.4e-15+(120e-9/ceil(11.9995e-3))*100e-9))+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)==0?14.4e-15+(120e-9/ceil(11.9995e-3))*50e-9:0))/1:(((140e-9*(120e-9/ceil(11.9995e-3))+floor((ceil(11.9995e-3)-1)/2.0)*(110e-9*(120e-9/ceil(11.9995e-3))))+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)==0?140e-9*(120e-9/ceil(11.9995e-3)):0))/1)/((((120e-9/ceil(11.9995e-3))*ceil(11.9995e-3))*(120e-9/ceil(11.9995e-3)))*ceil(11.9995e-3))' M=1
+mnm1 net9 net5 vss vss g45n1svt L=45e-9 W=120e-9 AD='120e-9/ceil(11.9995e-3)<119.5e-9?(floor(ceil(11.9995e-3)/2.0)*(14.4e-15+(120e-9/ceil(11.9995e-3))*100e-9)+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)!=0?14.4e-15+(120e-9/ceil(11.9995e-3))*50e-9:0))/1:(floor(ceil(11.9995e-3)/2.0)*(110e-9*(120e-9/ceil(11.9995e-3)))+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)!=0?140e-9*(120e-9/ceil(11.9995e-3)):0))/1' AS='120e-9/ceil(11.9995e-3)<119.5e-9?(((14.4e-15+(120e-9/ceil(11.9995e-3))*50e-9)+floor((ceil(11.9995e-3)-1)/2.0)*(14.4e-15+(120e-9/ceil(11.9995e-3))*100e-9))+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)==0?14.4e-15+(120e-9/ceil(11.9995e-3))*50e-9:0))/1:((140e-9*(120e-9/ceil(11.9995e-3))+floor((ceil(11.9995e-3)-1)/2.0)*(110e-9*(120e-9/ceil(11.9995e-3))))+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)==0?140e-9*(120e-9/ceil(11.9995e-3)):0))/1'
++PD='120e-9/ceil(11.9995e-3)<119.5e-9?(floor(ceil(11.9995e-3)/2.0)*680e-9+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)!=0?580e-9:0))/1:(floor(ceil(11.9995e-3)/2.0)*(220e-9+2*(120e-9/ceil(11.9995e-3)))+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)!=0?280e-9+2*(120e-9/ceil(11.9995e-3)):0))/1' PS='120e-9/ceil(11.9995e-3)<119.5e-9?((580e-9+floor((ceil(11.9995e-3)-1)/2.0)*680e-9)+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)==0?580e-9:0))/1:(((280e-9+2*(120e-9/ceil(11.9995e-3)))+floor((ceil(11.9995e-3)-1)/2.0)*(220e-9+2*(120e-9/ceil(11.9995e-3))))+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)==0?280e-9+2*(120e-9/ceil(11.9995e-3)):0))/1'
++NRD='120e-9/ceil(11.9995e-3)<119.5e-9?(floor(ceil(11.9995e-3)/2.0)*(14.4e-15+(120e-9/ceil(11.9995e-3))*100e-9)+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)!=0?14.4e-15+(120e-9/ceil(11.9995e-3))*50e-9:0))/1:((floor(ceil(11.9995e-3)/2.0)*(110e-9*(120e-9/ceil(11.9995e-3)))+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)!=0?140e-9*(120e-9/ceil(11.9995e-3)):0))/1)/((((120e-9/ceil(11.9995e-3))*ceil(11.9995e-3))*(120e-9/ceil(11.9995e-3)))*ceil(11.9995e-3))' NRS='120e-9/ceil(11.9995e-3)<119.5e-9?(((14.4e-15+(120e-9/ceil(11.9995e-3))*50e-9)+floor((ceil(11.9995e-3)-1)/2.0)*(14.4e-15+(120e-9/ceil(11.9995e-3))*100e-9))+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)==0?14.4e-15+(120e-9/ceil(11.9995e-3))*50e-9:0))/1:(((140e-9*(120e-9/ceil(11.9995e-3))+floor((ceil(11.9995e-3)-1)/2.0)*(110e-9*(120e-9/ceil(11.9995e-3))))+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)==0?140e-9*(120e-9/ceil(11.9995e-3)):0))/1)/((((120e-9/ceil(11.9995e-3))*ceil(11.9995e-3))*(120e-9/ceil(11.9995e-3)))*ceil(11.9995e-3))' M=1
+mnm0 x clk_bar net9 vss g45n1svt L=45e-9 W=120e-9 AD='120e-9/ceil(11.9995e-3)<119.5e-9?(floor(ceil(11.9995e-3)/2.0)*(14.4e-15+(120e-9/ceil(11.9995e-3))*100e-9)+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)!=0?14.4e-15+(120e-9/ceil(11.9995e-3))*50e-9:0))/1:(floor(ceil(11.9995e-3)/2.0)*(110e-9*(120e-9/ceil(11.9995e-3)))+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)!=0?140e-9*(120e-9/ceil(11.9995e-3)):0))/1' AS='120e-9/ceil(11.9995e-3)<119.5e-9?(((14.4e-15+(120e-9/ceil(11.9995e-3))*50e-9)+floor((ceil(11.9995e-3)-1)/2.0)*(14.4e-15+(120e-9/ceil(11.9995e-3))*100e-9))+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)==0?14.4e-15+(120e-9/ceil(11.9995e-3))*50e-9:0))/1:((140e-9*(120e-9/ceil(11.9995e-3))+floor((ceil(11.9995e-3)-1)/2.0)*(110e-9*(120e-9/ceil(11.9995e-3))))+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)==0?140e-9*(120e-9/ceil(11.9995e-3)):0))/1'
++PD='120e-9/ceil(11.9995e-3)<119.5e-9?(floor(ceil(11.9995e-3)/2.0)*680e-9+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)!=0?580e-9:0))/1:(floor(ceil(11.9995e-3)/2.0)*(220e-9+2*(120e-9/ceil(11.9995e-3)))+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)!=0?280e-9+2*(120e-9/ceil(11.9995e-3)):0))/1' PS='120e-9/ceil(11.9995e-3)<119.5e-9?((580e-9+floor((ceil(11.9995e-3)-1)/2.0)*680e-9)+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)==0?580e-9:0))/1:(((280e-9+2*(120e-9/ceil(11.9995e-3)))+floor((ceil(11.9995e-3)-1)/2.0)*(220e-9+2*(120e-9/ceil(11.9995e-3))))+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)==0?280e-9+2*(120e-9/ceil(11.9995e-3)):0))/1'
++NRD='120e-9/ceil(11.9995e-3)<119.5e-9?(floor(ceil(11.9995e-3)/2.0)*(14.4e-15+(120e-9/ceil(11.9995e-3))*100e-9)+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)!=0?14.4e-15+(120e-9/ceil(11.9995e-3))*50e-9:0))/1:((floor(ceil(11.9995e-3)/2.0)*(110e-9*(120e-9/ceil(11.9995e-3)))+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)!=0?140e-9*(120e-9/ceil(11.9995e-3)):0))/1)/((((120e-9/ceil(11.9995e-3))*ceil(11.9995e-3))*(120e-9/ceil(11.9995e-3)))*ceil(11.9995e-3))' NRS='120e-9/ceil(11.9995e-3)<119.5e-9?(((14.4e-15+(120e-9/ceil(11.9995e-3))*50e-9)+floor((ceil(11.9995e-3)-1)/2.0)*(14.4e-15+(120e-9/ceil(11.9995e-3))*100e-9))+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)==0?14.4e-15+(120e-9/ceil(11.9995e-3))*50e-9:0))/1:(((140e-9*(120e-9/ceil(11.9995e-3))+floor((ceil(11.9995e-3)-1)/2.0)*(110e-9*(120e-9/ceil(11.9995e-3))))+(ceil(11.9995e-3)/2-floor(ceil(11.9995e-3)/2)==0?140e-9*(120e-9/ceil(11.9995e-3)):0))/1)/((((120e-9/ceil(11.9995e-3))*ceil(11.9995e-3))*(120e-9/ceil(11.9995e-3)))*ceil(11.9995e-3))' M=1
+xi0 d net8 net5 vdd vss and_minsize
+xi1 rst net8 vdd vss inverter_minsize
+.ends C2MOS_register
+** End of subcircuit definition.
+
+** Library name: test2
+** Cell name: superbuffer_4
+** View name: schematic
+.subckt superbuffer_4 vddio vss sbuf_in sbuf_out
+m7 net17 net7 vddio vddio g45p2svt L=150e-9 W=14.32e-6 AD=1.432e-12 AS=1.79e-12 PD=15.12e-6 PS=22.48e-6 NRD=6.98324e-3 NRS=8.72905e-3 M=1
+m4 sbuf_out net17 vddio vddio g45p2svt L=150e-9 W=55.2e-6 AD=5.52e-12 AS=6.44e-12 PD=56.4e-6 PS=75e-6 NRD=1.81159e-3 NRS=2.11353e-3 M=1
+m1 net7 net3 vddio vddio g45p2svt L=150e-9 W=3.72e-6 AD=372e-15 AS=465e-15 PD=4.52e-6 PS=6.58e-6 NRD=26.8817e-3 NRS=33.6022e-3 M=1
+m0 net3 sbuf_in vddio vddio g45p2svt L=150e-9 W=960e-9 AD=144e-15 AS=144e-15 PD=2.22e-6 PS=2.22e-6 NRD=156.25e-3 NRS=156.25e-3 M=1
+m6 sbuf_out net17 vss vss g45n2svt L=150e-9 W=27.6e-6 AD=2.76e-12 AS=3.105e-12 PD=29.2e-6 PS=36.3e-6 NRD=3.62319e-3 NRS=4.07609e-3 M=1
+m5 net17 net7 vss vss g45n2svt L=150e-9 W=7.16e-6 AD=716e-15 AS=895e-15 PD=7.96e-6 PS=11.74e-6 NRD=13.9665e-3 NRS=17.4581e-3 M=1
+m3 net7 net3 vss vss g45n2svt L=150e-9 W=1.86e-6 AD=186e-15 AS=232.5e-15 PD=2.66e-6 PS=3.79e-6 NRD=53.7634e-3 NRS=67.2043e-3 M=1
+m2 net3 sbuf_in vss vss g45n2svt L=150e-9 W=480e-9 AD=72e-15 AS=72e-15 PD=1.26e-6 PS=1.26e-6 NRD=312.5e-3 NRS=312.5e-3 M=1
+.ends superbuffer_4
+** End of subcircuit definition.
+
+** Library name: test2
+** Cell name: multiplier
+** View name: schematic
+xi117 p7_f p7_bar p7_1_1 net59 vddio1 vss1 level_shifter_1_1_to_1_8
+xi116 p6_f p6_bar p6_1_1 net53 vddio1 vss1 level_shifter_1_1_to_1_8
+xi115 p5_f p5_bar p5_1_1 net47 vddio1 vss1 level_shifter_1_1_to_1_8
+xi114 p4_f p4_bar p4_1_1 net38 vddio1 vss1 level_shifter_1_1_to_1_8
+xi113 p3_f p3_bar p3_1_1 net30 vddio1 vss1 level_shifter_1_1_to_1_8
+xi112 p2_f p2_bar p2_1_1 net24 vddio1 vss1 level_shifter_1_1_to_1_8
+xi111 p1_f p1_bar p1_1_1 net16 vddio1 vss1 level_shifter_1_1_to_1_8
+xi110 p0_f p0_bar p0_1_1 net7 vddio1 vss1 level_shifter_1_1_to_1_8
+xi126 vddio1 vss1 decap3x3x2
+xi133 vddio1 vss1 decap3x3x2
+xi134 vddio1 vss1 decap3x3x2
+xi131 vddio1 vss1 decap3x3x2
+xi132 vddio1 vss1 decap3x3x2
+xi130 vddio1 vss1 decap3x3x2
+xi129 vddio1 vss1 decap3x3x2
+xi128 vddio1 vss1 decap3x3x2
+xi127 vddio1 vss1 decap3x3x2
+xi29 s_1_1_reg net6 c_2_0 p_3 vdd1 vss1 half_adder
+xi20 s_0_1_reg net5 c_1_0 p_2 vdd1 vss1 half_adder
+xi15 c_0_2 net41 c_0_3 s_0_3 vdd1 vss1 half_adder
+xi137 net10 net8 c_0_0 p_1 vdd1 vss1 half_adder
+xi32 c_1_3_reg net11 c_2_2 p_7 p_6 vdd1 vss1 full_adder
+xi31 s_1_3_reg net1 c_2_1 c_2_2 p_5 vdd1 vss1 full_adder
+xi30 s_1_2_reg net3 c_2_0 c_2_1 p_4 vdd1 vss1 full_adder
+xi28 c_0_3_reg net22 c_1_2 c_1_3 s_1_3 vdd1 vss1 full_adder
+xi22 s_0_3_reg net2 c_1_1 c_1_2 s_1_2 vdd1 vss1 full_adder
+xi21 s_0_2_reg net4 c_1_0 c_1_1 s_1_1 vdd1 vss1 full_adder
+xi14 net18 net35 c_0_1 c_0_2 s_0_2 vdd1 vss1 full_adder
+xi13 net13 net45 c_0_0 c_0_1 s_0_1 vdd1 vss1 full_adder
+xi125 p7_1_1 net59 vdd1 vss1 inverter_minsize
+xi124 p3_1_1 net30 vdd1 vss1 inverter_minsize
+xi123 p6_1_1 net53 vdd1 vss1 inverter_minsize
+xi122 p2_1_1 net24 vdd1 vss1 inverter_minsize
+xi121 p5_1_1 net47 vdd1 vss1 inverter_minsize
+xi120 p1_1_1 net16 vdd1 vss1 inverter_minsize
+xi119 p4_1_1 net38 vdd1 vss1 inverter_minsize
+xi118 p0_1_1 net7 vdd1 vss1 inverter_minsize
+xi90 clk clk_bar vdd1 vss1 inverter_minsize
+xi44 b_1_reg a_1_reg net45 vdd1 vss1 and_minsize
+xi45 b_0_reg a_2_reg net13 vdd1 vss1 and_minsize
+xi42 b_1_reg a_0_reg net8 vdd1 vss1 and_minsize
+xi43 b_0_reg a_1_reg net10 vdd1 vss1 and_minsize
+xi49 b_2_reg_reg a_0_reg_reg net5 vdd1 vss1 and_minsize
+xi52 b_2_reg_reg a_3_reg_reg net22 vdd1 vss1 and_minsize
+xi51 b_2_reg_reg a_2_reg_reg net2 vdd1 vss1 and_minsize
+xi50 b_2_reg_reg a_1_reg_reg net4 vdd1 vss1 and_minsize
+xi53 b_3_reg_reg_reg a_0_reg_reg_reg net6 vdd1 vss1 and_minsize
+xi54 b_3_reg_reg_reg a_1_reg_reg_reg net3 vdd1 vss1 and_minsize
+xi55 b_3_reg_reg_reg a_2_reg_reg_reg net1 vdd1 vss1 and_minsize
+xi56 b_3_reg_reg_reg a_3_reg_reg_reg net11 vdd1 vss1 and_minsize
+xi48 b_1_reg a_3_reg net41 vdd1 vss1 and_minsize
+xi46 b_0_reg a_3_reg net18 vdd1 vss1 and_minsize
+xi47 b_1_reg a_2_reg net35 vdd1 vss1 and_minsize
+xi135 b_0_reg a_0_reg p_0 vdd1 vss1 and_minsize
+xi75 reset reset_bar rst rst_bar vdd1 vss1 level_shifter_1_8_to_1_1
+xi74 b0 b0_bar b_0 b_0_bar vdd1 vss1 level_shifter_1_8_to_1_1
+xi73 b1 b1_bar b_1 b_1_bar vdd1 vss1 level_shifter_1_8_to_1_1
+xi72 b2 b2_bar b_2 b_2_bar vdd1 vss1 level_shifter_1_8_to_1_1
+xi71 b3 b3_bar b_3 b_3_bar vdd1 vss1 level_shifter_1_8_to_1_1
+xi70 a0 a0_bar a_0 a_0_bar vdd1 vss1 level_shifter_1_8_to_1_1
+xi69 a1 a1_bar a_1 a_1_bar vdd1 vss1 level_shifter_1_8_to_1_1
+xi68 a2 a2_bar a_2 a_2_bar vdd1 vss1 level_shifter_1_8_to_1_1
+xi67 a3 a3_bar a_3 a_3_bar vdd1 vss1 level_shifter_1_8_to_1_1
+xi84 reset reset_bar vddio1 vss1 inverter_1_8_v
+xi83 b0 b0_bar vddio1 vss1 inverter_1_8_v
+xi82 b1 b1_bar vddio1 vss1 inverter_1_8_v
+xi81 b2 b2_bar vddio1 vss1 inverter_1_8_v
+xi80 b3 b3_bar vddio1 vss1 inverter_1_8_v
+xi79 a0 a0_bar vddio1 vss1 inverter_1_8_v
+xi78 a1 a1_bar vddio1 vss1 inverter_1_8_v
+xi77 a2 a2_bar vddio1 vss1 inverter_1_8_v
+xi76 a3 a3_bar vddio1 vss1 inverter_1_8_v
+xi109 clk clk_bar c_1_3 c_1_3_reg rst vdd1 vss1 C2MOS_register
+xi108 clk clk_bar s_1_3 s_1_3_reg rst vdd1 vss1 C2MOS_register
+xi107 clk clk_bar s_1_2 s_1_2_reg rst vdd1 vss1 C2MOS_register
+xi106 clk clk_bar s_1_1 s_1_1_reg rst vdd1 vss1 C2MOS_register
+xi105 clk clk_bar c_0_3 c_0_3_reg rst vdd1 vss1 C2MOS_register
+xi104 clk clk_bar s_0_3 s_0_3_reg rst vdd1 vss1 C2MOS_register
+xi103 clk clk_bar s_0_2 s_0_2_reg rst vdd1 vss1 C2MOS_register
+xi102 clk clk_bar s_0_1 s_0_1_reg rst vdd1 vss1 C2MOS_register
+xi101 clk clk_bar p_7 p7_1_1 rst vdd1 vss1 C2MOS_register
+xi100 clk clk_bar p_6 p6_1_1 rst vdd1 vss1 C2MOS_register
+xi99 clk clk_bar p_5 p5_1_1 rst vdd1 vss1 C2MOS_register
+xi98 clk clk_bar p_4 p4_1_1 rst vdd1 vss1 C2MOS_register
+xi97 clk clk_bar p_3 p3_1_1 rst vdd1 vss1 C2MOS_register
+xi96 clk clk_bar p_2 p_2_reg rst vdd1 vss1 C2MOS_register
+xi95 clk clk_bar p_2_reg p2_1_1 rst vdd1 vss1 C2MOS_register
+xi94 clk clk_bar p_1_reg p_1_reg_reg rst vdd1 vss1 C2MOS_register
+xi93 clk clk_bar p_0_reg p_0_reg_reg rst vdd1 vss1 C2MOS_register
+xi92 clk clk_bar p_1 p_1_reg rst vdd1 vss1 C2MOS_register
+xi91 clk clk_bar p_0 p_0_reg rst vdd1 vss1 C2MOS_register
+xi89 clk clk_bar a_3_reg_reg a_3_reg_reg_reg rst vdd1 vss1 C2MOS_register
+xi88 clk clk_bar a_2_reg_reg a_2_reg_reg_reg rst vdd1 vss1 C2MOS_register
+xi87 clk clk_bar a_1_reg_reg a_1_reg_reg_reg rst vdd1 vss1 C2MOS_register
+xi86 clk clk_bar a_0_reg_reg a_0_reg_reg_reg rst vdd1 vss1 C2MOS_register
+xi85 clk clk_bar b_3_reg_reg b_3_reg_reg_reg rst vdd1 vss1 C2MOS_register
+xi66 clk clk_bar b_3_reg b_3_reg_reg rst vdd1 vss1 C2MOS_register
+xi65 clk clk_bar b_2_reg b_2_reg_reg rst vdd1 vss1 C2MOS_register
+xi64 clk clk_bar a_3_reg a_3_reg_reg rst vdd1 vss1 C2MOS_register
+xi63 clk clk_bar a_2_reg a_2_reg_reg rst vdd1 vss1 C2MOS_register
+xi60 clk clk_bar p_1_reg_reg p1_1_1 rst vdd1 vss1 C2MOS_register
+xi62 clk clk_bar a_1_reg a_1_reg_reg rst vdd1 vss1 C2MOS_register
+xi61 clk clk_bar a_0_reg a_0_reg_reg rst vdd1 vss1 C2MOS_register
+xi57 clk clk_bar p_0_reg_reg p0_1_1 rst vdd1 vss1 C2MOS_register
+xi7 clk clk_bar b_3 b_3_reg rst vdd1 vss1 C2MOS_register
+xi6 clk clk_bar b_0 b_0_reg rst vdd1 vss1 C2MOS_register
+xi5 clk clk_bar b_1 b_1_reg rst vdd1 vss1 C2MOS_register
+xi4 clk clk_bar b_2 b_2_reg rst vdd1 vss1 C2MOS_register
+xi3 clk clk_bar a_0 a_0_reg rst vdd1 vss1 C2MOS_register
+xi2 clk clk_bar a_1 a_1_reg rst vdd1 vss1 C2MOS_register
+xi1 clk clk_bar a_2 a_2_reg rst vdd1 vss1 C2MOS_register
+xi0 clk clk_bar a_3 a_3_reg rst vdd1 vss1 C2MOS_register
+xi160 vddio1 vss1 p7_f p7 superbuffer_4
+xi159 vddio1 vss1 p6_f p6 superbuffer_4
+xi156 vddio1 vss1 p5_f p5 superbuffer_4
+xi155 vddio1 vss1 p4_f p4 superbuffer_4
+xi161 vddio1 vss1 p3_f p3 superbuffer_4
+xi158 vddio1 vss1 p2_f p2 superbuffer_4
+xi157 vddio1 vss1 p1_f p1 superbuffer_4
+xi154 vddio1 vss1 p0_f p0 superbuffer_4
+
+*Put your extracted netlist above this comment
+
+* The load current required to be connected between the two terminals extracted from the netlist. You cannot modify it.
+ILOAD vdd1 vss1 PWL(
++ 'tstart+0ns'      0mA    'tstart+0.25ns'   1.25mA   'tstart+0.5ns'    5mA     'tstart+0.75ns'   11.25mA
++ 'tstart+1ns'     20mA    'tstart+1.25ns'  28.75mA   'tstart+1.5ns'   35mA     'tstart+1.75ns'   38.75mA
++ 'tstart+2ns'     40mA    'tstart+2.25ns'  38.75mA   'tstart+2.5ns'   35mA     'tstart+2.75ns'   28.75mA
++ 'tstart+3ns'     20mA    'tstart+3.25ns'  11.25mA   'tstart+3.5ns'    5mA     'tstart+3.75ns'    1.25mA
++ 'tstart+4ns'      0mA    'tstart+4.25ns'   1.25mA   'tstart+4.5ns'    5mA     'tstart+4.75ns'   11.25mA
++ 'tstart+5ns'     20mA    'tstart+5.25ns'  28.75mA   'tstart+5.5ns'   35mA     'tstart+5.75ns'   38.75mA
++ 'tstart+6ns'     40mA    'tstart+6.25ns'  38.75mA   'tstart+6.5ns'   35mA     'tstart+6.75ns'   28.75mA
++ 'tstart+7ns'     20mA    'tstart+7.25ns'  11.25mA   'tstart+7.5ns'    5mA     'tstart+7.75ns'    1.25mA
++ 'tstart+8ns'      0mA    'tstart+8.25ns'   1.25mA   'tstart+8.5ns'    5mA     'tstart+8.75ns'   11.25mA
++ 'tstart+9ns'     20mA    'tstart+9.25ns'  28.75mA   'tstart+9.5ns'   35mA     'tstart+9.75ns'   38.75mA
++ 'tstart+10ns'    40mA    'tstart+10.25ns' 38.75mA   'tstart+10.5ns'  35mA     'tstart+10.75ns'  28.75mA
++ 'tstart+11ns'    20mA    'tstart+11.25ns' 11.25mA   'tstart+11.5ns'   5mA     'tstart+11.75ns'   1.25mA
++ 'tstart+12ns'     0mA    'tstart+12.25ns'  1.25mA   'tstart+12.5ns'   5mA     'tstart+12.75ns'  11.25mA
++ 'tstart+13ns'    20mA    'tstart+13.25ns' 28.75mA   'tstart+13.5ns'  35mA     'tstart+13.75ns'  38.75mA
++ 'tstart+14ns'    40mA    'tstart+14.25ns' 38.75mA   'tstart+14.5ns'  35mA     'tstart+14.75ns'  28.75mA
++ 'tstart+15ns'    20mA    'tstart+15.25ns' 11.25mA   'tstart+15.5ns'   5mA     'tstart+15.75ns'   1.25mA
++ 'tstart+16ns'     0mA    'tstart+16.25ns'  1.25mA   'tstart+16.5ns'   5mA     'tstart+16.75ns'  11.25mA
++ 'tstart+17ns'    20mA    'tstart+17.25ns' 28.75mA   'tstart+17.5ns'  35mA     'tstart+17.75ns'  38.75mA
++ 'tstart+18ns'    40mA    'tstart+18.25ns' 38.75mA   'tstart+18.5ns'  35mA     'tstart+18.75ns'  28.75mA
++ 'tstart+19ns'    20mA    'tstart+19.25ns' 11.25mA   'tstart+19.5ns'   5mA     'tstart+19.75ns'   1.25mA
++ 'tstart+20ns'     0mA    'tstart+20.25ns'  1.25mA   'tstart+20.5ns'   5mA     'tstart+20.75ns'  11.25mA
++ 'tstart+21ns'    20mA    'tstart+21.25ns' 28.75mA   'tstart+21.5ns'  35mA     'tstart+21.75ns'  38.75mA
++ 'tstart+22ns'    40mA    'tstart+22.25ns' 38.75mA   'tstart+22.5ns'  35mA     'tstart+22.75ns'  28.75mA
++ 'tstart+23ns'    20mA    'tstart+23.25ns' 11.25mA   'tstart+23.5ns'   5mA     'tstart+23.75ns'   1.25mA
++ 'tstart+24ns'     0mA    'tstart+24.25ns'  1.25mA   'tstart+24.5ns'   5mA     'tstart+24.75ns'  11.25mA
++ 'tstart+25ns'    20mA    'tstart+25.25ns' 28.75mA   'tstart+25.5ns'  35mA     'tstart+25.75ns'  38.75mA
++ 'tstart+26ns'    40mA    'tstart+26.25ns' 38.75mA   'tstart+26.5ns'  35mA     'tstart+26.75ns'  28.75mA
++ 'tstart+27ns'    20mA    'tstart+27.25ns' 11.25mA   'tstart+27.5ns'   5mA     'tstart+27.75ns'   1.25mA
++ 'tstart+28ns'     0mA    'tstart+28.25ns'  1.25mA   'tstart+28.5ns'   5mA     'tstart+28.75ns'  11.25mA
++ 'tstart+29ns'    20mA    'tstart+29.25ns' 28.75mA   'tstart+29.5ns'  35mA     'tstart+29.75ns'  38.75mA
++ 'tstart+30ns'    40mA    'tstart+30.25ns' 38.75mA   'tstart+30.5ns'  35mA     'tstart+30.75ns'  28.75mA
++ 'tstart+31ns'    20mA    'tstart+31.25ns' 11.25mA   'tstart+31.5ns'   5mA     'tstart+31.75ns'   1.25mA
++ 'tstart+32ns'     0mA    'tstart+32.25ns'  1.25mA   'tstart+32.5ns'   5mA     'tstart+32.75ns'  11.25mA
++ 'tstart+33ns'    20mA    'tstart+33.25ns' 28.75mA   'tstart+33.5ns'  35mA     'tstart+33.75ns'  38.75mA
++ 'tstart+34ns'    40mA    'tstart+34.25ns' 38.75mA   'tstart+34.5ns'  35mA     'tstart+34.75ns'  28.75mA
++ 'tstart+35ns'    20mA    'tstart+35.25ns' 11.25mA   'tstart+35.5ns'   5mA     'tstart+35.75ns'   1.25mA
++ 'tstart+36ns'     0mA    'tstart+36.25ns'  1.25mA   'tstart+36.5ns'   5mA     'tstart+36.75ns'  11.25mA
++ 'tstart+37ns'    20mA    'tstart+37.25ns' 28.75mA   'tstart+37.5ns'  35mA     'tstart+37.75ns'  38.75mA
++ 'tstart+38ns'    40mA    'tstart+38.25ns' 38.75mA   'tstart+38.5ns'  35mA     'tstart+38.75ns'  28.75mA
++ 'tstart+39ns'    20mA    'tstart+39.25ns' 11.25mA   'tstart+39.5ns'   5mA     'tstart+39.75ns'   1.25mA
++ 'tstart+40ns'     0mA
+)
+
+
+
+*Clock and reset signal
+vCK clk_in 0 pulse(0 1.1 trf_ck trf_ck trf_ck CK_pw TCK)
+vReset reset 0 PWL(0 1.8 reset_delay 1.8 'reset_delay+trf_ip_reset' 1.8 'reset_delay+reset_pw+trf_ip_reset' 1.8 'reset_delay+reset_pw+2*trf_ip_reset' 0 sim_end 0)
+
+*Clock buffer
+mnm1 clk net31782 vss vss g45n1svt L=45e-9 W=9.6e-6 AD=768e-15 AS=825.6e-15 PD=12.8e-6 PS=14e-6 NRD=8.33333e-3 NRS=8.95833e-3 M=1
+mnm0 net31782 clk_in vss vss g45n1svt L=45e-9 W=2.4e-6 AD=192e-15 AS=206.4e-15 PD=5.6e-6 PS=6.08e-6 NRD=33.3333e-3 NRS=35.8333e-3 M=1
+mpm1 clk net31782 vdd vdd g45p1svt L=45e-9 W=19.2e-6 AD=1.536e-12 AS=1.6512e-12 PD=22.4e-6 PS=24.56e-6 NRD=4.16667e-3 NRS=4.47917e-3 M=1
+mpm0 net31782 clk_in vdd vdd g45p1svt L=45e-9 W=4.8e-6 AD=384e-15 AS=412.8e-15 PD=8e-6 PS=8.72e-6 NRD=16.6667e-3 NRS=17.9167e-3 M=1
+
+*Input signals
+vA3 a3 0 PWL(0 0 'input_delay+0*trf_ip_reset+0*input_pw' 0 'input_delay+1*trf_ip_reset+0*input_pw' 1.8 'input_delay+1*trf_ip_reset+1*input_pw' 1.8 'input_delay+2*trf_ip_reset+1*input_pw' 0 'input_delay+2*trf_ip_reset+2*input_pw' 0 'input_delay+3*trf_ip_reset+2*input_pw' 1.8 'input_delay+3*trf_ip_reset+3*input_pw' 1.8  'input_delay+4*trf_ip_reset+3*input_pw' 1.8 'input_delay+4*trf_ip_reset+4*input_pw' 1.8 'input_delay+5*trf_ip_reset+4*input_pw' 0 sim_end 0)
+vA2 a2 0 PWL(0 0 'input_delay2+0*trf_ip_reset+0*input_pw' 0 'input_delay2+1*trf_ip_reset+0*input_pw' 1.8 'input_delay2+1*trf_ip_reset+1*input_pw' 1.8 'input_delay2+2*trf_ip_reset+1*input_pw' 1.8 'input_delay2+2*trf_ip_reset+2*input_pw' 1.8 'input_delay2+3*trf_ip_reset+2*input_pw' 1.8 'input_delay2+3*trf_ip_reset+3*input_pw' 1.8  'input_delay2+4*trf_ip_reset+3*input_pw' 0 'input_delay2+4*trf_ip_reset+4*input_pw' 0 'input_delay2+5*trf_ip_reset+4*input_pw' 1.8 sim_end 1.8)
+vA1 a1 0 PWL(0 0 'input_delay3+0*trf_ip_reset+0*input_pw' 0 'input_delay3+1*trf_ip_reset+0*input_pw' 0 'input_delay3+1*trf_ip_reset+1*input_pw' 0 'input_delay3+2*trf_ip_reset+1*input_pw' 0 'input_delay3+2*trf_ip_reset+2*input_pw' 0 'input_delay3+3*trf_ip_reset+2*input_pw' 1.8 'input_delay3+3*trf_ip_reset+3*input_pw' 1.8  'input_delay3+4*trf_ip_reset+3*input_pw' 0 'input_delay3+4*trf_ip_reset+4*input_pw' 0 'input_delay3+5*trf_ip_reset+4*input_pw' 1.8 sim_end 1.8)
+vA0 a0 0 PWL(0 0 'input_delay4+0*trf_ip_reset+0*input_pw' 0 'input_delay4+1*trf_ip_reset+0*input_pw' 1.8 'input_delay4+1*trf_ip_reset+1*input_pw' 1.8 'input_delay4+2*trf_ip_reset+1*input_pw' 1.8 'input_delay4+2*trf_ip_reset+2*input_pw' 1.8 'input_delay4+3*trf_ip_reset+2*input_pw' 1.8 'input_delay4+3*trf_ip_reset+3*input_pw' 1.8  'input_delay4+4*trf_ip_reset+3*input_pw' 1.8 'input_delay4+4*trf_ip_reset+4*input_pw' 1.8 'input_delay4+5*trf_ip_reset+4*input_pw' 0 sim_end 0)
+vB3 b3 0 PWL(0 0 'input_delay+0*trf_ip_reset+0*input_pw' 0 'input_delay+1*trf_ip_reset+0*input_pw' 0 'input_delay+1*trf_ip_reset+1*input_pw' 0 'input_delay+2*trf_ip_reset+1*input_pw' 0 'input_delay+2*trf_ip_reset+2*input_pw' 0 'input_delay+3*trf_ip_reset+2*input_pw' 1.8 'input_delay+3*trf_ip_reset+3*input_pw' 1.8  'input_delay+4*trf_ip_reset+3*input_pw' 1.8 'input_delay+4*trf_ip_reset+4*input_pw' 1.8 'input_delay+5*trf_ip_reset+4*input_pw' 1.8 sim_end 1.8)
+vB2 b2 0 PWL(0 0 'input_delay2+0*trf_ip_reset+0*input_pw' 0 'input_delay2+1*trf_ip_reset+0*input_pw' 0 'input_delay2+1*trf_ip_reset+1*input_pw' 0 'input_delay2+2*trf_ip_reset+1*input_pw' 1.8 'input_delay2+2*trf_ip_reset+2*input_pw' 1.8 'input_delay2+3*trf_ip_reset+2*input_pw' 1.8 'input_delay2+3*trf_ip_reset+3*input_pw' 1.8  'input_delay2+4*trf_ip_reset+3*input_pw' 0 'input_delay2+4*trf_ip_reset+4*input_pw' 0 'input_delay2+5*trf_ip_reset+4*input_pw' 1.8 sim_end 1.8)
+vB1 b1 0 PWL(0 0 'input_delay3+0*trf_ip_reset+0*input_pw' 0 'input_delay3+1*trf_ip_reset+0*input_pw' 1.8 'input_delay3+1*trf_ip_reset+1*input_pw' 1.8 'input_delay3+2*trf_ip_reset+1*input_pw' 1.8 'input_delay3+2*trf_ip_reset+2*input_pw' 1.8 'input_delay3+3*trf_ip_reset+2*input_pw' 1.8 'input_delay3+3*trf_ip_reset+3*input_pw' 1.8  'input_delay3+4*trf_ip_reset+3*input_pw' 1.8 'input_delay3+4*trf_ip_reset+4*input_pw' 1.8 'input_delay3+5*trf_ip_reset+4*input_pw' 1.8 sim_end 1.8)
+vB0 b0 0 PWL(0 0 'input_delay4+0*trf_ip_reset+0*input_pw' 0 'input_delay4+1*trf_ip_reset+0*input_pw' 0 'input_delay4+1*trf_ip_reset+1*input_pw' 0 'input_delay4+2*trf_ip_reset+1*input_pw' 0 'input_delay4+2*trf_ip_reset+2*input_pw' 0 'input_delay4+3*trf_ip_reset+2*input_pw' 1.8 'input_delay4+3*trf_ip_reset+3*input_pw' 1.8  'input_delay4+4*trf_ip_reset+3*input_pw' 1.8 'input_delay4+4*trf_ip_reset+4*input_pw' 1.8 'input_delay4+5*trf_ip_reset+4*input_pw' 1.8 sim_end 1.8)
+
+*Sources on board - ONly nom_vdd value can be modified for power reduction using the parameters above.
+vVDDIO VDDIO 0 1.8
+vVDD VDD 0 nom_vdd
+vVSS VSS 0 0
+
+*Bondwire inductance - Not to be modified.
+LVSS1 vss1 VSS 2.5n
+LVSS2 vss2 VSS 2.5n
+LVSS3 vss3 VSS 2.5n
+LVSS4 vss4 VSS 2.5n
+LVSSIO1 vssio1 VSS 2.5n
+LVSSIO2 vssio2 VSS 2.5n
+LVSSIO3 vssio3 VSS 2.5n
+LVDDIO1 vddio1 VDDIO 5n
+LVDDIO2 vddio2 VDDIO 5n
+LVDDIO3 vddio3 VDDIO 5n
+LVDD1 vdd1 VDD 5n
+LVDD2 vdd2 VDD 5n
+LVDD3 vdd3 VDD 5n
+
+LA0 a0 a0_oc 4n
+LA1 a1 a1_oc 4n
+LA2 a2 a2_oc 4n
+LA3 a3 a3_oc 4n
+LB0 b0 b0_oc 4n
+LB1 b1 b1_oc 4n
+LB2 b2 b2_oc 4n
+LB3 b3 b3_oc 4n
+
+LP0 p0 p0_oc 4n
+LP1 p1 p1_oc 4n
+LP2 p2 p2_oc 4n
+LP3 p3 p3_oc 4n
+LP4 p4 p4_oc 4n
+LP5 p5 p5_oc 4n
+LP6 p6 p6_oc 4n
+LP7 p7 p7_oc 4n
+
+LRST reset rst_oc 4n
+LCLK clk clk_oc 2n
+
+*ESD capacitance - Not to be modified.
+CVDD1 vdd1 vss1 0.3p
+CVDD2 vdd2 vss2 0.3p
+CVDD3 vdd3 vss3 0.3p
+CVDDIO1 vdd1 vss1 0.4p
+CVDDIO2 vdd2 vss2 0.4p
+CVDDIO3 vdd3 vss3 0.4p
+
+CA0_OC a0_oc1 vss4 0.25p
+CA1_OC a1_oc1 vssio1 0.25p
+CA2_OC a2_oc1 vssio2 0.25p
+CA3_OC a3_oc1 vssio3 0.25p
+CB0_OC b0_oc1 vss1 0.25p
+CB1_OC b1_oc1 vss2 0.25p
+CB2_OC b2_oc1 vss3 0.25p
+CB3_OC b3_oc1 vss4 0.25p
+
+CP0_OC p0_oc1 vss4 0.25p
+CP1_OC p1_oc1 vssio1 0.25p
+CP2_OC p2_oc1 vssio2 0.25p
+CP3_OC p3_oc1 vssio3 0.25p
+CP4_OC p4_oc1 vss1 0.25p
+CP5_OC p5_oc1 vss2 0.25p
+CP6_OC p6_oc1 vss3 0.25p
+CP7_OC p7_oc1 vss4 0.25p
+
+
+CCLK_OC clk_oc1 vss1 0.3p
+CRST_OC rst_oc1 vss1 0.25p
+
+*Load Capacitance - Not to be modified.
+CA0 a0 VSS 20p
+CA1 a1 VSS 20p
+CA2 a2 VSS 20p
+CA3 a3 VSS 20p
+CB0 b0 VSS 20p
+CB1 b1 VSS 20p
+CB2 b2 VSS 20p
+CB3 b3 VSS 20p
+
+CP0 p0 VSS 20p
+CP1 p1 VSS 20p
+CP2 p2 VSS 20p
+CP3 p3 VSS 20p
+CP4 p4 VSS 20p
+CP5 p5 VSS 20p
+CP6 p6 VSS 20p
+CP7 p7 VSS 20p
+
+
+CCLK clk VSS 2p
+CRST reset VSS 20p
+
+.tran 0 sim_end
+
+*Power measurement functions - NOt to be modified.
+.meas tran avg_pwr_vdd avg p(vVDD) from=0.01ps to=sim_end
+.meas tran avg_pwr_vddio avg p(vVDDIO) from=0.01ps to=sim_end
+
+.probe tran i(ILOAD)
+.print tran vdd_net='v(vdd1) - v(vss1)'
+.print tran vddio_net='v(vddio1) - v(vssio1)'
+.option post
+.end

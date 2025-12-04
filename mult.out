@@ -1,0 +1,2377 @@
+Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice ece_482_proj_tb.cir
+ ****** PrimeSim HSPICE -- T-2022.06-SP1 linux64 (Aug 19 2022 7764626) ******
+  Copyright (c) 1986 - 2025 by Synopsys, Inc. All Rights Reserved.
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: ece_482_proj_tb.cir                                               
+  Command line options: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice ece_482_proj_tb.cir
+  Start time: Wed Dec  3 19:46:35 2025
+ lic:  
+ lic: FLEXlm: SDK_12.11.1 
+ lic: USER:   jstreck2             HOSTNAME: gelib-4e-41.ews.illinois.edu 
+ lic: HOSTID: 7e826af7             PID:      740373 
+ lic: Using FLEXlm license file: 
+ lic: 27005@synopsys.webstore.illinois.edu 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 15-apr-2026/2024.09 
+ lic: 1(in_use)/150(total) FLOATING license(s) on SERVER 27005@synopsys.webstore.illinois.edu 
+ lic:   
+  **warning** (/class/ece482/gpdk045_mos_details:124) Model g45n1svt device geometries will not be checked against the limits set by lmin, lmax, wmin and wmax. To enable this check, add a period(.) to the model name(i.e. enable model selector).
+  **warning** (ece_482_proj_tb.cir:361)   **warning** Found illegal characters s, truncated as number 0n
+1****** PrimeSim HSPICE -- T-2022.06-SP1 linux64 (Aug 19 2022 7764626) ******
+ ******  
+ ece 482 project testbench
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xi117.                          level_shifter_1_1_to_1_8
+                                                                 1.00 
+        2 xi116.                          level_shifter_1_1_to_1_8
+                                                                 1.00 
+        3 xi115.                          level_shifter_1_1_to_1_8
+                                                                 1.00 
+        4 xi114.                          level_shifter_1_1_to_1_8
+                                                                 1.00 
+        5 xi113.                          level_shifter_1_1_to_1_8
+                                                                 1.00 
+        6 xi112.                          level_shifter_1_1_to_1_8
+                                                                 1.00 
+        7 xi111.                          level_shifter_1_1_to_1_8
+                                                                 1.00 
+        8 xi110.                          level_shifter_1_1_to_1_8
+                                                                 1.00 
+        9 xi126.                          decap3x3x2         1.00 
+       10 xi133.                          decap3x3x2         1.00 
+       11 xi134.                          decap3x3x2         1.00 
+       12 xi131.                          decap3x3x2         1.00 
+       13 xi132.                          decap3x3x2         1.00 
+       14 xi130.                          decap3x3x2         1.00 
+       15 xi129.                          decap3x3x2         1.00 
+       16 xi128.                          decap3x3x2         1.00 
+       17 xi127.                          decap3x3x2         1.00 
+       18 xi29.                           half_adder         1.00 
+       19 xi20.                           half_adder         1.00 
+       20 xi15.                           half_adder         1.00 
+       21 xi137.                          half_adder         1.00 
+       22 xi32.                           full_adder         1.00 
+       23 xi31.                           full_adder         1.00 
+       24 xi30.                           full_adder         1.00 
+       25 xi28.                           full_adder         1.00 
+       26 xi22.                           full_adder         1.00 
+       27 xi21.                           full_adder         1.00 
+       28 xi14.                           full_adder         1.00 
+       29 xi13.                           full_adder         1.00 
+       30 xi125.                          inverter_minsize   1.00 
+       31 xi124.                          inverter_minsize   1.00 
+       32 xi123.                          inverter_minsize   1.00 
+       33 xi122.                          inverter_minsize   1.00 
+       34 xi121.                          inverter_minsize   1.00 
+       35 xi120.                          inverter_minsize   1.00 
+       36 xi119.                          inverter_minsize   1.00 
+       37 xi118.                          inverter_minsize   1.00 
+       38 xi90.                           inverter_minsize   1.00 
+       39 xi44.                           and_minsize        1.00 
+       40 xi45.                           and_minsize        1.00 
+       41 xi42.                           and_minsize        1.00 
+       42 xi43.                           and_minsize        1.00 
+       43 xi49.                           and_minsize        1.00 
+       44 xi52.                           and_minsize        1.00 
+       45 xi51.                           and_minsize        1.00 
+       46 xi50.                           and_minsize        1.00 
+       47 xi53.                           and_minsize        1.00 
+       48 xi54.                           and_minsize        1.00 
+       49 xi55.                           and_minsize        1.00 
+       50 xi56.                           and_minsize        1.00 
+       51 xi48.                           and_minsize        1.00 
+       52 xi46.                           and_minsize        1.00 
+       53 xi47.                           and_minsize        1.00 
+       54 xi135.                          and_minsize        1.00 
+       55 xi75.                           level_shifter_1_8_to_1_1
+                                                                 1.00 
+       56 xi74.                           level_shifter_1_8_to_1_1
+                                                                 1.00 
+       57 xi73.                           level_shifter_1_8_to_1_1
+                                                                 1.00 
+       58 xi72.                           level_shifter_1_8_to_1_1
+                                                                 1.00 
+       59 xi71.                           level_shifter_1_8_to_1_1
+                                                                 1.00 
+       60 xi70.                           level_shifter_1_8_to_1_1
+                                                                 1.00 
+       61 xi69.                           level_shifter_1_8_to_1_1
+                                                                 1.00 
+       62 xi68.                           level_shifter_1_8_to_1_1
+                                                                 1.00 
+       63 xi67.                           level_shifter_1_8_to_1_1
+                                                                 1.00 
+       64 xi84.                           inverter_1_8_v     1.00 
+       65 xi83.                           inverter_1_8_v     1.00 
+       66 xi82.                           inverter_1_8_v     1.00 
+       67 xi81.                           inverter_1_8_v     1.00 
+       68 xi80.                           inverter_1_8_v     1.00 
+       69 xi79.                           inverter_1_8_v     1.00 
+       70 xi78.                           inverter_1_8_v     1.00 
+       71 xi77.                           inverter_1_8_v     1.00 
+       72 xi76.                           inverter_1_8_v     1.00 
+       73 xi109.                          c2mos_register     1.00 
+       74 xi108.                          c2mos_register     1.00 
+       75 xi107.                          c2mos_register     1.00 
+       76 xi106.                          c2mos_register     1.00 
+       77 xi105.                          c2mos_register     1.00 
+       78 xi104.                          c2mos_register     1.00 
+       79 xi103.                          c2mos_register     1.00 
+       80 xi102.                          c2mos_register     1.00 
+       81 xi101.                          c2mos_register     1.00 
+       82 xi100.                          c2mos_register     1.00 
+       83 xi99.                           c2mos_register     1.00 
+       84 xi98.                           c2mos_register     1.00 
+       85 xi97.                           c2mos_register     1.00 
+       86 xi96.                           c2mos_register     1.00 
+       87 xi95.                           c2mos_register     1.00 
+       88 xi94.                           c2mos_register     1.00 
+       89 xi93.                           c2mos_register     1.00 
+       90 xi92.                           c2mos_register     1.00 
+       91 xi91.                           c2mos_register     1.00 
+       92 xi89.                           c2mos_register     1.00 
+       93 xi88.                           c2mos_register     1.00 
+       94 xi87.                           c2mos_register     1.00 
+       95 xi86.                           c2mos_register     1.00 
+       96 xi85.                           c2mos_register     1.00 
+       97 xi66.                           c2mos_register     1.00 
+       98 xi65.                           c2mos_register     1.00 
+       99 xi64.                           c2mos_register     1.00 
+      100 xi63.                           c2mos_register     1.00 
+      101 xi60.                           c2mos_register     1.00 
+      102 xi62.                           c2mos_register     1.00 
+      103 xi61.                           c2mos_register     1.00 
+      104 xi57.                           c2mos_register     1.00 
+      105 xi7.                            c2mos_register     1.00 
+      106 xi6.                            c2mos_register     1.00 
+      107 xi5.                            c2mos_register     1.00 
+      108 xi4.                            c2mos_register     1.00 
+      109 xi3.                            c2mos_register     1.00 
+      110 xi2.                            c2mos_register     1.00 
+      111 xi1.                            c2mos_register     1.00 
+      112 xi0.                            c2mos_register     1.00 
+      113 xi153.                          superbuffer_4      1.00 
+      114 xi152.                          superbuffer_4      1.00 
+      115 xi151.                          superbuffer_4      1.00 
+      116 xi150.                          superbuffer_4      1.00 
+      117 xi149.                          superbuffer_4      1.00 
+      118 xi148.                          superbuffer_4      1.00 
+      119 xi147.                          superbuffer_4      1.00 
+      120 xi146.                          superbuffer_4      1.00 
+      121 xi126.xi1<0>.                   unitcell_decap     1.00 
+      122 xi126.xi1<1>.                   unitcell_decap     1.00 
+      123 xi126.xi1<2>.                   unitcell_decap     1.00 
+      124 xi126.xi1<3>.                   unitcell_decap     1.00 
+      125 xi126.xi1<4>.                   unitcell_decap     1.00 
+      126 xi126.xi1<5>.                   unitcell_decap     1.00 
+      127 xi126.xi1<6>.                   unitcell_decap     1.00 
+      128 xi126.xi1<7>.                   unitcell_decap     1.00 
+      129 xi126.xi1<8>.                   unitcell_decap     1.00 
+      130 xi126.xi1<9>.                   unitcell_decap     1.00 
+      131 xi126.xi1<10>.                  unitcell_decap     1.00 
+      132 xi126.xi1<11>.                  unitcell_decap     1.00 
+      133 xi126.xi1<12>.                  unitcell_decap     1.00 
+      134 xi126.xi1<13>.                  unitcell_decap     1.00 
+      135 xi126.xi1<14>.                  unitcell_decap     1.00 
+      136 xi126.xi1<15>.                  unitcell_decap     1.00 
+      137 xi126.xi1<16>.                  unitcell_decap     1.00 
+      138 xi126.xi1<17>.                  unitcell_decap     1.00 
+      139 xi126.xi1<18>.                  unitcell_decap     1.00 
+      140 xi126.xi1<19>.                  unitcell_decap     1.00 
+      141 xi126.xi1<20>.                  unitcell_decap     1.00 
+      142 xi126.xi1<21>.                  unitcell_decap     1.00 
+      143 xi126.xi1<22>.                  unitcell_decap     1.00 
+      144 xi126.xi1<23>.                  unitcell_decap     1.00 
+      145 xi126.xi1<24>.                  unitcell_decap     1.00 
+      146 xi126.xi1<25>.                  unitcell_decap     1.00 
+      147 xi126.xi1<26>.                  unitcell_decap     1.00 
+      148 xi126.xi1<27>.                  unitcell_decap     1.00 
+      149 xi126.xi1<28>.                  unitcell_decap     1.00 
+      150 xi126.xi1<29>.                  unitcell_decap     1.00 
+      151 xi126.xi1<30>.                  unitcell_decap     1.00 
+      152 xi126.xi1<31>.                  unitcell_decap     1.00 
+      153 xi126.xi1<32>.                  unitcell_decap     1.00 
+      154 xi126.xi1<33>.                  unitcell_decap     1.00 
+      155 xi126.xi1<34>.                  unitcell_decap     1.00 
+      156 xi126.xi1<35>.                  unitcell_decap     1.00 
+      157 xi126.xi1<36>.                  unitcell_decap     1.00 
+      158 xi126.xi1<37>.                  unitcell_decap     1.00 
+      159 xi126.xi1<38>.                  unitcell_decap     1.00 
+      160 xi126.xi1<39>.                  unitcell_decap     1.00 
+      161 xi44.xi0.                       inverter_minsize   1.00 
+      162 xi45.xi0.                       inverter_minsize   1.00 
+      163 xi42.xi0.                       inverter_minsize   1.00 
+      164 xi43.xi0.                       inverter_minsize   1.00 
+      165 xi49.xi0.                       inverter_minsize   1.00 
+      166 xi52.xi0.                       inverter_minsize   1.00 
+      167 xi51.xi0.                       inverter_minsize   1.00 
+      168 xi50.xi0.                       inverter_minsize   1.00 
+      169 xi53.xi0.                       inverter_minsize   1.00 
+      170 xi54.xi0.                       inverter_minsize   1.00 
+      171 xi55.xi0.                       inverter_minsize   1.00 
+      172 xi56.xi0.                       inverter_minsize   1.00 
+      173 xi48.xi0.                       inverter_minsize   1.00 
+      174 xi46.xi0.                       inverter_minsize   1.00 
+      175 xi47.xi0.                       inverter_minsize   1.00 
+      176 xi135.xi0.                      inverter_minsize   1.00 
+      177 xi109.xi0.                      and_minsize        1.00 
+      178 xi109.xi1.                      inverter_minsize   1.00 
+      179 xi108.xi0.                      and_minsize        1.00 
+      180 xi108.xi1.                      inverter_minsize   1.00 
+      181 xi107.xi0.                      and_minsize        1.00 
+      182 xi107.xi1.                      inverter_minsize   1.00 
+      183 xi106.xi0.                      and_minsize        1.00 
+      184 xi106.xi1.                      inverter_minsize   1.00 
+      185 xi105.xi0.                      and_minsize        1.00 
+      186 xi105.xi1.                      inverter_minsize   1.00 
+      187 xi104.xi0.                      and_minsize        1.00 
+      188 xi104.xi1.                      inverter_minsize   1.00 
+      189 xi103.xi0.                      and_minsize        1.00 
+      190 xi103.xi1.                      inverter_minsize   1.00 
+      191 xi102.xi0.                      and_minsize        1.00 
+      192 xi102.xi1.                      inverter_minsize   1.00 
+      193 xi101.xi0.                      and_minsize        1.00 
+      194 xi101.xi1.                      inverter_minsize   1.00 
+      195 xi100.xi0.                      and_minsize        1.00 
+      196 xi100.xi1.                      inverter_minsize   1.00 
+      197 xi99.xi0.                       and_minsize        1.00 
+      198 xi99.xi1.                       inverter_minsize   1.00 
+      199 xi98.xi0.                       and_minsize        1.00 
+      200 xi98.xi1.                       inverter_minsize   1.00 
+      201 xi97.xi0.                       and_minsize        1.00 
+      202 xi97.xi1.                       inverter_minsize   1.00 
+      203 xi96.xi0.                       and_minsize        1.00 
+      204 xi96.xi1.                       inverter_minsize   1.00 
+      205 xi95.xi0.                       and_minsize        1.00 
+      206 xi95.xi1.                       inverter_minsize   1.00 
+      207 xi94.xi0.                       and_minsize        1.00 
+      208 xi94.xi1.                       inverter_minsize   1.00 
+      209 xi93.xi0.                       and_minsize        1.00 
+      210 xi93.xi1.                       inverter_minsize   1.00 
+      211 xi92.xi0.                       and_minsize        1.00 
+      212 xi92.xi1.                       inverter_minsize   1.00 
+      213 xi91.xi0.                       and_minsize        1.00 
+      214 xi91.xi1.                       inverter_minsize   1.00 
+      215 xi89.xi0.                       and_minsize        1.00 
+      216 xi89.xi1.                       inverter_minsize   1.00 
+      217 xi88.xi0.                       and_minsize        1.00 
+      218 xi88.xi1.                       inverter_minsize   1.00 
+      219 xi87.xi0.                       and_minsize        1.00 
+      220 xi87.xi1.                       inverter_minsize   1.00 
+      221 xi86.xi0.                       and_minsize        1.00 
+      222 xi86.xi1.                       inverter_minsize   1.00 
+      223 xi85.xi0.                       and_minsize        1.00 
+      224 xi85.xi1.                       inverter_minsize   1.00 
+      225 xi66.xi0.                       and_minsize        1.00 
+      226 xi66.xi1.                       inverter_minsize   1.00 
+      227 xi65.xi0.                       and_minsize        1.00 
+      228 xi65.xi1.                       inverter_minsize   1.00 
+      229 xi64.xi0.                       and_minsize        1.00 
+      230 xi64.xi1.                       inverter_minsize   1.00 
+      231 xi63.xi0.                       and_minsize        1.00 
+      232 xi63.xi1.                       inverter_minsize   1.00 
+      233 xi60.xi0.                       and_minsize        1.00 
+      234 xi60.xi1.                       inverter_minsize   1.00 
+      235 xi62.xi0.                       and_minsize        1.00 
+      236 xi62.xi1.                       inverter_minsize   1.00 
+      237 xi61.xi0.                       and_minsize        1.00 
+      238 xi61.xi1.                       inverter_minsize   1.00 
+      239 xi57.xi0.                       and_minsize        1.00 
+      240 xi57.xi1.                       inverter_minsize   1.00 
+      241 xi7.xi0.                        and_minsize        1.00 
+      242 xi7.xi1.                        inverter_minsize   1.00 
+      243 xi6.xi0.                        and_minsize        1.00 
+      244 xi6.xi1.                        inverter_minsize   1.00 
+      245 xi5.xi0.                        and_minsize        1.00 
+      246 xi5.xi1.                        inverter_minsize   1.00 
+      247 xi4.xi0.                        and_minsize        1.00 
+      248 xi4.xi1.                        inverter_minsize   1.00 
+      249 xi3.xi0.                        and_minsize        1.00 
+      250 xi3.xi1.                        inverter_minsize   1.00 
+      251 xi2.xi0.                        and_minsize        1.00 
+      252 xi2.xi1.                        inverter_minsize   1.00 
+      253 xi1.xi0.                        and_minsize        1.00 
+      254 xi1.xi1.                        inverter_minsize   1.00 
+      255 xi0.xi0.                        and_minsize        1.00 
+      256 xi0.xi1.                        inverter_minsize   1.00 
+      257 xi109.xi0.xi0.                  inverter_minsize   1.00 
+      258 xi108.xi0.xi0.                  inverter_minsize   1.00 
+      259 xi107.xi0.xi0.                  inverter_minsize   1.00 
+      260 xi106.xi0.xi0.                  inverter_minsize   1.00 
+      261 xi105.xi0.xi0.                  inverter_minsize   1.00 
+      262 xi104.xi0.xi0.                  inverter_minsize   1.00 
+      263 xi103.xi0.xi0.                  inverter_minsize   1.00 
+      264 xi102.xi0.xi0.                  inverter_minsize   1.00 
+      265 xi101.xi0.xi0.                  inverter_minsize   1.00 
+      266 xi100.xi0.xi0.                  inverter_minsize   1.00 
+      267 xi99.xi0.xi0.                   inverter_minsize   1.00 
+      268 xi98.xi0.xi0.                   inverter_minsize   1.00 
+      269 xi97.xi0.xi0.                   inverter_minsize   1.00 
+      270 xi96.xi0.xi0.                   inverter_minsize   1.00 
+      271 xi95.xi0.xi0.                   inverter_minsize   1.00 
+      272 xi94.xi0.xi0.                   inverter_minsize   1.00 
+      273 xi93.xi0.xi0.                   inverter_minsize   1.00 
+      274 xi92.xi0.xi0.                   inverter_minsize   1.00 
+      275 xi91.xi0.xi0.                   inverter_minsize   1.00 
+      276 xi89.xi0.xi0.                   inverter_minsize   1.00 
+      277 xi88.xi0.xi0.                   inverter_minsize   1.00 
+      278 xi87.xi0.xi0.                   inverter_minsize   1.00 
+      279 xi86.xi0.xi0.                   inverter_minsize   1.00 
+      280 xi85.xi0.xi0.                   inverter_minsize   1.00 
+      281 xi66.xi0.xi0.                   inverter_minsize   1.00 
+      282 xi65.xi0.xi0.                   inverter_minsize   1.00 
+      283 xi64.xi0.xi0.                   inverter_minsize   1.00 
+      284 xi63.xi0.xi0.                   inverter_minsize   1.00 
+      285 xi60.xi0.xi0.                   inverter_minsize   1.00 
+      286 xi62.xi0.xi0.                   inverter_minsize   1.00 
+      287 xi61.xi0.xi0.                   inverter_minsize   1.00 
+      288 xi57.xi0.xi0.                   inverter_minsize   1.00 
+      289 xi7.xi0.xi0.                    inverter_minsize   1.00 
+      290 xi6.xi0.xi0.                    inverter_minsize   1.00 
+      291 xi5.xi0.xi0.                    inverter_minsize   1.00 
+      292 xi4.xi0.xi0.                    inverter_minsize   1.00 
+      293 xi3.xi0.xi0.                    inverter_minsize   1.00 
+      294 xi2.xi0.xi0.                    inverter_minsize   1.00 
+      295 xi1.xi0.xi0.                    inverter_minsize   1.00 
+      296 xi0.xi0.xi0.                    inverter_minsize   1.00 
+      297 xi133.xi1<0>.                   unitcell_decap     1.00 
+      298 xi134.xi1<0>.                   unitcell_decap     1.00 
+      299 xi131.xi1<0>.                   unitcell_decap     1.00 
+      300 xi132.xi1<0>.                   unitcell_decap     1.00 
+      301 xi130.xi1<0>.                   unitcell_decap     1.00 
+      302 xi129.xi1<0>.                   unitcell_decap     1.00 
+      303 xi128.xi1<0>.                   unitcell_decap     1.00 
+      304 xi127.xi1<0>.                   unitcell_decap     1.00 
+      305 xi133.xi1<1>.                   unitcell_decap     1.00 
+      306 xi134.xi1<1>.                   unitcell_decap     1.00 
+      307 xi131.xi1<1>.                   unitcell_decap     1.00 
+      308 xi132.xi1<1>.                   unitcell_decap     1.00 
+      309 xi130.xi1<1>.                   unitcell_decap     1.00 
+      310 xi129.xi1<1>.                   unitcell_decap     1.00 
+      311 xi128.xi1<1>.                   unitcell_decap     1.00 
+      312 xi127.xi1<1>.                   unitcell_decap     1.00 
+      313 xi133.xi1<2>.                   unitcell_decap     1.00 
+      314 xi134.xi1<2>.                   unitcell_decap     1.00 
+      315 xi131.xi1<2>.                   unitcell_decap     1.00 
+      316 xi132.xi1<2>.                   unitcell_decap     1.00 
+      317 xi130.xi1<2>.                   unitcell_decap     1.00 
+      318 xi129.xi1<2>.                   unitcell_decap     1.00 
+      319 xi128.xi1<2>.                   unitcell_decap     1.00 
+      320 xi127.xi1<2>.                   unitcell_decap     1.00 
+      321 xi133.xi1<3>.                   unitcell_decap     1.00 
+      322 xi134.xi1<3>.                   unitcell_decap     1.00 
+      323 xi131.xi1<3>.                   unitcell_decap     1.00 
+      324 xi132.xi1<3>.                   unitcell_decap     1.00 
+      325 xi130.xi1<3>.                   unitcell_decap     1.00 
+      326 xi129.xi1<3>.                   unitcell_decap     1.00 
+      327 xi128.xi1<3>.                   unitcell_decap     1.00 
+      328 xi127.xi1<3>.                   unitcell_decap     1.00 
+      329 xi133.xi1<4>.                   unitcell_decap     1.00 
+      330 xi134.xi1<4>.                   unitcell_decap     1.00 
+      331 xi131.xi1<4>.                   unitcell_decap     1.00 
+      332 xi132.xi1<4>.                   unitcell_decap     1.00 
+      333 xi130.xi1<4>.                   unitcell_decap     1.00 
+      334 xi129.xi1<4>.                   unitcell_decap     1.00 
+      335 xi128.xi1<4>.                   unitcell_decap     1.00 
+      336 xi127.xi1<4>.                   unitcell_decap     1.00 
+      337 xi133.xi1<5>.                   unitcell_decap     1.00 
+      338 xi134.xi1<5>.                   unitcell_decap     1.00 
+      339 xi131.xi1<5>.                   unitcell_decap     1.00 
+      340 xi132.xi1<5>.                   unitcell_decap     1.00 
+      341 xi130.xi1<5>.                   unitcell_decap     1.00 
+      342 xi129.xi1<5>.                   unitcell_decap     1.00 
+      343 xi128.xi1<5>.                   unitcell_decap     1.00 
+      344 xi127.xi1<5>.                   unitcell_decap     1.00 
+      345 xi133.xi1<6>.                   unitcell_decap     1.00 
+      346 xi134.xi1<6>.                   unitcell_decap     1.00 
+      347 xi131.xi1<6>.                   unitcell_decap     1.00 
+      348 xi132.xi1<6>.                   unitcell_decap     1.00 
+      349 xi130.xi1<6>.                   unitcell_decap     1.00 
+      350 xi129.xi1<6>.                   unitcell_decap     1.00 
+      351 xi128.xi1<6>.                   unitcell_decap     1.00 
+      352 xi127.xi1<6>.                   unitcell_decap     1.00 
+      353 xi133.xi1<7>.                   unitcell_decap     1.00 
+      354 xi134.xi1<7>.                   unitcell_decap     1.00 
+      355 xi131.xi1<7>.                   unitcell_decap     1.00 
+      356 xi132.xi1<7>.                   unitcell_decap     1.00 
+      357 xi130.xi1<7>.                   unitcell_decap     1.00 
+      358 xi129.xi1<7>.                   unitcell_decap     1.00 
+      359 xi128.xi1<7>.                   unitcell_decap     1.00 
+      360 xi127.xi1<7>.                   unitcell_decap     1.00 
+      361 xi133.xi1<8>.                   unitcell_decap     1.00 
+      362 xi134.xi1<8>.                   unitcell_decap     1.00 
+      363 xi131.xi1<8>.                   unitcell_decap     1.00 
+      364 xi132.xi1<8>.                   unitcell_decap     1.00 
+      365 xi130.xi1<8>.                   unitcell_decap     1.00 
+      366 xi129.xi1<8>.                   unitcell_decap     1.00 
+      367 xi128.xi1<8>.                   unitcell_decap     1.00 
+      368 xi127.xi1<8>.                   unitcell_decap     1.00 
+      369 xi133.xi1<9>.                   unitcell_decap     1.00 
+      370 xi134.xi1<9>.                   unitcell_decap     1.00 
+      371 xi131.xi1<9>.                   unitcell_decap     1.00 
+      372 xi132.xi1<9>.                   unitcell_decap     1.00 
+      373 xi130.xi1<9>.                   unitcell_decap     1.00 
+      374 xi129.xi1<9>.                   unitcell_decap     1.00 
+      375 xi128.xi1<9>.                   unitcell_decap     1.00 
+      376 xi127.xi1<9>.                   unitcell_decap     1.00 
+      377 xi133.xi1<10>.                  unitcell_decap     1.00 
+      378 xi134.xi1<10>.                  unitcell_decap     1.00 
+      379 xi131.xi1<10>.                  unitcell_decap     1.00 
+      380 xi132.xi1<10>.                  unitcell_decap     1.00 
+      381 xi130.xi1<10>.                  unitcell_decap     1.00 
+      382 xi129.xi1<10>.                  unitcell_decap     1.00 
+      383 xi128.xi1<10>.                  unitcell_decap     1.00 
+      384 xi127.xi1<10>.                  unitcell_decap     1.00 
+      385 xi133.xi1<11>.                  unitcell_decap     1.00 
+      386 xi134.xi1<11>.                  unitcell_decap     1.00 
+      387 xi131.xi1<11>.                  unitcell_decap     1.00 
+      388 xi132.xi1<11>.                  unitcell_decap     1.00 
+      389 xi130.xi1<11>.                  unitcell_decap     1.00 
+      390 xi129.xi1<11>.                  unitcell_decap     1.00 
+      391 xi128.xi1<11>.                  unitcell_decap     1.00 
+      392 xi127.xi1<11>.                  unitcell_decap     1.00 
+      393 xi133.xi1<12>.                  unitcell_decap     1.00 
+      394 xi134.xi1<12>.                  unitcell_decap     1.00 
+      395 xi131.xi1<12>.                  unitcell_decap     1.00 
+      396 xi132.xi1<12>.                  unitcell_decap     1.00 
+      397 xi130.xi1<12>.                  unitcell_decap     1.00 
+      398 xi129.xi1<12>.                  unitcell_decap     1.00 
+      399 xi128.xi1<12>.                  unitcell_decap     1.00 
+      400 xi127.xi1<12>.                  unitcell_decap     1.00 
+      401 xi133.xi1<13>.                  unitcell_decap     1.00 
+      402 xi134.xi1<13>.                  unitcell_decap     1.00 
+      403 xi131.xi1<13>.                  unitcell_decap     1.00 
+      404 xi132.xi1<13>.                  unitcell_decap     1.00 
+      405 xi130.xi1<13>.                  unitcell_decap     1.00 
+      406 xi129.xi1<13>.                  unitcell_decap     1.00 
+      407 xi128.xi1<13>.                  unitcell_decap     1.00 
+      408 xi127.xi1<13>.                  unitcell_decap     1.00 
+      409 xi133.xi1<14>.                  unitcell_decap     1.00 
+      410 xi134.xi1<14>.                  unitcell_decap     1.00 
+      411 xi131.xi1<14>.                  unitcell_decap     1.00 
+      412 xi132.xi1<14>.                  unitcell_decap     1.00 
+      413 xi130.xi1<14>.                  unitcell_decap     1.00 
+      414 xi129.xi1<14>.                  unitcell_decap     1.00 
+      415 xi128.xi1<14>.                  unitcell_decap     1.00 
+      416 xi127.xi1<14>.                  unitcell_decap     1.00 
+      417 xi133.xi1<15>.                  unitcell_decap     1.00 
+      418 xi134.xi1<15>.                  unitcell_decap     1.00 
+      419 xi131.xi1<15>.                  unitcell_decap     1.00 
+      420 xi132.xi1<15>.                  unitcell_decap     1.00 
+      421 xi130.xi1<15>.                  unitcell_decap     1.00 
+      422 xi129.xi1<15>.                  unitcell_decap     1.00 
+      423 xi128.xi1<15>.                  unitcell_decap     1.00 
+      424 xi127.xi1<15>.                  unitcell_decap     1.00 
+      425 xi133.xi1<16>.                  unitcell_decap     1.00 
+      426 xi134.xi1<16>.                  unitcell_decap     1.00 
+      427 xi131.xi1<16>.                  unitcell_decap     1.00 
+      428 xi132.xi1<16>.                  unitcell_decap     1.00 
+      429 xi130.xi1<16>.                  unitcell_decap     1.00 
+      430 xi129.xi1<16>.                  unitcell_decap     1.00 
+      431 xi128.xi1<16>.                  unitcell_decap     1.00 
+      432 xi127.xi1<16>.                  unitcell_decap     1.00 
+      433 xi133.xi1<17>.                  unitcell_decap     1.00 
+      434 xi134.xi1<17>.                  unitcell_decap     1.00 
+      435 xi131.xi1<17>.                  unitcell_decap     1.00 
+      436 xi132.xi1<17>.                  unitcell_decap     1.00 
+      437 xi130.xi1<17>.                  unitcell_decap     1.00 
+      438 xi129.xi1<17>.                  unitcell_decap     1.00 
+      439 xi128.xi1<17>.                  unitcell_decap     1.00 
+      440 xi127.xi1<17>.                  unitcell_decap     1.00 
+      441 xi133.xi1<18>.                  unitcell_decap     1.00 
+      442 xi134.xi1<18>.                  unitcell_decap     1.00 
+      443 xi131.xi1<18>.                  unitcell_decap     1.00 
+      444 xi132.xi1<18>.                  unitcell_decap     1.00 
+      445 xi130.xi1<18>.                  unitcell_decap     1.00 
+      446 xi129.xi1<18>.                  unitcell_decap     1.00 
+      447 xi128.xi1<18>.                  unitcell_decap     1.00 
+      448 xi127.xi1<18>.                  unitcell_decap     1.00 
+      449 xi133.xi1<19>.                  unitcell_decap     1.00 
+      450 xi134.xi1<19>.                  unitcell_decap     1.00 
+      451 xi131.xi1<19>.                  unitcell_decap     1.00 
+      452 xi132.xi1<19>.                  unitcell_decap     1.00 
+      453 xi130.xi1<19>.                  unitcell_decap     1.00 
+      454 xi129.xi1<19>.                  unitcell_decap     1.00 
+      455 xi128.xi1<19>.                  unitcell_decap     1.00 
+      456 xi127.xi1<19>.                  unitcell_decap     1.00 
+      457 xi133.xi1<20>.                  unitcell_decap     1.00 
+      458 xi134.xi1<20>.                  unitcell_decap     1.00 
+      459 xi131.xi1<20>.                  unitcell_decap     1.00 
+      460 xi132.xi1<20>.                  unitcell_decap     1.00 
+      461 xi130.xi1<20>.                  unitcell_decap     1.00 
+      462 xi129.xi1<20>.                  unitcell_decap     1.00 
+      463 xi128.xi1<20>.                  unitcell_decap     1.00 
+      464 xi127.xi1<20>.                  unitcell_decap     1.00 
+      465 xi133.xi1<21>.                  unitcell_decap     1.00 
+      466 xi134.xi1<21>.                  unitcell_decap     1.00 
+      467 xi131.xi1<21>.                  unitcell_decap     1.00 
+      468 xi132.xi1<21>.                  unitcell_decap     1.00 
+      469 xi130.xi1<21>.                  unitcell_decap     1.00 
+      470 xi129.xi1<21>.                  unitcell_decap     1.00 
+      471 xi128.xi1<21>.                  unitcell_decap     1.00 
+      472 xi127.xi1<21>.                  unitcell_decap     1.00 
+      473 xi133.xi1<22>.                  unitcell_decap     1.00 
+      474 xi134.xi1<22>.                  unitcell_decap     1.00 
+      475 xi131.xi1<22>.                  unitcell_decap     1.00 
+      476 xi132.xi1<22>.                  unitcell_decap     1.00 
+      477 xi130.xi1<22>.                  unitcell_decap     1.00 
+      478 xi129.xi1<22>.                  unitcell_decap     1.00 
+      479 xi128.xi1<22>.                  unitcell_decap     1.00 
+      480 xi127.xi1<22>.                  unitcell_decap     1.00 
+      481 xi133.xi1<23>.                  unitcell_decap     1.00 
+      482 xi134.xi1<23>.                  unitcell_decap     1.00 
+      483 xi131.xi1<23>.                  unitcell_decap     1.00 
+      484 xi132.xi1<23>.                  unitcell_decap     1.00 
+      485 xi130.xi1<23>.                  unitcell_decap     1.00 
+      486 xi129.xi1<23>.                  unitcell_decap     1.00 
+      487 xi128.xi1<23>.                  unitcell_decap     1.00 
+      488 xi127.xi1<23>.                  unitcell_decap     1.00 
+      489 xi133.xi1<24>.                  unitcell_decap     1.00 
+      490 xi134.xi1<24>.                  unitcell_decap     1.00 
+      491 xi131.xi1<24>.                  unitcell_decap     1.00 
+      492 xi132.xi1<24>.                  unitcell_decap     1.00 
+      493 xi130.xi1<24>.                  unitcell_decap     1.00 
+      494 xi129.xi1<24>.                  unitcell_decap     1.00 
+      495 xi128.xi1<24>.                  unitcell_decap     1.00 
+      496 xi127.xi1<24>.                  unitcell_decap     1.00 
+      497 xi133.xi1<25>.                  unitcell_decap     1.00 
+      498 xi134.xi1<25>.                  unitcell_decap     1.00 
+      499 xi131.xi1<25>.                  unitcell_decap     1.00 
+      500 xi132.xi1<25>.                  unitcell_decap     1.00 
+      501 xi130.xi1<25>.                  unitcell_decap     1.00 
+      502 xi129.xi1<25>.                  unitcell_decap     1.00 
+      503 xi128.xi1<25>.                  unitcell_decap     1.00 
+      504 xi127.xi1<25>.                  unitcell_decap     1.00 
+      505 xi133.xi1<26>.                  unitcell_decap     1.00 
+      506 xi134.xi1<26>.                  unitcell_decap     1.00 
+      507 xi131.xi1<26>.                  unitcell_decap     1.00 
+      508 xi132.xi1<26>.                  unitcell_decap     1.00 
+      509 xi130.xi1<26>.                  unitcell_decap     1.00 
+      510 xi129.xi1<26>.                  unitcell_decap     1.00 
+      511 xi128.xi1<26>.                  unitcell_decap     1.00 
+      512 xi127.xi1<26>.                  unitcell_decap     1.00 
+      513 xi133.xi1<27>.                  unitcell_decap     1.00 
+      514 xi134.xi1<27>.                  unitcell_decap     1.00 
+      515 xi131.xi1<27>.                  unitcell_decap     1.00 
+      516 xi132.xi1<27>.                  unitcell_decap     1.00 
+      517 xi130.xi1<27>.                  unitcell_decap     1.00 
+      518 xi129.xi1<27>.                  unitcell_decap     1.00 
+      519 xi128.xi1<27>.                  unitcell_decap     1.00 
+      520 xi127.xi1<27>.                  unitcell_decap     1.00 
+      521 xi133.xi1<28>.                  unitcell_decap     1.00 
+      522 xi134.xi1<28>.                  unitcell_decap     1.00 
+      523 xi131.xi1<28>.                  unitcell_decap     1.00 
+      524 xi132.xi1<28>.                  unitcell_decap     1.00 
+      525 xi130.xi1<28>.                  unitcell_decap     1.00 
+      526 xi129.xi1<28>.                  unitcell_decap     1.00 
+      527 xi128.xi1<28>.                  unitcell_decap     1.00 
+      528 xi127.xi1<28>.                  unitcell_decap     1.00 
+      529 xi133.xi1<29>.                  unitcell_decap     1.00 
+      530 xi134.xi1<29>.                  unitcell_decap     1.00 
+      531 xi131.xi1<29>.                  unitcell_decap     1.00 
+      532 xi132.xi1<29>.                  unitcell_decap     1.00 
+      533 xi130.xi1<29>.                  unitcell_decap     1.00 
+      534 xi129.xi1<29>.                  unitcell_decap     1.00 
+      535 xi128.xi1<29>.                  unitcell_decap     1.00 
+      536 xi127.xi1<29>.                  unitcell_decap     1.00 
+      537 xi133.xi1<30>.                  unitcell_decap     1.00 
+      538 xi134.xi1<30>.                  unitcell_decap     1.00 
+      539 xi131.xi1<30>.                  unitcell_decap     1.00 
+      540 xi132.xi1<30>.                  unitcell_decap     1.00 
+      541 xi130.xi1<30>.                  unitcell_decap     1.00 
+      542 xi129.xi1<30>.                  unitcell_decap     1.00 
+      543 xi128.xi1<30>.                  unitcell_decap     1.00 
+      544 xi127.xi1<30>.                  unitcell_decap     1.00 
+      545 xi133.xi1<31>.                  unitcell_decap     1.00 
+      546 xi134.xi1<31>.                  unitcell_decap     1.00 
+      547 xi131.xi1<31>.                  unitcell_decap     1.00 
+      548 xi132.xi1<31>.                  unitcell_decap     1.00 
+      549 xi130.xi1<31>.                  unitcell_decap     1.00 
+      550 xi129.xi1<31>.                  unitcell_decap     1.00 
+      551 xi128.xi1<31>.                  unitcell_decap     1.00 
+      552 xi127.xi1<31>.                  unitcell_decap     1.00 
+      553 xi133.xi1<32>.                  unitcell_decap     1.00 
+      554 xi134.xi1<32>.                  unitcell_decap     1.00 
+      555 xi131.xi1<32>.                  unitcell_decap     1.00 
+      556 xi132.xi1<32>.                  unitcell_decap     1.00 
+      557 xi130.xi1<32>.                  unitcell_decap     1.00 
+      558 xi129.xi1<32>.                  unitcell_decap     1.00 
+      559 xi128.xi1<32>.                  unitcell_decap     1.00 
+      560 xi127.xi1<32>.                  unitcell_decap     1.00 
+      561 xi133.xi1<33>.                  unitcell_decap     1.00 
+      562 xi134.xi1<33>.                  unitcell_decap     1.00 
+      563 xi131.xi1<33>.                  unitcell_decap     1.00 
+      564 xi132.xi1<33>.                  unitcell_decap     1.00 
+      565 xi130.xi1<33>.                  unitcell_decap     1.00 
+      566 xi129.xi1<33>.                  unitcell_decap     1.00 
+      567 xi128.xi1<33>.                  unitcell_decap     1.00 
+      568 xi127.xi1<33>.                  unitcell_decap     1.00 
+      569 xi133.xi1<34>.                  unitcell_decap     1.00 
+      570 xi134.xi1<34>.                  unitcell_decap     1.00 
+      571 xi131.xi1<34>.                  unitcell_decap     1.00 
+      572 xi132.xi1<34>.                  unitcell_decap     1.00 
+      573 xi130.xi1<34>.                  unitcell_decap     1.00 
+      574 xi129.xi1<34>.                  unitcell_decap     1.00 
+      575 xi128.xi1<34>.                  unitcell_decap     1.00 
+      576 xi127.xi1<34>.                  unitcell_decap     1.00 
+      577 xi133.xi1<35>.                  unitcell_decap     1.00 
+      578 xi134.xi1<35>.                  unitcell_decap     1.00 
+      579 xi131.xi1<35>.                  unitcell_decap     1.00 
+      580 xi132.xi1<35>.                  unitcell_decap     1.00 
+      581 xi130.xi1<35>.                  unitcell_decap     1.00 
+      582 xi129.xi1<35>.                  unitcell_decap     1.00 
+      583 xi128.xi1<35>.                  unitcell_decap     1.00 
+      584 xi127.xi1<35>.                  unitcell_decap     1.00 
+      585 xi133.xi1<36>.                  unitcell_decap     1.00 
+      586 xi134.xi1<36>.                  unitcell_decap     1.00 
+      587 xi131.xi1<36>.                  unitcell_decap     1.00 
+      588 xi132.xi1<36>.                  unitcell_decap     1.00 
+      589 xi130.xi1<36>.                  unitcell_decap     1.00 
+      590 xi129.xi1<36>.                  unitcell_decap     1.00 
+      591 xi128.xi1<36>.                  unitcell_decap     1.00 
+      592 xi127.xi1<36>.                  unitcell_decap     1.00 
+      593 xi133.xi1<37>.                  unitcell_decap     1.00 
+      594 xi134.xi1<37>.                  unitcell_decap     1.00 
+      595 xi131.xi1<37>.                  unitcell_decap     1.00 
+      596 xi132.xi1<37>.                  unitcell_decap     1.00 
+      597 xi130.xi1<37>.                  unitcell_decap     1.00 
+      598 xi129.xi1<37>.                  unitcell_decap     1.00 
+      599 xi128.xi1<37>.                  unitcell_decap     1.00 
+      600 xi127.xi1<37>.                  unitcell_decap     1.00 
+      601 xi133.xi1<38>.                  unitcell_decap     1.00 
+      602 xi134.xi1<38>.                  unitcell_decap     1.00 
+      603 xi131.xi1<38>.                  unitcell_decap     1.00 
+      604 xi132.xi1<38>.                  unitcell_decap     1.00 
+      605 xi130.xi1<38>.                  unitcell_decap     1.00 
+      606 xi129.xi1<38>.                  unitcell_decap     1.00 
+      607 xi128.xi1<38>.                  unitcell_decap     1.00 
+      608 xi127.xi1<38>.                  unitcell_decap     1.00 
+      609 xi133.xi1<39>.                  unitcell_decap     1.00 
+      610 xi134.xi1<39>.                  unitcell_decap     1.00 
+      611 xi131.xi1<39>.                  unitcell_decap     1.00 
+      612 xi132.xi1<39>.                  unitcell_decap     1.00 
+      613 xi130.xi1<39>.                  unitcell_decap     1.00 
+      614 xi129.xi1<39>.                  unitcell_decap     1.00 
+      615 xi128.xi1<39>.                  unitcell_decap     1.00 
+      616 xi127.xi1<39>.                  unitcell_decap     1.00 
+  **warning** (ece_482_proj_tb.cir:521) TSTEP cannot be zero or negative for Transient Analysis. Reset it to "TSTOP/20.0".
+ ******  
+ ece 482 project testbench
+
+ ****** mos   model parameters tnom=  25.000 temp=  25.000 ******
+ Model file: /class/ece482/gpdk045_mos_details
+ Model line:          124
+ Model Name: g45n1svt  
+ BSIM4 Model (Level 54)
+    MOBMOD = 0
+    BINUNIT = 2
+    PARAMCHK = 1
+    CAPMOD = 2
+    DIOMOD = 1
+    RDSMOD = 0
+    TRNQSMOD = 0
+    ACNQSMOD = 0
+    RBODYMOD = 0
+    RGATEMOD = 0
+    PERMOD = 1
+    GEOMOD = 0
+    RGEOMOD = 0
+    FNOIMOD = 1
+    TNOIMOD = 0
+    IGCMOD = 1
+    IGBMOD = 1
+    STIMOD = 1
+    VBFWDMOD = 0
+    VERSION =    4.3 
+    TOXREF =  3e-09 
+    TOXE = 2.41e-09 
+    TOXP = 2.095e-09 
+    TOXM = 2.41e-09 
+    DTOX = 3.15e-10 
+    EPSROX =    3.9 
+    CDSC =      0 
+    CDSCB =      0 
+    CDSCD =      0 
+    CIT = 0.0007212 
+    NFACTOR = 0.2326 
+    XJ = 8.1e-08 
+    VSAT = 1.464e+05 
+    A0 =  0.001 
+    AGS =   5.44 
+    A1 =      0 
+    A2 =      1 
+    AT = 1.4e+05 
+    KETA = -0.09481 
+    NSUB =  6e+16 
+    NDEP =  1e+17 
+    NSD =  1e+20 
+    NGATE = 1.6e+20 
+    GAMMA1 =      0 
+    GAMMA2 =      0 
+    VBX =      0 
+    VBM =     -3 
+    XT = 1.55e-07 
+    K1 = 0.3026 
+    KT1 = -0.181 
+    KT1L =      0 
+    KT2 = -0.036 
+    K2 = 0.01443 
+    K3 = -7.285 
+    K3B =  2.455 
+    LPE0 = 6.61e-08 
+    LPEB =  2e-08 
+    DVTP0 = 2.361e-06 
+    DVTP1 =    4.5 
+    W0 = 8.19e-08 
+    DVT0 = 0.2364 
+    DVT1 = 0.5374 
+    DVT2 = 0.05567 
+    DVT0W =      0 
+    DVT1W =      0 
+    DVT2W =      0 
+    DROUT =  0.672 
+    DSUB = 0.4222 
+    VTH0 = 0.3192 
+    EU =   1.67 
+    UA = -2.003e-09 
+    UA1 = 1.04e-09 
+    UB = 2.387e-18 
+    UB1 = -4.64e-19 
+    UC = 2.056e-10 
+    UC1 = 8.71e-11 
+    U0 = 0.01549 
+    UTE =     -1 
+    VOFF = -0.1568 
+    VOFFL = -3.595e-09 
+    MINV =  -0.15 
+    FPROUT =    300 
+    PDITS =      0 
+    PDITSD =      0 
+    PDITSL =      0 
+    DELTA = 0.007596 
+    RDSW =    100 
+    RDSWMIN =      0 
+    RDWMIN =      0 
+    RSWMIN =      0 
+    RDW =    100 
+    RSW =    100 
+    PRWG =      0 
+    PRWB =      0 
+    PRT =      0 
+    ETA0 = 0.0009635 
+    ETAB = 0.1423 
+    PCLM =  1.441 
+    PDIBLC1 = -0.005428 
+    PDIBLC2 =      0 
+    PDIBLCB =      1 
+    PSCBE1 =  1e+09 
+    PSCBE2 =  1e-20 
+    PVAG =    1.2 
+    WR =      1 
+    DWG =      0 
+    DWB =      0 
+    XW =      0 
+    XWREF =      0 
+    XL =      0 
+    XLREF =      0 
+    B0 =      0 
+    B1 =      0 
+    ALPHA0 =  2e-10 
+    ALPHA1 =   0.01 
+    AGIDL = 2.151e-07 
+    BGIDL = 2.139e+09 
+    CGIDL =   0.22 
+    PHIN =      0 
+    EGIDL = 0.2973 
+    AIGC = 0.0112 
+    BIGC = 0.001392 
+    CIGC = 0.000622 
+    AIGSD = 0.0106 
+    BIGSD = 0.001235 
+    CIGSD =   0.07 
+    AIGBACC =   0.02 
+    BIGBACC = 0.00247 
+    CIGBACC = 0.3325 
+    AIGBINV = 0.0158 
+    BIGBINV = 0.004893 
+    CIGBINV = 0.0061 
+    NIGC =   3.07 
+    NIGBINV =     10 
+    NIGBACC =     10 
+    NTOX =      1 
+    EIGBINV =    1.1 
+    PIGCD =  2.591 
+    POXEDGE =      1 
+    XRCRG1 =     12 
+    TNOIA =    1.5 
+    TNOIB =    3.5 
+    NTNOI =      1 
+    XRCRG2 =      1 
+    BETA0 =    6.4 
+    IJTHDFWD =   0.01 
+    IJTHSFWD =   0.01 
+    IJTHDREV =   0.01 
+    IJTHSREV =   0.01 
+    XJBVD =      1 
+    XJBVS =      1 
+    BVD =     10 
+    BVS =     10 
+    VFB =     -1 
+    GBMIN =  1e-12 
+    RBDB =     50 
+    RBPB =     50 
+    RBSB =     50 
+    RBPS =     50 
+    RBPD =     50 
+    CGSL = 1.71e-11 
+    CGDL = 1.71e-11 
+    CKAPPAS =    0.6 
+    CKAPPAD =    0.6 
+    CF = 8.13e-11 
+    CLC = 1.04e-07 
+    CLE =    0.6 
+    DWC =      0 
+    DLC =      0 
+    DLCIG = 2.48e-09 
+    DWJ =      0 
+    VFBCV =     -1 
+    ACDE =      1 
+    MOIN =   5.67 
+    NOFF =   2.96 
+    VOFFCV =  -0.12 
+    DMCG =  4e-08 
+    DMCI =  4e-08 
+    DMDG =      0 
+    DMCGT =      0 
+    XGW =      0 
+    XGL =      0 
+    RSHG =   15.5 
+    NGCON =      1 
+    TCJ = 0.000652 
+    TPB = 0.0011 
+    TCJSW = 0.000357 
+    TPBSW = 0.0019 
+    TCJSWG = 0.0015 
+    TPBSWG =  0.001 
+    SK0 =      0 
+    SK1 =      0 
+    SK2 =      0 
+    SL =  2e-06 
+    SW =  2e-06 
+    K =      0 
+    LNFACTOR = 1.398e-07 
+    LVSAT = -0.0005407 
+    LAGS = 2.574e-08 
+    LKETA = 3.624e-09 
+    LK2 = -6.378e-10 
+    LDROUT = -6.495e-09 
+    LVTH0 = 2.055e-09 
+    LUA = -1.953e-18 
+    LUB = -1.319e-27 
+    LUC = -6.933e-18 
+    LU0 = -1.37e-10 
+    LVOFF = -1.675e-10 
+    LETAB = -6.624e-09 
+    LPDIBLC1 = 3.148e-10 
+    WNFACTOR = 2.204e-10 
+    WVSAT = -0.004165 
+    WAGS = 7.09e-08 
+    WKETA = 1.039e-08 
+    WK2 = -8.114e-09 
+    WDROUT = -1.299e-08 
+    WVTH0 = 2.369e-09 
+    WUA = 4.873e-17 
+    WUB = -6.82e-26 
+    WUC = -2.044e-17 
+    WU0 = -7.771e-11 
+    WVOFF = -2.622e-10 
+    WETAB = -1.325e-08 
+    WPDIBLC1 = 6.296e-10 
+    PNFACTOR = 1.325e-16 
+    PVSAT = 2.416e-10 
+    PAGS = -7.618e-15 
+    PKETA = -4.204e-16 
+    PK2 = 2.54e-16 
+    PDROUT = 7.534e-16 
+    PVTH0 = 6.451e-17 
+    PUA = 6.699e-25 
+    PUB = -8.036e-34 
+    PUC = 9.34e-25 
+    PU0 = 8.434e-18 
+    PVOFF = 9.333e-18 
+    PETAB = 7.684e-16 
+    PPDIBLC1 = -3.652e-17 
+    TNOM =  298.1 
+    CGSO = 5.53e-11 
+    CGDO = 5.53e-11 
+    CGBO =      0 
+    XPART =      1 
+    RSH =   17.5 
+    JSS = 2.1e-07 
+    JSWS = 3.4e-13 
+    JSWGS = 1.2e-12 
+    PBS =  0.511 
+    MJS =  0.264 
+    PBSWS =  0.786 
+    MJSWS =  0.011 
+    CJS = 0.000861 
+    CJSWS = 4.87e-11 
+    NJS =      1 
+    PBSWGS =  0.464 
+    MJSWGS =  0.511 
+    CJSWGS = 2.56e-10 
+    XTIS =      3 
+    JSD = 2.1e-07 
+    JSWD = 3.4e-13 
+    JSWGD = 1.2e-12 
+    PBD =  0.511 
+    MJD =  0.264 
+    PBSWD =  0.786 
+    MJSWD =  0.011 
+    CJD = 0.000861 
+    CJSWD = 4.87e-11 
+    NJD =      1 
+    PBSWGD =  0.464 
+    MJSWGD =  0.511 
+    CJSWGD = 2.56e-10 
+    XTID =      3 
+    LMLT =      1 
+    WMLT =      1 
+    LINT =  1e-09 
+    LL =      0 
+    LLC =      0 
+    LLN =      1 
+    LW =      0 
+    LWC =      0 
+    LWN =      1 
+    LWL =      0 
+    LWLC =      0 
+    LMIN =  4e-08 
+    LMAX =  6e-08 
+    WINT =  2e-09 
+    WL =      0 
+    WLC =      0 
+    WLN =      1 
+    WW =      0 
+    WWC =      0 
+    WWN =      1 
+    WWL =      0 
+    WWLC =      0 
+    WMIN = 1.2e-07 
+    WMAX =  3e-07 
+    NOIA = 2.6e+42 
+    NOIB = 1.61e+21 
+    NOIC =  3e+08 
+    EM =  1e+06 
+    EF =   0.94 
+    AF =      1 
+    KF =      0 
+    TRS =      0 
+    TRD =      0 
+    TEMPMOD  =      0 
+    LAMBDA   =      0 
+    VTL      =  2e+05 m/s
+    LC       =  5e-09 
+    XN       =      3 
+    LLAMBDA  =      0 
+    LVTL     =      0 
+    LXN      =      0 
+    WLAMBDA  =      0 
+    WVTL     =      0 
+    WXN      =      0 
+    PLAMBDA  =      0 
+    PVTL     =      0 
+    PXN      =      0 
+    RNOIA    =  0.577 
+    RNOIB    =   0.37 
+    SAREF(SA0) = 6.1e-07 m
+    SBREF(SB0) = 6.1e-07 m
+    WLOD     = 1.37e-07 m
+    KU0      = -3.471e-08 1/m
+    KVSAT    =  0.342 
+    KVTH0    = 2.461e-09 m
+    TKU0     =  0.097 
+    LLODKU0  =      1 
+    WLODKU0  =      1 
+    LLODVTH  =      1 
+    WLODVTH  =      1 
+    LKU0     = 1.23e-08 
+    WKU0     = 9.96e-08 
+    PKU0     = 4.6e-14 
+    LKVTH0   = -2.421e-11 
+    WKVTH0   =      0 
+    PKVTH0   =      0 
+    STK2     = 3.87e-10 
+    LODK2    =    0.5 
+    STETA0   =      0 
+    LODETA0  =      1 
+    LXRCRG1  =      0 
+    WXRCRG1  =      0 
+    PXRCRG1  =      0 
+    LXRCRG2  =      0 
+    WXRCRG2  =      0 
+    PXRCRG2  =      0 
+ Model file: /class/ece482/gpdk045_mos_details
+ Model line:          245
+ Model Name: g45p1svt  
+ BSIM4 Model (Level 54)
+    MOBMOD = 0
+    BINUNIT = 2
+    PARAMCHK = 1
+    CAPMOD = 2
+    DIOMOD = 1
+    RDSMOD = 0
+    TRNQSMOD = 0
+    ACNQSMOD = 0
+    RBODYMOD = 0
+    RGATEMOD = 0
+    PERMOD = 1
+    GEOMOD = 0
+    RGEOMOD = 0
+    FNOIMOD = 1
+    TNOIMOD = 0
+    IGCMOD = 1
+    IGBMOD = 1
+    STIMOD = 1
+    VBFWDMOD = 0
+    VERSION =    4.3 
+    TOXREF =  3e-09 
+    TOXE = 2.4e-09 
+    TOXP = 2.071e-09 
+    TOXM = 2.4e-09 
+    DTOX = 3.29e-10 
+    EPSROX =    3.9 
+    CDSC =      0 
+    CDSCB =      0 
+    CDSCD =      0 
+    CIT = 0.0001 
+    NFACTOR = 0.5111 
+    XJ = 1.7e-07 
+    VSAT = 1.255e+05 
+    A0 =  0.001 
+    AGS =  2.604 
+    A1 =      0 
+    A2 =      1 
+    AT =  4e+04 
+    KETA = 0.07615 
+    NSUB =  6e+16 
+    NDEP = 8.5e+17 
+    NSD =  1e+20 
+    NGATE =  8e+19 
+    GAMMA1 =      0 
+    GAMMA2 =      0 
+    VBX =      0 
+    VBM =     -3 
+    XT = 1.55e-07 
+    K1 =   0.25 
+    KT1 = -0.229 
+    KT1L =      0 
+    KT2 = -0.01232 
+    K2 = -0.007129 
+    K3 = -1.701 
+    K3B =    1.2 
+    LPE0 = 7.52e-08 
+    LPEB = 5.608e-08 
+    DVTP0 = 2.2e-06 
+    DVTP1 =    0.2 
+    W0 = 1.585e-07 
+    DVT0 = 0.2034 
+    DVT1 = 0.9515 
+    DVT2 =   0.01 
+    DVT0W =      0 
+    DVT1W = 5.366e+06 
+    DVT2W =      0 
+    DROUT = 0.9621 
+    DSUB =  1.272 
+    VTH0 = -0.3691 
+    EU =      1 
+    UA = 1.195e-11 
+    UA1 = 4.549e-09 
+    UB = 1.496e-18 
+    UB1 = -5.441e-18 
+    UC = 2.836e-11 
+    UC1 = -5e-11 
+    U0 = 0.02471 
+    UTE = -1.524 
+    VOFF = -0.1319 
+    VOFFL = -6.036e-09 
+    MINV =      0 
+    FPROUT =  390.2 
+    PDITS = 0.005043 
+    PDITSD =      0 
+    PDITSL =    100 
+    DELTA =   0.02 
+    RDSW =  327.6 
+    RDSWMIN =      0 
+    RDWMIN =      0 
+    RSWMIN =      0 
+    RDW =    100 
+    RSW =    100 
+    PRWG =   0.25 
+    PRWB =  -0.25 
+    PRT =      0 
+    ETA0 = 0.03115 
+    ETAB = 0.2478 
+    PCLM = 0.6273 
+    PDIBLC1 =      0 
+    PDIBLC2 = 0.0107 
+    PDIBLCB =      0 
+    PSCBE1 = 9.264e+08 
+    PSCBE2 =  1e-20 
+    PVAG =  1.425 
+    WR =      1 
+    DWG =      0 
+    DWB =      0 
+    XW =      0 
+    XWREF =      0 
+    XL =      0 
+    XLREF =      0 
+    B0 =      0 
+    B1 =      0 
+    ALPHA0 =      0 
+    ALPHA1 =   0.06 
+    AGIDL =  9e-08 
+    BGIDL = 3.404e+09 
+    CGIDL =    0.5 
+    PHIN =      0 
+    EGIDL =   0.15 
+    AIGC = 0.00712 
+    BIGC = 0.000631 
+    CIGC =      0 
+    AIGSD = 0.0059 
+    BIGSD = 0.000248 
+    CIGSD =  0.032 
+    AIGBACC =  0.012 
+    BIGBACC = 0.00349 
+    CIGBACC =  0.131 
+    AIGBINV =  0.347 
+    BIGBINV = 0.0312 
+    CIGBINV = 0.0061 
+    NIGC =   2.28 
+    NIGBINV =      1 
+    NIGBACC =    5.2 
+    NTOX =      1 
+    EIGBINV =    1.1 
+    PIGCD =   2.28 
+    POXEDGE =      1 
+    XRCRG1 =     12 
+    TNOIA =    1.5 
+    TNOIB =    3.5 
+    NTNOI =      1 
+    XRCRG2 =      1 
+    BETA0 =   13.5 
+    IJTHDFWD =   0.01 
+    IJTHSFWD =   0.01 
+    IJTHDREV =   0.01 
+    IJTHSREV =   0.01 
+    XJBVD =      1 
+    XJBVS =      1 
+    BVD =     10 
+    BVS =     10 
+    VFB =     -1 
+    GBMIN =  1e-12 
+    RBDB =     50 
+    RBPB =     50 
+    RBSB =     50 
+    RBPS =     50 
+    RBPD =     50 
+    CGSL = 5.4e-11 
+    CGDL = 5.4e-11 
+    CKAPPAS =    0.6 
+    CKAPPAD =    0.6 
+    CF = 1.18e-10 
+    CLC =  1e-07 
+    CLE =    0.6 
+    DWC =      0 
+    DLC =      0 
+    DLCIG = 2.52e-09 
+    DWJ =      0 
+    VFBCV =     -1 
+    ACDE =    1.2 
+    MOIN =      8 
+    NOFF =    2.5 
+    VOFFCV = -0.0486 
+    DMCG = 8.5e-08 
+    DMCI = 8.5e-08 
+    DMDG =      0 
+    DMCGT =      0 
+    XGW =      0 
+    XGL =      0 
+    RSHG =    0.1 
+    NGCON =      1 
+    TCJ = 0.000798 
+    TPB = 0.0019 
+    TCJSW = 0.00024 
+    TPBSW = 0.0019 
+    TCJSWG = 0.00477 
+    TPBSWG = 0.0019 
+    SK0 =      0 
+    SK1 =      0 
+    SK2 =      0 
+    SL =  2e-06 
+    SW =  2e-06 
+    K =      0 
+    LNFACTOR = 2.816e-08 
+    LVSAT = 0.001652 
+    LKETA = -1.385e-08 
+    LK2 = -1.77e-10 
+    LDROUT = 1.023e-08 
+    LVTH0 = 4.367e-09 
+    LUB = 2.766e-26 
+    LU0 = -4.235e-10 
+    LVOFF = 5.304e-09 
+    LETAB = -1.63e-08 
+    LPDIBLC2 = -3.548e-10 
+    WNFACTOR = -4.782e-08 
+    WVSAT = -0.004554 
+    WAGS = 8.643e-08 
+    WKETA = -1.376e-08 
+    WK2 = -7.701e-10 
+    WDROUT = 4.745e-08 
+    WVTH0 = 6.061e-09 
+    WUB = 4.042e-26 
+    WUC = -1.637e-18 
+    WU0 = 5.029e-10 
+    WVOFF = 5.559e-09 
+    WETAB = -2.668e-08 
+    WPDIBLC2 = -9.676e-10 
+    PNFACTOR = 6.587e-16 
+    PVSAT = 2.732e-10 
+    PKETA = 1.122e-15 
+    PK2 = -1.19e-16 
+    PDROUT = -2.847e-15 
+    PVTH0 = -3.872e-16 
+    PUB = -3.73e-33 
+    PU0 = 2.13e-17 
+    PVOFF = -5.016e-16 
+    PETAB = 1.601e-15 
+    PPDIBLC2 = 3.298e-17 
+    TNOM =  298.1 
+    CGSO = 3.1e-11 
+    CGDO = 3.1e-11 
+    CGBO =      0 
+    XPART =      1 
+    RSH =   9.68 
+    JSS = 1.51e-07 
+    JSWS = 3.98e-13 
+    JSWGS = 2.47e-12 
+    PBS =   0.75 
+    MJS =   0.34 
+    PBSWS =   0.49 
+    MJSWS =  0.012 
+    CJS = 0.000998 
+    CJSWS = 6.21e-11 
+    NJS =      1 
+    PBSWGS =   0.71 
+    MJSWGS =   0.86 
+    CJSWGS = 2.53e-10 
+    XTIS =      3 
+    JSD = 1.51e-07 
+    JSWD = 3.98e-13 
+    JSWGD = 2.47e-12 
+    PBD =   0.75 
+    MJD =   0.34 
+    PBSWD =   0.49 
+    MJSWD =  0.012 
+    CJD = 0.000998 
+    CJSWD = 6.21e-11 
+    NJD =      1 
+    PBSWGD =   0.71 
+    MJSWGD =   0.86 
+    CJSWGD = 2.53e-10 
+    XTID =      3 
+    LMLT =      1 
+    WMLT =      1 
+    LINT =  2e-24 
+    LL =      0 
+    LLC =      0 
+    LLN =      1 
+    LW =      0 
+    LWC =      0 
+    LWN =      1 
+    LWL =      0 
+    LWLC =      0 
+    LMIN =  4e-08 
+    LMAX =  6e-08 
+    WINT = 1.089e-08 
+    WL =      0 
+    WLC =      0 
+    WLN =      1 
+    WW =      0 
+    WWC =      0 
+    WWN =      1 
+    WWL =      0 
+    WWLC =      0 
+    WMIN = 1.2e-07 
+    WMAX =  3e-07 
+    NOIA = 1.45e+42 
+    NOIB = 3.57e+26 
+    NOIC =  2e+10 
+    EM = 2.1e+07 
+    EF =  1.147 
+    AF =      1 
+    KF =      0 
+    TRS =      0 
+    TRD =      0 
+    TEMPMOD  =      0 
+    LAMBDA   =      0 
+    VTL      =  2e+05 m/s
+    LC       =  5e-09 
+    XN       =      3 
+    LLAMBDA  =      0 
+    LVTL     =      0 
+    LXN      =      0 
+    WLAMBDA  =      0 
+    WVTL     =      0 
+    WXN      =      0 
+    PLAMBDA  =      0 
+    PVTL     =      0 
+    PXN      =      0 
+    RNOIA    =  0.577 
+    RNOIB    =   0.37 
+    SAREF(SA0) = 6.1e-07 m
+    SBREF(SB0) = 6.1e-07 m
+    WLOD     = 2.86e-07 m
+    KU0      =  1e-07 1/m
+    KVSAT    = -0.386 
+    KVTH0    =  2e-10 m
+    TKU0     =   0.24 
+    LLODKU0  =      1 
+    WLODKU0  =      1 
+    LLODVTH  =    1.8 
+    WLODVTH  =      1 
+    LKU0     = 1.871e-07 
+    WKU0     = 2.4e-07 
+    PKU0     = -3.24e-14 
+    LKVTH0   = 2.4e-10 
+    WKVTH0   = 1.8e-10 
+    PKVTH0   =      0 
+    STK2     =      0 
+    LODK2    =    1.9 
+    STETA0   =      0 
+    LODETA0  =      1 
+    LXRCRG1  =      0 
+    WXRCRG1  =      0 
+    PXRCRG1  =      0 
+    LXRCRG2  =      0 
+    WXRCRG2  =      0 
+    PXRCRG2  =      0 
+ Model file: /class/ece482/gpdk045_mos_details
+ Model line:          465
+ Model Name: g45n2svt  
+ BSIM4 Model (Level 54)
+    MOBMOD = 0
+    BINUNIT = 2
+    PARAMCHK = 1
+    CAPMOD = 2
+    DIOMOD = 1
+    RDSMOD = 0
+    TRNQSMOD = 0
+    ACNQSMOD = 0
+    RBODYMOD = 0
+    RGATEMOD = 0
+    PERMOD = 1
+    GEOMOD = 0
+    RGEOMOD = 0
+    FNOIMOD = 1
+    TNOIMOD = 0
+    IGCMOD = 1
+    IGBMOD = 1
+    STIMOD = 1
+    VBFWDMOD = 0
+    VERSION =    4.3 
+    TOXREF =  3e-09 
+    TOXE = 3.62e-09 
+    TOXP = 3.3e-09 
+    TOXM = 3.62e-09 
+    DTOX = 3.2e-10 
+    EPSROX =    3.9 
+    CDSC =      0 
+    CDSCB =      0 
+    CDSCD =      0 
+    CIT = 0.0007212 
+    NFACTOR =  1.622 
+    XJ = 8.1e-08 
+    VSAT = 1.151e+05 
+    A0 =  1.082 
+    AGS =  1.052 
+    A1 =      0 
+    A2 =      1 
+    AT =  7e+04 
+    KETA = -0.05194 
+    NSUB =  6e+16 
+    NDEP =  1e+17 
+    NSD =  1e+20 
+    NGATE = 1.6e+20 
+    GAMMA1 =      0 
+    GAMMA2 =      0 
+    VBX =      0 
+    VBM =     -3 
+    XT = 1.55e-07 
+    K1 = 0.3026 
+    KT1 = -0.2353 
+    KT1L =      0 
+    KT2 = -0.036 
+    K2 = -0.01213 
+    K3 = -5.685 
+    K3B =  2.455 
+    LPE0 = 6.61e-08 
+    LPEB =  2e-08 
+    DVTP0 = 2.361e-06 
+    DVTP1 =    4.5 
+    W0 = 8.19e-08 
+    DVT0 = 0.2364 
+    DVT1 = 0.5374 
+    DVT2 = 0.05567 
+    DVT0W =      0 
+    DVT1W =      0 
+    DVT2W =      0 
+    DROUT =   0.56 
+    DSUB = 0.4222 
+    VTH0 = 0.4207 
+    EU =   1.67 
+    UA = -9.5e-10 
+    UA1 = 8.32e-10 
+    UB = 2.092e-18 
+    UB1 =      0 
+    UC = 7.758e-11 
+    UC1 = 4.355e-11 
+    U0 = 0.0298 
+    UTE =   -0.9 
+    VOFF = -0.1556 
+    VOFFL = -3.595e-09 
+    MINV =  -0.15 
+    FPROUT =    300 
+    PDITS =      0 
+    PDITSD =      0 
+    PDITSL =      0 
+    DELTA = 0.007596 
+    RDSW =    100 
+    RDSWMIN =      0 
+    RDWMIN =      0 
+    RSWMIN =      0 
+    RDW =    100 
+    RSW =    100 
+    PRWG =      0 
+    PRWB =      0 
+    PRT =      0 
+    ETA0 = 0.001805 
+    ETAB = -0.01268 
+    PCLM =  1.239 
+    PDIBLC1 = 0.000453 
+    PDIBLC2 = 0.007802 
+    PDIBLCB =      1 
+    PSCBE1 =  1e+09 
+    PSCBE2 =  1e-20 
+    PVAG =    0.9 
+    WR =      1 
+    DWG =      0 
+    DWB =      0 
+    XW =      0 
+    XWREF =      0 
+    XL =      0 
+    XLREF =      0 
+    B0 =      0 
+    B1 =      0 
+    ALPHA0 =  2e-10 
+    ALPHA1 =   0.01 
+    AGIDL = 1.151e-07 
+    BGIDL = 2.692e+09 
+    CGIDL =   0.24 
+    PHIN =      0 
+    EGIDL =   0.24 
+    AIGC =  0.012 
+    BIGC = 0.00141 
+    CIGC = 0.000572 
+    AIGSD = 0.0116 
+    BIGSD = 0.0013 
+    CIGSD =  0.073 
+    AIGBACC = 0.0211 
+    BIGBACC = 0.00244 
+    CIGBACC =  0.312 
+    AIGBINV =  0.017 
+    BIGBINV = 0.0043 
+    CIGBINV = 0.0057 
+    NIGC =   2.97 
+    NIGBINV =      6 
+    NIGBACC =      6 
+    NTOX =      1 
+    EIGBINV =   1.04 
+    PIGCD =    2.4 
+    POXEDGE =      1 
+    XRCRG1 =     12 
+    TNOIA =    1.5 
+    TNOIB =    3.5 
+    NTNOI =      1 
+    XRCRG2 =      1 
+    BETA0 =    6.4 
+    IJTHDFWD =   0.01 
+    IJTHSFWD =   0.01 
+    IJTHDREV =   0.01 
+    IJTHSREV =   0.01 
+    XJBVD =      1 
+    XJBVS =      1 
+    BVD =     10 
+    BVS =     10 
+    VFB =     -1 
+    GBMIN =  1e-12 
+    RBDB =     50 
+    RBPB =     50 
+    RBSB =     50 
+    RBPS =     50 
+    RBPD =     50 
+    CGSL = 2.71e-11 
+    CGDL = 2.71e-11 
+    CKAPPAS =    0.6 
+    CKAPPAD =    0.6 
+    CF = 6.13e-11 
+    CLC = 1.04e-07 
+    CLE =    0.6 
+    DWC =      0 
+    DLC =      0 
+    DLCIG = 2.43e-09 
+    DWJ =      0 
+    VFBCV =     -1 
+    ACDE =      1 
+    MOIN =   5.67 
+    NOFF =    1.6 
+    VOFFCV = -0.097 
+    DMCG =  4e-08 
+    DMCI =  4e-08 
+    DMDG =      0 
+    DMCGT =      0 
+    XGW =      0 
+    XGL =      0 
+    RSHG =   15.5 
+    NGCON =      1 
+    TCJ = 0.000652 
+    TPB = 0.0011 
+    TCJSW = 0.000357 
+    TPBSW = 0.0019 
+    TCJSWG = 0.0015 
+    TPBSWG =  0.001 
+    SK0 =      0 
+    SK1 =      0 
+    SK2 =      0 
+    SL =  2e-06 
+    SW =  2e-06 
+    K =      0 
+    WVSAT = -0.0025 
+    WAGS = -5e-08 
+    TNOM =  298.1 
+    CGSO = 3.13e-11 
+    CGDO = 3.13e-11 
+    CGBO =      0 
+    XPART =      1 
+    RSH =   17.5 
+    JSS = 4.14e-07 
+    JSWS = 9.7e-13 
+    JSWGS = 1.4e-12 
+    PBS =  0.511 
+    MJS =   0.31 
+    PBSWS =  0.786 
+    MJSWS =  0.081 
+    CJS = 0.000841 
+    CJSWS = 1.02e-10 
+    NJS =      1 
+    PBSWGS =    0.7 
+    MJSWGS =  0.511 
+    CJSWGS = 1.2e-10 
+    XTIS =      3 
+    JSD = 4.14e-07 
+    JSWD = 9.7e-13 
+    JSWGD = 1.4e-12 
+    PBD =  0.511 
+    MJD =   0.31 
+    PBSWD =  0.786 
+    MJSWD =  0.081 
+    CJD = 0.000841 
+    CJSWD = 1.02e-10 
+    NJD =      1 
+    PBSWGD =    0.7 
+    MJSWGD =  0.511 
+    CJSWGD = 1.2e-10 
+    XTID =      3 
+    LMLT =      1 
+    WMLT =      1 
+    LINT =  1e-09 
+    LL =      0 
+    LLC =      0 
+    LLN =      1 
+    LW =      0 
+    LWC =      0 
+    LWN =      1 
+    LWL =      0 
+    LWLC =      0 
+    LMIN = 1.5e-07 
+    LMAX =  1e-06 
+    WINT =  2e-09 
+    WL =      0 
+    WLC =      0 
+    WLN =      1 
+    WW =      0 
+    WWC =      0 
+    WWN =      1 
+    WWL =      0 
+    WWLC =      0 
+    WMIN = 3.2e-07 
+    WMAX =  5e-07 
+    NOIA = 3.1e+42 
+    NOIB = 1.81e+21 
+    NOIC =  3e+08 
+    EM =  1e+06 
+    EF =   0.86 
+    AF =      1 
+    KF =      0 
+    TRS =      0 
+    TRD =      0 
+    TEMPMOD  =      0 
+    LAMBDA   =      0 
+    VTL      =  2e+05 m/s
+    LC       =  5e-09 
+    XN       =      3 
+    LLAMBDA  =      0 
+    LVTL     =      0 
+    LXN      =      0 
+    WLAMBDA  =      0 
+    WVTL     =      0 
+    WXN      =      0 
+    PLAMBDA  =      0 
+    PVTL     =      0 
+    PXN      =      0 
+    RNOIA    =  0.577 
+    RNOIB    =   0.37 
+    SAREF(SA0) = 6.1e-07 m
+    SBREF(SB0) = 6.1e-07 m
+    WLOD     = 1.37e-07 m
+    KU0      = -2.471e-08 1/m
+    KVSAT    =    0.3 
+    KVTH0    = 2.1e-09 m
+    TKU0     =  0.097 
+    LLODKU0  =      1 
+    WLODKU0  =      1 
+    LLODVTH  =      1 
+    WLODVTH  =      1 
+    LKU0     = 1.23e-08 
+    WKU0     = 9.96e-08 
+    PKU0     = 4.6e-14 
+    LKVTH0   = -2.421e-11 
+    WKVTH0   =      0 
+    PKVTH0   =      0 
+    STK2     = 3.87e-10 
+    LODK2    =    0.5 
+    STETA0   =      0 
+    LODETA0  =      1 
+    LXRCRG1  =      0 
+    WXRCRG1  =      0 
+    PXRCRG1  =      0 
+    LXRCRG2  =      0 
+    WXRCRG2  =      0 
+    PXRCRG2  =      0 
+ Model file: /class/ece482/gpdk045_mos_details
+ Model line:          575
+ Model Name: g45p2svt  
+ BSIM4 Model (Level 54)
+    MOBMOD = 0
+    BINUNIT = 2
+    PARAMCHK = 1
+    CAPMOD = 2
+    DIOMOD = 1
+    RDSMOD = 0
+    TRNQSMOD = 0
+    ACNQSMOD = 0
+    RBODYMOD = 0
+    RGATEMOD = 0
+    PERMOD = 1
+    GEOMOD = 0
+    RGEOMOD = 0
+    FNOIMOD = 1
+    TNOIMOD = 0
+    IGCMOD = 1
+    IGBMOD = 1
+    STIMOD = 1
+    VBFWDMOD = 0
+    VERSION =    4.3 
+    TOXREF =  3e-09 
+    TOXE = 3.62e-09 
+    TOXP = 3.31e-09 
+    TOXM = 3.62e-09 
+    DTOX = 3.1e-10 
+    EPSROX =    3.9 
+    CDSC =      0 
+    CDSCB =      0 
+    CDSCD =      0 
+    CIT = 0.0001 
+    NFACTOR = 0.6277 
+    XJ = 1.7e-07 
+    VSAT = 6.573e+04 
+    A0 = 0.6938 
+    AGS =  1.934 
+    A1 =      0 
+    A2 =      1 
+    AT =  4e+04 
+    KETA = -0.0614 
+    NSUB =  6e+16 
+    NDEP = 8.5e+17 
+    NSD =  1e+20 
+    NGATE =  8e+19 
+    GAMMA1 =      0 
+    GAMMA2 =      0 
+    VBX =      0 
+    VBM =     -3 
+    XT = 1.55e-07 
+    K1 =   0.25 
+    KT1 = -0.2061 
+    KT1L =      0 
+    KT2 = -0.01232 
+    K2 = -0.01219 
+    K3 =   -3.3 
+    K3B =    1.2 
+    LPE0 = 7.52e-08 
+    LPEB = 5.608e-08 
+    DVTP0 = 2.2e-06 
+    DVTP1 =    0.2 
+    W0 = 1.585e-07 
+    DVT0 = 0.2034 
+    DVT1 = 0.9515 
+    DVT2 =   0.01 
+    DVT0W =      0 
+    DVT1W = 5.366e+06 
+    DVT2W =      0 
+    DROUT =  1.133 
+    DSUB =  1.272 
+    VTH0 = -0.3591 
+    EU =      1 
+    UA = 2.455e-10 
+    UA1 = 4.094e-09 
+    UB = 2.57e-18 
+    UB1 = -4.897e-18 
+    UC = 4.336e-11 
+    UC1 = -5.5e-11 
+    U0 = 0.01967 
+    UTE = -1.219 
+    VOFF = -0.05137 
+    VOFFL = -6.036e-09 
+    MINV =      0 
+    FPROUT =  390.2 
+    PDITS = 0.005043 
+    PDITSD =      0 
+    PDITSL =    100 
+    DELTA =   0.02 
+    RDSW =  327.6 
+    RDSWMIN =      0 
+    RDWMIN =      0 
+    RSWMIN =      0 
+    RDW =    100 
+    RSW =    100 
+    PRWG =   0.25 
+    PRWB =  -0.25 
+    PRT =      0 
+    ETA0 = 0.03115 
+    ETAB = -0.02385 
+    PCLM = 0.6273 
+    PDIBLC1 =      0 
+    PDIBLC2 = 0.00958 
+    PDIBLCB =      0 
+    PSCBE1 = 9.264e+08 
+    PSCBE2 =  1e-20 
+    PVAG =  1.425 
+    WR =      1 
+    DWG =      0 
+    DWB =      0 
+    XW =      0 
+    XWREF =      0 
+    XL =      0 
+    XLREF =      0 
+    B0 =      0 
+    B1 =      0 
+    ALPHA0 =      0 
+    ALPHA1 =   0.06 
+    AGIDL = 7.8e-08 
+    BGIDL = 2.404e+09 
+    CGIDL =   0.47 
+    PHIN =      0 
+    EGIDL =   0.14 
+    AIGC = 0.0068 
+    BIGC = 0.000591 
+    CIGC =      0 
+    AIGSD = 0.0061 
+    BIGSD = 0.000214 
+    CIGSD =  0.037 
+    AIGBACC =  0.014 
+    BIGBACC = 0.0027 
+    CIGBACC =  0.121 
+    AIGBINV =   0.37 
+    BIGBINV =  0.028 
+    CIGBINV = 0.0064 
+    NIGC =   2.31 
+    NIGBINV =    1.5 
+    NIGBACC =    4.8 
+    NTOX =      1 
+    EIGBINV =    1.2 
+    PIGCD =   2.25 
+    POXEDGE =      1 
+    XRCRG1 =     12 
+    TNOIA =    1.5 
+    TNOIB =    3.5 
+    NTNOI =      1 
+    XRCRG2 =      1 
+    BETA0 =   13.5 
+    IJTHDFWD =   0.01 
+    IJTHSFWD =   0.01 
+    IJTHDREV =   0.01 
+    IJTHSREV =   0.01 
+    XJBVD =      1 
+    XJBVS =      1 
+    BVD =     10 
+    BVS =     10 
+    VFB =     -1 
+    GBMIN =  1e-12 
+    RBDB =     50 
+    RBPB =     50 
+    RBSB =     50 
+    RBPS =     50 
+    RBPD =     50 
+    CGSL =  1e-10 
+    CGDL =  1e-10 
+    CKAPPAS =    0.6 
+    CKAPPAD =    0.6 
+    CF = 1.08e-10 
+    CLC =  1e-07 
+    CLE =    0.6 
+    DWC =      0 
+    DLC =      0 
+    DLCIG = 2.21e-09 
+    DWJ =      0 
+    VFBCV =     -1 
+    ACDE =    1.2 
+    MOIN =    6.4 
+    NOFF =      2 
+    VOFFCV = -0.084 
+    DMCG = 8.5e-08 
+    DMCI = 8.5e-08 
+    DMDG =      0 
+    DMCGT =      0 
+    XGW =      0 
+    XGL =      0 
+    RSHG =    0.1 
+    NGCON =      1 
+    TCJ = 0.000798 
+    TPB = 0.0019 
+    TCJSW = 0.00024 
+    TPBSW = 0.0019 
+    TCJSWG = 0.00477 
+    TPBSWG = 0.0019 
+    SK0 =      0 
+    SK1 =      0 
+    SK2 =      0 
+    SL =  2e-06 
+    SW =  2e-06 
+    K =      0 
+    WUB = -3e-25 
+    TNOM =  298.1 
+    CGSO = 2.2e-11 
+    CGDO = 2.2e-11 
+    CGBO =      0 
+    XPART =      1 
+    RSH =   9.68 
+    JSS = 3.1e-07 
+    JSWS =  1e-12 
+    JSWGS = 2.87e-12 
+    PBS =   0.75 
+    MJS =   0.41 
+    PBSWS =   0.49 
+    MJSWS =  0.097 
+    CJS = 0.00097 
+    CJSWS = 1.1e-10 
+    NJS =      1 
+    PBSWGS =    0.8 
+    MJSWGS =   0.88 
+    CJSWGS = 2.3e-10 
+    XTIS =      3 
+    JSD = 3.1e-07 
+    JSWD =  1e-12 
+    JSWGD = 2.87e-12 
+    PBD =   0.75 
+    MJD =   0.41 
+    PBSWD =   0.49 
+    MJSWD =  0.097 
+    CJD = 0.00097 
+    CJSWD = 1.1e-10 
+    NJD =      1 
+    PBSWGD =    0.8 
+    MJSWGD =   0.88 
+    CJSWGD = 2.3e-10 
+    XTID =      3 
+    LMLT =      1 
+    WMLT =      1 
+    LINT =      0 
+    LL =      0 
+    LLC =      0 
+    LLN =      1 
+    LW =      0 
+    LWC =      0 
+    LWN =      1 
+    LWL =      0 
+    LWLC =      0 
+    LMIN = 1.5e-07 
+    LMAX =  1e-06 
+    WINT = 1.389e-08 
+    WL =      0 
+    WLC =      0 
+    WLN =      1 
+    WW =      0 
+    WWC =      0 
+    WWN =      1 
+    WWL =      0 
+    WWLC =      0 
+    WMIN = 3.2e-07 
+    WMAX =  5e-07 
+    NOIA = 7.45e+41 
+    NOIB = 1.57e+26 
+    NOIC =  2e+10 
+    EM = 2.1e+07 
+    EF =    1.3 
+    AF =      1 
+    KF =      0 
+    TRS =      0 
+    TRD =      0 
+    TEMPMOD  =      0 
+    LAMBDA   =      0 
+    VTL      =  2e+05 m/s
+    LC       =  5e-09 
+    XN       =      3 
+    LLAMBDA  =      0 
+    LVTL     =      0 
+    LXN      =      0 
+    WLAMBDA  =      0 
+    WVTL     =      0 
+    WXN      =      0 
+    PLAMBDA  =      0 
+    PVTL     =      0 
+    PXN      =      0 
+    RNOIA    =  0.577 
+    RNOIB    =   0.37 
+    SAREF(SA0) = 6.1e-07 m
+    SBREF(SB0) = 6.1e-07 m
+    WLOD     = 2.86e-07 m
+    KU0      = 1.2e-07 1/m
+    KVSAT    =  -0.34 
+    KVTH0    = 1.7e-10 m
+    TKU0     =   0.24 
+    LLODKU0  =      1 
+    WLODKU0  =      1 
+    LLODVTH  =    1.8 
+    WLODVTH  =      1 
+    LKU0     = 1.871e-07 
+    WKU0     = 2.4e-07 
+    PKU0     = -3.24e-14 
+    LKVTH0   = 2.4e-10 
+    WKVTH0   = 1.8e-10 
+    PKVTH0   =      0 
+    STK2     =      0 
+    LODK2    =    1.9 
+    STETA0   =      0 
+    LODETA0  =      1 
+    LXRCRG1  =      0 
+    WXRCRG1  =      0 
+    PXRCRG1  =      0 
+    LXRCRG2  =      0 
+    WXRCRG2  =      0 
+    PXRCRG2  =      0 
+  **info** (ece_482_proj_tb.cir:421) DC voltage reset to initial transient source value in source 0:va0. new dc=0.0000D+00
+  **warning** (g45p1svt:xi109.mpm3 (ece_482_proj_tb.cir:190)) Warning: (B1 + Weff) may be too small in BSIM4 model with w=1.2e-07 l=4.5e-08.
+  
+             
+ Warning:'1 connection nodes' occurs 38 times
+ Summary of 1 connection from the following nodes:
+ -----------------------
+ |Node      |Subckt    |
+ |----------+----------|
+ |a0_oc     |0         |
+ |a0_oc1    |0         |
+ |a1_oc     |0         |
+ |a1_oc1    |0         |
+ |a2_oc     |0         |
+ |a2_oc1    |0         |
+ |a3_oc     |0         |
+ |a3_oc1    |0         |
+ |b0_oc     |0         |
+ |b0_oc1    |0         |
+ -----------------------
+              
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+  Opening plot unit= 15
+ file=ece_482_proj_tb.pa0
+
+
+ **info** although this circuit has failed to converge
+ to gmindc=   1.000E-12, it did converge to a gmindc=   1.025E-10
+
+ no convergence with standard algorithm,  trying damped pseudo-transient
+
+  *** pseudo tran succeeded *** 
+ ******  
+ ece 482 project testbench
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+      node    =voltage        node    =voltage        node    =voltage
+
+ +  0:a0      =   0.        0:a0_bar  =   1.8000    0:a0_oc   =   0.     
+ +  0:a0_oc1  =   0.        0:a1      =   0.        0:a1_bar  =   1.8000 
+ +  0:a1_oc   =   0.        0:a1_oc1  =   0.        0:a2      =   0.     
+ +  0:a2_bar  =   1.8000    0:a2_oc   =   0.        0:a2_oc1  =   0.     
+ +  0:a3      =   0.        0:a3_bar  =   1.8000    0:a3_oc   =   0.     
+ +  0:a3_oc1  =   0.        0:a_0     =  51.7158n   0:a_0_bar =   1.1000 
+ +  0:a_0_reg = 568.0161m   0:a_0_reg_= 554.5381m   0:a_0_reg_= 477.4010m
+ +  0:a_1     =  51.7158n   0:a_1_bar =   1.1000    0:a_1_reg = 568.0163m
+ +  0:a_1_reg_= 554.5379m   0:a_1_reg_= 477.4007m   0:a_2     =  51.7158n
+ +  0:a_2_bar =   1.1000    0:a_2_reg = 568.0163m   0:a_2_reg_= 554.5382m
+ +  0:a_2_reg_= 477.4010m   0:a_3     =  51.7158n   0:a_3_bar =   1.1000 
+ +  0:a_3_reg = 568.0161m   0:a_3_reg_= 554.5380m   0:a_3_reg_= 477.4012m
+ +  0:b0      =   0.        0:b0_bar  =   1.8000    0:b0_oc   =   0.     
+ +  0:b0_oc1  =   0.        0:b1      =   0.        0:b1_bar  =   1.8000 
+ +  0:b1_oc   =   0.        0:b1_oc1  =   0.        0:b2      =   0.     
+ +  0:b2_bar  =   1.8000    0:b2_oc   =   0.        0:b2_oc1  =   0.     
+ +  0:b3      =   0.        0:b3_bar  =   1.8000    0:b3_oc   =   0.     
+ +  0:b3_oc1  =   0.        0:b_0     =  51.7158n   0:b_0_bar =   1.1000 
+ +  0:b_0_reg = 575.9625m   0:b_1     =  51.7158n   0:b_1_bar =   1.1000 
+ +  0:b_1_reg = 575.9624m   0:b_2     =  51.7158n   0:b_2_bar =   1.1000 
+ +  0:b_2_reg = 509.9367m   0:b_2_reg_= 593.2086m   0:b_3     =  51.7158n
+ +  0:b_3_bar =   1.1000    0:b_3_reg = 509.9367m   0:b_3_reg_= 509.9363m
+ +  0:b_3_reg_= 669.0884m   0:c_0_0   = 211.2478u   0:c_0_1   = 211.1555u
+ +  0:c_0_2   = 210.6978u   0:c_0_3   = 210.2554u   0:c_0_3_re= 242.2728m
+ +  0:c_1_0   =  15.8735u   0:c_1_1   =  15.7919u   0:c_1_2   =  15.7944u
+ +  0:c_1_3   =  14.9852u   0:c_1_3_re= 242.2611m   0:c_2_0   =   1.3184u
+ +  0:c_2_1   =   1.2673u   0:c_2_2   =   1.2673u   0:clk     =  45.3388n
+ +  0:clk_bar =   1.1000    0:clk_in  =   0.        0:clk_oc  =   0.     
+ +  0:clk_oc1 =   0.        0:net1    = 869.8234n   0:net10   = 209.7014u
+ +  0:net11   = 553.5902n   0:net13   = 209.7006u   0:net16   =   1.0710 
+ +  0:net18   = 209.6813u   0:net2    =  15.3969u   0:net22   =  14.8978u
+ +  0:net24   =   1.0710    0:net3    = 869.8235n   0:net30   =   1.0710 
+ +  0:net31782=   1.1000    0:net35   = 210.4435u   0:net38   =   1.0710 
+ +  0:net4    =  15.3945u   0:net41   = 210.1681u   0:net45   = 210.7581u
+ +  0:net47   =   1.0710    0:net5    =  15.4760u   0:net53   =   1.0710 
+ +  0:net59   =   1.0710    0:net6    = 920.9882n   0:net7    =   1.0710 
+ +  0:net8    = 210.8505u   0:p0      =   3.0213n   0:p0_1_1  = 489.2295m
+ +  0:p0_bar  =   1.7919    0:p0_f    =   6.0328n   0:p0_oc   =   0.     
+ +  0:p0_oc1  =   0.        0:p1      =   3.0213n   0:p1_1_1  = 489.2305m
+ +  0:p1_bar  =   1.7919    0:p1_f    =   6.0329n   0:p1_oc   =   0.     
+ +  0:p1_oc1  =   0.        0:p2      =   3.0213n   0:p2_1_1  = 489.2295m
+ +  0:p2_bar  =   1.7919    0:p2_f    =   6.0328n   0:p2_oc   =   0.     
+ +  0:p2_oc1  =   0.        0:p3      =   3.0213n   0:p3_1_1  = 489.2296m
+ +  0:p3_bar  =   1.7919    0:p3_f    =   6.0328n   0:p3_oc   =   0.     
+ +  0:p3_oc1  =   0.        0:p4      =   3.0213n   0:p4_1_1  = 489.2300m
+ +  0:p4_bar  =   1.7919    0:p4_f    =   6.0328n   0:p4_oc   =   0.     
+ +  0:p4_oc1  =   0.        0:p5      =   3.0213n   0:p5_1_1  = 489.2298m
+ +  0:p5_bar  =   1.7919    0:p5_f    =   6.0328n   0:p5_oc   =   0.     
+ +  0:p5_oc1  =   0.        0:p6      =   3.0213n   0:p6_1_1  = 489.2297m
+ +  0:p6_bar  =   1.7919    0:p6_f    =   6.0328n   0:p6_oc   =   0.     
+ +  0:p6_oc1  =   0.        0:p7      =   3.0213n   0:p7_1_1  = 489.2300m
+ +  0:p7_bar  =   1.7919    0:p7_f    =   6.0328n   0:p7_oc   =   0.     
+ +  0:p7_oc1  =   0.        0:p_0     = 209.3177u   0:p_0_reg = 509.9363m
+ +  0:p_0_reg_= 509.9363m   0:p_1     = 211.1719u   0:p_1_reg = 509.9357m
+ +  0:p_1_reg_= 509.9358m   0:p_2     =  15.9070u   0:p_2_reg = 509.9357m
+ +  0:p_3     =   1.3520u   0:p_4     =   1.4309u   0:p_5     =   1.3797u
+ +  0:p_6     =   1.3797u   0:p_7     = 641.0260n   0:reset   =   1.8000 
+ +  0:reset_ba=   6.8848n   0:rst     =   1.1000    0:rst_bar =  37.7890n
+ +  0:rst_oc  =   0.        0:rst_oc1 =   0.        0:s_0_1   = 211.3602u
+ +  0:s_0_1_re= 242.2733m   0:s_0_2   = 211.2679u   0:s_0_2_re= 242.2732m
+ +  0:s_0_3   = 210.4895u   0:s_0_3_re= 242.2733m   0:s_1_1   =  15.9859u
+ +  0:s_1_1_re= 242.2614m   0:s_1_2   =  15.9044u   0:s_1_2_re= 242.2614m
+ +  0:s_1_3   =  15.9068u   0:s_1_3_re= 242.2614m   0:vdd     =   1.1000 
+ +  0:vdd1    =   1.1000    0:vdd2    =   1.1000    0:vdd3    =   1.1000 
+ +  0:vddio   =   1.8000    0:vddio1  =   1.8000    0:vddio2  =   0.     
+ +  0:vddio3  =   0.        0:vss     =   0.        0:vss1    =   0.     
+ +  0:vss2    =   0.        0:vss3    =   0.        0:vss4    =   0.     
+ +  0:vssio1  =   0.        0:vssio2  =   0.        0:vssio3  =   0.     
+ + 18:a_xor_b_=   1.1000   18:net8    =   1.1000   19:a_xor_b_=   1.1000 
+ + 19:net8    =   1.1000   20:a_xor_b_=   1.1000   20:net8    =   1.1000 
+ + 21:a_xor_b_=   1.1000   21:net8    =   1.1000   22:a_xor_b = 934.4126n
+ + 22:a_xor_b_=   1.1000   22:net1    =   1.1000   22:net4    =   1.1000 
+ + 23:a_xor_b =   1.2506u  23:a_xor_b_=   1.1000   23:net1    =   1.1000 
+ + 23:net4    =   1.1000   24:a_xor_b =   1.2506u  24:a_xor_b_=   1.1000 
+ + 24:net1    =   1.1000   24:net4    =   1.1000   25:a_xor_b =  15.2786u
+ + 25:a_xor_b_=   1.1000   25:net1    =   1.1000   25:net4    =   1.1000 
+ + 26:a_xor_b =  15.7777u  26:a_xor_b_=   1.1000   26:net1    =   1.1000 
+ + 26:net4    =   1.1000   27:a_xor_b =  15.7753u  27:a_xor_b_=   1.1000 
+ + 27:net1    =   1.1000   27:net4    =   1.1000   28:a_xor_b = 210.7148u
+ + 28:a_xor_b_=   1.1000   28:net1    =   1.1000   28:net4    =   1.1000 
+ + 29:a_xor_b = 211.0294u  29:a_xor_b_=   1.1000   29:net1    =   1.1000 
+ + 29:net4    =   1.1000   39:net1    = 772.9011m  39:net10   =  65.4423m
+ + 40:net1    = 772.9002m  40:net10   =  65.4423m  41:net1    = 772.9039m
+ + 41:net10   =  65.4425m  42:net1    = 772.9000m  42:net10   =  65.4423m
+ + 43:net1    = 858.4570m  43:net10   =  86.8551m  44:net1    = 858.4585m
+ + 44:net10   =  86.8552m  45:net1    = 858.4541m  45:net10   =  86.8549m
+ + 46:net1    = 858.4594m  46:net10   =  86.8553m  47:net1    =   1.0845 
+ + 47:net10   = 204.4797m  48:net1    =   1.0845   48:net10   = 204.4799m
+ + 49:net1    =   1.0845   49:net10   = 204.4797m  50:net1    =   1.0845 
+ + 50:net10   = 204.4796m  51:net1    = 772.9043m  51:net10   =  65.4425m
+ + 52:net1    = 772.9032m  52:net10   =  65.4425m  53:net1    = 772.9013m
+ + 53:net10   =  65.4423m  54:net1    = 772.9028m  54:net10   =  65.4425m
+ + 73:net17   =   1.0716   73:net21   =  19.8021n  73:net4    =   1.1000 
+ + 73:net5    =  57.8274n  73:net8    =  82.6617n  73:net9    = 949.4558m
+ + 73:x       =   1.1000   74:net17   =   1.0716   74:net21   =  19.8021n
+ + 74:net4    =   1.1000   74:net5    =  57.8274n  74:net8    =  82.6617n
+ + 74:net9    = 949.4558m  74:x       =   1.1000   75:net17   =   1.0716 
+ + 75:net21   =  19.8021n  75:net4    =   1.1000   75:net5    =  57.8274n
+ + 75:net8    =  82.6617n  75:net9    = 949.4558m  75:x       =   1.1000 
+ + 76:net17   =   1.0716   76:net21   =  19.8021n  76:net4    =   1.1000 
+ + 76:net5    =  57.8274n  76:net8    =  82.6617n  76:net9    = 949.4558m
+ + 76:x       =   1.1000   77:net17   =   1.0716   77:net21   =  19.8023n
+ + 77:net4    =   1.1000   77:net5    =  57.8274n  77:net8    =  82.6618n
+ + 77:net9    = 949.4558m  77:x       =   1.1000   78:net17   =   1.0716 
+ + 78:net21   =  19.8024n  78:net4    =   1.1000   78:net5    =  57.8274n
+ + 78:net8    =  82.6618n  78:net9    = 949.4558m  78:x       =   1.1000 
+ + 79:net17   =   1.0716   79:net21   =  19.8024n  79:net4    =   1.1000 
+ + 79:net5    =  57.8274n  79:net8    =  82.6618n  79:net9    = 949.4558m
+ + 79:x       =   1.1000   80:net17   =   1.0716   80:net21   =  19.8024n
+ + 80:net4    =   1.1000   80:net5    =  57.8274n  80:net8    =  82.6618n
+ + 80:net9    = 949.4558m  80:x       =   1.1000   81:net17   =   1.0740 
+ + 81:net21   =  24.3375n  81:net4    =   1.1000   81:net5    =  57.8274n
+ + 81:net8    =  82.6617n  81:net9    = 949.4558m  81:x       =   1.1000 
+ + 82:net17   =   1.0740   82:net21   =  24.3374n  82:net4    =   1.1000 
+ + 82:net5    =  57.8274n  82:net8    =  82.6617n  82:net9    = 949.4558m
+ + 82:x       =   1.1000   83:net17   =   1.0740   83:net21   =  24.3375n
+ + 83:net4    =   1.1000   83:net5    =  57.8274n  83:net8    =  82.6617n
+ + 83:net9    = 949.4558m  83:x       =   1.1000   84:net17   =   1.0740 
+ + 84:net21   =  24.3375n  84:net4    =   1.1000   84:net5    =  57.8274n
+ + 84:net8    =  82.6617n  84:net9    = 949.4558m  84:x       =   1.1000 
+ + 85:net17   =   1.0740   85:net21   =  24.3374n  85:net4    =   1.1000 
+ + 85:net5    =  57.8274n  85:net8    =  82.6617n  85:net9    = 949.4558m
+ + 85:x       =   1.1000   86:net17   =   1.0743   86:net21   =  24.6721n
+ + 86:net4    =   1.1000   86:net5    =  57.8274n  86:net8    =  82.6617n
+ + 86:net9    = 949.4558m  86:x       =   1.1000   87:net17   =   1.0740 
+ + 87:net21   =  24.3374n  87:net4    =   1.1000   87:net5    =  57.8274n
+ + 87:net8    =  83.0535n  87:net9    = 949.4558m  87:x       =   1.1000 
+ + 88:net17   =   1.0743   88:net21   =  24.6721n  88:net4    =   1.1000 
+ + 88:net5    =  57.8274n  88:net8    =  83.0535n  88:net9    = 949.4558m
+ + 88:x       =   1.1000   89:net17   =   1.0743   89:net21   =  24.6721n
+ + 89:net4    =   1.1000   89:net5    =  57.8274n  89:net8    =  83.0535n
+ + 89:net9    = 949.4558m  89:x       =   1.1000   90:net17   =   1.0742 
+ + 90:net21   =  24.6721n  90:net4    =   1.1000   90:net5    =  57.8274n
+ + 90:net8    =  82.6618n  90:net9    = 949.4558m  90:x       =   1.1000 
+ + 91:net17   =   1.0743   91:net21   =  24.6721n  91:net4    =   1.1000 
+ + 91:net5    =  57.8274n  91:net8    =  82.6618n  91:net9    = 949.4558m
+ + 91:x       =   1.1000   92:net17   =   1.0739   92:net21   =  24.1429n
+ + 92:net4    =   1.1000   92:net5    =  57.8274n  92:net8    =  83.1388n
+ + 92:net9    = 949.4558m  92:x       =   1.1000   93:net17   =   1.0739 
+ + 93:net21   =  24.1429n  93:net4    =   1.1000   93:net5    =  57.8274n
+ + 93:net8    =  83.1388n  93:net9    = 949.4558m  93:x       =   1.1000 
+ + 94:net17   =   1.0739   94:net21   =  24.1429n  94:net4    =   1.1000 
+ + 94:net5    =  57.8274n  94:net8    =  83.1388n  94:net9    = 949.4558m
+ + 94:x       =   1.1000   95:net17   =   1.0739   95:net21   =  24.1429n
+ + 95:net4    =   1.1000   95:net5    =  57.8274n  95:net8    =  83.1388n
+ + 95:net9    = 949.4558m  95:x       =   1.1000   96:net17   =   1.0762 
+ + 96:net21   =  27.0070n  96:net4    =   1.1000   96:net5    =  57.8274n
+ + 96:net8    =  83.0535n  96:net9    = 949.4558m  96:x       =   1.1000 
+ + 97:net17   =   1.0743   97:net21   =  24.6721n  97:net4    =   1.1000 
+ + 97:net5    =  57.8274n  97:net8    =  83.0535n  97:net9    = 949.4558m
+ + 97:x       =   1.1000   98:net17   =   1.0752   98:net21   =  25.9440n
+ + 98:net4    =   1.1000   98:net5    =  57.8274n  98:net8    =  83.0535n
+ + 98:net9    = 949.4558m  98:x       =   1.1000   99:net17   =   1.0748 
+ + 99:net21   =  25.3678n  99:net4    =   1.1000   99:net5    =  57.8274n
+ + 99:net8    =  83.1669n  99:net9    = 949.4558m  99:x       =   1.1000 
+ +100:net17   =   1.0748  100:net21   =  25.3678n 100:net4    =   1.1000 
+ +100:net5    =  57.8274n 100:net8    =  83.1669n 100:net9    = 949.4558m
+ +100:x       =   1.1000  101:net17   =   1.0740  101:net21   =  24.3375n
+ +101:net4    =   1.1000  101:net5    =  57.8274n 101:net8    =  83.0535n
+ +101:net9    = 949.4558m 101:x       =   1.1000  102:net17   =   1.0748 
+ +102:net21   =  25.3678n 102:net4    =   1.1000  102:net5    =  57.8274n
+ +102:net8    =  83.1669n 102:net9    = 949.4558m 102:x       =   1.1000 
+ +103:net17   =   1.0748  103:net21   =  25.3678n 103:net4    =   1.1000 
+ +103:net5    =  57.8274n 103:net8    =  83.1669n 103:net9    = 949.4558m
+ +103:x       =   1.1000  104:net17   =   1.0740  104:net21   =  24.3374n
+ +104:net4    =   1.1000  104:net5    =  57.8274n 104:net8    =  83.0535n
+ +104:net9    = 949.4558m 104:x       =   1.1000  105:net17   =   1.0743 
+ +105:net21   =  24.6721n 105:net4    =   1.1000  105:net5    =  57.8274n
+ +105:net8    =  82.6617n 105:net9    = 949.4558m 105:x       =   1.1000 
+ +106:net17   =   1.0750  106:net21   =  25.6900n 106:net4    =   1.1000 
+ +106:net5    =  57.8274n 106:net8    =  82.6617n 106:net9    = 949.4558m
+ +106:x       =   1.1000  107:net17   =   1.0750  107:net21   =  25.6900n
+ +107:net4    =   1.1000  107:net5    =  57.8274n 107:net8    =  82.6617n
+ +107:net9    = 949.4558m 107:x       =   1.1000  108:net17   =   1.0743 
+ +108:net21   =  24.6721n 108:net4    =   1.1000  108:net5    =  57.8274n
+ +108:net8    =  82.6617n 108:net9    = 949.4558m 108:x       =   1.1000 
+ +109:net17   =   1.0749  109:net21   =  25.5714n 109:net4    =   1.1000 
+ +109:net5    =  57.8274n 109:net8    =  82.6617n 109:net9    = 949.4558m
+ +109:x       =   1.1000  110:net17   =   1.0749  110:net21   =  25.5714n
+ +110:net4    =   1.1000  110:net5    =  57.8274n 110:net8    =  82.6617n
+ +110:net9    = 949.4558m 110:x       =   1.1000  111:net17   =   1.0749 
+ +111:net21   =  25.5714n 111:net4    =   1.1000  111:net5    =  57.8274n
+ +111:net8    =  82.6617n 111:net9    = 949.4558m 111:x       =   1.1000 
+ +112:net17   =   1.0749  112:net21   =  25.5714n 112:net4    =   1.1000 
+ +112:net5    =  57.8274n 112:net8    =  82.6617n 112:net9    = 949.4558m
+ +112:x       =   1.1000  113:net17   =   1.8000  113:net3    =   1.8000 
+ +113:net7    =   4.1386n 114:net17   =   1.8000  114:net3    =   1.8000 
+ +114:net7    =   4.1386n 115:net17   =   1.8000  115:net3    =   1.8000 
+ +115:net7    =   4.1386n 116:net17   =   1.8000  116:net3    =   1.8000 
+ +116:net7    =   4.1386n 117:net17   =   1.8000  117:net3    =   1.8000 
+ +117:net7    =   4.1386n 118:net17   =   1.8000  118:net3    =   1.8000 
+ +118:net7    =   4.1386n 119:net17   =   1.8000  119:net3    =   1.8000 
+ +119:net7    =   4.1386n 120:net17   =   1.8000  120:net3    =   1.8000 
+ +120:net7    =   4.1386n 121:net1    =  70.8225p 121:net2    =   1.8000 
+ +177:net1    =   1.1000  177:net10   =  44.5061m 179:net1    =   1.1000 
+ +179:net10   =  44.5067m 181:net1    =   1.1000  181:net10   =  44.5067m
+ +183:net1    =   1.1000  183:net10   =  44.5067m 185:net1    =   1.1000 
+ +185:net10   =  44.6298m 187:net1    =   1.1000  187:net10   =  44.6299m
+ +189:net1    =   1.1000  189:net10   =  44.6304m 191:net1    =   1.1000 
+ +191:net10   =  44.6305m 193:net1    =   1.1000  193:net10   =  44.4970m
+ +195:net1    =   1.1000  195:net10   =  44.4975m 197:net1    =   1.1000 
+ +197:net10   =  44.4975m 199:net1    =   1.1000  199:net10   =  44.4975m
+ +201:net1    =   1.1000  201:net10   =  44.4974m 203:net1    =   1.1000 
+ +203:net10   =  44.5066m 205:net1    =   1.1000  205:net10   = 444.8854m
+ +207:net1    =   1.1000  207:net10   = 444.8854m 209:net1    =   1.1000 
+ +209:net10   = 444.8859m 211:net1    =   1.1000  211:net10   =  44.6303m
+ +213:net1    =   1.1000  213:net10   =  44.6292m 215:net1    =   1.1000 
+ +215:net10   = 481.7853m 217:net1    =   1.1000  217:net10   = 481.7855m
+ +219:net1    =   1.1000  219:net10   = 481.7853m 221:net1    =   1.1000 
+ +221:net10   = 481.7854m 223:net1    =   1.1000  223:net10   = 444.8858m
+ +225:net1    =   1.1000  225:net10   = 444.8862m 227:net1    =   1.1000 
+ +227:net10   = 444.8862m 229:net1    =   1.1000  229:net10   = 492.9601m
+ +231:net1    =   1.1000  231:net10   = 492.9603m 233:net1    =   1.1000 
+ +233:net10   = 444.8854m 235:net1    =   1.1000  235:net10   = 492.9603m
+ +237:net1    =   1.1000  237:net10   = 492.9601m 239:net1    =   1.1000 
+ +239:net10   = 444.8858m 241:net1    =   1.1000  241:net10   =  44.4966m
+ +243:net1    =   1.1000  243:net10   =  44.4966m 245:net1    =   1.1000 
+ +245:net10   =  44.4966m 247:net1    =   1.1000  247:net10   =  44.4966m
+ +249:net1    =   1.1000  249:net10   =  44.4966m 251:net1    =   1.1000 
+ +251:net10   =  44.4966m 253:net1    =   1.1000  253:net10   =  44.4966m
+ +255:net1    =   1.1000  255:net10   =  44.4966m
+
+ ******
+ ece 482 project testbench
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+x
+
+ time         param     
+             vdd_net    
+    0.          1.1000  
+    2.20000n  850.3003m 
+    4.40000n    1.3141  
+    6.60000n  868.7540m 
+    8.80000n    1.2630  
+   11.00000n  960.4705m 
+   13.20000n    1.1665  
+   15.40000n    1.0926  
+   17.60000n    1.0193  
+   19.80000n    1.2682  
+   22.00000n  866.5192m 
+   24.20000n    1.3698  
+   26.40000n  896.0072m 
+   28.60000n    1.3247  
+   30.80000n  950.8137m 
+   33.00000n  329.5900m 
+   35.20000n    1.2216  
+   37.40000n  745.5867m 
+   39.60000n    1.3010  
+   41.80000n  946.9876m 
+   44.00000n    1.1480  
+y
+x
+
+ time         param     
+             vddio_net  
+    0.          1.8000  
+    2.20000n    1.8138  
+    4.40000n    1.8411  
+    6.60000n    1.7452  
+    8.80000n    1.8554  
+   11.00000n    1.7271  
+   13.20000n    1.8386  
+   15.40000n    1.7638  
+   17.60000n    1.8147  
+   19.80000n    1.8146  
+   22.00000n    1.7938  
+   24.20000n    1.8397  
+   26.40000n    1.8565  
+   28.60000n    1.9546  
+   30.80000n    1.7304  
+   33.00000n    2.1867  
+   35.20000n    1.8390  
+   37.40000n    1.5090  
+   39.60000n    1.8706  
+   41.80000n    1.6438  
+   44.00000n    1.9445  
+y
+ avg_pwr_vdd= -20.6404m  from=  10.0000f     to=  44.0000n
+ avg_pwr_vddio= -15.2547m  from=  10.0000f     to=  44.0000n
+
+          ***** job concluded
+ ******  
+ ece 482 project testbench
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: Intel(R) Xeon(R) W-1350 @ 3.30GHz
+ cpu MHz	: 4301.660
+ CPU(s)		: 12
+  
+ OS:
+ Linux version 5.14.0-611.11.1.el9_7.x86_64 (mockbuild@x86-64-04.build.eng.rdu2.redhat.com) (gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-11), GNU ld version 2.35.2-67.el9) #1 SMP PREEMPT_DYNAMIC Tue Nov 25 05:13:22 EST 2025
+
+ System loadavg : 0.63 0.43 0.37 2/1072 740463
+
+
+  ******  PrimeSim HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :    12
+  Actual Threads Count       :     1
+
+
+  ****** Statistics of Ignored Elements ******
+  Inductors       :      20
+
+  ******  Circuit Statistics  ******
+  # nodes       =    5021 # elements   =    1887
+  # resistors   =       0 # capacitors =      42 # inductors   =      11
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =      13
+  # curr_srcs   =       1 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =    1820 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           1.86           1        1101
+  transient          6.25          21        5199        1683 rev=        38
+  readin             0.03
+  errchk             0.32
+  setup              0.04
+  output             0.00
+
+
+           peak memory used        451.56 megabytes
+           total cpu time            8.39 seconds
+           total elapsed time        8.43 seconds
+           job started at     19:46:35 12/03/2025
+           job ended   at     19:46:44 12/03/2025
+
+>info:         ***** hspice job concluded
+           job total runtime         8.43 seconds
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.03(s)
