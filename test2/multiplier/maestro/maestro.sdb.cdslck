@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      jstreck2
+HostName                       eceb-2022-06.ews.illinois.edu
+ProcessIdentifier              2049427
+ProcessCreationTime_UTC        1764893836
+ProcessCreationTime_Readable   Thu Dec  4 18:17:16 2025 CST
+AppIdentifier                  /software/cadence-2024-08/IC231/tools.lnx86/dfII/bin/64bit/virtuoso
+OSType                         lnx86
+ReasonForPlacingEditLock       
+FilePathUsedToEditLock         /home/jstreck2/ece482.work/ECE-482-Final-Project/ECE-482-Final-Project/test2/multiplier/maestro/maestro.sdb
+TimeEditLocked                 Thu Dec  4 23:22:34 2025 CST

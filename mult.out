@@ -1,4 +1,4 @@
-Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice ece_482_proj_tb2.cir
+Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice ece_482_proj_tb.cir
  ****** PrimeSim HSPICE -- T-2022.06-SP1 linux64 (Aug 19 2022 7764626) ******
   Copyright (c) 1986 - 2025 by Synopsys, Inc. All Rights Reserved.
   This software and the associated documentation are proprietary
@@ -6,21 +6,21 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
   with the terms and conditions of a written license agreement with
   Synopsys, Inc. All other use, reproduction, or distribution of
   this software is strictly prohibited.
-  Input File: ece_482_proj_tb2.cir                                              
-  Command line options: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice ece_482_proj_tb2.cir
-  Start time: Thu Dec  4 15:50:38 2025
+  Input File: ece_482_proj_tb.cir                                               
+  Command line options: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice ece_482_proj_tb.cir
+  Start time: Thu Dec  4 23:30:24 2025
  lic:  
  lic: FLEXlm: SDK_12.11.1 
- lic: USER:   jstreck2             HOSTNAME: gelib-4e-43.ews.illinois.edu 
- lic: HOSTID: 7e826cf7             PID:      393335 
+ lic: USER:   jstreck2             HOSTNAME: eceb-2022-06.ews.illinois.edu 
+ lic: HOSTID: ffffffffae807ebb     PID:      2384965 
  lic: Using FLEXlm license file: 
  lic: 27005@synopsys.webstore.illinois.edu 
  lic: Checkout 1 hspice 
  lic: License/Maintenance for hspice will expire on 15-apr-2026/2024.09 
- lic: 1(in_use)/150(total) FLOATING license(s) on SERVER 27005@synopsys.webstore.illinois.edu 
+ lic: 2(in_use)/150(total) FLOATING license(s) on SERVER 27005@synopsys.webstore.illinois.edu 
  lic:   
   **warning** (/class/ece482/gpdk045_mos_details:124) Model g45n1svt device geometries will not be checked against the limits set by lmin, lmax, wmin and wmax. To enable this check, add a period(.) to the model name(i.e. enable model selector).
-  **warning** (ece_482_proj_tb2.cir:1045)   **warning** Found illegal characters s, truncated as number 0n
+  **warning** (ece_482_proj_tb.cir:1049)   **warning** Found illegal characters s, truncated as number 0n
 1****** PrimeSim HSPICE -- T-2022.06-SP1 linux64 (Aug 19 2022 7764626) ******
  ******  
  ece 482 project testbench
@@ -66,641 +66,642 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
        27 xi21.                           full_adder         1.00 
        28 xi14.                           full_adder         1.00 
        29 xi13.                           full_adder         1.00 
-       30 xi125.                          inverter_minsize   1.00 
-       31 xi124.                          inverter_minsize   1.00 
-       32 xi123.                          inverter_minsize   1.00 
-       33 xi122.                          inverter_minsize   1.00 
-       34 xi121.                          inverter_minsize   1.00 
-       35 xi120.                          inverter_minsize   1.00 
-       36 xi119.                          inverter_minsize   1.00 
-       37 xi118.                          inverter_minsize   1.00 
-       38 xi90.                           inverter_minsize   1.00 
-       39 xi44.                           and_minsize        1.00 
-       40 xi45.                           and_minsize        1.00 
-       41 xi42.                           and_minsize        1.00 
-       42 xi43.                           and_minsize        1.00 
-       43 xi49.                           and_minsize        1.00 
-       44 xi52.                           and_minsize        1.00 
-       45 xi51.                           and_minsize        1.00 
-       46 xi50.                           and_minsize        1.00 
-       47 xi53.                           and_minsize        1.00 
-       48 xi54.                           and_minsize        1.00 
-       49 xi55.                           and_minsize        1.00 
-       50 xi56.                           and_minsize        1.00 
-       51 xi48.                           and_minsize        1.00 
-       52 xi46.                           and_minsize        1.00 
-       53 xi47.                           and_minsize        1.00 
-       54 xi135.                          and_minsize        1.00 
-       55 xi75.                           level_shifter_1_8_to_1_1
+       30 xi162.                          inverter_minsize   1.00 
+       31 xi125.                          inverter_minsize   1.00 
+       32 xi124.                          inverter_minsize   1.00 
+       33 xi123.                          inverter_minsize   1.00 
+       34 xi122.                          inverter_minsize   1.00 
+       35 xi121.                          inverter_minsize   1.00 
+       36 xi120.                          inverter_minsize   1.00 
+       37 xi119.                          inverter_minsize   1.00 
+       38 xi118.                          inverter_minsize   1.00 
+       39 xi90.                           inverter_minsize   1.00 
+       40 xi44.                           and_minsize        1.00 
+       41 xi45.                           and_minsize        1.00 
+       42 xi42.                           and_minsize        1.00 
+       43 xi43.                           and_minsize        1.00 
+       44 xi49.                           and_minsize        1.00 
+       45 xi52.                           and_minsize        1.00 
+       46 xi51.                           and_minsize        1.00 
+       47 xi50.                           and_minsize        1.00 
+       48 xi53.                           and_minsize        1.00 
+       49 xi54.                           and_minsize        1.00 
+       50 xi55.                           and_minsize        1.00 
+       51 xi56.                           and_minsize        1.00 
+       52 xi48.                           and_minsize        1.00 
+       53 xi46.                           and_minsize        1.00 
+       54 xi47.                           and_minsize        1.00 
+       55 xi135.                          and_minsize        1.00 
+       56 xi75.                           level_shifter_1_8_to_1_1
                                                                  1.00 
-       56 xi74.                           level_shifter_1_8_to_1_1
+       57 xi74.                           level_shifter_1_8_to_1_1
                                                                  1.00 
-       57 xi73.                           level_shifter_1_8_to_1_1
+       58 xi73.                           level_shifter_1_8_to_1_1
                                                                  1.00 
-       58 xi72.                           level_shifter_1_8_to_1_1
+       59 xi72.                           level_shifter_1_8_to_1_1
                                                                  1.00 
-       59 xi71.                           level_shifter_1_8_to_1_1
+       60 xi71.                           level_shifter_1_8_to_1_1
                                                                  1.00 
-       60 xi70.                           level_shifter_1_8_to_1_1
+       61 xi70.                           level_shifter_1_8_to_1_1
                                                                  1.00 
-       61 xi69.                           level_shifter_1_8_to_1_1
+       62 xi69.                           level_shifter_1_8_to_1_1
                                                                  1.00 
-       62 xi68.                           level_shifter_1_8_to_1_1
+       63 xi68.                           level_shifter_1_8_to_1_1
                                                                  1.00 
-       63 xi67.                           level_shifter_1_8_to_1_1
+       64 xi67.                           level_shifter_1_8_to_1_1
                                                                  1.00 
-       64 xi84.                           inverter_1_8_v     1.00 
-       65 xi83.                           inverter_1_8_v     1.00 
-       66 xi82.                           inverter_1_8_v     1.00 
-       67 xi81.                           inverter_1_8_v     1.00 
-       68 xi80.                           inverter_1_8_v     1.00 
-       69 xi79.                           inverter_1_8_v     1.00 
-       70 xi78.                           inverter_1_8_v     1.00 
-       71 xi77.                           inverter_1_8_v     1.00 
-       72 xi76.                           inverter_1_8_v     1.00 
-       73 xi109.                          c2mos_register     1.00 
-       74 xi108.                          c2mos_register     1.00 
-       75 xi107.                          c2mos_register     1.00 
-       76 xi106.                          c2mos_register     1.00 
-       77 xi105.                          c2mos_register     1.00 
-       78 xi104.                          c2mos_register     1.00 
-       79 xi103.                          c2mos_register     1.00 
-       80 xi102.                          c2mos_register     1.00 
-       81 xi101.                          c2mos_register     1.00 
-       82 xi100.                          c2mos_register     1.00 
-       83 xi99.                           c2mos_register     1.00 
-       84 xi98.                           c2mos_register     1.00 
-       85 xi97.                           c2mos_register     1.00 
-       86 xi96.                           c2mos_register     1.00 
-       87 xi95.                           c2mos_register     1.00 
-       88 xi94.                           c2mos_register     1.00 
-       89 xi93.                           c2mos_register     1.00 
-       90 xi92.                           c2mos_register     1.00 
-       91 xi91.                           c2mos_register     1.00 
-       92 xi89.                           c2mos_register     1.00 
-       93 xi88.                           c2mos_register     1.00 
-       94 xi87.                           c2mos_register     1.00 
-       95 xi86.                           c2mos_register     1.00 
-       96 xi85.                           c2mos_register     1.00 
-       97 xi66.                           c2mos_register     1.00 
-       98 xi65.                           c2mos_register     1.00 
-       99 xi64.                           c2mos_register     1.00 
-      100 xi63.                           c2mos_register     1.00 
-      101 xi60.                           c2mos_register     1.00 
-      102 xi62.                           c2mos_register     1.00 
-      103 xi61.                           c2mos_register     1.00 
-      104 xi57.                           c2mos_register     1.00 
-      105 xi7.                            c2mos_register     1.00 
-      106 xi6.                            c2mos_register     1.00 
-      107 xi5.                            c2mos_register     1.00 
-      108 xi4.                            c2mos_register     1.00 
-      109 xi3.                            c2mos_register     1.00 
-      110 xi2.                            c2mos_register     1.00 
-      111 xi1.                            c2mos_register     1.00 
-      112 xi0.                            c2mos_register     1.00 
-      113 xi160.                          superbuffer_4      1.00 
-      114 xi158.                          superbuffer_4      1.00 
-      115 xi155.                          superbuffer_4      1.00 
-      116 xi154.                          superbuffer_4      1.00 
-      117 xi159.                          superbuffer_4      1.00 
-      118 xi156.                          superbuffer_4      1.00 
-      119 xi157.                          superbuffer_4      1.00 
-      120 xi161.                          superbuffer_4      1.00 
-      121 xr41.                           resm11_pcell_0     1.00 
-      122 xr1.                            resm11_pcell_0     1.00 
-      123 xr0.                            resm11_pcell_0     1.00 
-      124 xr10.                           resm11_pcell_0     1.00 
-      125 xr11.                           resm11_pcell_0     1.00 
-      126 xr12.                           resm11_pcell_0     1.00 
-      127 xr13.                           resm11_pcell_0     1.00 
-      128 xr20.                           resm11_pcell_0     1.00 
-      129 xr21.                           resm11_pcell_0     1.00 
-      130 xr6.                            resm11_pcell_0     1.00 
-      131 xr7.                            resm11_pcell_0     1.00 
-      132 xr14.                           resm11_pcell_0     1.00 
-      133 xr15.                           resm11_pcell_0     1.00 
-      134 xr3.                            resm11_pcell_0     1.00 
-      135 xr2.                            resm11_pcell_0     1.00 
-      136 xr28.                           resm11_pcell_0     1.00 
-      137 xr29.                           resm11_pcell_0     1.00 
-      138 xr30.                           resm11_pcell_0     1.00 
-      139 xr31.                           resm11_pcell_0     1.00 
-      140 xr24.                           resm11_pcell_0     1.00 
-      141 xr25.                           resm11_pcell_0     1.00 
-      142 xr26.                           resm11_pcell_0     1.00 
-      143 xr27.                           resm11_pcell_0     1.00 
-      144 xr5.                            resm11_pcell_0     1.00 
-      145 xr4.                            resm11_pcell_0     1.00 
-      146 xr39.                           resm11_pcell_0     1.00 
-      147 xr38.                           resm11_pcell_0     1.00 
-      148 xr37.                           resm11_pcell_0     1.00 
-      149 xr36.                           resm11_pcell_0     1.00 
-      150 xr35.                           resm11_pcell_0     1.00 
-      151 xr34.                           resm11_pcell_0     1.00 
-      152 xr33.                           resm11_pcell_0     1.00 
-      153 xr40.                           resm11_pcell_0     1.00 
-      154 xr32.                           resm11_pcell_0     1.00 
-      155 xr16.                           resm11_pcell_0     1.00 
-      156 xr19.                           resm11_pcell_0     1.00 
-      157 xr17.                           resm11_pcell_0     1.00 
-      158 xr18.                           resm11_pcell_0     1.00 
-      159 xi126.xi1<0>.                   unitcell_decap     1.00 
-      160 xi126.xi1<1>.                   unitcell_decap     1.00 
-      161 xi126.xi1<2>.                   unitcell_decap     1.00 
-      162 xi126.xi1<3>.                   unitcell_decap     1.00 
-      163 xi126.xi1<4>.                   unitcell_decap     1.00 
-      164 xi126.xi1<5>.                   unitcell_decap     1.00 
-      165 xi126.xi1<6>.                   unitcell_decap     1.00 
-      166 xi126.xi1<7>.                   unitcell_decap     1.00 
-      167 xi126.xi1<8>.                   unitcell_decap     1.00 
-      168 xi126.xi1<9>.                   unitcell_decap     1.00 
-      169 xi126.xi1<10>.                  unitcell_decap     1.00 
-      170 xi126.xi1<11>.                  unitcell_decap     1.00 
-      171 xi126.xi1<12>.                  unitcell_decap     1.00 
-      172 xi126.xi1<13>.                  unitcell_decap     1.00 
-      173 xi126.xi1<14>.                  unitcell_decap     1.00 
-      174 xi126.xi1<15>.                  unitcell_decap     1.00 
-      175 xi126.xi1<16>.                  unitcell_decap     1.00 
-      176 xi126.xi1<17>.                  unitcell_decap     1.00 
-      177 xi126.xi1<18>.                  unitcell_decap     1.00 
-      178 xi126.xi1<19>.                  unitcell_decap     1.00 
-      179 xi126.xi1<20>.                  unitcell_decap     1.00 
-      180 xi126.xi1<21>.                  unitcell_decap     1.00 
-      181 xi126.xi1<22>.                  unitcell_decap     1.00 
-      182 xi126.xi1<23>.                  unitcell_decap     1.00 
-      183 xi126.xi1<24>.                  unitcell_decap     1.00 
-      184 xi126.xi1<25>.                  unitcell_decap     1.00 
-      185 xi126.xi1<26>.                  unitcell_decap     1.00 
-      186 xi126.xi1<27>.                  unitcell_decap     1.00 
-      187 xi126.xi1<28>.                  unitcell_decap     1.00 
-      188 xi126.xi1<29>.                  unitcell_decap     1.00 
-      189 xi126.xi1<30>.                  unitcell_decap     1.00 
-      190 xi126.xi1<31>.                  unitcell_decap     1.00 
-      191 xi126.xi1<32>.                  unitcell_decap     1.00 
-      192 xi126.xi1<33>.                  unitcell_decap     1.00 
-      193 xi126.xi1<34>.                  unitcell_decap     1.00 
-      194 xi126.xi1<35>.                  unitcell_decap     1.00 
-      195 xi126.xi1<36>.                  unitcell_decap     1.00 
-      196 xi126.xi1<37>.                  unitcell_decap     1.00 
-      197 xi126.xi1<38>.                  unitcell_decap     1.00 
-      198 xi126.xi1<39>.                  unitcell_decap     1.00 
-      199 xi44.xi0.                       inverter_minsize   1.00 
-      200 xi45.xi0.                       inverter_minsize   1.00 
-      201 xi42.xi0.                       inverter_minsize   1.00 
-      202 xi43.xi0.                       inverter_minsize   1.00 
-      203 xi49.xi0.                       inverter_minsize   1.00 
-      204 xi52.xi0.                       inverter_minsize   1.00 
-      205 xi51.xi0.                       inverter_minsize   1.00 
-      206 xi50.xi0.                       inverter_minsize   1.00 
-      207 xi53.xi0.                       inverter_minsize   1.00 
-      208 xi54.xi0.                       inverter_minsize   1.00 
-      209 xi55.xi0.                       inverter_minsize   1.00 
-      210 xi56.xi0.                       inverter_minsize   1.00 
-      211 xi48.xi0.                       inverter_minsize   1.00 
-      212 xi46.xi0.                       inverter_minsize   1.00 
-      213 xi47.xi0.                       inverter_minsize   1.00 
-      214 xi135.xi0.                      inverter_minsize   1.00 
-      215 xi109.xi0.                      and_minsize        1.00 
-      216 xi109.xi1.                      inverter_minsize   1.00 
-      217 xi108.xi0.                      and_minsize        1.00 
-      218 xi108.xi1.                      inverter_minsize   1.00 
-      219 xi107.xi0.                      and_minsize        1.00 
-      220 xi107.xi1.                      inverter_minsize   1.00 
-      221 xi106.xi0.                      and_minsize        1.00 
-      222 xi106.xi1.                      inverter_minsize   1.00 
-      223 xi105.xi0.                      and_minsize        1.00 
-      224 xi105.xi1.                      inverter_minsize   1.00 
-      225 xi104.xi0.                      and_minsize        1.00 
-      226 xi104.xi1.                      inverter_minsize   1.00 
-      227 xi103.xi0.                      and_minsize        1.00 
-      228 xi103.xi1.                      inverter_minsize   1.00 
-      229 xi102.xi0.                      and_minsize        1.00 
-      230 xi102.xi1.                      inverter_minsize   1.00 
-      231 xi101.xi0.                      and_minsize        1.00 
-      232 xi101.xi1.                      inverter_minsize   1.00 
-      233 xi100.xi0.                      and_minsize        1.00 
-      234 xi100.xi1.                      inverter_minsize   1.00 
-      235 xi99.xi0.                       and_minsize        1.00 
-      236 xi99.xi1.                       inverter_minsize   1.00 
-      237 xi98.xi0.                       and_minsize        1.00 
-      238 xi98.xi1.                       inverter_minsize   1.00 
-      239 xi97.xi0.                       and_minsize        1.00 
-      240 xi97.xi1.                       inverter_minsize   1.00 
-      241 xi96.xi0.                       and_minsize        1.00 
-      242 xi96.xi1.                       inverter_minsize   1.00 
-      243 xi95.xi0.                       and_minsize        1.00 
-      244 xi95.xi1.                       inverter_minsize   1.00 
-      245 xi94.xi0.                       and_minsize        1.00 
-      246 xi94.xi1.                       inverter_minsize   1.00 
-      247 xi93.xi0.                       and_minsize        1.00 
-      248 xi93.xi1.                       inverter_minsize   1.00 
-      249 xi92.xi0.                       and_minsize        1.00 
-      250 xi92.xi1.                       inverter_minsize   1.00 
-      251 xi91.xi0.                       and_minsize        1.00 
-      252 xi91.xi1.                       inverter_minsize   1.00 
-      253 xi89.xi0.                       and_minsize        1.00 
-      254 xi89.xi1.                       inverter_minsize   1.00 
-      255 xi88.xi0.                       and_minsize        1.00 
-      256 xi88.xi1.                       inverter_minsize   1.00 
-      257 xi87.xi0.                       and_minsize        1.00 
-      258 xi87.xi1.                       inverter_minsize   1.00 
-      259 xi86.xi0.                       and_minsize        1.00 
-      260 xi86.xi1.                       inverter_minsize   1.00 
-      261 xi85.xi0.                       and_minsize        1.00 
-      262 xi85.xi1.                       inverter_minsize   1.00 
-      263 xi66.xi0.                       and_minsize        1.00 
-      264 xi66.xi1.                       inverter_minsize   1.00 
-      265 xi65.xi0.                       and_minsize        1.00 
-      266 xi65.xi1.                       inverter_minsize   1.00 
-      267 xi64.xi0.                       and_minsize        1.00 
-      268 xi64.xi1.                       inverter_minsize   1.00 
-      269 xi63.xi0.                       and_minsize        1.00 
-      270 xi63.xi1.                       inverter_minsize   1.00 
-      271 xi60.xi0.                       and_minsize        1.00 
-      272 xi60.xi1.                       inverter_minsize   1.00 
-      273 xi62.xi0.                       and_minsize        1.00 
-      274 xi62.xi1.                       inverter_minsize   1.00 
-      275 xi61.xi0.                       and_minsize        1.00 
-      276 xi61.xi1.                       inverter_minsize   1.00 
-      277 xi57.xi0.                       and_minsize        1.00 
-      278 xi57.xi1.                       inverter_minsize   1.00 
-      279 xi7.xi0.                        and_minsize        1.00 
-      280 xi7.xi1.                        inverter_minsize   1.00 
-      281 xi6.xi0.                        and_minsize        1.00 
-      282 xi6.xi1.                        inverter_minsize   1.00 
-      283 xi5.xi0.                        and_minsize        1.00 
-      284 xi5.xi1.                        inverter_minsize   1.00 
-      285 xi4.xi0.                        and_minsize        1.00 
-      286 xi4.xi1.                        inverter_minsize   1.00 
-      287 xi3.xi0.                        and_minsize        1.00 
-      288 xi3.xi1.                        inverter_minsize   1.00 
-      289 xi2.xi0.                        and_minsize        1.00 
-      290 xi2.xi1.                        inverter_minsize   1.00 
-      291 xi1.xi0.                        and_minsize        1.00 
-      292 xi1.xi1.                        inverter_minsize   1.00 
-      293 xi0.xi0.                        and_minsize        1.00 
-      294 xi0.xi1.                        inverter_minsize   1.00 
-      295 xi109.xi0.xi0.                  inverter_minsize   1.00 
-      296 xi108.xi0.xi0.                  inverter_minsize   1.00 
-      297 xi107.xi0.xi0.                  inverter_minsize   1.00 
-      298 xi106.xi0.xi0.                  inverter_minsize   1.00 
-      299 xi105.xi0.xi0.                  inverter_minsize   1.00 
-      300 xi104.xi0.xi0.                  inverter_minsize   1.00 
-      301 xi103.xi0.xi0.                  inverter_minsize   1.00 
-      302 xi102.xi0.xi0.                  inverter_minsize   1.00 
-      303 xi101.xi0.xi0.                  inverter_minsize   1.00 
-      304 xi100.xi0.xi0.                  inverter_minsize   1.00 
-      305 xi99.xi0.xi0.                   inverter_minsize   1.00 
-      306 xi98.xi0.xi0.                   inverter_minsize   1.00 
-      307 xi97.xi0.xi0.                   inverter_minsize   1.00 
-      308 xi96.xi0.xi0.                   inverter_minsize   1.00 
-      309 xi95.xi0.xi0.                   inverter_minsize   1.00 
-      310 xi94.xi0.xi0.                   inverter_minsize   1.00 
-      311 xi93.xi0.xi0.                   inverter_minsize   1.00 
-      312 xi92.xi0.xi0.                   inverter_minsize   1.00 
-      313 xi91.xi0.xi0.                   inverter_minsize   1.00 
-      314 xi89.xi0.xi0.                   inverter_minsize   1.00 
-      315 xi88.xi0.xi0.                   inverter_minsize   1.00 
-      316 xi87.xi0.xi0.                   inverter_minsize   1.00 
-      317 xi86.xi0.xi0.                   inverter_minsize   1.00 
-      318 xi85.xi0.xi0.                   inverter_minsize   1.00 
-      319 xi66.xi0.xi0.                   inverter_minsize   1.00 
-      320 xi65.xi0.xi0.                   inverter_minsize   1.00 
-      321 xi64.xi0.xi0.                   inverter_minsize   1.00 
-      322 xi63.xi0.xi0.                   inverter_minsize   1.00 
-      323 xi60.xi0.xi0.                   inverter_minsize   1.00 
-      324 xi62.xi0.xi0.                   inverter_minsize   1.00 
-      325 xi61.xi0.xi0.                   inverter_minsize   1.00 
-      326 xi57.xi0.xi0.                   inverter_minsize   1.00 
-      327 xi7.xi0.xi0.                    inverter_minsize   1.00 
-      328 xi6.xi0.xi0.                    inverter_minsize   1.00 
-      329 xi5.xi0.xi0.                    inverter_minsize   1.00 
-      330 xi4.xi0.xi0.                    inverter_minsize   1.00 
-      331 xi3.xi0.xi0.                    inverter_minsize   1.00 
-      332 xi2.xi0.xi0.                    inverter_minsize   1.00 
-      333 xi1.xi0.xi0.                    inverter_minsize   1.00 
-      334 xi0.xi0.xi0.                    inverter_minsize   1.00 
-      335 xi133.xi1<0>.                   unitcell_decap     1.00 
-      336 xi134.xi1<0>.                   unitcell_decap     1.00 
-      337 xi131.xi1<0>.                   unitcell_decap     1.00 
-      338 xi132.xi1<0>.                   unitcell_decap     1.00 
-      339 xi130.xi1<0>.                   unitcell_decap     1.00 
-      340 xi129.xi1<0>.                   unitcell_decap     1.00 
-      341 xi128.xi1<0>.                   unitcell_decap     1.00 
-      342 xi127.xi1<0>.                   unitcell_decap     1.00 
-      343 xi133.xi1<1>.                   unitcell_decap     1.00 
-      344 xi134.xi1<1>.                   unitcell_decap     1.00 
-      345 xi131.xi1<1>.                   unitcell_decap     1.00 
-      346 xi132.xi1<1>.                   unitcell_decap     1.00 
-      347 xi130.xi1<1>.                   unitcell_decap     1.00 
-      348 xi129.xi1<1>.                   unitcell_decap     1.00 
-      349 xi128.xi1<1>.                   unitcell_decap     1.00 
-      350 xi127.xi1<1>.                   unitcell_decap     1.00 
-      351 xi133.xi1<2>.                   unitcell_decap     1.00 
-      352 xi134.xi1<2>.                   unitcell_decap     1.00 
-      353 xi131.xi1<2>.                   unitcell_decap     1.00 
-      354 xi132.xi1<2>.                   unitcell_decap     1.00 
-      355 xi130.xi1<2>.                   unitcell_decap     1.00 
-      356 xi129.xi1<2>.                   unitcell_decap     1.00 
-      357 xi128.xi1<2>.                   unitcell_decap     1.00 
-      358 xi127.xi1<2>.                   unitcell_decap     1.00 
-      359 xi133.xi1<3>.                   unitcell_decap     1.00 
-      360 xi134.xi1<3>.                   unitcell_decap     1.00 
-      361 xi131.xi1<3>.                   unitcell_decap     1.00 
-      362 xi132.xi1<3>.                   unitcell_decap     1.00 
-      363 xi130.xi1<3>.                   unitcell_decap     1.00 
-      364 xi129.xi1<3>.                   unitcell_decap     1.00 
-      365 xi128.xi1<3>.                   unitcell_decap     1.00 
-      366 xi127.xi1<3>.                   unitcell_decap     1.00 
-      367 xi133.xi1<4>.                   unitcell_decap     1.00 
-      368 xi134.xi1<4>.                   unitcell_decap     1.00 
-      369 xi131.xi1<4>.                   unitcell_decap     1.00 
-      370 xi132.xi1<4>.                   unitcell_decap     1.00 
-      371 xi130.xi1<4>.                   unitcell_decap     1.00 
-      372 xi129.xi1<4>.                   unitcell_decap     1.00 
-      373 xi128.xi1<4>.                   unitcell_decap     1.00 
-      374 xi127.xi1<4>.                   unitcell_decap     1.00 
-      375 xi133.xi1<5>.                   unitcell_decap     1.00 
-      376 xi134.xi1<5>.                   unitcell_decap     1.00 
-      377 xi131.xi1<5>.                   unitcell_decap     1.00 
-      378 xi132.xi1<5>.                   unitcell_decap     1.00 
-      379 xi130.xi1<5>.                   unitcell_decap     1.00 
-      380 xi129.xi1<5>.                   unitcell_decap     1.00 
-      381 xi128.xi1<5>.                   unitcell_decap     1.00 
-      382 xi127.xi1<5>.                   unitcell_decap     1.00 
-      383 xi133.xi1<6>.                   unitcell_decap     1.00 
-      384 xi134.xi1<6>.                   unitcell_decap     1.00 
-      385 xi131.xi1<6>.                   unitcell_decap     1.00 
-      386 xi132.xi1<6>.                   unitcell_decap     1.00 
-      387 xi130.xi1<6>.                   unitcell_decap     1.00 
-      388 xi129.xi1<6>.                   unitcell_decap     1.00 
-      389 xi128.xi1<6>.                   unitcell_decap     1.00 
-      390 xi127.xi1<6>.                   unitcell_decap     1.00 
-      391 xi133.xi1<7>.                   unitcell_decap     1.00 
-      392 xi134.xi1<7>.                   unitcell_decap     1.00 
-      393 xi131.xi1<7>.                   unitcell_decap     1.00 
-      394 xi132.xi1<7>.                   unitcell_decap     1.00 
-      395 xi130.xi1<7>.                   unitcell_decap     1.00 
-      396 xi129.xi1<7>.                   unitcell_decap     1.00 
-      397 xi128.xi1<7>.                   unitcell_decap     1.00 
-      398 xi127.xi1<7>.                   unitcell_decap     1.00 
-      399 xi133.xi1<8>.                   unitcell_decap     1.00 
-      400 xi134.xi1<8>.                   unitcell_decap     1.00 
-      401 xi131.xi1<8>.                   unitcell_decap     1.00 
-      402 xi132.xi1<8>.                   unitcell_decap     1.00 
-      403 xi130.xi1<8>.                   unitcell_decap     1.00 
-      404 xi129.xi1<8>.                   unitcell_decap     1.00 
-      405 xi128.xi1<8>.                   unitcell_decap     1.00 
-      406 xi127.xi1<8>.                   unitcell_decap     1.00 
-      407 xi133.xi1<9>.                   unitcell_decap     1.00 
-      408 xi134.xi1<9>.                   unitcell_decap     1.00 
-      409 xi131.xi1<9>.                   unitcell_decap     1.00 
-      410 xi132.xi1<9>.                   unitcell_decap     1.00 
-      411 xi130.xi1<9>.                   unitcell_decap     1.00 
-      412 xi129.xi1<9>.                   unitcell_decap     1.00 
-      413 xi128.xi1<9>.                   unitcell_decap     1.00 
-      414 xi127.xi1<9>.                   unitcell_decap     1.00 
-      415 xi133.xi1<10>.                  unitcell_decap     1.00 
-      416 xi134.xi1<10>.                  unitcell_decap     1.00 
-      417 xi131.xi1<10>.                  unitcell_decap     1.00 
-      418 xi132.xi1<10>.                  unitcell_decap     1.00 
-      419 xi130.xi1<10>.                  unitcell_decap     1.00 
-      420 xi129.xi1<10>.                  unitcell_decap     1.00 
-      421 xi128.xi1<10>.                  unitcell_decap     1.00 
-      422 xi127.xi1<10>.                  unitcell_decap     1.00 
-      423 xi133.xi1<11>.                  unitcell_decap     1.00 
-      424 xi134.xi1<11>.                  unitcell_decap     1.00 
-      425 xi131.xi1<11>.                  unitcell_decap     1.00 
-      426 xi132.xi1<11>.                  unitcell_decap     1.00 
-      427 xi130.xi1<11>.                  unitcell_decap     1.00 
-      428 xi129.xi1<11>.                  unitcell_decap     1.00 
-      429 xi128.xi1<11>.                  unitcell_decap     1.00 
-      430 xi127.xi1<11>.                  unitcell_decap     1.00 
-      431 xi133.xi1<12>.                  unitcell_decap     1.00 
-      432 xi134.xi1<12>.                  unitcell_decap     1.00 
-      433 xi131.xi1<12>.                  unitcell_decap     1.00 
-      434 xi132.xi1<12>.                  unitcell_decap     1.00 
-      435 xi130.xi1<12>.                  unitcell_decap     1.00 
-      436 xi129.xi1<12>.                  unitcell_decap     1.00 
-      437 xi128.xi1<12>.                  unitcell_decap     1.00 
-      438 xi127.xi1<12>.                  unitcell_decap     1.00 
-      439 xi133.xi1<13>.                  unitcell_decap     1.00 
-      440 xi134.xi1<13>.                  unitcell_decap     1.00 
-      441 xi131.xi1<13>.                  unitcell_decap     1.00 
-      442 xi132.xi1<13>.                  unitcell_decap     1.00 
-      443 xi130.xi1<13>.                  unitcell_decap     1.00 
-      444 xi129.xi1<13>.                  unitcell_decap     1.00 
-      445 xi128.xi1<13>.                  unitcell_decap     1.00 
-      446 xi127.xi1<13>.                  unitcell_decap     1.00 
-      447 xi133.xi1<14>.                  unitcell_decap     1.00 
-      448 xi134.xi1<14>.                  unitcell_decap     1.00 
-      449 xi131.xi1<14>.                  unitcell_decap     1.00 
-      450 xi132.xi1<14>.                  unitcell_decap     1.00 
-      451 xi130.xi1<14>.                  unitcell_decap     1.00 
-      452 xi129.xi1<14>.                  unitcell_decap     1.00 
-      453 xi128.xi1<14>.                  unitcell_decap     1.00 
-      454 xi127.xi1<14>.                  unitcell_decap     1.00 
-      455 xi133.xi1<15>.                  unitcell_decap     1.00 
-      456 xi134.xi1<15>.                  unitcell_decap     1.00 
-      457 xi131.xi1<15>.                  unitcell_decap     1.00 
-      458 xi132.xi1<15>.                  unitcell_decap     1.00 
-      459 xi130.xi1<15>.                  unitcell_decap     1.00 
-      460 xi129.xi1<15>.                  unitcell_decap     1.00 
-      461 xi128.xi1<15>.                  unitcell_decap     1.00 
-      462 xi127.xi1<15>.                  unitcell_decap     1.00 
-      463 xi133.xi1<16>.                  unitcell_decap     1.00 
-      464 xi134.xi1<16>.                  unitcell_decap     1.00 
-      465 xi131.xi1<16>.                  unitcell_decap     1.00 
-      466 xi132.xi1<16>.                  unitcell_decap     1.00 
-      467 xi130.xi1<16>.                  unitcell_decap     1.00 
-      468 xi129.xi1<16>.                  unitcell_decap     1.00 
-      469 xi128.xi1<16>.                  unitcell_decap     1.00 
-      470 xi127.xi1<16>.                  unitcell_decap     1.00 
-      471 xi133.xi1<17>.                  unitcell_decap     1.00 
-      472 xi134.xi1<17>.                  unitcell_decap     1.00 
-      473 xi131.xi1<17>.                  unitcell_decap     1.00 
-      474 xi132.xi1<17>.                  unitcell_decap     1.00 
-      475 xi130.xi1<17>.                  unitcell_decap     1.00 
-      476 xi129.xi1<17>.                  unitcell_decap     1.00 
-      477 xi128.xi1<17>.                  unitcell_decap     1.00 
-      478 xi127.xi1<17>.                  unitcell_decap     1.00 
-      479 xi133.xi1<18>.                  unitcell_decap     1.00 
-      480 xi134.xi1<18>.                  unitcell_decap     1.00 
-      481 xi131.xi1<18>.                  unitcell_decap     1.00 
-      482 xi132.xi1<18>.                  unitcell_decap     1.00 
-      483 xi130.xi1<18>.                  unitcell_decap     1.00 
-      484 xi129.xi1<18>.                  unitcell_decap     1.00 
-      485 xi128.xi1<18>.                  unitcell_decap     1.00 
-      486 xi127.xi1<18>.                  unitcell_decap     1.00 
-      487 xi133.xi1<19>.                  unitcell_decap     1.00 
-      488 xi134.xi1<19>.                  unitcell_decap     1.00 
-      489 xi131.xi1<19>.                  unitcell_decap     1.00 
-      490 xi132.xi1<19>.                  unitcell_decap     1.00 
-      491 xi130.xi1<19>.                  unitcell_decap     1.00 
-      492 xi129.xi1<19>.                  unitcell_decap     1.00 
-      493 xi128.xi1<19>.                  unitcell_decap     1.00 
-      494 xi127.xi1<19>.                  unitcell_decap     1.00 
-      495 xi133.xi1<20>.                  unitcell_decap     1.00 
-      496 xi134.xi1<20>.                  unitcell_decap     1.00 
-      497 xi131.xi1<20>.                  unitcell_decap     1.00 
-      498 xi132.xi1<20>.                  unitcell_decap     1.00 
-      499 xi130.xi1<20>.                  unitcell_decap     1.00 
-      500 xi129.xi1<20>.                  unitcell_decap     1.00 
-      501 xi128.xi1<20>.                  unitcell_decap     1.00 
-      502 xi127.xi1<20>.                  unitcell_decap     1.00 
-      503 xi133.xi1<21>.                  unitcell_decap     1.00 
-      504 xi134.xi1<21>.                  unitcell_decap     1.00 
-      505 xi131.xi1<21>.                  unitcell_decap     1.00 
-      506 xi132.xi1<21>.                  unitcell_decap     1.00 
-      507 xi130.xi1<21>.                  unitcell_decap     1.00 
-      508 xi129.xi1<21>.                  unitcell_decap     1.00 
-      509 xi128.xi1<21>.                  unitcell_decap     1.00 
-      510 xi127.xi1<21>.                  unitcell_decap     1.00 
-      511 xi133.xi1<22>.                  unitcell_decap     1.00 
-      512 xi134.xi1<22>.                  unitcell_decap     1.00 
-      513 xi131.xi1<22>.                  unitcell_decap     1.00 
-      514 xi132.xi1<22>.                  unitcell_decap     1.00 
-      515 xi130.xi1<22>.                  unitcell_decap     1.00 
-      516 xi129.xi1<22>.                  unitcell_decap     1.00 
-      517 xi128.xi1<22>.                  unitcell_decap     1.00 
-      518 xi127.xi1<22>.                  unitcell_decap     1.00 
-      519 xi133.xi1<23>.                  unitcell_decap     1.00 
-      520 xi134.xi1<23>.                  unitcell_decap     1.00 
-      521 xi131.xi1<23>.                  unitcell_decap     1.00 
-      522 xi132.xi1<23>.                  unitcell_decap     1.00 
-      523 xi130.xi1<23>.                  unitcell_decap     1.00 
-      524 xi129.xi1<23>.                  unitcell_decap     1.00 
-      525 xi128.xi1<23>.                  unitcell_decap     1.00 
-      526 xi127.xi1<23>.                  unitcell_decap     1.00 
-      527 xi133.xi1<24>.                  unitcell_decap     1.00 
-      528 xi134.xi1<24>.                  unitcell_decap     1.00 
-      529 xi131.xi1<24>.                  unitcell_decap     1.00 
-      530 xi132.xi1<24>.                  unitcell_decap     1.00 
-      531 xi130.xi1<24>.                  unitcell_decap     1.00 
-      532 xi129.xi1<24>.                  unitcell_decap     1.00 
-      533 xi128.xi1<24>.                  unitcell_decap     1.00 
-      534 xi127.xi1<24>.                  unitcell_decap     1.00 
-      535 xi133.xi1<25>.                  unitcell_decap     1.00 
-      536 xi134.xi1<25>.                  unitcell_decap     1.00 
-      537 xi131.xi1<25>.                  unitcell_decap     1.00 
-      538 xi132.xi1<25>.                  unitcell_decap     1.00 
-      539 xi130.xi1<25>.                  unitcell_decap     1.00 
-      540 xi129.xi1<25>.                  unitcell_decap     1.00 
-      541 xi128.xi1<25>.                  unitcell_decap     1.00 
-      542 xi127.xi1<25>.                  unitcell_decap     1.00 
-      543 xi133.xi1<26>.                  unitcell_decap     1.00 
-      544 xi134.xi1<26>.                  unitcell_decap     1.00 
-      545 xi131.xi1<26>.                  unitcell_decap     1.00 
-      546 xi132.xi1<26>.                  unitcell_decap     1.00 
-      547 xi130.xi1<26>.                  unitcell_decap     1.00 
-      548 xi129.xi1<26>.                  unitcell_decap     1.00 
-      549 xi128.xi1<26>.                  unitcell_decap     1.00 
-      550 xi127.xi1<26>.                  unitcell_decap     1.00 
-      551 xi133.xi1<27>.                  unitcell_decap     1.00 
-      552 xi134.xi1<27>.                  unitcell_decap     1.00 
-      553 xi131.xi1<27>.                  unitcell_decap     1.00 
-      554 xi132.xi1<27>.                  unitcell_decap     1.00 
-      555 xi130.xi1<27>.                  unitcell_decap     1.00 
-      556 xi129.xi1<27>.                  unitcell_decap     1.00 
-      557 xi128.xi1<27>.                  unitcell_decap     1.00 
-      558 xi127.xi1<27>.                  unitcell_decap     1.00 
-      559 xi133.xi1<28>.                  unitcell_decap     1.00 
-      560 xi134.xi1<28>.                  unitcell_decap     1.00 
-      561 xi131.xi1<28>.                  unitcell_decap     1.00 
-      562 xi132.xi1<28>.                  unitcell_decap     1.00 
-      563 xi130.xi1<28>.                  unitcell_decap     1.00 
-      564 xi129.xi1<28>.                  unitcell_decap     1.00 
-      565 xi128.xi1<28>.                  unitcell_decap     1.00 
-      566 xi127.xi1<28>.                  unitcell_decap     1.00 
-      567 xi133.xi1<29>.                  unitcell_decap     1.00 
-      568 xi134.xi1<29>.                  unitcell_decap     1.00 
-      569 xi131.xi1<29>.                  unitcell_decap     1.00 
-      570 xi132.xi1<29>.                  unitcell_decap     1.00 
-      571 xi130.xi1<29>.                  unitcell_decap     1.00 
-      572 xi129.xi1<29>.                  unitcell_decap     1.00 
-      573 xi128.xi1<29>.                  unitcell_decap     1.00 
-      574 xi127.xi1<29>.                  unitcell_decap     1.00 
-      575 xi133.xi1<30>.                  unitcell_decap     1.00 
-      576 xi134.xi1<30>.                  unitcell_decap     1.00 
-      577 xi131.xi1<30>.                  unitcell_decap     1.00 
-      578 xi132.xi1<30>.                  unitcell_decap     1.00 
-      579 xi130.xi1<30>.                  unitcell_decap     1.00 
-      580 xi129.xi1<30>.                  unitcell_decap     1.00 
-      581 xi128.xi1<30>.                  unitcell_decap     1.00 
-      582 xi127.xi1<30>.                  unitcell_decap     1.00 
-      583 xi133.xi1<31>.                  unitcell_decap     1.00 
-      584 xi134.xi1<31>.                  unitcell_decap     1.00 
-      585 xi131.xi1<31>.                  unitcell_decap     1.00 
-      586 xi132.xi1<31>.                  unitcell_decap     1.00 
-      587 xi130.xi1<31>.                  unitcell_decap     1.00 
-      588 xi129.xi1<31>.                  unitcell_decap     1.00 
-      589 xi128.xi1<31>.                  unitcell_decap     1.00 
-      590 xi127.xi1<31>.                  unitcell_decap     1.00 
-      591 xi133.xi1<32>.                  unitcell_decap     1.00 
-      592 xi134.xi1<32>.                  unitcell_decap     1.00 
-      593 xi131.xi1<32>.                  unitcell_decap     1.00 
-      594 xi132.xi1<32>.                  unitcell_decap     1.00 
-      595 xi130.xi1<32>.                  unitcell_decap     1.00 
-      596 xi129.xi1<32>.                  unitcell_decap     1.00 
-      597 xi128.xi1<32>.                  unitcell_decap     1.00 
-      598 xi127.xi1<32>.                  unitcell_decap     1.00 
-      599 xi133.xi1<33>.                  unitcell_decap     1.00 
-      600 xi134.xi1<33>.                  unitcell_decap     1.00 
-      601 xi131.xi1<33>.                  unitcell_decap     1.00 
-      602 xi132.xi1<33>.                  unitcell_decap     1.00 
-      603 xi130.xi1<33>.                  unitcell_decap     1.00 
-      604 xi129.xi1<33>.                  unitcell_decap     1.00 
-      605 xi128.xi1<33>.                  unitcell_decap     1.00 
-      606 xi127.xi1<33>.                  unitcell_decap     1.00 
-      607 xi133.xi1<34>.                  unitcell_decap     1.00 
-      608 xi134.xi1<34>.                  unitcell_decap     1.00 
-      609 xi131.xi1<34>.                  unitcell_decap     1.00 
-      610 xi132.xi1<34>.                  unitcell_decap     1.00 
-      611 xi130.xi1<34>.                  unitcell_decap     1.00 
-      612 xi129.xi1<34>.                  unitcell_decap     1.00 
-      613 xi128.xi1<34>.                  unitcell_decap     1.00 
-      614 xi127.xi1<34>.                  unitcell_decap     1.00 
-      615 xi133.xi1<35>.                  unitcell_decap     1.00 
-      616 xi134.xi1<35>.                  unitcell_decap     1.00 
-      617 xi131.xi1<35>.                  unitcell_decap     1.00 
-      618 xi132.xi1<35>.                  unitcell_decap     1.00 
-      619 xi130.xi1<35>.                  unitcell_decap     1.00 
-      620 xi129.xi1<35>.                  unitcell_decap     1.00 
-      621 xi128.xi1<35>.                  unitcell_decap     1.00 
-      622 xi127.xi1<35>.                  unitcell_decap     1.00 
-      623 xi133.xi1<36>.                  unitcell_decap     1.00 
-      624 xi134.xi1<36>.                  unitcell_decap     1.00 
-      625 xi131.xi1<36>.                  unitcell_decap     1.00 
-      626 xi132.xi1<36>.                  unitcell_decap     1.00 
-      627 xi130.xi1<36>.                  unitcell_decap     1.00 
-      628 xi129.xi1<36>.                  unitcell_decap     1.00 
-      629 xi128.xi1<36>.                  unitcell_decap     1.00 
-      630 xi127.xi1<36>.                  unitcell_decap     1.00 
-      631 xi133.xi1<37>.                  unitcell_decap     1.00 
-      632 xi134.xi1<37>.                  unitcell_decap     1.00 
-      633 xi131.xi1<37>.                  unitcell_decap     1.00 
-      634 xi132.xi1<37>.                  unitcell_decap     1.00 
-      635 xi130.xi1<37>.                  unitcell_decap     1.00 
-      636 xi129.xi1<37>.                  unitcell_decap     1.00 
-      637 xi128.xi1<37>.                  unitcell_decap     1.00 
-      638 xi127.xi1<37>.                  unitcell_decap     1.00 
-      639 xi133.xi1<38>.                  unitcell_decap     1.00 
-      640 xi134.xi1<38>.                  unitcell_decap     1.00 
-      641 xi131.xi1<38>.                  unitcell_decap     1.00 
-      642 xi132.xi1<38>.                  unitcell_decap     1.00 
-      643 xi130.xi1<38>.                  unitcell_decap     1.00 
-      644 xi129.xi1<38>.                  unitcell_decap     1.00 
-      645 xi128.xi1<38>.                  unitcell_decap     1.00 
-      646 xi127.xi1<38>.                  unitcell_decap     1.00 
-      647 xi133.xi1<39>.                  unitcell_decap     1.00 
-      648 xi134.xi1<39>.                  unitcell_decap     1.00 
-      649 xi131.xi1<39>.                  unitcell_decap     1.00 
-      650 xi132.xi1<39>.                  unitcell_decap     1.00 
-      651 xi130.xi1<39>.                  unitcell_decap     1.00 
-      652 xi129.xi1<39>.                  unitcell_decap     1.00 
-      653 xi128.xi1<39>.                  unitcell_decap     1.00 
-      654 xi127.xi1<39>.                  unitcell_decap     1.00 
-  **warning** (ece_482_proj_tb2.cir:1205) TSTEP cannot be zero or negative for Transient Analysis. Reset it to "TSTOP/20.0".
+       65 xi84.                           inverter_1_8_v     1.00 
+       66 xi83.                           inverter_1_8_v     1.00 
+       67 xi82.                           inverter_1_8_v     1.00 
+       68 xi81.                           inverter_1_8_v     1.00 
+       69 xi80.                           inverter_1_8_v     1.00 
+       70 xi79.                           inverter_1_8_v     1.00 
+       71 xi78.                           inverter_1_8_v     1.00 
+       72 xi77.                           inverter_1_8_v     1.00 
+       73 xi76.                           inverter_1_8_v     1.00 
+       74 xi109.                          c2mos_register     1.00 
+       75 xi108.                          c2mos_register     1.00 
+       76 xi107.                          c2mos_register     1.00 
+       77 xi106.                          c2mos_register     1.00 
+       78 xi105.                          c2mos_register     1.00 
+       79 xi104.                          c2mos_register     1.00 
+       80 xi103.                          c2mos_register     1.00 
+       81 xi102.                          c2mos_register     1.00 
+       82 xi101.                          c2mos_register     1.00 
+       83 xi100.                          c2mos_register     1.00 
+       84 xi99.                           c2mos_register     1.00 
+       85 xi98.                           c2mos_register     1.00 
+       86 xi97.                           c2mos_register     1.00 
+       87 xi96.                           c2mos_register     1.00 
+       88 xi95.                           c2mos_register     1.00 
+       89 xi94.                           c2mos_register     1.00 
+       90 xi93.                           c2mos_register     1.00 
+       91 xi92.                           c2mos_register     1.00 
+       92 xi91.                           c2mos_register     1.00 
+       93 xi89.                           c2mos_register     1.00 
+       94 xi88.                           c2mos_register     1.00 
+       95 xi87.                           c2mos_register     1.00 
+       96 xi86.                           c2mos_register     1.00 
+       97 xi85.                           c2mos_register     1.00 
+       98 xi66.                           c2mos_register     1.00 
+       99 xi65.                           c2mos_register     1.00 
+      100 xi64.                           c2mos_register     1.00 
+      101 xi63.                           c2mos_register     1.00 
+      102 xi60.                           c2mos_register     1.00 
+      103 xi62.                           c2mos_register     1.00 
+      104 xi61.                           c2mos_register     1.00 
+      105 xi57.                           c2mos_register     1.00 
+      106 xi7.                            c2mos_register     1.00 
+      107 xi6.                            c2mos_register     1.00 
+      108 xi5.                            c2mos_register     1.00 
+      109 xi4.                            c2mos_register     1.00 
+      110 xi3.                            c2mos_register     1.00 
+      111 xi2.                            c2mos_register     1.00 
+      112 xi1.                            c2mos_register     1.00 
+      113 xi0.                            c2mos_register     1.00 
+      114 xi160.                          superbuffer_4      1.00 
+      115 xi158.                          superbuffer_4      1.00 
+      116 xi155.                          superbuffer_4      1.00 
+      117 xi154.                          superbuffer_4      1.00 
+      118 xi159.                          superbuffer_4      1.00 
+      119 xi156.                          superbuffer_4      1.00 
+      120 xi157.                          superbuffer_4      1.00 
+      121 xi161.                          superbuffer_4      1.00 
+      122 xr41.                           resm11_pcell_0     1.00 
+      123 xr1.                            resm11_pcell_0     1.00 
+      124 xr0.                            resm11_pcell_0     1.00 
+      125 xr10.                           resm11_pcell_0     1.00 
+      126 xr11.                           resm11_pcell_0     1.00 
+      127 xr12.                           resm11_pcell_0     1.00 
+      128 xr13.                           resm11_pcell_0     1.00 
+      129 xr20.                           resm11_pcell_0     1.00 
+      130 xr21.                           resm11_pcell_0     1.00 
+      131 xr6.                            resm11_pcell_0     1.00 
+      132 xr7.                            resm11_pcell_0     1.00 
+      133 xr14.                           resm11_pcell_0     1.00 
+      134 xr15.                           resm11_pcell_0     1.00 
+      135 xr3.                            resm11_pcell_0     1.00 
+      136 xr2.                            resm11_pcell_0     1.00 
+      137 xr28.                           resm11_pcell_0     1.00 
+      138 xr29.                           resm11_pcell_0     1.00 
+      139 xr30.                           resm11_pcell_0     1.00 
+      140 xr31.                           resm11_pcell_0     1.00 
+      141 xr24.                           resm11_pcell_0     1.00 
+      142 xr25.                           resm11_pcell_0     1.00 
+      143 xr26.                           resm11_pcell_0     1.00 
+      144 xr27.                           resm11_pcell_0     1.00 
+      145 xr5.                            resm11_pcell_0     1.00 
+      146 xr4.                            resm11_pcell_0     1.00 
+      147 xr39.                           resm11_pcell_0     1.00 
+      148 xr38.                           resm11_pcell_0     1.00 
+      149 xr37.                           resm11_pcell_0     1.00 
+      150 xr36.                           resm11_pcell_0     1.00 
+      151 xr35.                           resm11_pcell_0     1.00 
+      152 xr34.                           resm11_pcell_0     1.00 
+      153 xr33.                           resm11_pcell_0     1.00 
+      154 xr40.                           resm11_pcell_0     1.00 
+      155 xr32.                           resm11_pcell_0     1.00 
+      156 xr16.                           resm11_pcell_0     1.00 
+      157 xr19.                           resm11_pcell_0     1.00 
+      158 xr17.                           resm11_pcell_0     1.00 
+      159 xr18.                           resm11_pcell_0     1.00 
+      160 xi126.xi1<0>.                   unitcell_decap     1.00 
+      161 xi126.xi1<1>.                   unitcell_decap     1.00 
+      162 xi126.xi1<2>.                   unitcell_decap     1.00 
+      163 xi126.xi1<3>.                   unitcell_decap     1.00 
+      164 xi126.xi1<4>.                   unitcell_decap     1.00 
+      165 xi126.xi1<5>.                   unitcell_decap     1.00 
+      166 xi126.xi1<6>.                   unitcell_decap     1.00 
+      167 xi126.xi1<7>.                   unitcell_decap     1.00 
+      168 xi126.xi1<8>.                   unitcell_decap     1.00 
+      169 xi126.xi1<9>.                   unitcell_decap     1.00 
+      170 xi126.xi1<10>.                  unitcell_decap     1.00 
+      171 xi126.xi1<11>.                  unitcell_decap     1.00 
+      172 xi126.xi1<12>.                  unitcell_decap     1.00 
+      173 xi126.xi1<13>.                  unitcell_decap     1.00 
+      174 xi126.xi1<14>.                  unitcell_decap     1.00 
+      175 xi126.xi1<15>.                  unitcell_decap     1.00 
+      176 xi126.xi1<16>.                  unitcell_decap     1.00 
+      177 xi126.xi1<17>.                  unitcell_decap     1.00 
+      178 xi126.xi1<18>.                  unitcell_decap     1.00 
+      179 xi126.xi1<19>.                  unitcell_decap     1.00 
+      180 xi126.xi1<20>.                  unitcell_decap     1.00 
+      181 xi126.xi1<21>.                  unitcell_decap     1.00 
+      182 xi126.xi1<22>.                  unitcell_decap     1.00 
+      183 xi126.xi1<23>.                  unitcell_decap     1.00 
+      184 xi126.xi1<24>.                  unitcell_decap     1.00 
+      185 xi126.xi1<25>.                  unitcell_decap     1.00 
+      186 xi126.xi1<26>.                  unitcell_decap     1.00 
+      187 xi126.xi1<27>.                  unitcell_decap     1.00 
+      188 xi126.xi1<28>.                  unitcell_decap     1.00 
+      189 xi126.xi1<29>.                  unitcell_decap     1.00 
+      190 xi126.xi1<30>.                  unitcell_decap     1.00 
+      191 xi126.xi1<31>.                  unitcell_decap     1.00 
+      192 xi126.xi1<32>.                  unitcell_decap     1.00 
+      193 xi126.xi1<33>.                  unitcell_decap     1.00 
+      194 xi126.xi1<34>.                  unitcell_decap     1.00 
+      195 xi126.xi1<35>.                  unitcell_decap     1.00 
+      196 xi126.xi1<36>.                  unitcell_decap     1.00 
+      197 xi126.xi1<37>.                  unitcell_decap     1.00 
+      198 xi126.xi1<38>.                  unitcell_decap     1.00 
+      199 xi126.xi1<39>.                  unitcell_decap     1.00 
+      200 xi44.xi0.                       inverter_minsize   1.00 
+      201 xi45.xi0.                       inverter_minsize   1.00 
+      202 xi42.xi0.                       inverter_minsize   1.00 
+      203 xi43.xi0.                       inverter_minsize   1.00 
+      204 xi49.xi0.                       inverter_minsize   1.00 
+      205 xi52.xi0.                       inverter_minsize   1.00 
+      206 xi51.xi0.                       inverter_minsize   1.00 
+      207 xi50.xi0.                       inverter_minsize   1.00 
+      208 xi53.xi0.                       inverter_minsize   1.00 
+      209 xi54.xi0.                       inverter_minsize   1.00 
+      210 xi55.xi0.                       inverter_minsize   1.00 
+      211 xi56.xi0.                       inverter_minsize   1.00 
+      212 xi48.xi0.                       inverter_minsize   1.00 
+      213 xi46.xi0.                       inverter_minsize   1.00 
+      214 xi47.xi0.                       inverter_minsize   1.00 
+      215 xi135.xi0.                      inverter_minsize   1.00 
+      216 xi109.xi0.                      and_minsize        1.00 
+      217 xi109.xi1.                      inverter_minsize   1.00 
+      218 xi108.xi0.                      and_minsize        1.00 
+      219 xi108.xi1.                      inverter_minsize   1.00 
+      220 xi107.xi0.                      and_minsize        1.00 
+      221 xi107.xi1.                      inverter_minsize   1.00 
+      222 xi106.xi0.                      and_minsize        1.00 
+      223 xi106.xi1.                      inverter_minsize   1.00 
+      224 xi105.xi0.                      and_minsize        1.00 
+      225 xi105.xi1.                      inverter_minsize   1.00 
+      226 xi104.xi0.                      and_minsize        1.00 
+      227 xi104.xi1.                      inverter_minsize   1.00 
+      228 xi103.xi0.                      and_minsize        1.00 
+      229 xi103.xi1.                      inverter_minsize   1.00 
+      230 xi102.xi0.                      and_minsize        1.00 
+      231 xi102.xi1.                      inverter_minsize   1.00 
+      232 xi101.xi0.                      and_minsize        1.00 
+      233 xi101.xi1.                      inverter_minsize   1.00 
+      234 xi100.xi0.                      and_minsize        1.00 
+      235 xi100.xi1.                      inverter_minsize   1.00 
+      236 xi99.xi0.                       and_minsize        1.00 
+      237 xi99.xi1.                       inverter_minsize   1.00 
+      238 xi98.xi0.                       and_minsize        1.00 
+      239 xi98.xi1.                       inverter_minsize   1.00 
+      240 xi97.xi0.                       and_minsize        1.00 
+      241 xi97.xi1.                       inverter_minsize   1.00 
+      242 xi96.xi0.                       and_minsize        1.00 
+      243 xi96.xi1.                       inverter_minsize   1.00 
+      244 xi95.xi0.                       and_minsize        1.00 
+      245 xi95.xi1.                       inverter_minsize   1.00 
+      246 xi94.xi0.                       and_minsize        1.00 
+      247 xi94.xi1.                       inverter_minsize   1.00 
+      248 xi93.xi0.                       and_minsize        1.00 
+      249 xi93.xi1.                       inverter_minsize   1.00 
+      250 xi92.xi0.                       and_minsize        1.00 
+      251 xi92.xi1.                       inverter_minsize   1.00 
+      252 xi91.xi0.                       and_minsize        1.00 
+      253 xi91.xi1.                       inverter_minsize   1.00 
+      254 xi89.xi0.                       and_minsize        1.00 
+      255 xi89.xi1.                       inverter_minsize   1.00 
+      256 xi88.xi0.                       and_minsize        1.00 
+      257 xi88.xi1.                       inverter_minsize   1.00 
+      258 xi87.xi0.                       and_minsize        1.00 
+      259 xi87.xi1.                       inverter_minsize   1.00 
+      260 xi86.xi0.                       and_minsize        1.00 
+      261 xi86.xi1.                       inverter_minsize   1.00 
+      262 xi85.xi0.                       and_minsize        1.00 
+      263 xi85.xi1.                       inverter_minsize   1.00 
+      264 xi66.xi0.                       and_minsize        1.00 
+      265 xi66.xi1.                       inverter_minsize   1.00 
+      266 xi65.xi0.                       and_minsize        1.00 
+      267 xi65.xi1.                       inverter_minsize   1.00 
+      268 xi64.xi0.                       and_minsize        1.00 
+      269 xi64.xi1.                       inverter_minsize   1.00 
+      270 xi63.xi0.                       and_minsize        1.00 
+      271 xi63.xi1.                       inverter_minsize   1.00 
+      272 xi60.xi0.                       and_minsize        1.00 
+      273 xi60.xi1.                       inverter_minsize   1.00 
+      274 xi62.xi0.                       and_minsize        1.00 
+      275 xi62.xi1.                       inverter_minsize   1.00 
+      276 xi61.xi0.                       and_minsize        1.00 
+      277 xi61.xi1.                       inverter_minsize   1.00 
+      278 xi57.xi0.                       and_minsize        1.00 
+      279 xi57.xi1.                       inverter_minsize   1.00 
+      280 xi7.xi0.                        and_minsize        1.00 
+      281 xi7.xi1.                        inverter_minsize   1.00 
+      282 xi6.xi0.                        and_minsize        1.00 
+      283 xi6.xi1.                        inverter_minsize   1.00 
+      284 xi5.xi0.                        and_minsize        1.00 
+      285 xi5.xi1.                        inverter_minsize   1.00 
+      286 xi4.xi0.                        and_minsize        1.00 
+      287 xi4.xi1.                        inverter_minsize   1.00 
+      288 xi3.xi0.                        and_minsize        1.00 
+      289 xi3.xi1.                        inverter_minsize   1.00 
+      290 xi2.xi0.                        and_minsize        1.00 
+      291 xi2.xi1.                        inverter_minsize   1.00 
+      292 xi1.xi0.                        and_minsize        1.00 
+      293 xi1.xi1.                        inverter_minsize   1.00 
+      294 xi0.xi0.                        and_minsize        1.00 
+      295 xi0.xi1.                        inverter_minsize   1.00 
+      296 xi109.xi0.xi0.                  inverter_minsize   1.00 
+      297 xi108.xi0.xi0.                  inverter_minsize   1.00 
+      298 xi107.xi0.xi0.                  inverter_minsize   1.00 
+      299 xi106.xi0.xi0.                  inverter_minsize   1.00 
+      300 xi105.xi0.xi0.                  inverter_minsize   1.00 
+      301 xi104.xi0.xi0.                  inverter_minsize   1.00 
+      302 xi103.xi0.xi0.                  inverter_minsize   1.00 
+      303 xi102.xi0.xi0.                  inverter_minsize   1.00 
+      304 xi101.xi0.xi0.                  inverter_minsize   1.00 
+      305 xi100.xi0.xi0.                  inverter_minsize   1.00 
+      306 xi99.xi0.xi0.                   inverter_minsize   1.00 
+      307 xi98.xi0.xi0.                   inverter_minsize   1.00 
+      308 xi97.xi0.xi0.                   inverter_minsize   1.00 
+      309 xi96.xi0.xi0.                   inverter_minsize   1.00 
+      310 xi95.xi0.xi0.                   inverter_minsize   1.00 
+      311 xi94.xi0.xi0.                   inverter_minsize   1.00 
+      312 xi93.xi0.xi0.                   inverter_minsize   1.00 
+      313 xi92.xi0.xi0.                   inverter_minsize   1.00 
+      314 xi91.xi0.xi0.                   inverter_minsize   1.00 
+      315 xi89.xi0.xi0.                   inverter_minsize   1.00 
+      316 xi88.xi0.xi0.                   inverter_minsize   1.00 
+      317 xi87.xi0.xi0.                   inverter_minsize   1.00 
+      318 xi86.xi0.xi0.                   inverter_minsize   1.00 
+      319 xi85.xi0.xi0.                   inverter_minsize   1.00 
+      320 xi66.xi0.xi0.                   inverter_minsize   1.00 
+      321 xi65.xi0.xi0.                   inverter_minsize   1.00 
+      322 xi64.xi0.xi0.                   inverter_minsize   1.00 
+      323 xi63.xi0.xi0.                   inverter_minsize   1.00 
+      324 xi60.xi0.xi0.                   inverter_minsize   1.00 
+      325 xi62.xi0.xi0.                   inverter_minsize   1.00 
+      326 xi61.xi0.xi0.                   inverter_minsize   1.00 
+      327 xi57.xi0.xi0.                   inverter_minsize   1.00 
+      328 xi7.xi0.xi0.                    inverter_minsize   1.00 
+      329 xi6.xi0.xi0.                    inverter_minsize   1.00 
+      330 xi5.xi0.xi0.                    inverter_minsize   1.00 
+      331 xi4.xi0.xi0.                    inverter_minsize   1.00 
+      332 xi3.xi0.xi0.                    inverter_minsize   1.00 
+      333 xi2.xi0.xi0.                    inverter_minsize   1.00 
+      334 xi1.xi0.xi0.                    inverter_minsize   1.00 
+      335 xi0.xi0.xi0.                    inverter_minsize   1.00 
+      336 xi133.xi1<0>.                   unitcell_decap     1.00 
+      337 xi134.xi1<0>.                   unitcell_decap     1.00 
+      338 xi131.xi1<0>.                   unitcell_decap     1.00 
+      339 xi132.xi1<0>.                   unitcell_decap     1.00 
+      340 xi130.xi1<0>.                   unitcell_decap     1.00 
+      341 xi129.xi1<0>.                   unitcell_decap     1.00 
+      342 xi128.xi1<0>.                   unitcell_decap     1.00 
+      343 xi127.xi1<0>.                   unitcell_decap     1.00 
+      344 xi133.xi1<1>.                   unitcell_decap     1.00 
+      345 xi134.xi1<1>.                   unitcell_decap     1.00 
+      346 xi131.xi1<1>.                   unitcell_decap     1.00 
+      347 xi132.xi1<1>.                   unitcell_decap     1.00 
+      348 xi130.xi1<1>.                   unitcell_decap     1.00 
+      349 xi129.xi1<1>.                   unitcell_decap     1.00 
+      350 xi128.xi1<1>.                   unitcell_decap     1.00 
+      351 xi127.xi1<1>.                   unitcell_decap     1.00 
+      352 xi133.xi1<2>.                   unitcell_decap     1.00 
+      353 xi134.xi1<2>.                   unitcell_decap     1.00 
+      354 xi131.xi1<2>.                   unitcell_decap     1.00 
+      355 xi132.xi1<2>.                   unitcell_decap     1.00 
+      356 xi130.xi1<2>.                   unitcell_decap     1.00 
+      357 xi129.xi1<2>.                   unitcell_decap     1.00 
+      358 xi128.xi1<2>.                   unitcell_decap     1.00 
+      359 xi127.xi1<2>.                   unitcell_decap     1.00 
+      360 xi133.xi1<3>.                   unitcell_decap     1.00 
+      361 xi134.xi1<3>.                   unitcell_decap     1.00 
+      362 xi131.xi1<3>.                   unitcell_decap     1.00 
+      363 xi132.xi1<3>.                   unitcell_decap     1.00 
+      364 xi130.xi1<3>.                   unitcell_decap     1.00 
+      365 xi129.xi1<3>.                   unitcell_decap     1.00 
+      366 xi128.xi1<3>.                   unitcell_decap     1.00 
+      367 xi127.xi1<3>.                   unitcell_decap     1.00 
+      368 xi133.xi1<4>.                   unitcell_decap     1.00 
+      369 xi134.xi1<4>.                   unitcell_decap     1.00 
+      370 xi131.xi1<4>.                   unitcell_decap     1.00 
+      371 xi132.xi1<4>.                   unitcell_decap     1.00 
+      372 xi130.xi1<4>.                   unitcell_decap     1.00 
+      373 xi129.xi1<4>.                   unitcell_decap     1.00 
+      374 xi128.xi1<4>.                   unitcell_decap     1.00 
+      375 xi127.xi1<4>.                   unitcell_decap     1.00 
+      376 xi133.xi1<5>.                   unitcell_decap     1.00 
+      377 xi134.xi1<5>.                   unitcell_decap     1.00 
+      378 xi131.xi1<5>.                   unitcell_decap     1.00 
+      379 xi132.xi1<5>.                   unitcell_decap     1.00 
+      380 xi130.xi1<5>.                   unitcell_decap     1.00 
+      381 xi129.xi1<5>.                   unitcell_decap     1.00 
+      382 xi128.xi1<5>.                   unitcell_decap     1.00 
+      383 xi127.xi1<5>.                   unitcell_decap     1.00 
+      384 xi133.xi1<6>.                   unitcell_decap     1.00 
+      385 xi134.xi1<6>.                   unitcell_decap     1.00 
+      386 xi131.xi1<6>.                   unitcell_decap     1.00 
+      387 xi132.xi1<6>.                   unitcell_decap     1.00 
+      388 xi130.xi1<6>.                   unitcell_decap     1.00 
+      389 xi129.xi1<6>.                   unitcell_decap     1.00 
+      390 xi128.xi1<6>.                   unitcell_decap     1.00 
+      391 xi127.xi1<6>.                   unitcell_decap     1.00 
+      392 xi133.xi1<7>.                   unitcell_decap     1.00 
+      393 xi134.xi1<7>.                   unitcell_decap     1.00 
+      394 xi131.xi1<7>.                   unitcell_decap     1.00 
+      395 xi132.xi1<7>.                   unitcell_decap     1.00 
+      396 xi130.xi1<7>.                   unitcell_decap     1.00 
+      397 xi129.xi1<7>.                   unitcell_decap     1.00 
+      398 xi128.xi1<7>.                   unitcell_decap     1.00 
+      399 xi127.xi1<7>.                   unitcell_decap     1.00 
+      400 xi133.xi1<8>.                   unitcell_decap     1.00 
+      401 xi134.xi1<8>.                   unitcell_decap     1.00 
+      402 xi131.xi1<8>.                   unitcell_decap     1.00 
+      403 xi132.xi1<8>.                   unitcell_decap     1.00 
+      404 xi130.xi1<8>.                   unitcell_decap     1.00 
+      405 xi129.xi1<8>.                   unitcell_decap     1.00 
+      406 xi128.xi1<8>.                   unitcell_decap     1.00 
+      407 xi127.xi1<8>.                   unitcell_decap     1.00 
+      408 xi133.xi1<9>.                   unitcell_decap     1.00 
+      409 xi134.xi1<9>.                   unitcell_decap     1.00 
+      410 xi131.xi1<9>.                   unitcell_decap     1.00 
+      411 xi132.xi1<9>.                   unitcell_decap     1.00 
+      412 xi130.xi1<9>.                   unitcell_decap     1.00 
+      413 xi129.xi1<9>.                   unitcell_decap     1.00 
+      414 xi128.xi1<9>.                   unitcell_decap     1.00 
+      415 xi127.xi1<9>.                   unitcell_decap     1.00 
+      416 xi133.xi1<10>.                  unitcell_decap     1.00 
+      417 xi134.xi1<10>.                  unitcell_decap     1.00 
+      418 xi131.xi1<10>.                  unitcell_decap     1.00 
+      419 xi132.xi1<10>.                  unitcell_decap     1.00 
+      420 xi130.xi1<10>.                  unitcell_decap     1.00 
+      421 xi129.xi1<10>.                  unitcell_decap     1.00 
+      422 xi128.xi1<10>.                  unitcell_decap     1.00 
+      423 xi127.xi1<10>.                  unitcell_decap     1.00 
+      424 xi133.xi1<11>.                  unitcell_decap     1.00 
+      425 xi134.xi1<11>.                  unitcell_decap     1.00 
+      426 xi131.xi1<11>.                  unitcell_decap     1.00 
+      427 xi132.xi1<11>.                  unitcell_decap     1.00 
+      428 xi130.xi1<11>.                  unitcell_decap     1.00 
+      429 xi129.xi1<11>.                  unitcell_decap     1.00 
+      430 xi128.xi1<11>.                  unitcell_decap     1.00 
+      431 xi127.xi1<11>.                  unitcell_decap     1.00 
+      432 xi133.xi1<12>.                  unitcell_decap     1.00 
+      433 xi134.xi1<12>.                  unitcell_decap     1.00 
+      434 xi131.xi1<12>.                  unitcell_decap     1.00 
+      435 xi132.xi1<12>.                  unitcell_decap     1.00 
+      436 xi130.xi1<12>.                  unitcell_decap     1.00 
+      437 xi129.xi1<12>.                  unitcell_decap     1.00 
+      438 xi128.xi1<12>.                  unitcell_decap     1.00 
+      439 xi127.xi1<12>.                  unitcell_decap     1.00 
+      440 xi133.xi1<13>.                  unitcell_decap     1.00 
+      441 xi134.xi1<13>.                  unitcell_decap     1.00 
+      442 xi131.xi1<13>.                  unitcell_decap     1.00 
+      443 xi132.xi1<13>.                  unitcell_decap     1.00 
+      444 xi130.xi1<13>.                  unitcell_decap     1.00 
+      445 xi129.xi1<13>.                  unitcell_decap     1.00 
+      446 xi128.xi1<13>.                  unitcell_decap     1.00 
+      447 xi127.xi1<13>.                  unitcell_decap     1.00 
+      448 xi133.xi1<14>.                  unitcell_decap     1.00 
+      449 xi134.xi1<14>.                  unitcell_decap     1.00 
+      450 xi131.xi1<14>.                  unitcell_decap     1.00 
+      451 xi132.xi1<14>.                  unitcell_decap     1.00 
+      452 xi130.xi1<14>.                  unitcell_decap     1.00 
+      453 xi129.xi1<14>.                  unitcell_decap     1.00 
+      454 xi128.xi1<14>.                  unitcell_decap     1.00 
+      455 xi127.xi1<14>.                  unitcell_decap     1.00 
+      456 xi133.xi1<15>.                  unitcell_decap     1.00 
+      457 xi134.xi1<15>.                  unitcell_decap     1.00 
+      458 xi131.xi1<15>.                  unitcell_decap     1.00 
+      459 xi132.xi1<15>.                  unitcell_decap     1.00 
+      460 xi130.xi1<15>.                  unitcell_decap     1.00 
+      461 xi129.xi1<15>.                  unitcell_decap     1.00 
+      462 xi128.xi1<15>.                  unitcell_decap     1.00 
+      463 xi127.xi1<15>.                  unitcell_decap     1.00 
+      464 xi133.xi1<16>.                  unitcell_decap     1.00 
+      465 xi134.xi1<16>.                  unitcell_decap     1.00 
+      466 xi131.xi1<16>.                  unitcell_decap     1.00 
+      467 xi132.xi1<16>.                  unitcell_decap     1.00 
+      468 xi130.xi1<16>.                  unitcell_decap     1.00 
+      469 xi129.xi1<16>.                  unitcell_decap     1.00 
+      470 xi128.xi1<16>.                  unitcell_decap     1.00 
+      471 xi127.xi1<16>.                  unitcell_decap     1.00 
+      472 xi133.xi1<17>.                  unitcell_decap     1.00 
+      473 xi134.xi1<17>.                  unitcell_decap     1.00 
+      474 xi131.xi1<17>.                  unitcell_decap     1.00 
+      475 xi132.xi1<17>.                  unitcell_decap     1.00 
+      476 xi130.xi1<17>.                  unitcell_decap     1.00 
+      477 xi129.xi1<17>.                  unitcell_decap     1.00 
+      478 xi128.xi1<17>.                  unitcell_decap     1.00 
+      479 xi127.xi1<17>.                  unitcell_decap     1.00 
+      480 xi133.xi1<18>.                  unitcell_decap     1.00 
+      481 xi134.xi1<18>.                  unitcell_decap     1.00 
+      482 xi131.xi1<18>.                  unitcell_decap     1.00 
+      483 xi132.xi1<18>.                  unitcell_decap     1.00 
+      484 xi130.xi1<18>.                  unitcell_decap     1.00 
+      485 xi129.xi1<18>.                  unitcell_decap     1.00 
+      486 xi128.xi1<18>.                  unitcell_decap     1.00 
+      487 xi127.xi1<18>.                  unitcell_decap     1.00 
+      488 xi133.xi1<19>.                  unitcell_decap     1.00 
+      489 xi134.xi1<19>.                  unitcell_decap     1.00 
+      490 xi131.xi1<19>.                  unitcell_decap     1.00 
+      491 xi132.xi1<19>.                  unitcell_decap     1.00 
+      492 xi130.xi1<19>.                  unitcell_decap     1.00 
+      493 xi129.xi1<19>.                  unitcell_decap     1.00 
+      494 xi128.xi1<19>.                  unitcell_decap     1.00 
+      495 xi127.xi1<19>.                  unitcell_decap     1.00 
+      496 xi133.xi1<20>.                  unitcell_decap     1.00 
+      497 xi134.xi1<20>.                  unitcell_decap     1.00 
+      498 xi131.xi1<20>.                  unitcell_decap     1.00 
+      499 xi132.xi1<20>.                  unitcell_decap     1.00 
+      500 xi130.xi1<20>.                  unitcell_decap     1.00 
+      501 xi129.xi1<20>.                  unitcell_decap     1.00 
+      502 xi128.xi1<20>.                  unitcell_decap     1.00 
+      503 xi127.xi1<20>.                  unitcell_decap     1.00 
+      504 xi133.xi1<21>.                  unitcell_decap     1.00 
+      505 xi134.xi1<21>.                  unitcell_decap     1.00 
+      506 xi131.xi1<21>.                  unitcell_decap     1.00 
+      507 xi132.xi1<21>.                  unitcell_decap     1.00 
+      508 xi130.xi1<21>.                  unitcell_decap     1.00 
+      509 xi129.xi1<21>.                  unitcell_decap     1.00 
+      510 xi128.xi1<21>.                  unitcell_decap     1.00 
+      511 xi127.xi1<21>.                  unitcell_decap     1.00 
+      512 xi133.xi1<22>.                  unitcell_decap     1.00 
+      513 xi134.xi1<22>.                  unitcell_decap     1.00 
+      514 xi131.xi1<22>.                  unitcell_decap     1.00 
+      515 xi132.xi1<22>.                  unitcell_decap     1.00 
+      516 xi130.xi1<22>.                  unitcell_decap     1.00 
+      517 xi129.xi1<22>.                  unitcell_decap     1.00 
+      518 xi128.xi1<22>.                  unitcell_decap     1.00 
+      519 xi127.xi1<22>.                  unitcell_decap     1.00 
+      520 xi133.xi1<23>.                  unitcell_decap     1.00 
+      521 xi134.xi1<23>.                  unitcell_decap     1.00 
+      522 xi131.xi1<23>.                  unitcell_decap     1.00 
+      523 xi132.xi1<23>.                  unitcell_decap     1.00 
+      524 xi130.xi1<23>.                  unitcell_decap     1.00 
+      525 xi129.xi1<23>.                  unitcell_decap     1.00 
+      526 xi128.xi1<23>.                  unitcell_decap     1.00 
+      527 xi127.xi1<23>.                  unitcell_decap     1.00 
+      528 xi133.xi1<24>.                  unitcell_decap     1.00 
+      529 xi134.xi1<24>.                  unitcell_decap     1.00 
+      530 xi131.xi1<24>.                  unitcell_decap     1.00 
+      531 xi132.xi1<24>.                  unitcell_decap     1.00 
+      532 xi130.xi1<24>.                  unitcell_decap     1.00 
+      533 xi129.xi1<24>.                  unitcell_decap     1.00 
+      534 xi128.xi1<24>.                  unitcell_decap     1.00 
+      535 xi127.xi1<24>.                  unitcell_decap     1.00 
+      536 xi133.xi1<25>.                  unitcell_decap     1.00 
+      537 xi134.xi1<25>.                  unitcell_decap     1.00 
+      538 xi131.xi1<25>.                  unitcell_decap     1.00 
+      539 xi132.xi1<25>.                  unitcell_decap     1.00 
+      540 xi130.xi1<25>.                  unitcell_decap     1.00 
+      541 xi129.xi1<25>.                  unitcell_decap     1.00 
+      542 xi128.xi1<25>.                  unitcell_decap     1.00 
+      543 xi127.xi1<25>.                  unitcell_decap     1.00 
+      544 xi133.xi1<26>.                  unitcell_decap     1.00 
+      545 xi134.xi1<26>.                  unitcell_decap     1.00 
+      546 xi131.xi1<26>.                  unitcell_decap     1.00 
+      547 xi132.xi1<26>.                  unitcell_decap     1.00 
+      548 xi130.xi1<26>.                  unitcell_decap     1.00 
+      549 xi129.xi1<26>.                  unitcell_decap     1.00 
+      550 xi128.xi1<26>.                  unitcell_decap     1.00 
+      551 xi127.xi1<26>.                  unitcell_decap     1.00 
+      552 xi133.xi1<27>.                  unitcell_decap     1.00 
+      553 xi134.xi1<27>.                  unitcell_decap     1.00 
+      554 xi131.xi1<27>.                  unitcell_decap     1.00 
+      555 xi132.xi1<27>.                  unitcell_decap     1.00 
+      556 xi130.xi1<27>.                  unitcell_decap     1.00 
+      557 xi129.xi1<27>.                  unitcell_decap     1.00 
+      558 xi128.xi1<27>.                  unitcell_decap     1.00 
+      559 xi127.xi1<27>.                  unitcell_decap     1.00 
+      560 xi133.xi1<28>.                  unitcell_decap     1.00 
+      561 xi134.xi1<28>.                  unitcell_decap     1.00 
+      562 xi131.xi1<28>.                  unitcell_decap     1.00 
+      563 xi132.xi1<28>.                  unitcell_decap     1.00 
+      564 xi130.xi1<28>.                  unitcell_decap     1.00 
+      565 xi129.xi1<28>.                  unitcell_decap     1.00 
+      566 xi128.xi1<28>.                  unitcell_decap     1.00 
+      567 xi127.xi1<28>.                  unitcell_decap     1.00 
+      568 xi133.xi1<29>.                  unitcell_decap     1.00 
+      569 xi134.xi1<29>.                  unitcell_decap     1.00 
+      570 xi131.xi1<29>.                  unitcell_decap     1.00 
+      571 xi132.xi1<29>.                  unitcell_decap     1.00 
+      572 xi130.xi1<29>.                  unitcell_decap     1.00 
+      573 xi129.xi1<29>.                  unitcell_decap     1.00 
+      574 xi128.xi1<29>.                  unitcell_decap     1.00 
+      575 xi127.xi1<29>.                  unitcell_decap     1.00 
+      576 xi133.xi1<30>.                  unitcell_decap     1.00 
+      577 xi134.xi1<30>.                  unitcell_decap     1.00 
+      578 xi131.xi1<30>.                  unitcell_decap     1.00 
+      579 xi132.xi1<30>.                  unitcell_decap     1.00 
+      580 xi130.xi1<30>.                  unitcell_decap     1.00 
+      581 xi129.xi1<30>.                  unitcell_decap     1.00 
+      582 xi128.xi1<30>.                  unitcell_decap     1.00 
+      583 xi127.xi1<30>.                  unitcell_decap     1.00 
+      584 xi133.xi1<31>.                  unitcell_decap     1.00 
+      585 xi134.xi1<31>.                  unitcell_decap     1.00 
+      586 xi131.xi1<31>.                  unitcell_decap     1.00 
+      587 xi132.xi1<31>.                  unitcell_decap     1.00 
+      588 xi130.xi1<31>.                  unitcell_decap     1.00 
+      589 xi129.xi1<31>.                  unitcell_decap     1.00 
+      590 xi128.xi1<31>.                  unitcell_decap     1.00 
+      591 xi127.xi1<31>.                  unitcell_decap     1.00 
+      592 xi133.xi1<32>.                  unitcell_decap     1.00 
+      593 xi134.xi1<32>.                  unitcell_decap     1.00 
+      594 xi131.xi1<32>.                  unitcell_decap     1.00 
+      595 xi132.xi1<32>.                  unitcell_decap     1.00 
+      596 xi130.xi1<32>.                  unitcell_decap     1.00 
+      597 xi129.xi1<32>.                  unitcell_decap     1.00 
+      598 xi128.xi1<32>.                  unitcell_decap     1.00 
+      599 xi127.xi1<32>.                  unitcell_decap     1.00 
+      600 xi133.xi1<33>.                  unitcell_decap     1.00 
+      601 xi134.xi1<33>.                  unitcell_decap     1.00 
+      602 xi131.xi1<33>.                  unitcell_decap     1.00 
+      603 xi132.xi1<33>.                  unitcell_decap     1.00 
+      604 xi130.xi1<33>.                  unitcell_decap     1.00 
+      605 xi129.xi1<33>.                  unitcell_decap     1.00 
+      606 xi128.xi1<33>.                  unitcell_decap     1.00 
+      607 xi127.xi1<33>.                  unitcell_decap     1.00 
+      608 xi133.xi1<34>.                  unitcell_decap     1.00 
+      609 xi134.xi1<34>.                  unitcell_decap     1.00 
+      610 xi131.xi1<34>.                  unitcell_decap     1.00 
+      611 xi132.xi1<34>.                  unitcell_decap     1.00 
+      612 xi130.xi1<34>.                  unitcell_decap     1.00 
+      613 xi129.xi1<34>.                  unitcell_decap     1.00 
+      614 xi128.xi1<34>.                  unitcell_decap     1.00 
+      615 xi127.xi1<34>.                  unitcell_decap     1.00 
+      616 xi133.xi1<35>.                  unitcell_decap     1.00 
+      617 xi134.xi1<35>.                  unitcell_decap     1.00 
+      618 xi131.xi1<35>.                  unitcell_decap     1.00 
+      619 xi132.xi1<35>.                  unitcell_decap     1.00 
+      620 xi130.xi1<35>.                  unitcell_decap     1.00 
+      621 xi129.xi1<35>.                  unitcell_decap     1.00 
+      622 xi128.xi1<35>.                  unitcell_decap     1.00 
+      623 xi127.xi1<35>.                  unitcell_decap     1.00 
+      624 xi133.xi1<36>.                  unitcell_decap     1.00 
+      625 xi134.xi1<36>.                  unitcell_decap     1.00 
+      626 xi131.xi1<36>.                  unitcell_decap     1.00 
+      627 xi132.xi1<36>.                  unitcell_decap     1.00 
+      628 xi130.xi1<36>.                  unitcell_decap     1.00 
+      629 xi129.xi1<36>.                  unitcell_decap     1.00 
+      630 xi128.xi1<36>.                  unitcell_decap     1.00 
+      631 xi127.xi1<36>.                  unitcell_decap     1.00 
+      632 xi133.xi1<37>.                  unitcell_decap     1.00 
+      633 xi134.xi1<37>.                  unitcell_decap     1.00 
+      634 xi131.xi1<37>.                  unitcell_decap     1.00 
+      635 xi132.xi1<37>.                  unitcell_decap     1.00 
+      636 xi130.xi1<37>.                  unitcell_decap     1.00 
+      637 xi129.xi1<37>.                  unitcell_decap     1.00 
+      638 xi128.xi1<37>.                  unitcell_decap     1.00 
+      639 xi127.xi1<37>.                  unitcell_decap     1.00 
+      640 xi133.xi1<38>.                  unitcell_decap     1.00 
+      641 xi134.xi1<38>.                  unitcell_decap     1.00 
+      642 xi131.xi1<38>.                  unitcell_decap     1.00 
+      643 xi132.xi1<38>.                  unitcell_decap     1.00 
+      644 xi130.xi1<38>.                  unitcell_decap     1.00 
+      645 xi129.xi1<38>.                  unitcell_decap     1.00 
+      646 xi128.xi1<38>.                  unitcell_decap     1.00 
+      647 xi127.xi1<38>.                  unitcell_decap     1.00 
+      648 xi133.xi1<39>.                  unitcell_decap     1.00 
+      649 xi134.xi1<39>.                  unitcell_decap     1.00 
+      650 xi131.xi1<39>.                  unitcell_decap     1.00 
+      651 xi132.xi1<39>.                  unitcell_decap     1.00 
+      652 xi130.xi1<39>.                  unitcell_decap     1.00 
+      653 xi129.xi1<39>.                  unitcell_decap     1.00 
+      654 xi128.xi1<39>.                  unitcell_decap     1.00 
+      655 xi127.xi1<39>.                  unitcell_decap     1.00 
+  **warning** (ece_482_proj_tb.cir:1209) TSTEP cannot be zero or negative for Transient Analysis. Reset it to "TSTOP/20.0".
  ******  
  ece 482 project testbench
 
@@ -730,9 +731,9 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     VBFWDMOD = 0
     VERSION =    4.3 
     TOXREF =  3e-09 
-    TOXE = 2.45e-09 
-    TOXP = 2.135e-09 
-    TOXM = 2.45e-09 
+    TOXE = 2.37e-09 
+    TOXP = 2.055e-09 
+    TOXM = 2.37e-09 
     DTOX = 3.15e-10 
     EPSROX =    3.9 
     CDSC =      0 
@@ -777,7 +778,7 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     DVT2W =      0 
     DROUT =  0.672 
     DSUB = 0.4222 
-    VTH0 = 0.3552 
+    VTH0 = 0.2842 
     EU =   1.67 
     UA = -2.003e-09 
     UA1 = 1.04e-09 
@@ -785,7 +786,7 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     UB1 = -4.64e-19 
     UC = 2.056e-10 
     UC1 = 8.71e-11 
-    U0 = 0.01529 
+    U0 = 0.01555 
     UTE =     -1 
     VOFF = -0.1568 
     VOFFL = -3.595e-09 
@@ -816,10 +817,10 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     WR =      1 
     DWG =      0 
     DWB =      0 
-    XW = -9e-09 
-    XWREF = -9e-09 
-    XL = 4.4e-09 
-    XLREF = 4.4e-09 
+    XW =  9e-09 
+    XWREF =  9e-09 
+    XL = -4.4e-09 
+    XLREF = -4.4e-09 
     B0 =      0 
     B1 =      0 
     ALPHA0 =  2e-10 
@@ -869,8 +870,8 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     RBSB =     50 
     RBPS =     50 
     RBPD =     50 
-    CGSL = 1.556e-11 
-    CGDL = 1.556e-11 
+    CGSL = 1.864e-11 
+    CGDL = 1.864e-11 
     CKAPPAS =    0.6 
     CKAPPAD =    0.6 
     CF = 8.13e-11 
@@ -911,11 +912,11 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     LKETA = 3.624e-09 
     LK2 = -6.378e-10 
     LDROUT = -6.495e-09 
-    LVTH0 = 2.897e-09 
+    LVTH0 = 1.415e-09 
     LUA = -1.953e-18 
     LUB = -1.319e-27 
     LUC = -6.933e-18 
-    LU0 = -1.975e-11 
+    LU0 = -2.18e-10 
     LVOFF = -1.675e-10 
     LETAB = -6.624e-09 
     LPDIBLC1 = 3.148e-10 
@@ -925,11 +926,11 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     WKETA = 1.039e-08 
     WK2 = -8.114e-09 
     WDROUT = -1.299e-08 
-    WVTH0 = 5.345e-09 
+    WVTH0 = -1.211e-09 
     WUA = 4.873e-17 
     WUB = -6.82e-26 
     WUC = -2.044e-17 
-    WU0 = -1.41e-10 
+    WU0 = -9.971e-11 
     WVOFF = -2.622e-10 
     WETAB = -1.325e-08 
     WPDIBLC1 = 6.296e-10 
@@ -939,17 +940,17 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     PKETA = -4.204e-16 
     PK2 = 2.54e-16 
     PDROUT = 7.534e-16 
-    PVTH0 = 1.825e-16 
+    PVTH0 = -5.349e-17 
     PUA = 6.699e-25 
     PUB = -8.036e-34 
     PUC = 9.34e-25 
-    PU0 = 1.778e-17 
+    PU0 = 4.594e-18 
     PVOFF = 9.333e-18 
     PETAB = 7.684e-16 
     PPDIBLC1 = -3.652e-17 
     TNOM =  298.1 
-    CGSO = 5.032e-11 
-    CGDO = 5.032e-11 
+    CGSO = 6.028e-11 
+    CGDO = 6.028e-11 
     CGBO =      0 
     XPART =      1 
     RSH =   17.5 
@@ -960,12 +961,12 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     MJS =  0.264 
     PBSWS =  0.786 
     MJSWS =  0.011 
-    CJS = 0.0009178 
-    CJSWS = 5.191e-11 
+    CJS = 0.0008042 
+    CJSWS = 4.549e-11 
     NJS =      1 
     PBSWGS =  0.464 
     MJSWGS =  0.511 
-    CJSWGS = 2.729e-10 
+    CJSWGS = 2.391e-10 
     XTIS =      3 
     JSD = 2.1e-07 
     JSWD = 3.4e-13 
@@ -974,12 +975,12 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     MJD =  0.264 
     PBSWD =  0.786 
     MJSWD =  0.011 
-    CJD = 0.0009178 
-    CJSWD = 5.191e-11 
+    CJD = 0.0008042 
+    CJSWD = 4.549e-11 
     NJD =      1 
     PBSWGD =  0.464 
     MJSWGD =  0.511 
-    CJSWGD = 2.729e-10 
+    CJSWGD = 2.391e-10 
     XTID =      3 
     LMLT =      1 
     WMLT =      1 
@@ -993,7 +994,7 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     LWL =      0 
     LWLC =      0 
     LMIN =  4e-08 
-    LMAX = 5.56e-08 
+    LMAX = 6.44e-08 
     WINT =  2e-09 
     WL =      0 
     WLC =      0 
@@ -1004,7 +1005,7 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     WWL =      0 
     WWLC =      0 
     WMIN = 1.2e-07 
-    WMAX = 3.09e-07 
+    WMAX = 2.91e-07 
     NOIA = 2.6e+42 
     NOIB = 1.61e+21 
     NOIC =  3e+08 
@@ -1082,9 +1083,9 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     VBFWDMOD = 0
     VERSION =    4.3 
     TOXREF =  3e-09 
-    TOXE = 2.44e-09 
-    TOXP = 2.111e-09 
-    TOXM = 2.44e-09 
+    TOXE = 2.36e-09 
+    TOXP = 2.031e-09 
+    TOXM = 2.36e-09 
     DTOX = 3.29e-10 
     EPSROX =    3.9 
     CDSC =      0 
@@ -1129,7 +1130,7 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     DVT2W =      0 
     DROUT = 0.9621 
     DSUB =  1.272 
-    VTH0 = -0.3981 
+    VTH0 = -0.3399 
     EU =      1 
     UA = 1.195e-11 
     UA1 = 4.549e-09 
@@ -1137,7 +1138,7 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     UB1 = -5.441e-18 
     UC = 2.836e-11 
     UC1 = -5e-11 
-    U0 = 0.02375 
+    U0 = 0.02539 
     UTE = -1.524 
     VOFF = -0.1319 
     VOFFL = -6.036e-09 
@@ -1168,10 +1169,10 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     WR =      1 
     DWG =      0 
     DWB =      0 
-    XW = -9e-09 
-    XWREF = -9e-09 
-    XL = 4.4e-09 
-    XLREF = 4.4e-09 
+    XW =  9e-09 
+    XWREF =  9e-09 
+    XL = -4.4e-09 
+    XLREF = -4.4e-09 
     B0 =      0 
     B1 =      0 
     ALPHA0 =      0 
@@ -1221,8 +1222,8 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     RBSB =     50 
     RBPS =     50 
     RBPD =     50 
-    CGSL = 4.914e-11 
-    CGDL = 4.914e-11 
+    CGSL = 5.886e-11 
+    CGDL = 5.886e-11 
     CKAPPAS =    0.6 
     CKAPPAD =    0.6 
     CF = 1.18e-10 
@@ -1262,9 +1263,9 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     LKETA = -1.385e-08 
     LK2 = -1.77e-10 
     LDROUT = 1.023e-08 
-    LVTH0 = 3.327e-09 
+    LVTH0 = 5.267e-09 
     LUB = 2.766e-26 
-    LU0 = -3.055e-10 
+    LU0 = -5.015e-10 
     LVOFF = 5.304e-09 
     LETAB = -1.63e-08 
     LPDIBLC2 = -3.548e-10 
@@ -1274,10 +1275,10 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     WKETA = -1.376e-08 
     WK2 = -7.701e-10 
     WDROUT = 4.745e-08 
-    WVTH0 = 4.161e-09 
+    WVTH0 = 8.661e-09 
     WUB = 4.042e-26 
     WUC = -1.637e-18 
-    WU0 = 3.809e-10 
+    WU0 = 5.049e-10 
     WVOFF = 5.559e-09 
     WETAB = -2.668e-08 
     WPDIBLC2 = -9.676e-10 
@@ -1286,15 +1287,15 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     PKETA = 1.122e-15 
     PK2 = -1.19e-16 
     PDROUT = -2.847e-15 
-    PVTH0 = -4.772e-16 
+    PVTH0 = -3.002e-16 
     PUB = -3.73e-33 
-    PU0 = 4.1e-17 
+    PU0 = 7.897e-18 
     PVOFF = -5.016e-16 
     PETAB = 1.601e-15 
     PPDIBLC2 = 3.298e-17 
     TNOM =  298.1 
-    CGSO = 2.821e-11 
-    CGDO = 2.821e-11 
+    CGSO = 3.379e-11 
+    CGDO = 3.379e-11 
     CGBO =      0 
     XPART =      1 
     RSH =   9.68 
@@ -1305,12 +1306,12 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     MJS =   0.34 
     PBSWS =   0.49 
     MJSWS =  0.012 
-    CJS = 0.001064 
-    CJSWS = 6.62e-11 
+    CJS = 0.0009321 
+    CJSWS = 5.8e-11 
     NJS =      1 
     PBSWGS =   0.71 
     MJSWGS =   0.86 
-    CJSWGS = 2.697e-10 
+    CJSWGS = 2.363e-10 
     XTIS =      3 
     JSD = 1.51e-07 
     JSWD = 3.98e-13 
@@ -1319,12 +1320,12 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     MJD =   0.34 
     PBSWD =   0.49 
     MJSWD =  0.012 
-    CJD = 0.001064 
-    CJSWD = 6.62e-11 
+    CJD = 0.0009321 
+    CJSWD = 5.8e-11 
     NJD =      1 
     PBSWGD =   0.71 
     MJSWGD =   0.86 
-    CJSWGD = 2.697e-10 
+    CJSWGD = 2.363e-10 
     XTID =      3 
     LMLT =      1 
     WMLT =      1 
@@ -1338,7 +1339,7 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     LWL =      0 
     LWLC =      0 
     LMIN =  4e-08 
-    LMAX = 5.56e-08 
+    LMAX = 6.44e-08 
     WINT = 1.089e-08 
     WL =      0 
     WLC =      0 
@@ -1349,7 +1350,7 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     WWL =      0 
     WWLC =      0 
     WMIN = 1.2e-07 
-    WMAX = 3.09e-07 
+    WMAX = 2.91e-07 
     NOIA = 1.45e+42 
     NOIB = 3.57e+26 
     NOIC =  2e+10 
@@ -1427,9 +1428,9 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     VBFWDMOD = 0
     VERSION =    4.3 
     TOXREF =  3e-09 
-    TOXE = 3.75e-09 
-    TOXP = 3.43e-09 
-    TOXM = 3.75e-09 
+    TOXE = 3.49e-09 
+    TOXP = 3.17e-09 
+    TOXM = 3.49e-09 
     DTOX = 3.2e-10 
     EPSROX =    3.9 
     CDSC =      0 
@@ -1474,7 +1475,7 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     DVT2W =      0 
     DROUT =   0.56 
     DSUB = 0.4222 
-    VTH0 = 0.4553 
+    VTH0 = 0.3833 
     EU =   1.67 
     UA = -9.5e-10 
     UA1 = 8.32e-10 
@@ -1482,7 +1483,7 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     UB1 =      0 
     UC = 7.758e-11 
     UC1 = 4.355e-11 
-    U0 =  0.028 
+    U0 = 0.03106 
     UTE =   -0.9 
     VOFF = -0.1556 
     VOFFL = -3.595e-09 
@@ -1513,10 +1514,10 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     WR =      1 
     DWG =      0 
     DWB =      0 
-    XW = -9e-09 
-    XWREF = -9e-09 
-    XL =  9e-09 
-    XLREF =  9e-09 
+    XW =  9e-09 
+    XWREF =  9e-09 
+    XL = -9e-09 
+    XLREF = -9e-09 
     B0 =      0 
     B1 =      0 
     ALPHA0 =  2e-10 
@@ -1566,8 +1567,8 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     RBSB =     50 
     RBPS =     50 
     RBPD =     50 
-    CGSL = 2.467e-11 
-    CGDL = 2.467e-11 
+    CGSL = 2.953e-11 
+    CGDL = 2.953e-11 
     CKAPPAS =    0.6 
     CKAPPAD =    0.6 
     CF = 6.13e-11 
@@ -1602,17 +1603,17 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     SL =  2e-06 
     SW =  2e-06 
     K =      0 
-    LVTH0 = 4.08e-09 
-    LU0 = 2.62e-10 
+    LVTH0 = -4e-09 
+    LU0 = -3.44e-10 
     WVSAT = -0.0025 
     WAGS = -5e-08 
-    WVTH0 = 6.4e-09 
-    WU0 = -2.2e-10 
-    PVTH0 = 2.214e-16 
-    PU0 = -7.3e-18 
+    WVTH0 = -6.6e-09 
+    WU0 = 4.6e-11 
+    PVTH0 = -2.5e-16 
+    PU0 =  4e-18 
     TNOM =  298.1 
-    CGSO = 2.848e-11 
-    CGDO = 2.848e-11 
+    CGSO = 3.412e-11 
+    CGDO = 3.412e-11 
     CGBO =      0 
     XPART =      1 
     RSH =   17.5 
@@ -1623,12 +1624,12 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     MJS =   0.31 
     PBSWS =  0.786 
     MJSWS =  0.081 
-    CJS = 0.0008965 
-    CJSWS = 1.087e-10 
+    CJS = 0.0007855 
+    CJSWS = 9.527e-11 
     NJS =      1 
     PBSWGS =    0.7 
     MJSWGS =  0.511 
-    CJSWGS = 1.279e-10 
+    CJSWGS = 1.121e-10 
     XTIS =      3 
     JSD = 4.14e-07 
     JSWD = 9.7e-13 
@@ -1637,12 +1638,12 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     MJD =   0.31 
     PBSWD =  0.786 
     MJSWD =  0.081 
-    CJD = 0.0008965 
-    CJSWD = 1.087e-10 
+    CJD = 0.0007855 
+    CJSWD = 9.527e-11 
     NJD =      1 
     PBSWGD =    0.7 
     MJSWGD =  0.511 
-    CJSWGD = 1.279e-10 
+    CJSWGD = 1.121e-10 
     XTID =      3 
     LMLT =      1 
     WMLT =      1 
@@ -1656,7 +1657,7 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     LWL =      0 
     LWLC =      0 
     LMIN = 1.5e-07 
-    LMAX = 9.91e-07 
+    LMAX = 1.009e-06 
     WINT =  2e-09 
     WL =      0 
     WLC =      0 
@@ -1667,7 +1668,7 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     WWL =      0 
     WWLC =      0 
     WMIN = 3.2e-07 
-    WMAX = 5.09e-07 
+    WMAX = 4.91e-07 
     NOIA = 3.1e+42 
     NOIB = 1.81e+21 
     NOIC =  3e+08 
@@ -1745,9 +1746,9 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     VBFWDMOD = 0
     VERSION =    4.3 
     TOXREF =  3e-09 
-    TOXE = 3.75e-09 
-    TOXP = 3.44e-09 
-    TOXM = 3.75e-09 
+    TOXE = 3.49e-09 
+    TOXP = 3.18e-09 
+    TOXM = 3.49e-09 
     DTOX = 3.1e-10 
     EPSROX =    3.9 
     CDSC =      0 
@@ -1792,7 +1793,7 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     DVT2W =      0 
     DROUT =  1.133 
     DSUB =  1.272 
-    VTH0 = -0.3931 
+    VTH0 = -0.3231 
     EU =      1 
     UA = 2.455e-10 
     UA1 = 4.094e-09 
@@ -1800,7 +1801,7 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     UB1 = -4.897e-18 
     UC = 4.336e-11 
     UC1 = -5.5e-11 
-    U0 = 0.01787 
+    U0 = 0.02111 
     UTE = -1.219 
     VOFF = -0.05137 
     VOFFL = -6.036e-09 
@@ -1831,10 +1832,10 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     WR =      1 
     DWG =      0 
     DWB =      0 
-    XW = -9e-09 
-    XWREF = -9e-09 
-    XL =  9e-09 
-    XLREF =  9e-09 
+    XW =  9e-09 
+    XWREF =  9e-09 
+    XL = -9e-09 
+    XLREF = -9e-09 
     B0 =      0 
     B1 =      0 
     ALPHA0 =      0 
@@ -1884,8 +1885,8 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     RBSB =     50 
     RBPS =     50 
     RBPD =     50 
-    CGSL = 9.1e-11 
-    CGDL = 9.1e-11 
+    CGSL = 1.09e-10 
+    CGDL = 1.09e-10 
     CKAPPAS =    0.6 
     CKAPPAD =    0.6 
     CF = 1.08e-10 
@@ -1920,16 +1921,16 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     SL =  2e-06 
     SW =  2e-06 
     K =      0 
-    LVTH0 = -3.6e-09 
-    LU0 = 1.13e-10 
-    WVTH0 = -2.4e-09 
+    LVTH0 = 4.12e-09 
+    LU0 = -2.28e-10 
+    WVTH0 = 2.8e-09 
     WUB = -3e-25 
-    WU0 = -1.08e-10 
-    PVTH0 = -3.56e-16 
-    PU0 =  1e-17 
+    WU0 = 2.4e-11 
+    PVTH0 = 1.723e-16 
+    PU0 =  8e-18 
     TNOM =  298.1 
-    CGSO = 2.002e-11 
-    CGDO = 2.002e-11 
+    CGSO = 2.398e-11 
+    CGDO = 2.398e-11 
     CGBO =      0 
     XPART =      1 
     RSH =   9.68 
@@ -1940,12 +1941,12 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     MJS =   0.41 
     PBSWS =   0.49 
     MJSWS =  0.097 
-    CJS = 0.001034 
-    CJSWS = 1.173e-10 
+    CJS = 0.000906 
+    CJSWS = 1.027e-10 
     NJS =      1 
     PBSWGS =    0.8 
     MJSWGS =   0.88 
-    CJSWGS = 2.452e-10 
+    CJSWGS = 2.148e-10 
     XTIS =      3 
     JSD = 3.1e-07 
     JSWD =  1e-12 
@@ -1954,12 +1955,12 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     MJD =   0.41 
     PBSWD =   0.49 
     MJSWD =  0.097 
-    CJD = 0.001034 
-    CJSWD = 1.173e-10 
+    CJD = 0.000906 
+    CJSWD = 1.027e-10 
     NJD =      1 
     PBSWGD =    0.8 
     MJSWGD =   0.88 
-    CJSWGD = 2.452e-10 
+    CJSWGD = 2.148e-10 
     XTID =      3 
     LMLT =      1 
     WMLT =      1 
@@ -1973,7 +1974,7 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     LWL =      0 
     LWLC =      0 
     LMIN = 1.5e-07 
-    LMAX = 9.91e-07 
+    LMAX = 1.009e-06 
     WINT = 1.389e-08 
     WL =      0 
     WLC =      0 
@@ -1984,7 +1985,7 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     WWL =      0 
     WWLC =      0 
     WMIN = 3.2e-07 
-    WMAX = 5.09e-07 
+    WMAX = 4.91e-07 
     NOIA = 7.45e+41 
     NOIB = 1.57e+26 
     NOIC =  2e+10 
@@ -2037,8 +2038,7 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
     LXRCRG2  =      0 
     WXRCRG2  =      0 
     PXRCRG2  =      0 
-  **info** (ece_482_proj_tb2.cir:1103) DC voltage reset to initial transient source value in source 0:va0. new dc=0.0000D+00
-  **warning** (g45n1svt:xi29.mnm5 (ece_482_proj_tb2.cir:106)) Warning: Pdibl1 = -0.000102097 is negative in BSIM4 model with w=1.2e-07 l=4.5e-08.
+  **info** (ece_482_proj_tb.cir:1109) DC voltage reset to initial transient source value in source 0:va0. new dc=0.0000D+00
              
  Summary of Linear Res Distribution Info
  ---------------------------------------
@@ -2096,12 +2096,13 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
  ******
  runlvl  = 3         bypass  = 2.0000    
   Opening plot unit= 15
- file=ece_482_proj_tb2.pa0
+ file=ece_482_proj_tb.pa0
+
+
+ **info** although this circuit has failed to converge
+ to gmindc=   1.000E-12, it did converge to a gmindc=   1.790E-09
 
  no convergence with standard algorithm,  trying damped pseudo-transient
-
-    **info** although this circuit has failed to converge
- to gmindc= 1e-12, it did converge to a gmindc= 1e-11
 
   *** pseudo tran succeeded *** 
  ******  
@@ -2111,258 +2112,258 @@ Using: /software/Synopsys-2022_x86_64/hspice/T-2022.06-SP1/hspice/linux64/hspice
  ****** operating point status is voltage   simulation time is     0.     
       node    =voltage        node    =voltage        node    =voltage
 
- +  0:_net0   =   1.8000    0:_net1   =  27.9351p   0:_net10  =   1.8000 
- +  0:_net11  =  27.9351p   0:_net12  =   1.8000    0:_net13  =  27.9351p
- +  0:_net14  =   1.8000    0:_net15  =  27.9351p   0:_net16  =   1.8000 
- +  0:_net17  =  27.9351p   0:_net18  =   1.8000    0:_net19  =  27.9351p
- +  0:_net2   =   1.8000    0:_net20  =   1.8000    0:_net21  =  27.9351p
- +  0:_net22  =   1.8000    0:_net23  =  27.9351p   0:_net24  =   1.8000 
- +  0:_net25  =  27.9351p   0:_net26  =   1.8000    0:_net27  =  27.9351p
- +  0:_net28  =   1.8000    0:_net29  =  27.9351p   0:_net3   =  27.9351p
- +  0:_net30  =   1.8000    0:_net31  =  27.9351p   0:_net32  =   1.8000 
- +  0:_net33  =  27.9351p   0:_net34  =   1.8000    0:_net35  =  27.9351p
- +  0:_net36  =   1.8000    0:_net37  =  27.9351p   0:_net38  =   1.8000 
- +  0:_net39  =  27.9351p   0:_net4   =   1.8000    0:_net40  =   1.8000 
- +  0:_net41  =  27.9351p   0:_net42  =   1.8000    0:_net43  =  27.9351p
- +  0:_net44  =   1.8000    0:_net45  =  27.9351p   0:_net46  =   1.8000 
- +  0:_net47  =  27.9351p   0:_net48  =   1.8000    0:_net49  =  27.9351p
- +  0:_net5   =  27.9351p   0:_net50  =   1.8000    0:_net51  =  27.9351p
- +  0:_net52  =   1.8000    0:_net53  =  27.9351p   0:_net54  =   1.8000 
- +  0:_net55  =  27.9351p   0:_net56  =   1.8000    0:_net57  =  27.9351p
- +  0:_net58  =   1.8000    0:_net59  =  27.9351p   0:_net6   =   1.8000 
- +  0:_net60  =   1.8000    0:_net61  =  27.9351p   0:_net62  =   1.8000 
- +  0:_net63  =  27.9351p   0:_net64  =   1.8000    0:_net65  =  27.9351p
- +  0:_net66  =   1.8000    0:_net67  =  27.9351p   0:_net68  =   1.8000 
- +  0:_net69  =  27.9351p   0:_net7   =  27.9351p   0:_net70  =   1.8000 
- +  0:_net71  =  27.9351p   0:_net72  =   1.8000    0:_net73  =  27.9351p
- +  0:_net74  =   1.8000    0:_net75  =  27.9351p   0:_net76  =   1.8000 
- +  0:_net77  =  27.9351p   0:_net78  =   1.8000    0:_net79  =  27.9351p
- +  0:_net8   =   1.8000    0:_net9   =  27.9351p   0:a0      =   0.     
+ +  0:_net0   =   1.8000    0:_net1   = 213.5583p   0:_net10  =   1.8000 
+ +  0:_net11  = 213.5583p   0:_net12  =   1.8000    0:_net13  = 213.5583p
+ +  0:_net14  =   1.8000    0:_net15  = 213.5583p   0:_net16  =   1.8000 
+ +  0:_net17  = 213.5583p   0:_net18  =   1.8000    0:_net19  = 213.5583p
+ +  0:_net2   =   1.8000    0:_net20  =   1.8000    0:_net21  = 213.5583p
+ +  0:_net22  =   1.8000    0:_net23  = 213.5583p   0:_net24  =   1.8000 
+ +  0:_net25  = 213.5583p   0:_net26  =   1.8000    0:_net27  = 213.5583p
+ +  0:_net28  =   1.8000    0:_net29  = 213.5583p   0:_net3   = 213.5583p
+ +  0:_net30  =   1.8000    0:_net31  = 213.5583p   0:_net32  =   1.8000 
+ +  0:_net33  = 213.5583p   0:_net34  =   1.8000    0:_net35  = 213.5583p
+ +  0:_net36  =   1.8000    0:_net37  = 213.5583p   0:_net38  =   1.8000 
+ +  0:_net39  = 213.5583p   0:_net4   =   1.8000    0:_net40  =   1.8000 
+ +  0:_net41  = 213.5583p   0:_net42  =   1.8000    0:_net43  = 213.5583p
+ +  0:_net44  =   1.8000    0:_net45  = 213.5583p   0:_net46  =   1.8000 
+ +  0:_net47  = 213.5583p   0:_net48  =   1.8000    0:_net49  = 213.5583p
+ +  0:_net5   = 213.5583p   0:_net50  =   1.8000    0:_net51  = 213.5583p
+ +  0:_net52  =   1.8000    0:_net53  = 213.5583p   0:_net54  =   1.8000 
+ +  0:_net55  = 213.5583p   0:_net56  =   1.8000    0:_net57  = 213.5583p
+ +  0:_net58  =   1.8000    0:_net59  = 213.5583p   0:_net6   =   1.8000 
+ +  0:_net60  =   1.8000    0:_net61  = 213.5583p   0:_net62  =   1.8000 
+ +  0:_net63  = 213.5583p   0:_net64  =   1.8000    0:_net65  = 213.5583p
+ +  0:_net66  =   1.8000    0:_net67  = 213.5583p   0:_net68  =   1.8000 
+ +  0:_net69  = 213.5583p   0:_net7   = 213.5583p   0:_net70  =   1.8000 
+ +  0:_net71  = 213.5583p   0:_net72  =   1.8000    0:_net73  = 213.5583p
+ +  0:_net74  =   1.8000    0:_net75  = 213.5583p   0:_net76  =   1.8000 
+ +  0:_net77  = 213.5583p   0:_net78  =   1.8000    0:_net79  = 213.5583p
+ +  0:_net8   =   1.8000    0:_net9   = 213.5583p   0:a0      =   0.     
  +  0:a0_bar  =   1.8000    0:a0_oc   =   0.        0:a0_oc1  =   0.     
  +  0:a1      =   0.        0:a1_bar  =   1.8000    0:a1_oc   =   0.     
  +  0:a1_oc1  =   0.        0:a2      =   0.        0:a2_bar  =   1.8000 
  +  0:a2_oc   =   0.        0:a2_oc1  =   0.        0:a3      =   0.     
  +  0:a3_bar  =   1.8000    0:a3_oc   =   0.        0:a3_oc1  =   0.     
- +  0:a_0     =  52.4696n   0:a_0_bar =   1.1000    0:a_0_reg = 601.2917m
- +  0:a_0_reg_= 608.0049m   0:a_0_reg_= 574.8953m   0:a_1     =  52.4696n
- +  0:a_1_bar =   1.1000    0:a_1_reg = 601.2918m   0:a_1_reg_= 608.0049m
- +  0:a_1_reg_= 574.8952m   0:a_2     =  52.4696n   0:a_2_bar =   1.1000 
- +  0:a_2_reg = 601.2917m   0:a_2_reg_= 608.0049m   0:a_2_reg_= 574.8952m
- +  0:a_3     =  52.4696n   0:a_3_bar =   1.1000    0:a_3_reg = 601.2917m
- +  0:a_3_reg_= 608.0049m   0:a_3_reg_= 574.8953m   0:b0      =   0.     
+ +  0:a_0     =  74.3608n   0:a_0_bar =   1.1000    0:a_0_reg = 210.6697m
+ +  0:a_0_reg_= 151.7302m   0:a_0_reg_=  63.8151m   0:a_1     =  74.3608n
+ +  0:a_1_bar =   1.1000    0:a_1_reg = 210.6697m   0:a_1_reg_= 151.7302m
+ +  0:a_1_reg_=  63.8151m   0:a_2     =  74.3608n   0:a_2_bar =   1.1000 
+ +  0:a_2_reg = 210.6696m   0:a_2_reg_= 151.7302m   0:a_2_reg_=  63.8151m
+ +  0:a_3     =  74.3608n   0:a_3_bar =   1.1000    0:a_3_reg = 210.6697m
+ +  0:a_3_reg_= 151.7302m   0:a_3_reg_=  63.8151m   0:b0      =   0.     
  +  0:b0_bar  =   1.8000    0:b0_oc   =   0.        0:b0_oc1  =   0.     
  +  0:b1      =   0.        0:b1_bar  =   1.8000    0:b1_oc   =   0.     
  +  0:b1_oc1  =   0.        0:b2      =   0.        0:b2_bar  =   1.8000 
  +  0:b2_oc   =   0.        0:b2_oc1  =   0.        0:b3      =   0.     
  +  0:b3_bar  =   1.8000    0:b3_oc   =   0.        0:b3_oc1  =   0.     
- +  0:b_0     =  52.4696n   0:b_0_bar =   1.1000    0:b_0_reg = 577.7257m
- +  0:b_1     =  52.4696n   0:b_1_bar =   1.1000    0:b_1_reg = 577.7257m
- +  0:b_2     =  52.4696n   0:b_2_bar =   1.1000    0:b_2_reg = 620.7476m
- +  0:b_2_reg_= 575.1282m   0:b_3     =  52.4696n   0:b_3_bar =   1.1000 
- +  0:b_3_reg = 620.7476m   0:b_3_reg_= 620.7477m   0:b_3_reg_= 595.0643m
- +  0:c_0_0   =   1.1000    0:c_0_1   =   1.1000    0:c_0_2   =   1.1000 
- +  0:c_0_3   =   1.1000    0:c_0_3_re= 648.7077m   0:c_1_0   =   1.0994 
- +  0:c_1_1   =   1.0994    0:c_1_2   =   1.0994    0:c_1_3   =   1.0994 
- +  0:c_1_3_re= 648.6849m   0:c_2_0   =   1.0991    0:c_2_1   =   1.0991 
- +  0:c_2_2   =   1.0991    0:clk     =  41.8861n   0:clk_bar =   1.1000 
- +  0:clk_in  =   0.        0:clk_oc  =  41.8861n   0:clk_oc1 =  41.8861n
- +  0:n16     =   0.        0:n18     =   0.        0:n20     =   0.     
- +  0:n22     =   0.        0:n24     =   0.        0:n26     =   0.     
- +  0:n28     =   0.        0:n29     =   0.        0:n30     =   0.     
- +  0:n31     =   0.        0:n32     =   0.        0:n33     =   0.     
- +  0:n34     =   0.        0:net1    =   1.0991    0:net10   =   1.1000 
- +  0:net11   =   1.0991    0:net13   =   1.1000    0:net16   = 150.6258m
- +  0:net18   =   1.1000    0:net2    =   1.0994    0:net22   =   1.0994 
- +  0:net24   = 150.6275m   0:net3    =   1.0991    0:net30   = 150.6281m
- +  0:net31782=   1.1000    0:net35   =   1.1000    0:net38   = 150.6262m
- +  0:net4    =   1.0994    0:net41   =   1.1000    0:net45   =   1.1000 
- +  0:net47   = 150.6277m   0:net5    =   1.0994    0:net53   = 150.6266m
- +  0:net59   = 150.6273m   0:net6    =   1.0991    0:net7    = 150.6248m
- +  0:net8    =   1.1000    0:p0      =   1.6175n   0:p0_1_1  = 578.3333m
- +  0:p0_bar  =   1.7866    0:p0_f    = 242.8109m   0:p0_oc   =   1.6175n
- +  0:p0_oc1  =   1.6175n   0:p1      =   1.6175n   0:p1_1_1  = 578.3333m
- +  0:p1_bar  =   1.7866    0:p1_f    = 242.8022m   0:p1_oc   =   1.6175n
- +  0:p1_oc1  =   1.6175n   0:p2      =   1.6175n   0:p2_1_1  = 578.3331m
- +  0:p2_bar  =   1.7866    0:p2_f    = 242.7878m   0:p2_oc   =   1.6175n
- +  0:p2_oc1  =   1.6175n   0:p3      =   1.6175n   0:p3_1_1  = 578.3331m
- +  0:p3_bar  =   1.7866    0:p3_f    = 242.7819m   0:p3_oc   =   1.6175n
- +  0:p3_oc1  =   1.6175n   0:p4      =   1.6175n   0:p4_1_1  = 578.3332m
- +  0:p4_bar  =   1.7866    0:p4_f    = 242.7990m   0:p4_oc   =   1.6175n
- +  0:p4_oc1  =   1.6175n   0:p5      =   1.6175n   0:p5_1_1  = 578.3331m
- +  0:p5_bar  =   1.7866    0:p5_f    = 242.7861m   0:p5_oc   =   1.6175n
- +  0:p5_oc1  =   1.6175n   0:p6      =   1.6175n   0:p6_1_1  = 578.3332m
- +  0:p6_bar  =   1.7866    0:p6_f    = 242.7957m   0:p6_oc   =   1.6175n
- +  0:p6_oc1  =   1.6175n   0:p7      =   1.6175n   0:p7_1_1  = 578.3331m
- +  0:p7_bar  =   1.7866    0:p7_f    = 242.7900m   0:p7_oc   =   1.6175n
- +  0:p7_oc1  =   1.6175n   0:p_0     =   1.1000    0:p_0_reg = 620.7476m
- +  0:p_0_reg_= 620.7476m   0:p_1     = 332.6160n   0:p_1_reg = 620.7477m
- +  0:p_1_reg_= 620.7478m   0:p_2     =   4.3486m   0:p_2_reg = 620.7477m
- +  0:p_3     =   4.3444m   0:p_4     =   1.0991    0:p_5     =   1.0991 
- +  0:p_6     =   1.0991    0:p_7     =   1.0991    0:reset   =   1.8000 
- +  0:reset_ba=  44.5583n   0:rst     =   1.1000    0:rst_bar =  41.5617n
- +  0:rst_oc  =   1.8000    0:rst_oc1 =   1.8000    0:s_0_1   =   1.1000 
- +  0:s_0_1_re= 648.7078m   0:s_0_2   =   1.1000    0:s_0_2_re= 648.7076m
- +  0:s_0_3   = 332.6160n   0:s_0_3_re= 648.7076m   0:s_1_1   =   1.0994 
- +  0:s_1_1_re= 648.6843m   0:s_1_2   =   1.0994    0:s_1_2_re= 648.6845m
- +  0:s_1_3   =   1.0994    0:s_1_3_re= 648.6845m   0:vdd     =   1.1000 
- +  0:vdd1    =   1.1000    0:vdd2    =   1.1000    0:vdd3    =   1.1000 
- +  0:vddio   =   1.8000    0:vddio1  =   1.8000    0:vddio2  =   1.8000 
- +  0:vddio3  =   1.8000    0:vss     =   0.        0:vss1    =   0.     
- +  0:vss2    =   0.        0:vss3    =   0.        0:vss4    =   0.     
- +  0:vssio1  =   0.        0:vssio2  =   0.        0:vssio3  =   0.     
- + 18:a_xor_b_=   1.1000   18:net8    =   4.1171m  19:a_xor_b_=   1.1000 
- + 19:net8    =   4.1199m  20:a_xor_b_=   1.1000   20:net8    = 135.6147n
- + 21:a_xor_b_=   1.1000   21:net8    = 135.6145n  22:a_xor_b =   4.3444m
- + 22:a_xor_b_=   1.1000   22:net1    =  48.2816n  22:net4    =   4.1170m
- + 23:a_xor_b =   4.3444m  23:a_xor_b_=   1.1000   23:net1    =  48.2816n
- + 23:net4    =   4.1171m  24:a_xor_b =   4.3444m  24:a_xor_b_=   1.1000 
- + 24:net1    =  48.2816n  24:net4    =   4.1171m  25:a_xor_b =   4.3486m
- + 25:a_xor_b_=   1.1000   25:net1    =  48.2771n  25:net4    =   4.1199m
- + 26:a_xor_b =   4.3486m  26:a_xor_b_=   1.1000   26:net1    =  48.2771n
- + 26:net4    =   4.1199m  27:a_xor_b =   4.3486m  27:a_xor_b_=   1.1000 
- + 27:net1    =  48.2771n  27:net4    =   4.1199m  28:a_xor_b = 332.4525n
- + 28:a_xor_b_=   1.1000   28:net1    =  48.2273n  28:net4    = 135.5602n
- + 29:a_xor_b = 332.4526n  29:a_xor_b_=   1.1000   29:net1    =  48.2273n
- + 29:net4    = 135.5602n  39:net1    = 169.6043m  39:net10   =  25.5942m
- + 40:net1    = 169.6053m  40:net10   =  25.5943m  41:net1    = 169.6048m
- + 41:net10   =  25.5943m  42:net1    = 169.6047m  42:net10   =  25.5942m
- + 43:net1    = 156.0389m  43:net10   =  22.5078m  44:net1    = 156.0390m
- + 44:net10   =  22.5079m  45:net1    = 156.0387m  45:net10   =  22.5078m
- + 46:net1    = 156.0388m  46:net10   =  22.5078m  47:net1    = 268.2855m
- + 47:net10   =  48.0617m  48:net1    = 268.2869m  48:net10   =  48.0618m
- + 49:net1    = 268.2866m  49:net10   =  48.0618m  50:net1    = 268.2847m
- + 50:net10   =  48.0616m  51:net1    = 169.6047m  51:net10   =  25.5943m
- + 52:net1    = 169.6051m  52:net10   =  25.5943m  53:net1    = 169.6049m
- + 53:net10   =  25.5943m  54:net1    = 169.6052m  54:net10   =  25.5943m
- + 73:net17   =   1.0966   73:net21   =   7.8477n  73:net4    =   1.1000 
- + 73:net5    = 106.5974n  73:net8    = 107.5938n  73:net9    = 845.3850m
- + 73:x       =   1.1000   74:net17   =   1.0966   74:net21   =   7.8477n
- + 74:net4    =   1.1000   74:net5    = 106.5974n  74:net8    = 107.5938n
- + 74:net9    = 845.3850m  74:x       =   1.1000   75:net17   =   1.0966 
- + 75:net21   =   7.8477n  75:net4    =   1.1000   75:net5    = 106.5974n
- + 75:net8    = 107.5938n  75:net9    = 845.3850m  75:x       =   1.1000 
- + 76:net17   =   1.0966   76:net21   =   7.8477n  76:net4    =   1.1000 
- + 76:net5    = 106.5974n  76:net8    = 107.5938n  76:net9    = 845.3850m
- + 76:x       =   1.1000   77:net17   =   1.0966   77:net21   =   7.8477n
- + 77:net4    =   1.1000   77:net5    = 106.5974n  77:net8    = 107.5971n
- + 77:net9    = 845.3850m  77:x       =   1.1000   78:net17   =   1.0966 
- + 78:net21   =   7.8477n  78:net4    =   1.1000   78:net5    = 106.5974n
- + 78:net8    = 105.7846n  78:net9    = 845.3850m  78:x       =   1.1000 
- + 79:net17   =   1.0966   79:net21   =   7.8477n  79:net4    =   1.1000 
- + 79:net5    = 106.5974n  79:net8    = 107.5971n  79:net9    = 845.3850m
- + 79:x       =   1.1000   80:net17   =   1.0966   80:net21   =   7.8477n
- + 80:net4    =   1.1000   80:net5    = 106.5974n  80:net8    = 107.5971n
- + 80:net9    = 845.3850m  80:x       =   1.1000   81:net17   =   1.0965 
- + 81:net21   =   7.7910n  81:net4    =   1.1000   81:net5    = 106.5974n
- + 81:net8    = 107.5925n  81:net9    = 845.3850m  81:x       =   1.1000 
- + 82:net17   =   1.0965   82:net21   =   7.7910n  82:net4    =   1.1000 
- + 82:net5    = 106.5974n  82:net8    = 107.5925n  82:net9    = 845.3850m
- + 82:x       =   1.1000   83:net17   =   1.0965   83:net21   =   7.7910n
- + 83:net4    =   1.1000   83:net5    = 106.5974n  83:net8    = 107.5925n
- + 83:net9    = 845.3850m  83:x       =   1.1000   84:net17   =   1.0965 
- + 84:net21   =   7.7910n  84:net4    =   1.1000   84:net5    = 106.5974n
- + 84:net8    = 107.5925n  84:net9    = 845.3850m  84:x       =   1.1000 
- + 85:net17   =   1.0965   85:net21   =   7.7910n  85:net4    =   1.1000 
- + 85:net5    = 106.5974n  85:net8    = 105.7847n  85:net9    = 845.3850m
- + 85:x       =   1.1000   86:net17   =   1.0966   86:net21   =   7.8257n
- + 86:net4    =   1.1000   86:net5    = 106.5974n  86:net8    = 105.7847n
- + 86:net9    = 845.3850m  86:x       =   1.1000   87:net17   =   1.0965 
- + 87:net21   =   7.7910n  87:net4    =   1.1000   87:net5    = 106.5974n
- + 87:net8    = 106.1284n  87:net9    = 845.3850m  87:x       =   1.1000 
- + 88:net17   =   1.0966   88:net21   =   7.8257n  88:net4    =   1.1000 
- + 88:net5    = 106.5974n  88:net8    = 106.1284n  88:net9    = 845.3850m
- + 88:x       =   1.1000   89:net17   =   1.0966   89:net21   =   7.8257n
- + 89:net4    =   1.1000   89:net5    = 106.5974n  89:net8    = 106.1284n
- + 89:net9    = 845.3850m  89:x       =   1.1000   90:net17   =   1.0966 
- + 90:net21   =   7.8257n  90:net4    =   1.1000   90:net5    = 106.5974n
- + 90:net8    = 105.7846n  90:net9    = 845.3850m  90:x       =   1.1000 
- + 91:net17   =   1.0966   91:net21   =   7.8257n  91:net4    =   1.1000 
- + 91:net5    = 106.5974n  91:net8    = 107.5971n  91:net9    = 845.3850m
- + 91:x       =   1.1000   92:net17   =   1.0964   92:net21   =   7.7881n
- + 92:net4    =   1.1000   92:net5    = 106.5974n  92:net8    = 106.1097n
- + 92:net9    = 845.3850m  92:x       =   1.1000   93:net17   =   1.0964 
- + 93:net21   =   7.7881n  93:net4    =   1.1000   93:net5    = 106.5974n
- + 93:net8    = 106.1097n  93:net9    = 845.3850m  93:x       =   1.1000 
- + 94:net17   =   1.0964   94:net21   =   7.7881n  94:net4    =   1.1000 
- + 94:net5    = 106.5974n  94:net8    = 106.1097n  94:net9    = 845.3850m
- + 94:x       =   1.1000   95:net17   =   1.0964   95:net21   =   7.7881n
- + 95:net4    =   1.1000   95:net5    = 106.5974n  95:net8    = 106.1097n
- + 95:net9    = 845.3850m  95:x       =   1.1000   96:net17   =   1.0965 
- + 96:net21   =   7.8049n  96:net4    =   1.1000   96:net5    = 106.5974n
- + 96:net8    = 106.1284n  96:net9    = 845.3850m  96:x       =   1.1000 
- + 97:net17   =   1.0966   97:net21   =   7.8257n  97:net4    =   1.1000 
- + 97:net5    = 106.5974n  97:net8    = 106.1284n  97:net9    = 845.3850m
- + 97:x       =   1.1000   98:net17   =   1.0964   98:net21   =   7.7883n
- + 98:net4    =   1.1000   98:net5    = 106.5974n  98:net8    = 106.1284n
- + 98:net9    = 845.3850m  98:x       =   1.1000   99:net17   =   1.0965 
- + 99:net21   =   7.8155n  99:net4    =   1.1000   99:net5    = 106.5974n
- + 99:net8    = 106.1002n  99:net9    = 845.3850m  99:x       =   1.1000 
- +100:net17   =   1.0965  100:net21   =   7.8155n 100:net4    =   1.1000 
- +100:net5    = 106.5974n 100:net8    = 106.1002n 100:net9    = 845.3850m
- +100:x       =   1.1000  101:net17   =   1.0965  101:net21   =   7.7910n
- +101:net4    =   1.1000  101:net5    = 106.5974n 101:net8    = 106.1284n
- +101:net9    = 845.3850m 101:x       =   1.1000  102:net17   =   1.0965 
- +102:net21   =   7.8155n 102:net4    =   1.1000  102:net5    = 106.5974n
- +102:net8    = 106.1002n 102:net9    = 845.3850m 102:x       =   1.1000 
- +103:net17   =   1.0965  103:net21   =   7.8155n 103:net4    =   1.1000 
- +103:net5    = 106.5974n 103:net8    = 106.1002n 103:net9    = 845.3850m
- +103:x       =   1.1000  104:net17   =   1.0965  104:net21   =   7.7910n
- +104:net4    =   1.1000  104:net5    = 106.5974n 104:net8    = 106.1284n
- +104:net9    = 845.3850m 104:x       =   1.1000  105:net17   =   1.0966 
- +105:net21   =   7.8257n 105:net4    =   1.1000  105:net5    = 106.5974n
- +105:net8    = 105.7846n 105:net9    = 845.3850m 105:x       =   1.1000 
- +106:net17   =   1.0965  106:net21   =   7.7905n 106:net4    =   1.1000 
- +106:net5    = 106.5974n 106:net8    = 105.7846n 106:net9    = 845.3850m
- +106:x       =   1.1000  107:net17   =   1.0965  107:net21   =   7.7905n
- +107:net4    =   1.1000  107:net5    = 106.5974n 107:net8    = 105.7846n
- +107:net9    = 845.3850m 107:x       =   1.1000  108:net17   =   1.0966 
- +108:net21   =   7.8257n 108:net4    =   1.1000  108:net5    = 106.5974n
- +108:net8    = 105.7846n 108:net9    = 845.3850m 108:x       =   1.1000 
- +109:net17   =   1.0965  109:net21   =   7.8100n 109:net4    =   1.1000 
- +109:net5    = 106.5974n 109:net8    = 105.7846n 109:net9    = 845.3850m
- +109:x       =   1.1000  110:net17   =   1.0965  110:net21   =   7.8100n
- +110:net4    =   1.1000  110:net5    = 106.5974n 110:net8    = 105.7846n
- +110:net9    = 845.3850m 110:x       =   1.1000  111:net17   =   1.0965 
- +111:net21   =   7.8100n 111:net4    =   1.1000  111:net5    = 106.5974n
- +111:net8    = 105.7846n 111:net9    = 845.3850m 111:x       =   1.1000 
- +112:net17   =   1.0965  112:net21   =   7.8100n 112:net4    =   1.1000 
- +112:net5    = 106.5974n 112:net8    = 105.7846n 112:net9    = 845.3850m
- +112:x       =   1.1000  113:net17   =   1.8000  113:net3    =   1.8000 
- +113:net7    =   4.2265n 114:net17   =   1.8000  114:net3    =   1.8000 
- +114:net7    =   4.2265n 115:net17   =   1.8000  115:net3    =   1.8000 
- +115:net7    =   4.2265n 116:net17   =   1.8000  116:net3    =   1.8000 
- +116:net7    =   4.2265n 117:net17   =   1.8000  117:net3    =   1.8000 
- +117:net7    =   4.2265n 118:net17   =   1.8000  118:net3    =   1.8000 
- +118:net7    =   4.2265n 119:net17   =   1.8000  119:net3    =   1.8000 
- +119:net7    =   4.2265n 120:net17   =   1.8000  120:net3    =   1.8000 
- +120:net7    =   4.2265n 159:net1    =  26.3841p 159:net2    =   1.8000 
- +215:net1    =   1.1000  215:net10   = 858.9548m 217:net1    =   1.1000 
- +217:net10   = 858.9540m 219:net1    =   1.1000  219:net10   = 858.9540m
- +221:net1    =   1.1000  221:net10   = 858.9540m 223:net1    =   1.1000 
- +223:net10   = 859.4778m 225:net1    =   1.1000  225:net10   =  18.3134m
- +227:net1    =   1.1000  227:net10   = 859.4770m 229:net1    =   1.1000 
- +229:net10   = 859.4770m 231:net1    =   1.1000  231:net10   = 858.7464m
- +233:net1    =   1.1000  233:net10   = 858.7454m 235:net1    =   1.1000 
- +235:net10   = 858.7454m 237:net1    =   1.1000  237:net10   = 858.7454m
- +239:net1    =   1.1000  239:net10   =  19.8293m 241:net1    =   1.1000 
- +241:net10   =  19.8308m 243:net1    =   1.1000  243:net10   = 464.0510m
- +245:net1    =   1.1000  245:net10   = 464.0510m 247:net1    =   1.1000 
- +247:net10   = 464.0509m 249:net1    =   1.1000  249:net10   =  18.3134m
- +251:net1    =   1.1000  251:net10   = 859.4782m 253:net1    =   1.1000 
- +253:net10   = 453.6375m 255:net1    =   1.1000  255:net10   = 453.6375m
- +257:net1    =   1.1000  257:net10   = 453.6375m 259:net1    =   1.1000 
- +259:net10   = 453.6375m 261:net1    =   1.1000  261:net10   = 464.0510m
- +263:net1    =   1.1000  263:net10   = 464.0509m 265:net1    =   1.1000 
- +265:net10   = 464.0509m 267:net1    =   1.1000  267:net10   = 448.1573m
- +269:net1    =   1.1000  269:net10   = 448.1572m 271:net1    =   1.1000 
- +271:net10   = 464.0511m 273:net1    =   1.1000  273:net10   = 448.1573m
- +275:net1    =   1.1000  275:net10   = 448.1573m 277:net1    =   1.1000 
- +277:net10   = 464.0509m 279:net1    =   1.1000  279:net10   =  18.3133m
- +281:net1    =   1.1000  281:net10   =  18.3133m 283:net1    =   1.1000 
- +283:net10   =  18.3133m 285:net1    =   1.1000  285:net10   =  18.3133m
- +287:net1    =   1.1000  287:net10   =  18.3133m 289:net1    =   1.1000 
- +289:net10   =  18.3133m 291:net1    =   1.1000  291:net10   =  18.3133m
- +293:net1    =   1.1000  293:net10   =  18.3133m
+ +  0:b_0     =  74.3608n   0:b_0_bar =   1.1000    0:b_0_reg = 268.2068m
+ +  0:b_1     =  74.3608n   0:b_1_bar =   1.1000    0:b_1_reg = 268.2067m
+ +  0:b_2     =  74.3608n   0:b_2_bar =   1.1000    0:b_2_reg =  72.1965m
+ +  0:b_2_reg_= 268.4541m   0:b_3     =  74.3608n   0:b_3_bar =   1.1000 
+ +  0:b_3_reg =  72.1965m   0:b_3_reg_=  72.1964m   0:b_3_reg_= 268.6430m
+ +  0:c_0_0   =   2.5446u   0:c_0_1   =   2.4776u   0:c_0_2   =   1.3854u
+ +  0:c_0_3   =   1.0326u   0:c_0_3_re= 183.8009m   0:c_1_0   =   2.6146u
+ +  0:c_1_1   =   2.5476u   0:c_1_2   =   2.5476u   0:c_1_3   =   1.0356u
+ +  0:c_1_3_re= 183.8009m   0:c_2_0   =   2.6146u   0:c_2_1   =   2.5476u
+ +  0:c_2_2   =   2.5475u   0:clk     =  54.6820n   0:clk_bar =   1.1000 
+ +  0:clk_buff=   2.6331u   0:clk_in  =   0.        0:clk_oc  =  54.6820n
+ +  0:clk_oc1 =  54.6820n   0:n16     =   0.        0:n18     =   0.     
+ +  0:n20     =   0.        0:n22     =   0.        0:n24     =   0.     
+ +  0:n26     =   0.        0:n28     =   0.        0:n29     =   0.     
+ +  0:n30     =   0.        0:n31     =   0.        0:n32     =   0.     
+ +  0:n33     =   0.        0:n34     =   0.        0:net1    =   1.6755u
+ +  0:net10   = 361.1718n   0:net11   = 919.5625n   0:net13   = 361.1718n
+ +  0:net16   =   1.1000    0:net18   = 361.1718n   0:net2    =   1.6755u
+ +  0:net22   = 919.5718n   0:net24   =   1.1000    0:net3    =   1.6755u
+ +  0:net30   =   1.1000    0:net31782=   1.1000    0:net35   =   1.0595u
+ +  0:net38   =   1.1000    0:net4    =   1.6756u   0:net41   = 916.5766n
+ +  0:net45   =   1.6056u   0:net47   =   1.1000    0:net5    =   1.7426u
+ +  0:net53   =   1.1000    0:net59   =   1.1000    0:net6    =   1.7426u
+ +  0:net7    =   1.1000    0:net8    =   1.6726u   0:p0      =   9.9940n
+ +  0:p0_1_1  =  68.0163m   0:p0_bar  =   1.8000    0:p0_f    =   4.5240n
+ +  0:p0_oc   =   9.9940n   0:p0_oc1  =   9.9940n   0:p1      =   9.9940n
+ +  0:p1_1_1  =  68.0162m   0:p1_bar  =   1.8000    0:p1_f    =   4.5240n
+ +  0:p1_oc   =   9.9940n   0:p1_oc1  =   9.9940n   0:p2      =   9.9940n
+ +  0:p2_1_1  =  68.0162m   0:p2_bar  =   1.8000    0:p2_f    =   4.5240n
+ +  0:p2_oc   =   9.9940n   0:p2_oc1  =   9.9940n   0:p3      =   9.9940n
+ +  0:p3_1_1  =  68.0161m   0:p3_bar  =   1.8000    0:p3_f    =   4.5240n
+ +  0:p3_oc   =   9.9940n   0:p3_oc1  =   9.9940n   0:p4      =   9.9940n
+ +  0:p4_1_1  =  68.0161m   0:p4_bar  =   1.8000    0:p4_f    =   4.5240n
+ +  0:p4_oc   =   9.9940n   0:p4_oc1  =   9.9940n   0:p5      =   9.9940n
+ +  0:p5_1_1  =  68.0162m   0:p5_bar  =   1.8000    0:p5_f    =   4.5240n
+ +  0:p5_oc   =   9.9940n   0:p5_oc1  =   9.9940n   0:p6      =   9.9940n
+ +  0:p6_1_1  =  68.0162m   0:p6_bar  =   1.8000    0:p6_f    =   4.5240n
+ +  0:p6_oc   =   9.9940n   0:p6_oc1  =   9.9940n   0:p7      =   9.9940n
+ +  0:p7_1_1  =  68.0160m   0:p7_bar  =   1.8000    0:p7_f    =   4.5240n
+ +  0:p7_oc   =   9.9940n   0:p7_oc1  =   9.9940n   0:p_0     = 151.2458n
+ +  0:p_0_reg =  72.1964m   0:p_0_reg_=  72.1965m   0:p_1     =   2.3415u
+ +  0:p_1_reg =  72.1965m   0:p_1_reg_=  72.1964m   0:p_2     =   2.4799u
+ +  0:p_2_reg =  72.1965m   0:p_3     =   2.4799u   0:p_4     =   3.1187u
+ +  0:p_5     =   3.0517u   0:p_6     =   3.0517u   0:p_7     =   1.0356u
+ +  0:reset   =   1.8000    0:reset_ba=  17.6532n   0:rst     =   1.1000 
+ +  0:rst_bar =  55.8596n   0:rst_oc  =   1.8000    0:rst_oc1 =   1.8000 
+ +  0:s_0_1   =   3.0487u   0:s_0_1_re= 183.8015m   0:s_0_2   =   2.9817u
+ +  0:s_0_2_re= 183.8014m   0:s_0_3   =   1.5855u   0:s_0_3_re= 183.8014m
+ +  0:s_1_1   =   3.1187u   0:s_1_1_re= 183.8015m   0:s_1_2   =   3.0517u
+ +  0:s_1_2_re= 183.8014m   0:s_1_3   =   3.0517u   0:s_1_3_re= 183.8014m
+ +  0:vdd     =   1.1000    0:vdd1    =   1.1000    0:vdd2    =   1.1000 
+ +  0:vdd3    =   1.1000    0:vddio   =   1.8000    0:vddio1  =   1.8000 
+ +  0:vddio2  =   1.8000    0:vddio3  =   1.8000    0:vss     =   0.     
+ +  0:vss1    =   0.        0:vss2    =   0.        0:vss3    =   0.     
+ +  0:vss4    =   0.        0:vssio1  =   0.        0:vssio2  =   0.     
+ +  0:vssio3  =   0.       18:a_xor_b_=   1.1000   18:net8    =   1.1000 
+ + 19:a_xor_b_=   1.1000   19:net8    =   1.1000   20:a_xor_b_=   1.1000 
+ + 20:net8    =   1.1000   21:a_xor_b_=   1.1000   21:net8    =   1.1000 
+ + 22:a_xor_b =   1.5899u  22:a_xor_b_=   1.1000   22:net1    =   1.1000 
+ + 22:net4    =   1.1000   23:a_xor_b =   2.3459u  23:a_xor_b_=   1.1000 
+ + 23:net1    =   1.1000   23:net4    =   1.1000   24:a_xor_b =   2.3459u
+ + 24:a_xor_b_=   1.1000   24:net1    =   1.1000   24:net4    =   1.1000 
+ + 25:a_xor_b =   1.5899u  25:a_xor_b_=   1.1000   25:net1    =   1.1000 
+ + 25:net4    =   1.1000   26:a_xor_b =   2.3459u  26:a_xor_b_=   1.1000 
+ + 26:net1    =   1.1000   26:net4    =   1.1000   27:a_xor_b =   2.3459u
+ + 27:a_xor_b_=   1.1000   27:net1    =   1.1000   27:net4    =   1.1000 
+ + 28:a_xor_b =   1.6614u  28:a_xor_b_=   1.1000   28:net1    =   1.1000 
+ + 28:net4    =   1.1000   29:a_xor_b =   2.2075u  29:a_xor_b_=   1.1000 
+ + 29:net1    =   1.1000   29:net4    =   1.1000   40:net1    =   1.1000 
+ + 40:net10   =  93.5202m  41:net1    =   1.1000   41:net10   =  93.5203m
+ + 42:net1    =   1.1000   42:net10   =  93.5202m  43:net1    =   1.1000 
+ + 43:net10   =  93.5202m  44:net1    =   1.1000   44:net10   = 138.2068m
+ + 45:net1    =   1.1000   45:net10   = 138.2068m  46:net1    =   1.1000 
+ + 46:net10   = 138.2068m  47:net1    =   1.1000   47:net10   = 138.2067m
+ + 48:net1    =   1.1000   48:net10   = 206.5240m  49:net1    =   1.1000 
+ + 49:net10   = 206.5240m  50:net1    =   1.1000   50:net10   = 206.5240m
+ + 51:net1    =   1.1000   51:net10   = 206.5240m  52:net1    =   1.1000 
+ + 52:net10   =  93.5202m  53:net1    =   1.1000   53:net10   =  93.5202m
+ + 54:net1    =   1.1000   54:net10   =  93.5203m  55:net1    =   1.1000 
+ + 55:net10   =  93.5202m  74:net17   =   1.0681   74:net21   = 145.5607n
+ + 74:net4    =   1.1000   74:net5    = 146.7938n  74:net8    = 144.6333n
+ + 74:net9    = 959.6391m  74:x       =   1.1000   75:net17   =   1.0681 
+ + 75:net21   = 145.5608n  75:net4    =   1.1000   75:net5    = 146.7938n
+ + 75:net8    = 144.6333n  75:net9    = 959.6391m  75:x       =   1.1000 
+ + 76:net17   =   1.0681   76:net21   = 145.5608n  76:net4    =   1.1000 
+ + 76:net5    = 146.7938n  76:net8    = 144.6333n  76:net9    = 959.6391m
+ + 76:x       =   1.1000   77:net17   =   1.0681   77:net21   = 145.5608n
+ + 77:net4    =   1.1000   77:net5    = 146.7938n  77:net8    = 144.6333n
+ + 77:net9    = 959.6391m  77:x       =   1.1000   78:net17   =   1.0681 
+ + 78:net21   = 145.5607n  78:net4    =   1.1000   78:net5    = 146.7938n
+ + 78:net8    = 144.6333n  78:net9    = 959.6391m  78:x       =   1.1000 
+ + 79:net17   =   1.0681   79:net21   = 145.5608n  79:net4    =   1.1000 
+ + 79:net5    = 146.7938n  79:net8    = 144.6333n  79:net9    = 959.6391m
+ + 79:x       =   1.1000   80:net17   =   1.0681   80:net21   = 145.5608n
+ + 80:net4    =   1.1000   80:net5    = 146.7938n  80:net8    = 144.6333n
+ + 80:net9    = 959.6391m  80:x       =   1.1000   81:net17   =   1.0681 
+ + 81:net21   = 145.5608n  81:net4    =   1.1000   81:net5    = 146.7938n
+ + 81:net8    = 144.6333n  81:net9    = 959.6391m  81:x       =   1.1000 
+ + 82:net17   =   1.0669   82:net21   = 105.5932n  82:net4    =   1.1000 
+ + 82:net5    = 146.7938n  82:net8    = 144.6333n  82:net9    = 959.6391m
+ + 82:x       =   1.1000   83:net17   =   1.0669   83:net21   = 105.5933n
+ + 83:net4    =   1.1000   83:net5    = 146.7938n  83:net8    = 144.6333n
+ + 83:net9    = 959.6391m  83:x       =   1.1000   84:net17   =   1.0669 
+ + 84:net21   = 105.5933n  84:net4    =   1.1000   84:net5    = 146.7938n
+ + 84:net8    = 144.6333n  84:net9    = 959.6391m  84:x       =   1.1000 
+ + 85:net17   =   1.0669   85:net21   = 105.5933n  85:net4    =   1.1000 
+ + 85:net5    = 146.7938n  85:net8    = 144.6333n  85:net9    = 959.6391m
+ + 85:x       =   1.1000   86:net17   =   1.0669   86:net21   = 105.5933n
+ + 86:net4    =   1.1000   86:net5    = 146.7938n  86:net8    = 144.6333n
+ + 86:net9    = 959.6391m  86:x       =   1.1000   87:net17   =   1.0670 
+ + 87:net21   = 107.3682n  87:net4    =   1.1000   87:net5    = 146.7938n
+ + 87:net8    = 144.6333n  87:net9    = 959.6391m  87:x       =   1.1000 
+ + 88:net17   =   1.0669   88:net21   = 105.5933n  88:net4    =   1.1000 
+ + 88:net5    = 146.7938n  88:net8    = 144.6495n  88:net9    = 959.6391m
+ + 88:x       =   1.1000   89:net17   =   1.0670   89:net21   = 107.3682n
+ + 89:net4    =   1.1000   89:net5    = 146.7938n  89:net8    = 144.6495n
+ + 89:net9    = 959.6391m  89:x       =   1.1000   90:net17   =   1.0670 
+ + 90:net21   = 107.3682n  90:net4    =   1.1000   90:net5    = 146.7938n
+ + 90:net8    = 144.6495n  90:net9    = 959.6391m  90:x       =   1.1000 
+ + 91:net17   =   1.0670   91:net21   = 107.3682n  91:net4    =   1.1000 
+ + 91:net5    = 146.7938n  91:net8    = 144.6333n  91:net9    = 959.6391m
+ + 91:x       =   1.1000   92:net17   =   1.0670   92:net21   = 107.3682n
+ + 92:net4    =   1.1000   92:net5    = 146.7938n  92:net8    = 144.6333n
+ + 92:net9    = 959.6391m  92:x       =   1.1000   93:net17   =   1.0669 
+ + 93:net21   = 103.6911n  93:net4    =   1.1000   93:net5    = 146.7938n
+ + 93:net8    = 144.6847n  93:net9    = 959.6391m  93:x       =   1.1000 
+ + 94:net17   =   1.0669   94:net21   = 103.6911n  94:net4    =   1.1000 
+ + 94:net5    = 146.7938n  94:net8    = 144.6847n  94:net9    = 959.6391m
+ + 94:x       =   1.1000   95:net17   =   1.0669   95:net21   = 103.6911n
+ + 95:net4    =   1.1000   95:net5    = 146.7938n  95:net8    = 144.6847n
+ + 95:net9    = 959.6391m  95:x       =   1.1000   96:net17   =   1.0669 
+ + 96:net21   = 103.6911n  96:net4    =   1.1000   96:net5    = 146.7938n
+ + 96:net8    = 144.6847n  96:net9    = 959.6391m  96:x       =   1.1000 
+ + 97:net17   =   1.0690   97:net21   = 173.2741n  97:net4    =   1.1000 
+ + 97:net5    = 146.7938n  97:net8    = 144.6495n  97:net9    = 959.6391m
+ + 97:x       =   1.1000   98:net17   =   1.0670   98:net21   = 107.3682n
+ + 98:net4    =   1.1000   98:net5    = 146.7938n  98:net8    = 144.6495n
+ + 98:net9    = 959.6391m  98:x       =   1.1000   99:net17   =   1.0690 
+ + 99:net21   = 173.2133n  99:net4    =   1.1000   99:net5    = 146.7938n
+ + 99:net8    = 144.6495n  99:net9    = 959.6391m  99:x       =   1.1000 
+ +100:net17   =   1.0677  100:net21   = 134.9745n 100:net4    =   1.1000 
+ +100:net5    = 146.7938n 100:net8    = 144.7244n 100:net9    = 959.6391m
+ +100:x       =   1.1000  101:net17   =   1.0677  101:net21   = 134.9745n
+ +101:net4    =   1.1000  101:net5    = 146.7938n 101:net8    = 144.7244n
+ +101:net9    = 959.6391m 101:x       =   1.1000  102:net17   =   1.0669 
+ +102:net21   = 105.5933n 102:net4    =   1.1000  102:net5    = 146.7938n
+ +102:net8    = 144.6495n 102:net9    = 959.6391m 102:x       =   1.1000 
+ +103:net17   =   1.0677  103:net21   = 134.9745n 103:net4    =   1.1000 
+ +103:net5    = 146.7938n 103:net8    = 144.7244n 103:net9    = 959.6391m
+ +103:x       =   1.1000  104:net17   =   1.0677  104:net21   = 134.9745n
+ +104:net4    =   1.1000  104:net5    = 146.7938n 104:net8    = 144.7244n
+ +104:net9    = 959.6391m 104:x       =   1.1000  105:net17   =   1.0669 
+ +105:net21   = 105.5933n 105:net4    =   1.1000  105:net5    = 146.7938n
+ +105:net8    = 144.6495n 105:net9    = 959.6391m 105:x       =   1.1000 
+ +106:net17   =   1.0670  106:net21   = 107.3682n 106:net4    =   1.1000 
+ +106:net5    = 146.7938n 106:net8    = 144.6333n 106:net9    = 959.6391m
+ +106:x       =   1.1000  107:net17   =   1.0689  107:net21   = 173.1336n
+ +107:net4    =   1.1000  107:net5    = 146.7938n 107:net8    = 144.6333n
+ +107:net9    = 959.6391m 107:x       =   1.1000  108:net17   =   1.0689 
+ +108:net21   = 173.1336n 108:net4    =   1.1000  108:net5    = 146.7938n
+ +108:net8    = 144.6333n 108:net9    = 959.6391m 108:x       =   1.1000 
+ +109:net17   =   1.0670  109:net21   = 107.3682n 109:net4    =   1.1000 
+ +109:net5    = 146.7938n 109:net8    = 144.6333n 109:net9    = 959.6391m
+ +109:x       =   1.1000  110:net17   =   1.0683  110:net21   = 154.4000n
+ +110:net4    =   1.1000  110:net5    = 146.7938n 110:net8    = 144.6333n
+ +110:net9    = 959.6391m 110:x       =   1.1000  111:net17   =   1.0683 
+ +111:net21   = 154.4000n 111:net4    =   1.1000  111:net5    = 146.7938n
+ +111:net8    = 144.6333n 111:net9    = 959.6391m 111:x       =   1.1000 
+ +112:net17   =   1.0683  112:net21   = 154.3999n 112:net4    =   1.1000 
+ +112:net5    = 146.7938n 112:net8    = 144.6333n 112:net9    = 959.6391m
+ +112:x       =   1.1000  113:net17   =   1.0683  113:net21   = 154.4000n
+ +113:net4    =   1.1000  113:net5    = 146.7938n 113:net8    = 144.6333n
+ +113:net9    = 959.6391m 113:x       =   1.1000  114:net17   =   1.8000 
+ +114:net3    =   1.8000  114:net7    =  11.9042n 115:net17   =   1.8000 
+ +115:net3    =   1.8000  115:net7    =  11.9042n 116:net17   =   1.8000 
+ +116:net3    =   1.8000  116:net7    =  11.9042n 117:net17   =   1.8000 
+ +117:net3    =   1.8000  117:net7    =  11.9042n 118:net17   =   1.8000 
+ +118:net3    =   1.8000  118:net7    =  11.9042n 119:net17   =   1.8000 
+ +119:net3    =   1.8000  119:net7    =  11.9042n 120:net17   =   1.8000 
+ +120:net3    =   1.8000  120:net7    =  11.9042n 121:net17   =   1.8000 
+ +121:net3    =   1.8000  121:net7    =  11.9042n 160:net1    = 198.6938p
+ +160:net2    =   1.8000  216:net1    =   1.1000  216:net10   =  47.4223m
+ +218:net1    =   1.1000  218:net10   =  47.4237m 220:net1    =   1.1000 
+ +220:net10   =  47.4237m 222:net1    =   1.1000  222:net10   =  47.4237m
+ +224:net1    =   1.1000  224:net10   =  47.4223m 226:net1    =   1.1000 
+ +226:net10   =  47.4227m 228:net1    =   1.1000  228:net10   =  47.4236m
+ +230:net1    =   1.1000  230:net10   =  47.4237m 232:net1    =   1.1000 
+ +232:net10   =  47.4223m 234:net1    =   1.1000  234:net10   =  47.4237m
+ +236:net1    =   1.1000  236:net10   =  47.4237m 238:net1    =   1.1000 
+ +238:net10   =  47.4237m 240:net1    =   1.1000  240:net10   =  47.4233m
+ +242:net1    =   1.1000  242:net10   =  47.4233m 244:net1    =   1.1000 
+ +244:net10   = 100.7310m 246:net1    =   1.1000  246:net10   = 100.7310m
+ +248:net1    =   1.1000  248:net10   = 100.7309m 250:net1    =   1.1000 
+ +250:net10   =  47.4232m 252:net1    =   1.1000  252:net10   =  47.4217m
+ +254:net1    =   1.1000  254:net10   = 162.8508m 256:net1    =   1.1000 
+ +256:net10   = 162.8508m 258:net1    =   1.1000  258:net10   = 162.8508m
+ +260:net1    =   1.1000  260:net10   = 162.8508m 262:net1    =   1.1000 
+ +262:net10   = 100.7310m 264:net1    =   1.1000  264:net10   = 100.7310m
+ +266:net1    =   1.1000  266:net10   = 100.7310m 268:net1    =   1.1000 
+ +268:net10   = 209.6641m 270:net1    =   1.1000  270:net10   = 209.6641m
+ +272:net1    =   1.1000  272:net10   = 100.7310m 274:net1    =   1.1000 
+ +274:net10   = 209.6641m 276:net1    =   1.1000  276:net10   = 209.6641m
+ +278:net1    =   1.1000  278:net10   = 100.7310m 280:net1    =   1.1000 
+ +280:net10   =  47.4217m 282:net1    =   1.1000  282:net10   =  47.4217m
+ +284:net1    =   1.1000  284:net10   =  47.4217m 286:net1    =   1.1000 
+ +286:net10   =  47.4217m 288:net1    =   1.1000  288:net10   =  47.4217m
+ +290:net1    =   1.1000  290:net10   =  47.4217m 292:net1    =   1.1000 
+ +292:net10   =  47.4217m 294:net1    =   1.1000  294:net10   =  47.4217m
 
  ******
  ece 482 project testbench
@@ -2373,56 +2374,55 @@ x
  time         param     
              vdd_net    
     0.          1.1000  
-    2.20000n    1.0167  
-    4.40000n    1.2317  
-    6.60000n    1.0496  
-    8.80000n    1.1389  
-   11.00000n    1.0937  
-   13.20000n    1.0632  
-   15.40000n    1.1624  
-   17.60000n    1.0119  
-   19.80000n    1.2013  
-   22.00000n  998.2685m 
-   24.20000n    1.2027  
-   26.40000n    1.0074  
-   28.60000n    1.1651  
-   30.80000n    1.0610  
-   33.00000n    1.1043  
-   35.20000n    1.1324  
-   37.40000n    1.0352  
-   39.60000n    1.2080  
-   41.80000n    1.0317  
-   44.00000n    1.0672  
+    2.20000n    1.0152  
+    4.40000n    1.2303  
+    6.60000n    1.0483  
+    8.80000n    1.1459  
+   11.00000n    1.1005  
+   13.20000n    1.0660  
+   15.40000n    1.1604  
+   17.60000n    1.0111  
+   19.80000n    1.2005  
+   22.00000n    1.0009  
+   24.20000n    1.2052  
+   26.40000n  986.0439m 
+   28.60000n    1.1076  
+   30.80000n    1.0219  
+   33.00000n    1.0816  
+   35.20000n    1.3989  
+   37.40000n    1.2363  
+   39.60000n    1.2513  
+   41.80000n  935.6192m 
+   44.00000n  883.0770m 
 y
 x
 
  time         param     
              vddio_net  
     0.          1.8000  
-    2.20000n    1.7875  
-    4.40000n    1.8386  
-    6.60000n    1.7902  
+    2.20000n    1.7874  
+    4.40000n    1.8361  
+    6.60000n    1.7899  
     8.80000n    1.8085  
-   11.00000n    1.7934  
-   13.20000n    1.7957  
-   15.40000n    1.8086  
-   17.60000n    1.7813  
-   19.80000n    1.8246  
-   22.00000n    1.7759  
-   24.20000n    1.8260  
-   26.40000n    1.7778  
-   28.60000n    1.8133  
-   30.80000n    1.7921  
-   33.00000n    1.8023  
-   35.20000n    1.8056  
-   37.40000n    1.7863  
-   39.60000n    1.9754  
-   41.80000n    1.8155  
-   44.00000n    2.1077  
+   11.00000n    1.7956  
+   13.20000n    1.7970  
+   15.40000n    1.8066  
+   17.60000n    1.7829  
+   19.80000n    1.8226  
+   22.00000n    1.7758  
+   24.20000n    1.8286  
+   26.40000n    1.9745  
+   28.60000n    1.7400  
+   30.80000n    1.8799  
+   33.00000n    1.7867  
+   35.20000n    2.1191  
+   37.40000n    1.6660  
+   39.60000n    1.8021  
+   41.80000n    1.7166  
+   44.00000n    1.7000  
 y
- avg_pwr_vdd= -21.6877m  from=   7.4000n     to=  42.0000n
- avg_pwr_vddio=  -3.9665m  from=   7.4000n     to=  42.0000n
- corrected_pwr_vdd=  80.4313u
+ avg_pwr_vdd= -20.3289m  from=  10.0000f     to=  44.0000n
+ avg_pwr_vddio= -16.4941m  from=  10.0000f     to=  44.0000n
 
           ***** job concluded
  ******  
@@ -2432,30 +2432,30 @@ y
   
  ******  Machine Information  ******
  CPU:
- model name	: Intel(R) Xeon(R) W-1350 @ 3.30GHz
- cpu MHz	: 3844.422
- CPU(s)		: 12
+ model name	: Intel(R) Xeon(R) E-2224 CPU @ 3.40GHz
+ cpu MHz	: 4200.587
+ CPU(s)		: 4
   
  OS:
- Linux version 5.14.0-611.11.1.el9_7.x86_64 (mockbuild@x86-64-04.build.eng.rdu2.redhat.com) (gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-11), GNU ld version 2.35.2-67.el9) #1 SMP PREEMPT_DYNAMIC Tue Nov 25 05:13:22 EST 2025
+ Linux version 5.14.0-611.8.1.el9_7.x86_64 (mockbuild@x86-64-03.build.eng.rdu2.redhat.com) (gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-11), GNU ld version 2.35.2-67.el9) #1 SMP PREEMPT_DYNAMIC Thu Nov 13 05:30:00 EST 2025
 
- System loadavg : 0.46 0.44 0.42 3/1075 393967
+ System loadavg : 1.71 0.95 0.60 4/1727 2385799
 
 
   ******  PrimeSim HSPICE Threads Information  ******
 
   Command Line Threads Count :     1
-  Available CPU Count        :    12
+  Available CPU Count        :     4
   Actual Threads Count       :     1
 
 
   ******  Circuit Statistics  ******
-  # nodes       =    6074 # elements   =    2566
+  # nodes       =    6079 # elements   =    2568
   # resistors   =      38 # capacitors =     183 # inductors   =      31
   # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
   # cccs        =       0 # ccvs       =       0 # volt_srcs   =      13
   # curr_srcs   =       1 # diodes     =       0 # bjts        =       0
-  # jfets       =       0 # mosfets    =    2300 # U elements  =       0
+  # jfets       =       0 # mosfets    =    2302 # U elements  =       0
   # T elements  =       0 # W elements =       0 # B elements  =       0
   # S elements  =       0 # P elements =       0 # va device   =       0
   # vector_srcs =       0 # N elements =       0
@@ -2464,23 +2464,23 @@ y
   ******  Runtime Statistics (seconds)  ******
 
   analysis           time    # points   tot. iter  conv.iter
-  op point           2.20           1         911
-  transient          7.40          21        4819        1652 rev=        35
+  op point           3.59           1        1097
+  transient         10.44          21        5072        1726 rev=        23
   readin             0.04
-  errchk             0.63
-  setup              0.08
+  errchk             0.28
+  setup              0.09
   output             0.00
 
 
-           peak memory used        454.92 megabytes
-           total cpu time           10.22 seconds
-           total elapsed time       10.27 seconds
-           job started at     15:50:37 12/04/2025
-           job ended   at     15:50:48 12/04/2025
+           peak memory used        456.81 megabytes
+           total cpu time           14.06 seconds
+           total elapsed time       14.11 seconds
+           job started at     23:30:24 12/04/2025
+           job ended   at     23:30:38 12/04/2025
 
 >info:         ***** hspice job concluded
-           job total runtime        10.27 seconds
+           job total runtime        14.11 seconds
 
 
  lic: Release hspice token(s) 
- lic: total license checkout elapse time:        0.03(s)
+ lic: total license checkout elapse time:        0.04(s)
