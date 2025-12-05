@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      crjung2
+HostName                       eceb-2022-07.ews.illinois.edu
+ProcessIdentifier              114987
+ProcessCreationTime_UTC        1764887058
+ProcessCreationTime_Readable   Thu Dec  4 16:24:18 2025 CST
+AppIdentifier                  /software/cadence-2024-08/IC231/tools.lnx86/dfII/bin/64bit/virtuoso
+OSType                         lnx86
+ReasonForPlacingEditLock       
+FilePathUsedToEditLock         /home/crjung2/ece482.work/ECE482Final/ECE-482-Final-Project/test2/multiplier/physConfig/physExpand.cfg
+TimeEditLocked                 Thu Dec  4 18:10:40 2025 CST
