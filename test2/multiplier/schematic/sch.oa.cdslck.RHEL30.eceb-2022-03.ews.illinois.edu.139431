@@ -12,5 +12,5 @@ ProcessCreationTime_Readable   Thu Dec  4 20:29:34 2025 CST
 AppIdentifier                  OA File System Design Manager
 OSType                         unix
 ReasonForPlacingEditLock       OpenAccess edit lock
-FilePathUsedToEditLock         /home/evanhz2/ECE-482-Final-Project/test2/and_minsize/layout/layout.oa.cdslck
-TimeEditLocked                 Thu Dec  4 20:50:15 2025 CST
+FilePathUsedToEditLock         /home/evanhz2/ECE-482-Final-Project/test2/multiplier/schematic/sch.oa.cdslck
+TimeEditLocked                 Thu Dec  4 21:13:28 2025 CST
