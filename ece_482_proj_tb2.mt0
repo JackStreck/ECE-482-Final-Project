@@ -2,5 +2,5 @@ $DATA1 SOURCE='PrimeSim HSPICE' VERSION='T-2022.06-SP1 linux64' PARAM_COUNT=0
 .TITLE 'ece 482 project testbench'
  avg_pwr_vdd      avg_pwr_vddio    corrected_pwr_vdd temper          
  alter#          
- -2.167e-02       -5.151e-03        1.017e-04         25.0000       
+ -2.181e-02       -5.072e-03       -4.489e-05         25.0000       
 1               
