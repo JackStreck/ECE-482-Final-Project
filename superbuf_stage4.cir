@@ -2459,7 +2459,7 @@ m6_2__rcx n281__out n481__in n154__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-1
 m6_5__rcx n281__out n479__in n153__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
 m20_6__rcx n269__out n478__in n153__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=48e-15 AS=64e-15 PD=940e-9 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
 
-
+cLoad n100_out VSS1 20p
 
 vSupply VDDIO1 0 1.8
 vGND VSS1 0 0
