@@ -1,0 +1,2470 @@
+CMOS Inverter
+.lib '/class/ece482/gpdk045_mos' FF
+.meas tran avg_pwr avg p(vSupply) from=0.01p TO=50n
+
+
+
+
+** Library name: test2
+** Cell name: superbuf_stage4
+** View name: av_extracted
+m18 n293__out n506__in n165__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=96e-15 PD=1.68e-6 PS=1.58e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m18_5__rcx n249__out n459__in n166__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=96e-15 PD=1.68e-6 PS=1.58e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m19_12__rcx n238__out n414__in n136__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=96e-15 PD=1.68e-6 PS=1.58e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m19_5__rcx n195__out n367__in n137__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=96e-15 PD=1.68e-6 PS=1.58e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m18_2__rcx n184__out n322__in n107__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=96e-15 PD=1.68e-6 PS=1.58e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m19_9__rcx n141__out n275__in n108__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=96e-15 PD=1.68e-6 PS=1.58e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m19_2__rcx n130__out n230__in n78__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=96e-15 PD=1.68e-6 PS=1.58e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m18_6__rcx n87__out n183__in n79__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=96e-15 PD=1.68e-6 PS=1.58e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m19_11__rcx n76__out n138__in n49__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=96e-15 PD=1.68e-6 PS=1.58e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m19_14__rcx n33__out n91__in n50__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=96e-15 PD=1.68e-6 PS=1.58e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m19_3__rcx n25__out n46__in n21__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=96e-15 PD=1.68e-6 PS=1.58e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m12_4__rcx n293__out n504__in n163__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m8_7__rcx n249__out n457__in n164__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m5_1__rcx n238__out n412__in n134__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m2_11__rcx n195__out n365__in n135__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m1_11__rcx n184__out n320__in n105__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m4_7__rcx n141__out n273__in n106__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m11_4__rcx n130__out n228__in n76__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m2_8__rcx n87__out n181__in n77__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m16_4__rcx n76__out n136__in n47__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m9_2__rcx n33__out n89__in n48__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m16_11__rcx n25__out n44__in n20__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m9_9__rcx n292__out n502__in n163__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m12_5__rcx n263__out n455__in n164__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m8_3__rcx n237__out n410__in n134__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m11_11__rcx n209__out n363__in n135__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m8_11__rcx n183__out n318__in n105__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m5_2__rcx n155__out n271__in n106__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m5_9__rcx n129__out n226__in n76__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m2_12__rcx n101__out n179__in n77__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m1_4__rcx n75__out n134__in n47__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m1_12__rcx n47__out n87__in n48__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m4_3__rcx n24__out n42__in n20__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m11 n292__out n500__in n161__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m4_11__rcx n263__out n453__in n162__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m18_14__rcx n237__out n408__in n132__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m2_4__rcx n209__out n361__in n133__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m11_8__rcx n183__out n316__in n103__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m11_10__rcx n155__out n269__in n104__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m16_5__rcx n129__out n224__in n74__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m9 n101__out n177__in n75__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m16_8__rcx n75__out n132__in n45__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m9_4__rcx n47__out n85__in n46__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m16_12__rcx n24__out n40__in n19__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m9_7__rcx n290__out n498__in n161__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m12 n261__out n451__in n162__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m9_11__rcx n235__out n406__in n132__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m12_6__rcx n207__out n359__in n133__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m8_1__rcx n181__out n314__in n103__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m12_9__rcx n153__out n267__in n104__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m8_5__rcx n127__out n222__in n74__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m11_12__rcx n99__out n175__in n75__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m8_9__rcx n73__out n130__in n45__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m9_13__rcx n45__out n83__in n46__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m8_13__rcx n22__out n38__in n19__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m5_3__rcx n290__out n496__in n159__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m5_6__rcx n261__out n449__in n160__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m5_10__rcx n235__out n404__in n130__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m5_13__rcx n207__out n357__in n131__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m2_13__rcx n181__out n312__in n101__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m1_1__rcx n153__out n265__in n102__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m1_5__rcx n127__out n220__in n72__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m1_8__rcx n99__out n173__in n73__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m1_13__rcx n73__out n128__in n43__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m4_1__rcx n45__out n81__in n44__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m12_13__rcx n22__out n36__in n18__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m4_5__rcx n288__out n494__in n159__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m18_12__rcx n259__out n447__in n160__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m4_9__rcx n233__out n402__in n130__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m11_2__rcx n205__out n355__in n131__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m4_13__rcx n179__out n310__in n101__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m18_8__rcx n151__out n263__in n102__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m2_2__rcx n125__out n218__in n72__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m11_6__rcx n97__out n171__in n73__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m2_6__rcx n71__out n126__in n43__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m16_1__rcx n43__out n79__in n44__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m2_10__rcx n20__out n34__in n18__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m16_3__rcx n288__out n492__in n157__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m16_2__rcx n259__out n445__in n158__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m16_6__rcx n233__out n400__in n128__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m11_14__rcx n205__out n353__in n129__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m16_7__rcx n179__out n308__in n99__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m9_1__rcx n151__out n261__in n100__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m16_9__rcx n125__out n216__in n70__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m9_3__rcx n97__out n169__in n71__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m16_10__rcx n71__out n124__in n41__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m9_5__rcx n43__out n77__in n42__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m16_13__rcx n20__out n32__in n17__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m9_6__rcx n286__out n490__in n157__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m16_14__rcx n257__out n443__in n158__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m9_8__rcx n231__out n398__in n128__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m12_1__rcx n203__out n351__in n129__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m9_10__rcx n177__out n306__in n99__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m12_2__rcx n149__out n259__in n100__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m12_3__rcx n123__out n214__in n70__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m12_7__rcx n95__out n167__in n71__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m8 n69__out n122__in n41__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m12_8__rcx n41__out n75__in n42__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m8_2__rcx n18__out n30__in n17__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m12_10__rcx n286__out n488__in n155__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m8_4__rcx n257__out n441__in n156__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m12_11__rcx n231__out n396__in n126__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m8_6__rcx n203__out n349__in n127__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m11_13__rcx n177__out n304__in n97__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m8_8__rcx n149__out n257__in n98__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m9_12__rcx n123__out n212__in n68__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m8_10__rcx n95__out n165__in n69__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m9_14__rcx n69__out n120__in n39__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m8_12__rcx n41__out n73__in n40__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m8_14__rcx n18__out n28__in n16__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m5 n284__out n486__in n155__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m5_4__rcx n255__out n439__in n156__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m5_5__rcx n229__out n394__in n126__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m5_7__rcx n201__out n347__in n127__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m5_8__rcx n175__out n302__in n97__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m5_11__rcx n147__out n255__in n98__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m5_12__rcx n121__out n210__in n68__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m5_14__rcx n93__out n163__in n69__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m2 n67__out n118__in n39__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m2_14__rcx n39__out n71__in n40__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m1 n16__out n26__in n16__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m1_2__rcx n284__out n484__in n153__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m1_3__rcx n255__out n437__in n154__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m1_6__rcx n229__out n392__in n124__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m1_7__rcx n201__out n345__in n125__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m1_9__rcx n175__out n300__in n95__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m1_10__rcx n147__out n253__in n96__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m1_14__rcx n121__out n208__in n66__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m4 n93__out n161__in n67__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m12_12__rcx n67__out n116__in n37__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m4_2__rcx n39__out n69__in n38__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m18_11__rcx n16__out n24__in n15__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m4_4__rcx n282__out n482__in n153__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m12_14__rcx n250__out n435__in n154__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m4_6__rcx n215__out n390__in n124__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m18_7__rcx n196__out n343__in n125__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m4_8__rcx n161__out n298__in n95__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m11_1__rcx n142__out n251__in n96__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m4_10__rcx n107__out n206__in n66__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m18_13__rcx n88__out n159__in n67__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m4_12__rcx n53__out n114__in n37__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m11_3__rcx n34__out n67__in n38__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m4_14__rcx n14__out n22__in n15__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m18_9__rcx n282__out n480__in n151__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m2_1__rcx n250__out n433__in n152__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m11_5__rcx n215__out n388__in n122__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m2_3__rcx n196__out n341__in n123__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m16 n161__out n296__in n93__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m2_5__rcx n142__out n249__in n94__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m11_7__rcx n107__out n204__in n64__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m2_7__rcx n88__out n157__in n65__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m18_10__rcx n53__out n112__in n35__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m2_9__rcx n34__out n65__in n36__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m11_9__rcx n14__out n20__in n14__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=128e-15 AS=128e-15 PD=1.68e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m19 n278__out n461__in n151__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=96e-15 AS=128e-15 PD=1.58e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m19_4__rcx n252__out n432__in n152__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=96e-15 AS=128e-15 PD=1.58e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m19_1__rcx n239__out n369__in n122__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=96e-15 AS=128e-15 PD=1.58e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m19_10__rcx n198__out n340__in n123__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=96e-15 AS=128e-15 PD=1.58e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m18_3__rcx n185__out n277__in n93__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=96e-15 AS=128e-15 PD=1.58e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m18_1__rcx n144__out n248__in n94__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=96e-15 AS=128e-15 PD=1.58e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m19_6__rcx n131__out n185__in n64__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=96e-15 AS=128e-15 PD=1.58e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m19_13__rcx n90__out n156__in n65__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=96e-15 AS=128e-15 PD=1.58e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m18_4__rcx n77__out n93__in n35__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=96e-15 AS=128e-15 PD=1.58e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m19_7__rcx n36__out n64__in n36__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=96e-15 AS=128e-15 PD=1.58e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m19_8__rcx n1__out n1__in n14__vddio1 vddio1 g45p2svt L=150e-9 W=640e-9 AD=96e-15 AS=128e-15 PD=1.58e-6 PS=1.68e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+c1 in vss1 874.247e-18
+c2 out vss1 845.127e-18
+c3 vddio1 vss1 3.71992e-15
+c4 n1__in vss1 61.888e-18
+c5 n64__in vss1 59.2771e-18
+c6 n93__in vss1 59.1353e-18
+c7 n156__in vss1 59.2771e-18
+c8 n185__in vss1 59.1353e-18
+c9 n248__in vss1 59.2771e-18
+c10 n277__in vss1 59.1353e-18
+c11 n340__in vss1 59.2771e-18
+c12 n369__in vss1 59.1353e-18
+c13 n432__in vss1 59.2771e-18
+c14 n461__in vss1 59.1353e-18
+c15 n20__in vss1 50.2897e-18
+c16 n65__in vss1 51.2838e-18
+c17 n112__in vss1 50.5096e-18
+c18 n157__in vss1 51.2838e-18
+c19 n204__in vss1 50.5096e-18
+c20 n249__in vss1 51.2838e-18
+c21 n296__in vss1 50.5096e-18
+c22 n341__in vss1 51.2838e-18
+c23 n388__in vss1 50.5096e-18
+c24 n433__in vss1 51.2838e-18
+c25 n480__in vss1 50.5096e-18
+c26 n22__in vss1 49.8464e-18
+c27 n67__in vss1 50.7883e-18
+c28 n114__in vss1 50.0587e-18
+c29 n159__in vss1 50.7883e-18
+c30 n206__in vss1 50.0587e-18
+c31 n251__in vss1 50.7883e-18
+c32 n298__in vss1 50.0587e-18
+c33 n343__in vss1 50.7883e-18
+c34 n390__in vss1 50.0587e-18
+c35 n435__in vss1 50.7883e-18
+c36 n482__in vss1 50.0587e-18
+c37 n24__in vss1 49.4479e-18
+c38 n69__in vss1 50.6452e-18
+c39 n116__in vss1 49.9157e-18
+c40 n161__in vss1 50.6452e-18
+c41 n208__in vss1 49.9157e-18
+c42 n253__in vss1 50.6452e-18
+c43 n300__in vss1 49.9157e-18
+c44 n345__in vss1 50.6452e-18
+c45 n392__in vss1 49.9157e-18
+c46 n437__in vss1 50.6452e-18
+c47 n484__in vss1 49.9157e-18
+c48 n26__in vss1 49.7027e-18
+c49 n71__in vss1 50.4323e-18
+c50 n118__in vss1 49.7027e-18
+c51 n163__in vss1 50.4323e-18
+c52 n210__in vss1 49.7027e-18
+c53 n255__in vss1 50.4323e-18
+c54 n302__in vss1 49.7027e-18
+c55 n347__in vss1 50.4323e-18
+c56 n394__in vss1 49.7027e-18
+c57 n439__in vss1 50.4323e-18
+c58 n486__in vss1 49.7027e-18
+c59 n28__in vss1 49.4187e-18
+c60 n73__in vss1 50.1483e-18
+c61 n120__in vss1 49.4187e-18
+c62 n165__in vss1 50.1483e-18
+c63 n212__in vss1 49.4187e-18
+c64 n257__in vss1 50.1483e-18
+c65 n304__in vss1 49.4187e-18
+c66 n349__in vss1 50.1483e-18
+c67 n396__in vss1 49.4187e-18
+c68 n441__in vss1 50.1483e-18
+c69 n488__in vss1 49.4187e-18
+c70 n30__in vss1 49.7027e-18
+c71 n75__in vss1 50.4323e-18
+c72 n122__in vss1 49.7027e-18
+c73 n167__in vss1 50.4323e-18
+c74 n214__in vss1 49.7027e-18
+c75 n259__in vss1 50.4323e-18
+c76 n306__in vss1 49.7027e-18
+c77 n351__in vss1 50.4323e-18
+c78 n398__in vss1 49.7027e-18
+c79 n443__in vss1 50.4323e-18
+c80 n490__in vss1 49.7027e-18
+c81 n32__in vss1 49.4187e-18
+c82 n77__in vss1 50.1483e-18
+c83 n124__in vss1 49.4187e-18
+c84 n169__in vss1 50.1483e-18
+c85 n216__in vss1 49.4187e-18
+c86 n261__in vss1 50.1483e-18
+c87 n308__in vss1 49.4187e-18
+c88 n353__in vss1 50.1483e-18
+c89 n400__in vss1 49.4187e-18
+c90 n445__in vss1 50.1483e-18
+c91 n492__in vss1 49.4187e-18
+c92 n34__in vss1 49.9322e-18
+c93 n79__in vss1 50.6618e-18
+c94 n126__in vss1 49.9322e-18
+c95 n171__in vss1 50.6618e-18
+c96 n218__in vss1 49.9322e-18
+c97 n263__in vss1 50.6618e-18
+c98 n310__in vss1 49.9322e-18
+c99 n355__in vss1 50.6618e-18
+c100 n402__in vss1 49.9322e-18
+c101 n447__in vss1 50.6618e-18
+c102 n494__in vss1 49.7027e-18
+c103 n36__in vss1 49.6128e-18
+c104 n81__in vss1 50.3424e-18
+c105 n128__in vss1 49.6128e-18
+c106 n173__in vss1 50.3424e-18
+c107 n220__in vss1 49.6128e-18
+c108 n265__in vss1 50.3424e-18
+c109 n312__in vss1 49.6128e-18
+c110 n357__in vss1 50.3424e-18
+c111 n404__in vss1 49.6128e-18
+c112 n449__in vss1 50.3424e-18
+c113 n496__in vss1 49.4187e-18
+c114 n38__in vss1 50.0776e-18
+c115 n83__in vss1 50.8072e-18
+c116 n130__in vss1 50.0776e-18
+c117 n175__in vss1 50.8072e-18
+c118 n222__in vss1 50.0776e-18
+c119 n267__in vss1 50.8072e-18
+c120 n314__in vss1 50.0776e-18
+c121 n359__in vss1 50.8072e-18
+c122 n406__in vss1 50.0776e-18
+c123 n451__in vss1 50.8072e-18
+c124 n498__in vss1 49.7027e-18
+c125 n40__in vss1 49.9381e-18
+c126 n85__in vss1 50.6241e-18
+c127 n132__in vss1 49.8994e-18
+c128 n177__in vss1 50.6241e-18
+c129 n224__in vss1 49.8994e-18
+c130 n269__in vss1 50.6241e-18
+c131 n316__in vss1 49.8994e-18
+c132 n361__in vss1 50.6241e-18
+c133 n408__in vss1 49.8994e-18
+c134 n453__in vss1 50.6241e-18
+c135 n500__in vss1 49.6114e-18
+c136 n42__in vss1 65.1465e-18
+c137 n87__in vss1 62.2189e-18
+c138 n134__in vss1 65.0208e-18
+c139 n179__in vss1 62.2189e-18
+c140 n226__in vss1 65.0208e-18
+c141 n271__in vss1 62.2189e-18
+c142 n318__in vss1 65.0208e-18
+c143 n363__in vss1 62.2189e-18
+c144 n410__in vss1 65.0208e-18
+c145 n455__in vss1 62.2189e-18
+c146 n502__in vss1 58.2104e-18
+c147 n44__in vss1 50.7951e-18
+c148 n89__in vss1 50.3323e-18
+c149 n136__in vss1 49.6027e-18
+c150 n181__in vss1 50.3323e-18
+c151 n228__in vss1 49.6027e-18
+c152 n273__in vss1 50.3323e-18
+c153 n320__in vss1 49.6027e-18
+c154 n365__in vss1 50.3323e-18
+c155 n412__in vss1 49.6027e-18
+c156 n457__in vss1 50.3323e-18
+c157 n504__in vss1 49.3632e-18
+c158 n46__in vss1 63.5392e-18
+c159 n91__in vss1 57.0993e-18
+c160 n138__in vss1 56.3745e-18
+c161 n183__in vss1 57.0993e-18
+c162 n230__in vss1 56.3745e-18
+c163 n275__in vss1 57.0993e-18
+c164 n322__in vss1 56.3745e-18
+c165 n367__in vss1 57.0993e-18
+c166 n414__in vss1 56.3745e-18
+c167 n459__in vss1 57.0993e-18
+c168 n506__in vss1 56.6861e-18
+c169 n18__in vss1 44.0742e-18
+c170 n47__in vss1 43.9745e-18
+c171 n110__in vss1 44.0742e-18
+c172 n139__in vss1 43.9745e-18
+c173 n202__in vss1 44.0742e-18
+c174 n231__in vss1 43.9745e-18
+c175 n294__in vss1 44.0742e-18
+c176 n323__in vss1 43.9745e-18
+c177 n386__in vss1 44.0742e-18
+c178 n415__in vss1 43.9745e-18
+c179 n478__in vss1 46.1949e-18
+c180 n19__in vss1 37.2143e-18
+c181 n66__in vss1 35.3534e-18
+c182 n111__in vss1 37.2143e-18
+c183 n158__in vss1 35.3534e-18
+c184 n203__in vss1 37.2146e-18
+c185 n250__in vss1 35.3507e-18
+c186 n295__in vss1 37.2146e-18
+c187 n342__in vss1 35.3507e-18
+c188 n387__in vss1 37.2143e-18
+c189 n434__in vss1 35.3534e-18
+c190 n479__in vss1 36.9064e-18
+c191 n21__in vss1 37.0813e-18
+c192 n68__in vss1 35.2193e-18
+c193 n113__in vss1 37.0813e-18
+c194 n160__in vss1 35.2193e-18
+c195 n205__in vss1 37.0813e-18
+c196 n252__in vss1 35.2193e-18
+c197 n297__in vss1 37.0813e-18
+c198 n344__in vss1 35.2193e-18
+c199 n389__in vss1 37.0813e-18
+c200 n436__in vss1 35.2193e-18
+c201 n481__in vss1 36.869e-18
+c202 n23__in vss1 36.9691e-18
+c203 n70__in vss1 35.0993e-18
+c204 n115__in vss1 36.9691e-18
+c205 n162__in vss1 35.0993e-18
+c206 n207__in vss1 36.9691e-18
+c207 n254__in vss1 35.0993e-18
+c208 n299__in vss1 36.9691e-18
+c209 n346__in vss1 35.0993e-18
+c210 n391__in vss1 36.9691e-18
+c211 n438__in vss1 35.0993e-18
+c212 n483__in vss1 36.5014e-18
+c213 n25__in vss1 36.7089e-18
+c214 n72__in vss1 34.839e-18
+c215 n117__in vss1 36.7089e-18
+c216 n164__in vss1 34.839e-18
+c217 n209__in vss1 36.7089e-18
+c218 n256__in vss1 34.839e-18
+c219 n301__in vss1 36.7089e-18
+c220 n348__in vss1 34.839e-18
+c221 n393__in vss1 36.7089e-18
+c222 n440__in vss1 34.839e-18
+c223 n485__in vss1 36.7089e-18
+c224 n27__in vss1 36.4722e-18
+c225 n74__in vss1 34.6023e-18
+c226 n119__in vss1 36.4722e-18
+c227 n166__in vss1 34.6023e-18
+c228 n211__in vss1 36.4722e-18
+c229 n258__in vss1 34.6023e-18
+c230 n303__in vss1 36.4722e-18
+c231 n350__in vss1 34.6023e-18
+c232 n395__in vss1 36.4722e-18
+c233 n442__in vss1 34.6023e-18
+c234 n487__in vss1 36.4722e-18
+c235 n29__in vss1 36.7089e-18
+c236 n76__in vss1 34.839e-18
+c237 n121__in vss1 36.7089e-18
+c238 n168__in vss1 34.839e-18
+c239 n213__in vss1 36.7089e-18
+c240 n260__in vss1 34.839e-18
+c241 n305__in vss1 36.7089e-18
+c242 n352__in vss1 34.839e-18
+c243 n397__in vss1 36.7089e-18
+c244 n444__in vss1 34.839e-18
+c245 n489__in vss1 36.7089e-18
+c246 n31__in vss1 36.4722e-18
+c247 n78__in vss1 34.6023e-18
+c248 n123__in vss1 36.4722e-18
+c249 n170__in vss1 34.6023e-18
+c250 n215__in vss1 36.4722e-18
+c251 n262__in vss1 34.6023e-18
+c252 n307__in vss1 36.4722e-18
+c253 n354__in vss1 34.6023e-18
+c254 n399__in vss1 36.4722e-18
+c255 n446__in vss1 34.6023e-18
+c256 n491__in vss1 36.4722e-18
+c257 n33__in vss1 36.9036e-18
+c258 n80__in vss1 35.0338e-18
+c259 n125__in vss1 36.9036e-18
+c260 n172__in vss1 35.0338e-18
+c261 n217__in vss1 36.9036e-18
+c262 n264__in vss1 35.0338e-18
+c263 n309__in vss1 36.9036e-18
+c264 n356__in vss1 35.0338e-18
+c265 n401__in vss1 36.9036e-18
+c266 n448__in vss1 35.0338e-18
+c267 n493__in vss1 36.7089e-18
+c268 n35__in vss1 36.6649e-18
+c269 n82__in vss1 34.7951e-18
+c270 n127__in vss1 36.6649e-18
+c271 n174__in vss1 34.7951e-18
+c272 n219__in vss1 36.6649e-18
+c273 n266__in vss1 34.7951e-18
+c274 n311__in vss1 36.6649e-18
+c275 n358__in vss1 34.7951e-18
+c276 n403__in vss1 36.6649e-18
+c277 n450__in vss1 34.7951e-18
+c278 n495__in vss1 36.4722e-18
+c279 n37__in vss1 37.0483e-18
+c280 n84__in vss1 35.1784e-18
+c281 n129__in vss1 37.0483e-18
+c282 n176__in vss1 35.1784e-18
+c283 n221__in vss1 37.0483e-18
+c284 n268__in vss1 35.1784e-18
+c285 n313__in vss1 37.0483e-18
+c286 n360__in vss1 35.1784e-18
+c287 n405__in vss1 37.0483e-18
+c288 n452__in vss1 35.1784e-18
+c289 n497__in vss1 36.7089e-18
+c290 n39__in vss1 36.9643e-18
+c291 n86__in vss1 35.1022e-18
+c292 n131__in vss1 36.9643e-18
+c293 n178__in vss1 35.1022e-18
+c294 n223__in vss1 36.9643e-18
+c295 n270__in vss1 35.1022e-18
+c296 n315__in vss1 36.9643e-18
+c297 n362__in vss1 35.1022e-18
+c298 n407__in vss1 36.9643e-18
+c299 n454__in vss1 35.1022e-18
+c300 n499__in vss1 36.6951e-18
+c301 n41__in vss1 43.3592e-18
+c302 n88__in vss1 42.8881e-18
+c303 n133__in vss1 43.9405e-18
+c304 n180__in vss1 42.8881e-18
+c305 n225__in vss1 43.9405e-18
+c306 n272__in vss1 42.8881e-18
+c307 n317__in vss1 43.9405e-18
+c308 n364__in vss1 42.8881e-18
+c309 n409__in vss1 43.9405e-18
+c310 n456__in vss1 42.8881e-18
+c311 n501__in vss1 37.1001e-18
+c312 n43__in vss1 36.62e-18
+c313 n90__in vss1 34.5395e-18
+c314 n135__in vss1 36.4015e-18
+c315 n182__in vss1 34.5395e-18
+c316 n227__in vss1 36.4015e-18
+c317 n274__in vss1 34.5395e-18
+c318 n319__in vss1 36.4015e-18
+c319 n366__in vss1 34.5395e-18
+c320 n411__in vss1 36.4015e-18
+c321 n458__in vss1 34.5395e-18
+c322 n503__in vss1 37.0919e-18
+c323 n45__in vss1 46.1622e-18
+c324 n92__in vss1 41.3865e-18
+c325 n137__in vss1 44.2982e-18
+c326 n184__in vss1 41.3799e-18
+c327 n229__in vss1 44.302e-18
+c328 n276__in vss1 41.3865e-18
+c329 n321__in vss1 44.2986e-18
+c330 n368__in vss1 41.3805e-18
+c331 n413__in vss1 44.302e-18
+c332 n460__in vss1 41.3865e-18
+c333 n505__in vss1 46.2277e-18
+c334 n17__in vss1 57.7225e-18
+c335 n63__in vss1 51.0264e-18
+c336 n109__in vss1 50.599e-18
+c337 n155__in vss1 51.0264e-18
+c338 n201__in vss1 50.599e-18
+c339 n247__in vss1 51.0264e-18
+c340 n293__in vss1 50.599e-18
+c341 n339__in vss1 51.0264e-18
+c342 n385__in vss1 50.599e-18
+c343 n431__in vss1 51.0264e-18
+c344 n477__in vss1 52.4398e-18
+c345 n12__out vss1 59.5327e-18
+c346 n52__out vss1 59.8514e-18
+c347 n38__out vss1 65.2264e-18
+c348 n79__out vss1 64.7843e-18
+c349 n65__out vss1 59.4949e-18
+c350 n106__out vss1 59.8514e-18
+c351 n92__out vss1 65.2264e-18
+c352 n133__out vss1 64.7843e-18
+c353 n119__out vss1 59.4949e-18
+c354 n160__out vss1 59.8514e-18
+c355 n146__out vss1 65.2264e-18
+c356 n187__out vss1 64.7843e-18
+c357 n173__out vss1 59.4949e-18
+c358 n214__out vss1 59.8514e-18
+c359 n200__out vss1 65.2264e-18
+c360 n241__out vss1 64.7843e-18
+c361 n227__out vss1 59.4949e-18
+c362 n268__out vss1 59.8514e-18
+c363 n254__out vss1 65.2264e-18
+c364 n280__out vss1 64.8129e-18
+c365 n10__vddio1 vss1 159.306e-18
+c366 n31__vddio1 vss1 359.108e-18
+c367 n60__vddio1 vss1 359.108e-18
+c368 n89__vddio1 vss1 359.108e-18
+c369 n118__vddio1 vss1 359.108e-18
+c370 n147__vddio1 vss1 193.349e-18
+c371 n1__out vss1 88.3928e-18
+c372 n36__out vss1 47.2973e-18
+c373 n77__out vss1 47.0697e-18
+c374 n90__out vss1 47.2973e-18
+c375 n131__out vss1 47.0697e-18
+c376 n144__out vss1 47.2973e-18
+c377 n185__out vss1 47.0697e-18
+c378 n198__out vss1 47.2973e-18
+c379 n239__out vss1 47.0697e-18
+c380 n252__out vss1 47.2973e-18
+c381 n278__out vss1 47.0697e-18
+c382 n14__vddio1 vss1 97.3252e-18
+c383 n36__vddio1 vss1 101.919e-18
+c384 n35__vddio1 vss1 102.069e-18
+c385 n65__vddio1 vss1 101.919e-18
+c386 n64__vddio1 vss1 102.069e-18
+c387 n94__vddio1 vss1 101.919e-18
+c388 n93__vddio1 vss1 102.069e-18
+c389 n123__vddio1 vss1 101.919e-18
+c390 n122__vddio1 vss1 102.069e-18
+c391 n152__vddio1 vss1 101.919e-18
+c392 n151__vddio1 vss1 102.069e-18
+c393 n14__out vss1 100.649e-18
+c394 n34__out vss1 101.085e-18
+c395 n53__out vss1 100.562e-18
+c396 n88__out vss1 101.085e-18
+c397 n107__out vss1 100.562e-18
+c398 n142__out vss1 101.085e-18
+c399 n161__out vss1 100.562e-18
+c400 n196__out vss1 101.085e-18
+c401 n215__out vss1 100.562e-18
+c402 n250__out vss1 101.085e-18
+c403 n282__out vss1 100.628e-18
+c404 n15__vddio1 vss1 97.9171e-18
+c405 n38__vddio1 vss1 98.9015e-18
+c406 n37__vddio1 vss1 99.1263e-18
+c407 n67__vddio1 vss1 98.9015e-18
+c408 n66__vddio1 vss1 99.1263e-18
+c409 n96__vddio1 vss1 98.9015e-18
+c410 n95__vddio1 vss1 99.1263e-18
+c411 n125__vddio1 vss1 98.9015e-18
+c412 n124__vddio1 vss1 99.1263e-18
+c413 n154__vddio1 vss1 98.9015e-18
+c414 n153__vddio1 vss1 99.1263e-18
+c415 n16__out vss1 100.375e-18
+c416 n39__out vss1 100.793e-18
+c417 n67__out vss1 100.549e-18
+c418 n93__out vss1 100.793e-18
+c419 n121__out vss1 100.549e-18
+c420 n147__out vss1 100.793e-18
+c421 n175__out vss1 100.549e-18
+c422 n201__out vss1 100.793e-18
+c423 n229__out vss1 100.549e-18
+c424 n255__out vss1 100.793e-18
+c425 n284__out vss1 100.581e-18
+c426 n16__vddio1 vss1 97.8342e-18
+c427 n40__vddio1 vss1 97.7473e-18
+c428 n39__vddio1 vss1 97.9609e-18
+c429 n69__vddio1 vss1 97.7473e-18
+c430 n68__vddio1 vss1 97.9609e-18
+c431 n98__vddio1 vss1 97.7473e-18
+c432 n97__vddio1 vss1 97.9609e-18
+c433 n127__vddio1 vss1 97.7473e-18
+c434 n126__vddio1 vss1 97.9609e-18
+c435 n156__vddio1 vss1 97.7473e-18
+c436 n155__vddio1 vss1 97.9609e-18
+c437 n18__out vss1 100.31e-18
+c438 n41__out vss1 100.835e-18
+c439 n69__out vss1 100.407e-18
+c440 n95__out vss1 100.835e-18
+c441 n123__out vss1 100.407e-18
+c442 n149__out vss1 100.835e-18
+c443 n177__out vss1 100.407e-18
+c444 n203__out vss1 100.835e-18
+c445 n231__out vss1 100.407e-18
+c446 n257__out vss1 100.835e-18
+c447 n286__out vss1 100.407e-18
+c448 n17__vddio1 vss1 97.8336e-18
+c449 n42__vddio1 vss1 97.7467e-18
+c450 n41__vddio1 vss1 97.9603e-18
+c451 n71__vddio1 vss1 97.7467e-18
+c452 n70__vddio1 vss1 97.9603e-18
+c453 n100__vddio1 vss1 97.7467e-18
+c454 n99__vddio1 vss1 97.9603e-18
+c455 n129__vddio1 vss1 97.7467e-18
+c456 n128__vddio1 vss1 97.9603e-18
+c457 n158__vddio1 vss1 97.7467e-18
+c458 n157__vddio1 vss1 97.9603e-18
+c459 n20__out vss1 100.375e-18
+c460 n43__out vss1 100.793e-18
+c461 n71__out vss1 100.581e-18
+c462 n97__out vss1 100.793e-18
+c463 n125__out vss1 100.581e-18
+c464 n151__out vss1 100.793e-18
+c465 n179__out vss1 100.581e-18
+c466 n205__out vss1 100.793e-18
+c467 n233__out vss1 100.581e-18
+c468 n259__out vss1 100.793e-18
+c469 n288__out vss1 100.581e-18
+c470 n18__vddio1 vss1 97.8336e-18
+c471 n44__vddio1 vss1 97.7467e-18
+c472 n43__vddio1 vss1 97.9603e-18
+c473 n73__vddio1 vss1 97.7467e-18
+c474 n72__vddio1 vss1 97.9603e-18
+c475 n102__vddio1 vss1 97.7467e-18
+c476 n101__vddio1 vss1 97.9603e-18
+c477 n131__vddio1 vss1 97.7467e-18
+c478 n130__vddio1 vss1 97.9603e-18
+c479 n160__vddio1 vss1 97.7467e-18
+c480 n159__vddio1 vss1 97.9603e-18
+c481 n22__out vss1 103.703e-18
+c482 n45__out vss1 104.121e-18
+c483 n73__out vss1 103.909e-18
+c484 n99__out vss1 104.121e-18
+c485 n127__out vss1 103.909e-18
+c486 n153__out vss1 104.121e-18
+c487 n181__out vss1 103.909e-18
+c488 n207__out vss1 104.121e-18
+c489 n235__out vss1 103.909e-18
+c490 n261__out vss1 104.121e-18
+c491 n290__out vss1 100.581e-18
+c492 n19__vddio1 vss1 97.032e-18
+c493 n46__vddio1 vss1 96.9452e-18
+c494 n45__vddio1 vss1 97.1587e-18
+c495 n75__vddio1 vss1 96.9452e-18
+c496 n74__vddio1 vss1 97.1587e-18
+c497 n104__vddio1 vss1 96.9452e-18
+c498 n103__vddio1 vss1 97.1587e-18
+c499 n133__vddio1 vss1 96.9452e-18
+c500 n132__vddio1 vss1 97.1587e-18
+c501 n162__vddio1 vss1 96.9452e-18
+c502 n161__vddio1 vss1 97.9609e-18
+c503 n24__out vss1 109.475e-18
+c504 n47__out vss1 110.775e-18
+c505 n75__out vss1 110.347e-18
+c506 n101__out vss1 110.775e-18
+c507 n129__out vss1 110.347e-18
+c508 n155__out vss1 110.775e-18
+c509 n183__out vss1 110.347e-18
+c510 n209__out vss1 110.775e-18
+c511 n237__out vss1 110.347e-18
+c512 n263__out vss1 110.775e-18
+c513 n292__out vss1 102.289e-18
+c514 n20__vddio1 vss1 92.9696e-18
+c515 n48__vddio1 vss1 95.1041e-18
+c516 n47__vddio1 vss1 95.3182e-18
+c517 n77__vddio1 vss1 95.1047e-18
+c518 n76__vddio1 vss1 95.3176e-18
+c519 n106__vddio1 vss1 95.1041e-18
+c520 n105__vddio1 vss1 95.3182e-18
+c521 n135__vddio1 vss1 95.1047e-18
+c522 n134__vddio1 vss1 95.3176e-18
+c523 n164__vddio1 vss1 95.1041e-18
+c524 n163__vddio1 vss1 101.607e-18
+c525 n25__out vss1 107.65e-18
+c526 n33__out vss1 114.408e-18
+c527 n76__out vss1 113.98e-18
+c528 n87__out vss1 114.408e-18
+c529 n130__out vss1 113.98e-18
+c530 n141__out vss1 114.408e-18
+c531 n184__out vss1 113.98e-18
+c532 n195__out vss1 114.408e-18
+c533 n238__out vss1 113.98e-18
+c534 n249__out vss1 114.408e-18
+c535 n293__out vss1 106.515e-18
+c536 n21__vddio1 vss1 62.8942e-18
+c537 n50__vddio1 vss1 100.925e-18
+c538 n49__vddio1 vss1 101.545e-18
+c539 n79__vddio1 vss1 100.925e-18
+c540 n78__vddio1 vss1 101.545e-18
+c541 n108__vddio1 vss1 100.925e-18
+c542 n107__vddio1 vss1 101.545e-18
+c543 n137__vddio1 vss1 100.925e-18
+c544 n136__vddio1 vss1 101.545e-18
+c545 n166__vddio1 vss1 100.925e-18
+c546 n165__vddio1 vss1 101.658e-18
+c547 n1__vddio1 vss1 56.5536e-18
+c548 n22__vddio1 vss1 129.316e-18
+c549 n51__vddio1 vss1 129.316e-18
+c550 n80__vddio1 vss1 129.316e-18
+c551 n109__vddio1 vss1 129.316e-18
+c552 n138__vddio1 vss1 129.316e-18
+c553 n10__out vss1 30.2262e-18
+c554 n50__out vss1 30.2746e-18
+c555 n63__out vss1 30.047e-18
+c556 n104__out vss1 30.2746e-18
+c557 n117__out vss1 30.047e-18
+c558 n158__out vss1 30.2746e-18
+c559 n171__out vss1 30.047e-18
+c560 n212__out vss1 30.2746e-18
+c561 n225__out vss1 30.047e-18
+c562 n266__out vss1 30.2746e-18
+c563 n269__out vss1 57.7491e-18
+c564 n13__out vss1 64.904e-18
+c565 n26__out vss1 64.1683e-18
+c566 n62__out vss1 64.904e-18
+c567 n80__out vss1 64.1683e-18
+c568 n116__out vss1 64.904e-18
+c569 n134__out vss1 64.1683e-18
+c570 n170__out vss1 64.904e-18
+c571 n188__out vss1 64.1683e-18
+c572 n224__out vss1 64.904e-18
+c573 n242__out vss1 64.1683e-18
+c574 n281__out vss1 64.7033e-18
+c575 n15__out vss1 64.8878e-18
+c576 n40__out vss1 64.5368e-18
+c577 n66__out vss1 64.8878e-18
+c578 n94__out vss1 64.5368e-18
+c579 n120__out vss1 64.8878e-18
+c580 n148__out vss1 64.5368e-18
+c581 n174__out vss1 64.8878e-18
+c582 n202__out vss1 64.5368e-18
+c583 n228__out vss1 64.8878e-18
+c584 n256__out vss1 64.5368e-18
+c585 n283__out vss1 64.5716e-18
+c586 n17__out vss1 64.93e-18
+c587 n42__out vss1 64.2841e-18
+c588 n68__out vss1 64.93e-18
+c589 n96__out vss1 64.2841e-18
+c590 n122__out vss1 64.93e-18
+c591 n150__out vss1 64.2841e-18
+c592 n176__out vss1 64.93e-18
+c593 n204__out vss1 64.2841e-18
+c594 n230__out vss1 64.93e-18
+c595 n258__out vss1 64.2841e-18
+c596 n285__out vss1 64.6119e-18
+c597 n19__out vss1 64.8878e-18
+c598 n44__out vss1 64.5687e-18
+c599 n70__out vss1 64.8878e-18
+c600 n98__out vss1 64.5687e-18
+c601 n124__out vss1 64.8878e-18
+c602 n152__out vss1 64.5687e-18
+c603 n178__out vss1 64.8878e-18
+c604 n206__out vss1 64.5687e-18
+c605 n232__out vss1 64.8878e-18
+c606 n260__out vss1 64.5687e-18
+c607 n287__out vss1 64.5716e-18
+c608 n21__out vss1 67.0674e-18
+c609 n46__out vss1 66.7483e-18
+c610 n72__out vss1 67.0674e-18
+c611 n100__out vss1 66.7483e-18
+c612 n126__out vss1 67.0674e-18
+c613 n154__out vss1 66.7483e-18
+c614 n180__out vss1 67.0674e-18
+c615 n208__out vss1 66.7483e-18
+c616 n234__out vss1 67.0674e-18
+c617 n262__out vss1 66.7483e-18
+c618 n289__out vss1 64.5716e-18
+c619 n23__out vss1 71.191e-18
+c620 n48__out vss1 71.0862e-18
+c621 n74__out vss1 71.7321e-18
+c622 n102__out vss1 71.0862e-18
+c623 n128__out vss1 71.7321e-18
+c624 n156__out vss1 71.0862e-18
+c625 n182__out vss1 71.7321e-18
+c626 n210__out vss1 71.0862e-18
+c627 n236__out vss1 71.7321e-18
+c628 n264__out vss1 71.0862e-18
+c629 n291__out vss1 65.8463e-18
+c630 n9__out vss1 71.8727e-18
+c631 n49__out vss1 73.9807e-18
+c632 n61__out vss1 74.6256e-18
+c633 n103__out vss1 73.9797e-18
+c634 n115__out vss1 74.6266e-18
+c635 n157__out vss1 73.9807e-18
+c636 n169__out vss1 74.6256e-18
+c637 n211__out vss1 73.9797e-18
+c638 n223__out vss1 74.6266e-18
+c639 n265__out vss1 73.9807e-18
+c640 n277__out vss1 67.5641e-18
+c641 n508__in vss1 308.631e-18
+c642 n509__in vss1 284.916e-18
+c643 n510__in vss1 282.781e-18
+c644 n511__in vss1 284.916e-18
+c645 n512__in vss1 282.781e-18
+c646 n513__in vss1 284.916e-18
+c647 n514__in vss1 282.781e-18
+c648 n515__in vss1 284.916e-18
+c649 n516__in vss1 308.429e-18
+c650 n2__out vss1 76.8389e-18
+c651 n3__out vss1 77.8292e-18
+c652 n4__out vss1 78.2451e-18
+c653 n5__out vss1 77.8292e-18
+c654 n6__out vss1 79.9963e-18
+c655 n7__out vss1 94.7012e-18
+c656 n8__out vss1 74.0704e-18
+c657 n27__out vss1 80.163e-18
+c658 n28__out vss1 81.2195e-18
+c659 n29__out vss1 81.1317e-18
+c660 n30__out vss1 81.2195e-18
+c661 n31__out vss1 83.3865e-18
+c662 n32__out vss1 98.7759e-18
+c663 n35__out vss1 77.9256e-18
+c664 n54__out vss1 76.9005e-18
+c665 n55__out vss1 77.9473e-18
+c666 n56__out vss1 78.3632e-18
+c667 n57__out vss1 77.9473e-18
+c668 n58__out vss1 80.1144e-18
+c669 n59__out vss1 93.5514e-18
+c670 n60__out vss1 75.9173e-18
+c671 n81__out vss1 80.163e-18
+c672 n82__out vss1 81.2195e-18
+c673 n83__out vss1 81.1317e-18
+c674 n84__out vss1 81.2195e-18
+c675 n85__out vss1 83.3865e-18
+c676 n86__out vss1 98.7759e-18
+c677 n89__out vss1 77.9256e-18
+c678 n108__out vss1 76.9001e-18
+c679 n109__out vss1 77.9473e-18
+c680 n110__out vss1 78.3632e-18
+c681 n111__out vss1 77.9473e-18
+c682 n112__out vss1 80.1144e-18
+c683 n113__out vss1 93.5514e-18
+c684 n114__out vss1 75.9159e-18
+c685 n135__out vss1 80.1632e-18
+c686 n136__out vss1 81.2195e-18
+c687 n137__out vss1 81.1317e-18
+c688 n138__out vss1 81.2195e-18
+c689 n139__out vss1 83.3865e-18
+c690 n140__out vss1 98.7759e-18
+c691 n143__out vss1 77.9256e-18
+c692 n162__out vss1 76.9001e-18
+c693 n163__out vss1 77.9473e-18
+c694 n164__out vss1 78.3632e-18
+c695 n165__out vss1 77.9473e-18
+c696 n166__out vss1 80.1144e-18
+c697 n167__out vss1 93.5514e-18
+c698 n168__out vss1 75.9173e-18
+c699 n189__out vss1 80.1632e-18
+c700 n190__out vss1 81.2195e-18
+c701 n191__out vss1 81.1317e-18
+c702 n192__out vss1 81.2195e-18
+c703 n193__out vss1 83.3865e-18
+c704 n194__out vss1 98.7759e-18
+c705 n197__out vss1 77.9256e-18
+c706 n216__out vss1 76.9005e-18
+c707 n217__out vss1 77.9473e-18
+c708 n218__out vss1 78.3632e-18
+c709 n219__out vss1 77.9473e-18
+c710 n220__out vss1 80.1144e-18
+c711 n221__out vss1 93.5514e-18
+c712 n222__out vss1 75.9159e-18
+c713 n243__out vss1 80.163e-18
+c714 n244__out vss1 81.2195e-18
+c715 n245__out vss1 81.1317e-18
+c716 n246__out vss1 81.2195e-18
+c717 n247__out vss1 83.3865e-18
+c718 n248__out vss1 98.7759e-18
+c719 n251__out vss1 77.9256e-18
+c720 n270__out vss1 76.7307e-18
+c721 n271__out vss1 77.7107e-18
+c722 n272__out vss1 78.1266e-18
+c723 n273__out vss1 77.7107e-18
+c724 n274__out vss1 77.7107e-18
+c725 n275__out vss1 77.1134e-18
+c726 n276__out vss1 69.7469e-18
+c727 n2__vddio1 vss1 1.58622e-18
+c728 n3__vddio1 vss1 20.9549e-18
+c729 n6__vddio1 vss1 20.9549e-18
+c730 n7__vddio1 vss1 24.2546e-18
+c731 n8__vddio1 vss1 16.8986e-18
+c732 n11__vddio1 vss1 8.89832e-18
+c733 n12__vddio1 vss1 2.0118e-18
+c734 n23__vddio1 vss1 11.0166e-18
+c735 n24__vddio1 vss1 45.4925e-18
+c736 n27__vddio1 vss1 43.6759e-18
+c737 n28__vddio1 vss1 50.5933e-18
+c738 n29__vddio1 vss1 35.2303e-18
+c739 n32__vddio1 vss1 20.5145e-18
+c740 n33__vddio1 vss1 47.7236e-18
+c741 n52__vddio1 vss1 11.0166e-18
+c742 n53__vddio1 vss1 45.4925e-18
+c743 n56__vddio1 vss1 43.6759e-18
+c744 n57__vddio1 vss1 50.5933e-18
+c745 n58__vddio1 vss1 35.2303e-18
+c746 n61__vddio1 vss1 20.5145e-18
+c747 n62__vddio1 vss1 47.7236e-18
+c748 n81__vddio1 vss1 11.0166e-18
+c749 n82__vddio1 vss1 45.4925e-18
+c750 n85__vddio1 vss1 43.6759e-18
+c751 n86__vddio1 vss1 50.5933e-18
+c752 n87__vddio1 vss1 35.2303e-18
+c753 n90__vddio1 vss1 20.5145e-18
+c754 n91__vddio1 vss1 47.7236e-18
+c755 n110__vddio1 vss1 11.0166e-18
+c756 n111__vddio1 vss1 45.4925e-18
+c757 n114__vddio1 vss1 43.6759e-18
+c758 n115__vddio1 vss1 50.5933e-18
+c759 n116__vddio1 vss1 35.2303e-18
+c760 n119__vddio1 vss1 20.5145e-18
+c761 n120__vddio1 vss1 47.7236e-18
+c762 n139__vddio1 vss1 11.0166e-18
+c763 n140__vddio1 vss1 45.4925e-18
+c764 n143__vddio1 vss1 43.6759e-18
+c765 n144__vddio1 vss1 50.5933e-18
+c766 n145__vddio1 vss1 35.2303e-18
+c767 n148__vddio1 vss1 20.7491e-18
+c768 n149__vddio1 vss1 47.9413e-18
+c769 n2__in vss1 57.3602e-18
+c770 n3__in vss1 56.8144e-18
+c771 n4__in vss1 57.5969e-18
+c772 n5__in vss1 56.7571e-18
+c773 n6__in vss1 57.555e-18
+c774 n7__in vss1 56.8471e-18
+c775 n8__in vss1 57.9213e-18
+c776 n9__in vss1 56.7571e-18
+c777 n10__in vss1 57.8146e-18
+c778 n11__in vss1 56.8012e-18
+c779 n12__in vss1 58.0643e-18
+c780 n13__in vss1 56.7032e-18
+c781 n14__in vss1 59.737e-18
+c782 n15__in vss1 57.1553e-18
+c783 n48__in vss1 58.8896e-18
+c784 n49__in vss1 58.7261e-18
+c785 n50__in vss1 59.4707e-18
+c786 n51__in vss1 58.6034e-18
+c787 n52__in vss1 59.4661e-18
+c788 n53__in vss1 58.6236e-18
+c789 n54__in vss1 59.4381e-18
+c790 n55__in vss1 58.6402e-18
+c791 n56__in vss1 59.7285e-18
+c792 n57__in vss1 58.6842e-18
+c793 n58__in vss1 59.9782e-18
+c794 n59__in vss1 58.5779e-18
+c795 n60__in vss1 64.3031e-18
+c796 n61__in vss1 58.949e-18
+c797 n94__in vss1 57.3688e-18
+c798 n95__in vss1 56.8444e-18
+c799 n96__in vss1 57.5591e-18
+c800 n97__in vss1 56.716e-18
+c801 n98__in vss1 57.548e-18
+c802 n99__in vss1 56.8428e-18
+c803 n100__in vss1 57.9171e-18
+c804 n101__in vss1 56.7528e-18
+c805 n102__in vss1 57.8104e-18
+c806 n103__in vss1 56.7968e-18
+c807 n104__in vss1 58.0601e-18
+c808 n105__in vss1 56.697e-18
+c809 n106__in vss1 60.7656e-18
+c810 n107__in vss1 57.0682e-18
+c811 n140__in vss1 58.8896e-18
+c812 n141__in vss1 58.7261e-18
+c813 n142__in vss1 59.4707e-18
+c814 n143__in vss1 58.6034e-18
+c815 n144__in vss1 59.4661e-18
+c816 n145__in vss1 58.6236e-18
+c817 n146__in vss1 59.4381e-18
+c818 n147__in vss1 58.6402e-18
+c819 n148__in vss1 59.7285e-18
+c820 n149__in vss1 58.6842e-18
+c821 n150__in vss1 59.9782e-18
+c822 n151__in vss1 58.5779e-18
+c823 n152__in vss1 64.3031e-18
+c824 n153__in vss1 58.9491e-18
+c825 n186__in vss1 57.3688e-18
+c826 n187__in vss1 56.8443e-18
+c827 n188__in vss1 57.5591e-18
+c828 n189__in vss1 56.716e-18
+c829 n190__in vss1 57.548e-18
+c830 n191__in vss1 56.8428e-18
+c831 n192__in vss1 57.9171e-18
+c832 n193__in vss1 56.7528e-18
+c833 n194__in vss1 57.8104e-18
+c834 n195__in vss1 56.7968e-18
+c835 n196__in vss1 58.0601e-18
+c836 n197__in vss1 56.697e-18
+c837 n198__in vss1 60.7656e-18
+c838 n199__in vss1 57.0681e-18
+c839 n232__in vss1 58.8896e-18
+c840 n233__in vss1 58.7266e-18
+c841 n234__in vss1 59.4707e-18
+c842 n235__in vss1 58.6034e-18
+c843 n236__in vss1 59.4661e-18
+c844 n237__in vss1 58.6236e-18
+c845 n238__in vss1 59.4381e-18
+c846 n239__in vss1 58.6402e-18
+c847 n240__in vss1 59.7285e-18
+c848 n241__in vss1 58.6842e-18
+c849 n242__in vss1 59.9782e-18
+c850 n243__in vss1 58.5779e-18
+c851 n244__in vss1 64.3031e-18
+c852 n245__in vss1 58.949e-18
+c853 n278__in vss1 57.3688e-18
+c854 n279__in vss1 56.8443e-18
+c855 n280__in vss1 57.5591e-18
+c856 n281__in vss1 56.716e-18
+c857 n282__in vss1 57.548e-18
+c858 n283__in vss1 56.8428e-18
+c859 n284__in vss1 57.9171e-18
+c860 n285__in vss1 56.7528e-18
+c861 n286__in vss1 57.8104e-18
+c862 n287__in vss1 56.7968e-18
+c863 n288__in vss1 58.0601e-18
+c864 n289__in vss1 56.697e-18
+c865 n290__in vss1 60.7656e-18
+c866 n291__in vss1 57.0682e-18
+c867 n324__in vss1 58.8896e-18
+c868 n325__in vss1 58.7266e-18
+c869 n326__in vss1 59.4707e-18
+c870 n327__in vss1 58.6034e-18
+c871 n328__in vss1 59.4661e-18
+c872 n329__in vss1 58.6236e-18
+c873 n330__in vss1 59.4381e-18
+c874 n331__in vss1 58.6402e-18
+c875 n332__in vss1 59.7285e-18
+c876 n333__in vss1 58.6842e-18
+c877 n334__in vss1 59.9782e-18
+c878 n335__in vss1 58.5779e-18
+c879 n336__in vss1 64.3031e-18
+c880 n337__in vss1 58.9491e-18
+c881 n370__in vss1 57.3688e-18
+c882 n371__in vss1 56.8444e-18
+c883 n372__in vss1 57.5591e-18
+c884 n373__in vss1 56.716e-18
+c885 n374__in vss1 57.548e-18
+c886 n375__in vss1 56.8428e-18
+c887 n376__in vss1 57.9171e-18
+c888 n377__in vss1 56.7528e-18
+c889 n378__in vss1 57.8104e-18
+c890 n379__in vss1 56.7968e-18
+c891 n380__in vss1 58.0601e-18
+c892 n381__in vss1 56.697e-18
+c893 n382__in vss1 60.7656e-18
+c894 n383__in vss1 57.0681e-18
+c895 n416__in vss1 58.8896e-18
+c896 n417__in vss1 58.7261e-18
+c897 n418__in vss1 59.4707e-18
+c898 n419__in vss1 58.6034e-18
+c899 n420__in vss1 59.4661e-18
+c900 n421__in vss1 58.6236e-18
+c901 n422__in vss1 59.4381e-18
+c902 n423__in vss1 58.6402e-18
+c903 n424__in vss1 59.7285e-18
+c904 n425__in vss1 58.6842e-18
+c905 n426__in vss1 59.9782e-18
+c906 n427__in vss1 58.5779e-18
+c907 n428__in vss1 64.3031e-18
+c908 n429__in vss1 58.949e-18
+c909 n462__in vss1 57.3606e-18
+c910 n463__in vss1 56.7578e-18
+c911 n464__in vss1 57.5972e-18
+c912 n465__in vss1 56.6991e-18
+c913 n466__in vss1 57.5554e-18
+c914 n467__in vss1 56.7891e-18
+c915 n468__in vss1 57.9216e-18
+c916 n469__in vss1 56.6991e-18
+c917 n470__in vss1 57.5554e-18
+c918 n471__in vss1 56.6991e-18
+c919 n472__in vss1 57.5554e-18
+c920 n473__in vss1 56.6547e-18
+c921 n474__in vss1 56.2201e-18
+c922 n475__in vss1 55.8008e-18
+rj1 n12__vss1 n40__vss1 3.06559 W=100e-9
+rj2 n40__vss1 n68__vss1 2.56559 W=100e-9
+rj3 n68__vss1 n96__vss1 2.56559 W=100e-9
+rj4 n96__vss1 n124__vss1 2.56559 W=100e-9
+rj5 n124__vss1 n152__vss1 3.06559 W=100e-9
+rj6 n10__vddio1 n168__vddio1 3.06559 W=100e-9
+rj7 n168__vddio1 n169__vddio1 2.56559 W=100e-9
+rj8 n169__vddio1 n170__vddio1 2.56559 W=100e-9
+rj9 n170__vddio1 n171__vddio1 2.56559 W=100e-9
+rj10 n171__vddio1 n147__vddio1 3.06559 W=100e-9
+rj11 n12__out n52__out 1.46142 W=100e-9
+rj12 n38__out n79__out 1.46142 W=100e-9
+rj13 n65__out n106__out 1.46142 W=100e-9
+rj14 n92__out n133__out 1.46142 W=100e-9
+rj15 n119__out n160__out 1.46142 W=100e-9
+rj16 n146__out n187__out 1.46142 W=100e-9
+rj17 n173__out n214__out 1.46142 W=100e-9
+rj18 n200__out n241__out 1.46142 W=100e-9
+rj19 n227__out n268__out 1.46142 W=100e-9
+rj20 n254__out n280__out 1.46142 W=100e-9
+rj28 n31__vddio1 n168__vddio1 500e-3 W=4.9e-9
+rj29 n60__vddio1 n169__vddio1 500e-3 W=4.9e-9
+rj30 n89__vddio1 n170__vddio1 500e-3 W=4.9e-9
+rj31 n118__vddio1 n171__vddio1 500e-3 W=4.9e-9
+rk1 n17__in in 45.0094 W=180e-9
+rk2 in n508__in 944.85e-3 W=180e-9
+rk3 n508__in n509__in 1.03399 W=180e-9
+rk4 n509__in n510__in 793.622e-3 W=180e-9
+rk5 n510__in n511__in 1.03399 W=180e-9
+rk6 n511__in n512__in 793.622e-3 W=180e-9
+rk7 n512__in n513__in 1.03399 W=180e-9
+rk8 n513__in n514__in 793.622e-3 W=180e-9
+rk9 n514__in n515__in 1.03399 W=180e-9
+rk10 n515__in n516__in 793.622e-3 W=180e-9
+rk11 n516__in in 1.18521 W=180e-9
+rk12 in n477__in 45.0094 W=160e-9
+rk13 n508__in in 147.974e-3 W=180e-9
+rk14 in n63__in 45.0094 W=160e-9
+rk15 n509__in in 147.974e-3 W=180e-9
+rk16 in n109__in 45.0094 W=160e-9
+rk17 n510__in in 147.974e-3 W=180e-9
+rk18 in n155__in 45.0094 W=160e-9
+rk19 n511__in in 147.974e-3 W=180e-9
+rk20 in n201__in 45.0094 W=160e-9
+rk21 n512__in in 147.974e-3 W=180e-9
+rk22 in n247__in 45.0094 W=160e-9
+rk23 n513__in in 147.974e-3 W=180e-9
+rk24 in n293__in 45.0094 W=160e-9
+rk25 n514__in in 147.974e-3 W=180e-9
+rk26 in n339__in 45.0094 W=160e-9
+rk27 n515__in in 147.974e-3 W=180e-9
+rk28 in n385__in 45.0094 W=160e-9
+rk29 n516__in in 147.974e-3 W=180e-9
+rk30 in n431__in 45.0094 W=160e-9
+rk31 n1__out out 12.901 W=100e-9
+rk32 out n2__out 461.401e-3 W=100e-9
+rk33 n2__out n3__out 458.844e-3 W=100e-9
+rk34 n3__out n4__out 458.844e-3 W=100e-9
+rk35 n4__out n5__out 458.844e-3 W=100e-9
+rk36 n5__out n6__out 458.844e-3 W=100e-9
+rk37 n6__out n7__out 458.844e-3 W=100e-9
+rk38 n7__out n8__out 439.368e-3 W=100e-9
+rk39 n8__out n9__out 37.8745 W=100e-9
+rk40 out n11__out 368.911e-3 W=100e-9
+rk41 n11__out n12__out 62.348e-3 W=100e-9
+rk42 n2__out n13__out 37.868 W=100e-9
+rk43 n2__out n14__out 12.9001 W=100e-9
+rk44 n3__out n15__out 37.868 W=100e-9
+rk45 n3__out n16__out 12.9001 W=100e-9
+rk46 n4__out n17__out 37.868 W=100e-9
+rk47 n4__out n18__out 12.9001 W=100e-9
+rk48 n5__out n19__out 37.868 W=100e-9
+rk49 n5__out n20__out 12.9001 W=100e-9
+rk50 n6__out n21__out 37.868 W=100e-9
+rk51 n6__out n22__out 12.9001 W=100e-9
+rk52 n7__out n23__out 37.868 W=100e-9
+rk53 n7__out n24__out 12.9001 W=100e-9
+rk54 n8__out n25__out 12.9066 W=100e-9
+rk55 n10__out n11__out 37.5 W=100e-9
+rk56 n26__out n27__out 37.868 W=100e-9
+rk57 n27__out n28__out 458.844e-3 W=100e-9
+rk58 n28__out n29__out 458.844e-3 W=100e-9
+rk59 n29__out n30__out 458.844e-3 W=100e-9
+rk60 n30__out n31__out 458.844e-3 W=100e-9
+rk61 n31__out n32__out 458.844e-3 W=100e-9
+rk62 n32__out out 467.845e-3 W=100e-9
+rk63 out n33__out 12.901 W=100e-9
+rk64 n27__out n34__out 12.9001 W=100e-9
+rk65 n27__out n35__out 432.925e-3 W=100e-9
+rk66 n35__out n37__out 506.598e-3 W=100e-9
+rk67 n37__out n38__out 168.672e-3 W=100e-9
+rk68 n28__out n39__out 12.9001 W=100e-9
+rk69 n28__out n40__out 37.868 W=100e-9
+rk70 n29__out n41__out 12.9001 W=100e-9
+rk71 n29__out n42__out 37.868 W=100e-9
+rk72 n30__out n43__out 12.9001 W=100e-9
+rk73 n30__out n44__out 37.868 W=100e-9
+rk74 n31__out n45__out 12.9001 W=100e-9
+rk75 n31__out n46__out 37.868 W=100e-9
+rk76 n32__out n47__out 12.9001 W=100e-9
+rk77 n32__out n48__out 37.868 W=100e-9
+rk78 out n49__out 37.8689 W=100e-9
+rk79 n35__out n51__out 374.499e-3 W=100e-9
+rk80 n51__out n52__out 65.57e-3 W=100e-9
+rk81 n36__out n37__out 12.4 W=100e-9
+rk82 n50__out n51__out 37.5 W=100e-9
+rk83 n53__out n54__out 12.9001 W=100e-9
+rk84 n54__out n55__out 458.844e-3 W=100e-9
+rk85 n55__out n56__out 458.844e-3 W=100e-9
+rk86 n56__out n57__out 458.844e-3 W=100e-9
+rk87 n57__out n58__out 458.844e-3 W=100e-9
+rk88 n58__out n59__out 458.844e-3 W=100e-9
+rk89 n59__out n60__out 439.368e-3 W=100e-9
+rk90 n60__out n61__out 37.8745 W=100e-9
+rk91 n54__out n62__out 37.868 W=100e-9
+rk92 n54__out out 461.401e-3 W=100e-9
+rk93 out n64__out 368.911e-3 W=100e-9
+rk94 n64__out n65__out 62.348e-3 W=100e-9
+rk95 n55__out n66__out 37.868 W=100e-9
+rk96 n55__out n67__out 12.9001 W=100e-9
+rk97 n56__out n68__out 37.868 W=100e-9
+rk98 n56__out n69__out 12.9001 W=100e-9
+rk99 n57__out n70__out 37.868 W=100e-9
+rk100 n57__out n71__out 12.9001 W=100e-9
+rk101 n58__out n72__out 37.868 W=100e-9
+rk102 n58__out n73__out 12.9001 W=100e-9
+rk103 n59__out n74__out 37.868 W=100e-9
+rk104 n59__out n75__out 12.9001 W=100e-9
+rk105 n60__out n76__out 12.9066 W=100e-9
+rk106 out n78__out 501.01e-3 W=100e-9
+rk107 n78__out n79__out 165.45e-3 W=100e-9
+rk108 n63__out n64__out 37.5 W=100e-9
+rk109 n77__out n78__out 12.4 W=100e-9
+rk110 n80__out n81__out 37.868 W=100e-9
+rk111 n81__out n82__out 458.844e-3 W=100e-9
+rk112 n82__out n83__out 458.844e-3 W=100e-9
+rk113 n83__out n84__out 458.844e-3 W=100e-9
+rk114 n84__out n85__out 458.844e-3 W=100e-9
+rk115 n85__out n86__out 458.844e-3 W=100e-9
+rk116 n86__out out 467.845e-3 W=100e-9
+rk117 out n87__out 12.901 W=100e-9
+rk118 n81__out n88__out 12.9001 W=100e-9
+rk119 n81__out n89__out 432.925e-3 W=100e-9
+rk120 n89__out n91__out 506.598e-3 W=100e-9
+rk121 n91__out n92__out 168.672e-3 W=100e-9
+rk122 n82__out n93__out 12.9001 W=100e-9
+rk123 n82__out n94__out 37.868 W=100e-9
+rk124 n83__out n95__out 12.9001 W=100e-9
+rk125 n83__out n96__out 37.868 W=100e-9
+rk126 n84__out n97__out 12.9001 W=100e-9
+rk127 n84__out n98__out 37.868 W=100e-9
+rk128 n85__out n99__out 12.9001 W=100e-9
+rk129 n85__out n100__out 37.868 W=100e-9
+rk130 n86__out n101__out 12.9001 W=100e-9
+rk131 n86__out n102__out 37.868 W=100e-9
+rk132 out n103__out 37.8689 W=100e-9
+rk133 n89__out n105__out 374.499e-3 W=100e-9
+rk134 n105__out n106__out 65.57e-3 W=100e-9
+rk135 n90__out n91__out 12.4 W=100e-9
+rk136 n104__out n105__out 37.5 W=100e-9
+rk137 n107__out n108__out 12.9001 W=100e-9
+rk138 n108__out n109__out 458.844e-3 W=100e-9
+rk139 n109__out n110__out 458.844e-3 W=100e-9
+rk140 n110__out n111__out 458.844e-3 W=100e-9
+rk141 n111__out n112__out 458.844e-3 W=100e-9
+rk142 n112__out n113__out 458.844e-3 W=100e-9
+rk143 n113__out n114__out 439.368e-3 W=100e-9
+rk144 n114__out n115__out 37.8745 W=100e-9
+rk145 n108__out n116__out 37.868 W=100e-9
+rk146 n108__out out 461.401e-3 W=100e-9
+rk147 out n118__out 368.911e-3 W=100e-9
+rk148 n118__out n119__out 62.348e-3 W=100e-9
+rk149 n109__out n120__out 37.868 W=100e-9
+rk150 n109__out n121__out 12.9001 W=100e-9
+rk151 n110__out n122__out 37.868 W=100e-9
+rk152 n110__out n123__out 12.9001 W=100e-9
+rk153 n111__out n124__out 37.868 W=100e-9
+rk154 n111__out n125__out 12.9001 W=100e-9
+rk155 n112__out n126__out 37.868 W=100e-9
+rk156 n112__out n127__out 12.9001 W=100e-9
+rk157 n113__out n128__out 37.868 W=100e-9
+rk158 n113__out n129__out 12.9001 W=100e-9
+rk159 n114__out n130__out 12.9066 W=100e-9
+rk160 out n132__out 501.01e-3 W=100e-9
+rk161 n132__out n133__out 165.45e-3 W=100e-9
+rk162 n117__out n118__out 37.5 W=100e-9
+rk163 n131__out n132__out 12.4 W=100e-9
+rk164 n134__out n135__out 37.868 W=100e-9
+rk165 n135__out n136__out 458.844e-3 W=100e-9
+rk166 n136__out n137__out 458.844e-3 W=100e-9
+rk167 n137__out n138__out 458.844e-3 W=100e-9
+rk168 n138__out n139__out 458.844e-3 W=100e-9
+rk169 n139__out n140__out 458.844e-3 W=100e-9
+rk170 n140__out out 467.845e-3 W=100e-9
+rk171 out n141__out 12.901 W=100e-9
+rk172 n135__out n142__out 12.9001 W=100e-9
+rk173 n135__out n143__out 432.925e-3 W=100e-9
+rk174 n143__out n145__out 506.598e-3 W=100e-9
+rk175 n145__out n146__out 168.672e-3 W=100e-9
+rk176 n136__out n147__out 12.9001 W=100e-9
+rk177 n136__out n148__out 37.868 W=100e-9
+rk178 n137__out n149__out 12.9001 W=100e-9
+rk179 n137__out n150__out 37.868 W=100e-9
+rk180 n138__out n151__out 12.9001 W=100e-9
+rk181 n138__out n152__out 37.868 W=100e-9
+rk182 n139__out n153__out 12.9001 W=100e-9
+rk183 n139__out n154__out 37.868 W=100e-9
+rk184 n140__out n155__out 12.9001 W=100e-9
+rk185 n140__out n156__out 37.868 W=100e-9
+rk186 out n157__out 37.8689 W=100e-9
+rk187 n143__out n159__out 374.499e-3 W=100e-9
+rk188 n159__out n160__out 65.57e-3 W=100e-9
+rk189 n144__out n145__out 12.4 W=100e-9
+rk190 n158__out n159__out 37.5 W=100e-9
+rk191 n161__out n162__out 12.9001 W=100e-9
+rk192 n162__out n163__out 458.844e-3 W=100e-9
+rk193 n163__out n164__out 458.844e-3 W=100e-9
+rk194 n164__out n165__out 458.844e-3 W=100e-9
+rk195 n165__out n166__out 458.844e-3 W=100e-9
+rk196 n166__out n167__out 458.844e-3 W=100e-9
+rk197 n167__out n168__out 439.368e-3 W=100e-9
+rk198 n168__out n169__out 37.8745 W=100e-9
+rk199 n162__out n170__out 37.868 W=100e-9
+rk200 n162__out out 461.401e-3 W=100e-9
+rk201 out n172__out 368.911e-3 W=100e-9
+rk202 n172__out n173__out 62.348e-3 W=100e-9
+rk203 n163__out n174__out 37.868 W=100e-9
+rk204 n163__out n175__out 12.9001 W=100e-9
+rk205 n164__out n176__out 37.868 W=100e-9
+rk206 n164__out n177__out 12.9001 W=100e-9
+rk207 n165__out n178__out 37.868 W=100e-9
+rk208 n165__out n179__out 12.9001 W=100e-9
+rk209 n166__out n180__out 37.868 W=100e-9
+rk210 n166__out n181__out 12.9001 W=100e-9
+rk211 n167__out n182__out 37.868 W=100e-9
+rk212 n167__out n183__out 12.9001 W=100e-9
+rk213 n168__out n184__out 12.9066 W=100e-9
+rk214 out n186__out 501.01e-3 W=100e-9
+rk215 n186__out n187__out 165.45e-3 W=100e-9
+rk216 n171__out n172__out 37.5 W=100e-9
+rk217 n185__out n186__out 12.4 W=100e-9
+rk218 n188__out n189__out 37.868 W=100e-9
+rk219 n189__out n190__out 458.844e-3 W=100e-9
+rk220 n190__out n191__out 458.844e-3 W=100e-9
+rk221 n191__out n192__out 458.844e-3 W=100e-9
+rk222 n192__out n193__out 458.844e-3 W=100e-9
+rk223 n193__out n194__out 458.844e-3 W=100e-9
+rk224 n194__out out 467.845e-3 W=100e-9
+rk225 out n195__out 12.901 W=100e-9
+rk226 n189__out n196__out 12.9001 W=100e-9
+rk227 n189__out n197__out 432.925e-3 W=100e-9
+rk228 n197__out n199__out 506.598e-3 W=100e-9
+rk229 n199__out n200__out 168.672e-3 W=100e-9
+rk230 n190__out n201__out 12.9001 W=100e-9
+rk231 n190__out n202__out 37.868 W=100e-9
+rk232 n191__out n203__out 12.9001 W=100e-9
+rk233 n191__out n204__out 37.868 W=100e-9
+rk234 n192__out n205__out 12.9001 W=100e-9
+rk235 n192__out n206__out 37.868 W=100e-9
+rk236 n193__out n207__out 12.9001 W=100e-9
+rk237 n193__out n208__out 37.868 W=100e-9
+rk238 n194__out n209__out 12.9001 W=100e-9
+rk239 n194__out n210__out 37.868 W=100e-9
+rk240 out n211__out 37.8689 W=100e-9
+rk241 n197__out n213__out 374.499e-3 W=100e-9
+rk242 n213__out n214__out 65.57e-3 W=100e-9
+rk243 n198__out n199__out 12.4 W=100e-9
+rk244 n212__out n213__out 37.5 W=100e-9
+rk245 n215__out n216__out 12.9001 W=100e-9
+rk246 n216__out n217__out 458.844e-3 W=100e-9
+rk247 n217__out n218__out 458.844e-3 W=100e-9
+rk248 n218__out n219__out 458.844e-3 W=100e-9
+rk249 n219__out n220__out 458.844e-3 W=100e-9
+rk250 n220__out n221__out 458.844e-3 W=100e-9
+rk251 n221__out n222__out 439.368e-3 W=100e-9
+rk252 n222__out n223__out 37.8745 W=100e-9
+rk253 n216__out n224__out 37.868 W=100e-9
+rk254 n216__out out 461.401e-3 W=100e-9
+rk255 out n226__out 368.911e-3 W=100e-9
+rk256 n226__out n227__out 62.348e-3 W=100e-9
+rk257 n217__out n228__out 37.868 W=100e-9
+rk258 n217__out n229__out 12.9001 W=100e-9
+rk259 n218__out n230__out 37.868 W=100e-9
+rk260 n218__out n231__out 12.9001 W=100e-9
+rk261 n219__out n232__out 37.868 W=100e-9
+rk262 n219__out n233__out 12.9001 W=100e-9
+rk263 n220__out n234__out 37.868 W=100e-9
+rk264 n220__out n235__out 12.9001 W=100e-9
+rk265 n221__out n236__out 37.868 W=100e-9
+rk266 n221__out n237__out 12.9001 W=100e-9
+rk267 n222__out n238__out 12.9066 W=100e-9
+rk268 out n240__out 501.01e-3 W=100e-9
+rk269 n240__out n241__out 165.45e-3 W=100e-9
+rk270 n225__out n226__out 37.5 W=100e-9
+rk271 n239__out n240__out 12.4 W=100e-9
+rk272 n242__out n243__out 37.868 W=100e-9
+rk273 n243__out n244__out 458.844e-3 W=100e-9
+rk274 n244__out n245__out 458.844e-3 W=100e-9
+rk275 n245__out n246__out 458.844e-3 W=100e-9
+rk276 n246__out n247__out 458.844e-3 W=100e-9
+rk277 n247__out n248__out 458.844e-3 W=100e-9
+rk278 n248__out out 467.845e-3 W=100e-9
+rk279 out n249__out 12.901 W=100e-9
+rk280 n243__out n250__out 12.9001 W=100e-9
+rk281 n243__out n251__out 432.925e-3 W=100e-9
+rk282 n251__out n253__out 506.598e-3 W=100e-9
+rk283 n253__out n254__out 168.672e-3 W=100e-9
+rk284 n244__out n255__out 12.9001 W=100e-9
+rk285 n244__out n256__out 37.868 W=100e-9
+rk286 n245__out n257__out 12.9001 W=100e-9
+rk287 n245__out n258__out 37.868 W=100e-9
+rk288 n246__out n259__out 12.9001 W=100e-9
+rk289 n246__out n260__out 37.868 W=100e-9
+rk290 n247__out n261__out 12.9001 W=100e-9
+rk291 n247__out n262__out 37.868 W=100e-9
+rk292 n248__out n263__out 12.9001 W=100e-9
+rk293 n248__out n264__out 37.868 W=100e-9
+rk294 out n265__out 37.8689 W=100e-9
+rk295 n251__out n267__out 374.499e-3 W=100e-9
+rk296 n267__out n268__out 65.57e-3 W=100e-9
+rk297 n252__out n253__out 12.4 W=100e-9
+rk298 n266__out n267__out 37.5 W=100e-9
+rk299 n269__out out 37.8689 W=100e-9
+rk300 out n270__out 461.401e-3 W=100e-9
+rk301 n270__out n271__out 458.844e-3 W=100e-9
+rk302 n271__out n272__out 458.844e-3 W=100e-9
+rk303 n272__out n273__out 458.844e-3 W=100e-9
+rk304 n273__out n274__out 458.844e-3 W=100e-9
+rk305 n274__out n275__out 458.844e-3 W=100e-9
+rk306 n275__out n276__out 439.368e-3 W=100e-9
+rk307 n276__out n277__out 37.8745 W=100e-9
+rk308 out n279__out 501.01e-3 W=100e-9
+rk309 n279__out n280__out 165.45e-3 W=100e-9
+rk310 n270__out n281__out 37.868 W=100e-9
+rk311 n270__out n282__out 12.9001 W=100e-9
+rk312 n271__out n283__out 37.868 W=100e-9
+rk313 n271__out n284__out 12.9001 W=100e-9
+rk314 n272__out n285__out 37.868 W=100e-9
+rk315 n272__out n286__out 12.9001 W=100e-9
+rk316 n273__out n287__out 37.868 W=100e-9
+rk317 n273__out n288__out 12.9001 W=100e-9
+rk318 n274__out n289__out 37.868 W=100e-9
+rk319 n274__out n290__out 12.9001 W=100e-9
+rk320 n275__out n291__out 37.868 W=100e-9
+rk321 n275__out n292__out 12.9001 W=100e-9
+rk322 n276__out n293__out 12.9066 W=100e-9
+rk323 n278__out n279__out 12.4 W=100e-9
+rk324 n1__vddio1 n2__vddio1 10.7754 W=125e-9
+rk325 n2__vddio1 vddio1 85.568e-3 W=125e-9
+rk326 vddio1 n3__vddio1 257.088e-3 W=125e-9
+rk327 n3__vddio1 n4__vddio1 342.656e-3 W=125e-9
+rk328 n4__vddio1 n5__vddio1 46.364e-3 W=125e-9
+rk329 n5__vddio1 n6__vddio1 296.293e-3 W=125e-9
+rk330 n6__vddio1 n7__vddio1 342.656e-3 W=125e-9
+rk331 n7__vddio1 n8__vddio1 342.656e-3 W=125e-9
+rk332 n8__vddio1 n9__vddio1 193.381e-3 W=125e-9
+rk333 n9__vddio1 n10__vddio1 63.11e-3 W=125e-9
+rk334 n10__vddio1 n11__vddio1 84.971e-3 W=125e-9
+rk335 n11__vddio1 vddio1 252.188e-3 W=125e-9
+rk336 vddio1 n12__vddio1 85.568e-3 W=125e-9
+rk338 n2__vddio1 n14__vddio1 12.8576 W=100e-9
+rk339 n3__vddio1 n15__vddio1 12.8576 W=100e-9
+rk340 n4__vddio1 n16__vddio1 12.8576 W=100e-9
+rk341 n6__vddio1 n17__vddio1 12.8576 W=100e-9
+rk342 n7__vddio1 n18__vddio1 12.8576 W=100e-9
+rk343 n8__vddio1 n19__vddio1 12.8576 W=100e-9
+rk344 n11__vddio1 n20__vddio1 12.8583 W=90e-9
+rk345 n12__vddio1 n21__vddio1 12.8576 W=100e-9
+rk346 n1__vddio1 n5__vddio1 3.75 W=100e-9
+rk347 n1__vddio1 n9__vddio1 3.75 W=100e-9
+rk348 n1__vss1 n2__vss1 7.80786 W=125e-9
+rk349 n2__vss1 vss1 152.192e-3 W=125e-9
+rk350 vss1 n3__vss1 188.946e-3 W=125e-9
+rk351 n3__vss1 n4__vss1 341.139e-3 W=125e-9
+rk352 n4__vss1 n5__vss1 77.458e-3 W=125e-9
+rk353 n5__vss1 n6__vss1 263.68e-3 W=125e-9
+rk354 n6__vss1 n7__vss1 341.139e-3 W=125e-9
+rk355 n7__vss1 n8__vss1 341.139e-3 W=125e-9
+rk356 n8__vss1 n9__vss1 224.476e-3 W=125e-9
+rk357 n9__vss1 n10__vss1 116.663e-3 W=125e-9
+rk358 n10__vss1 vss1 184.046e-3 W=125e-9
+rk359 vss1 n11__vss1 152.192e-3 W=125e-9
+rk360 n11__vss1 n12__vss1 96.464e-3 W=125e-9
+rk361 n2__vss1 n13__vss1 37.8899 W=100e-9
+rk362 n2__vss1 n14__vss1 37.8899 W=100e-9
+rk363 n3__vss1 n15__vss1 37.8899 W=100e-9
+rk364 n3__vss1 n16__vss1 37.8899 W=100e-9
+rk365 n4__vss1 n17__vss1 37.8899 W=100e-9
+rk366 n4__vss1 n18__vss1 37.8899 W=100e-9
+rk367 n6__vss1 n19__vss1 37.8899 W=100e-9
+rk368 n6__vss1 n20__vss1 37.8899 W=100e-9
+rk369 n7__vss1 n21__vss1 37.8899 W=100e-9
+rk370 n7__vss1 n22__vss1 37.8899 W=100e-9
+rk371 n8__vss1 n23__vss1 37.8899 W=100e-9
+rk372 n8__vss1 n24__vss1 37.8899 W=100e-9
+rk373 n10__vss1 n25__vss1 37.8899 W=100e-9
+rk374 n10__vss1 n26__vss1 37.8899 W=100e-9
+rk375 n11__vss1 n27__vss1 37.8899 W=100e-9
+rk376 n11__vss1 n28__vss1 37.8906 W=90e-9
+rk377 n1__vss1 n5__vss1 3.1 W=100e-9
+rk378 n1__vss1 n9__vss1 3.1 W=100e-9
+rk379 n22__vddio1 n23__vddio1 10.7746 W=125e-9
+rk380 n23__vddio1 vddio1 84.809e-3 W=125e-9
+rk381 vddio1 n24__vddio1 256.329e-3 W=125e-9
+rk382 n24__vddio1 n25__vddio1 341.139e-3 W=125e-9
+rk383 n25__vddio1 n26__vddio1 45.605e-3 W=125e-9
+rk384 n26__vddio1 n27__vddio1 295.534e-3 W=125e-9
+rk385 n27__vddio1 n28__vddio1 341.139e-3 W=125e-9
+rk386 n28__vddio1 n29__vddio1 341.139e-3 W=125e-9
+rk387 n29__vddio1 n30__vddio1 192.622e-3 W=125e-9
+rk388 n30__vddio1 n31__vddio1 63.11e-3 W=125e-9
+rk389 n31__vddio1 n32__vddio1 84.212e-3 W=125e-9
+rk390 n32__vddio1 vddio1 251.429e-3 W=125e-9
+rk391 vddio1 n33__vddio1 84.809e-3 W=125e-9
+rk393 n23__vddio1 n35__vddio1 12.893 W=100e-9
+rk394 n23__vddio1 n36__vddio1 12.893 W=100e-9
+rk395 n24__vddio1 n37__vddio1 12.893 W=100e-9
+rk396 n24__vddio1 n38__vddio1 12.893 W=100e-9
+rk397 n25__vddio1 n39__vddio1 12.893 W=100e-9
+rk398 n25__vddio1 n40__vddio1 12.893 W=100e-9
+rk399 n27__vddio1 n41__vddio1 12.893 W=100e-9
+rk400 n27__vddio1 n42__vddio1 12.893 W=100e-9
+rk401 n28__vddio1 n43__vddio1 12.893 W=100e-9
+rk402 n28__vddio1 n44__vddio1 12.893 W=100e-9
+rk403 n29__vddio1 n45__vddio1 12.893 W=100e-9
+rk404 n29__vddio1 n46__vddio1 12.893 W=100e-9
+rk405 n32__vddio1 n47__vddio1 12.8937 W=90e-9
+rk406 n32__vddio1 n48__vddio1 12.893 W=100e-9
+rk407 n33__vddio1 n49__vddio1 12.893 W=100e-9
+rk408 n33__vddio1 n50__vddio1 12.893 W=100e-9
+rk409 n22__vddio1 n26__vddio1 3.75 W=100e-9
+rk410 n22__vddio1 n30__vddio1 3.75 W=100e-9
+rk411 n29__vss1 n30__vss1 7.80786 W=125e-9
+rk412 n30__vss1 vss1 152.192e-3 W=125e-9
+rk413 vss1 n31__vss1 188.946e-3 W=125e-9
+rk414 n31__vss1 n32__vss1 341.139e-3 W=125e-9
+rk415 n32__vss1 n33__vss1 77.458e-3 W=125e-9
+rk416 n33__vss1 n34__vss1 263.68e-3 W=125e-9
+rk417 n34__vss1 n35__vss1 341.139e-3 W=125e-9
+rk418 n35__vss1 n36__vss1 341.139e-3 W=125e-9
+rk419 n36__vss1 n37__vss1 224.476e-3 W=125e-9
+rk420 n37__vss1 n38__vss1 116.663e-3 W=125e-9
+rk421 n38__vss1 vss1 164.444e-3 W=125e-9
+rk422 vss1 n39__vss1 171.794e-3 W=125e-9
+rk423 n39__vss1 n40__vss1 596.464e-3 W=125e-9
+rk424 n30__vss1 n41__vss1 37.8899 W=100e-9
+rk425 n30__vss1 n42__vss1 37.8899 W=100e-9
+rk426 n31__vss1 n43__vss1 37.8899 W=100e-9
+rk427 n31__vss1 n44__vss1 37.8899 W=100e-9
+rk428 n32__vss1 n45__vss1 37.8899 W=100e-9
+rk429 n32__vss1 n46__vss1 37.8899 W=100e-9
+rk430 n34__vss1 n47__vss1 37.8899 W=100e-9
+rk431 n34__vss1 n48__vss1 37.8899 W=100e-9
+rk432 n35__vss1 n49__vss1 37.8899 W=100e-9
+rk433 n35__vss1 n50__vss1 37.8899 W=100e-9
+rk434 n36__vss1 n51__vss1 37.8899 W=100e-9
+rk435 n36__vss1 n52__vss1 37.8899 W=100e-9
+rk436 n38__vss1 n53__vss1 37.8899 W=100e-9
+rk437 n38__vss1 n54__vss1 37.8899 W=100e-9
+rk438 n39__vss1 n55__vss1 37.8899 W=100e-9
+rk439 n39__vss1 n56__vss1 37.8906 W=90e-9
+rk440 n29__vss1 n33__vss1 3.1 W=100e-9
+rk441 n29__vss1 n37__vss1 3.1 W=100e-9
+rk442 n51__vddio1 n52__vddio1 10.7746 W=125e-9
+rk443 n52__vddio1 vddio1 84.809e-3 W=125e-9
+rk444 vddio1 n53__vddio1 256.329e-3 W=125e-9
+rk445 n53__vddio1 n54__vddio1 341.139e-3 W=125e-9
+rk446 n54__vddio1 n55__vddio1 45.605e-3 W=125e-9
+rk447 n55__vddio1 n56__vddio1 295.534e-3 W=125e-9
+rk448 n56__vddio1 n57__vddio1 341.139e-3 W=125e-9
+rk449 n57__vddio1 n58__vddio1 341.139e-3 W=125e-9
+rk450 n58__vddio1 n59__vddio1 192.622e-3 W=125e-9
+rk451 n59__vddio1 n60__vddio1 63.11e-3 W=125e-9
+rk452 n60__vddio1 n61__vddio1 84.212e-3 W=125e-9
+rk453 n61__vddio1 vddio1 251.429e-3 W=125e-9
+rk454 vddio1 n62__vddio1 84.809e-3 W=125e-9
+rk456 n52__vddio1 n64__vddio1 12.893 W=100e-9
+rk457 n52__vddio1 n65__vddio1 12.893 W=100e-9
+rk458 n53__vddio1 n66__vddio1 12.893 W=100e-9
+rk459 n53__vddio1 n67__vddio1 12.893 W=100e-9
+rk460 n54__vddio1 n68__vddio1 12.893 W=100e-9
+rk461 n54__vddio1 n69__vddio1 12.893 W=100e-9
+rk462 n56__vddio1 n70__vddio1 12.893 W=100e-9
+rk463 n56__vddio1 n71__vddio1 12.893 W=100e-9
+rk464 n57__vddio1 n72__vddio1 12.893 W=100e-9
+rk465 n57__vddio1 n73__vddio1 12.893 W=100e-9
+rk466 n58__vddio1 n74__vddio1 12.893 W=100e-9
+rk467 n58__vddio1 n75__vddio1 12.893 W=100e-9
+rk468 n61__vddio1 n76__vddio1 12.8937 W=90e-9
+rk469 n61__vddio1 n77__vddio1 12.893 W=100e-9
+rk470 n62__vddio1 n78__vddio1 12.893 W=100e-9
+rk471 n62__vddio1 n79__vddio1 12.893 W=100e-9
+rk472 n51__vddio1 n55__vddio1 3.75 W=100e-9
+rk473 n51__vddio1 n59__vddio1 3.75 W=100e-9
+rk474 n57__vss1 n58__vss1 7.80786 W=125e-9
+rk475 n58__vss1 vss1 169.344e-3 W=125e-9
+rk476 vss1 n59__vss1 171.794e-3 W=125e-9
+rk477 n59__vss1 n60__vss1 341.139e-3 W=125e-9
+rk478 n60__vss1 n61__vss1 77.458e-3 W=125e-9
+rk479 n61__vss1 n62__vss1 263.68e-3 W=125e-9
+rk480 n62__vss1 n63__vss1 341.139e-3 W=125e-9
+rk481 n63__vss1 n64__vss1 341.139e-3 W=125e-9
+rk482 n64__vss1 n65__vss1 224.476e-3 W=125e-9
+rk483 n65__vss1 n66__vss1 116.663e-3 W=125e-9
+rk484 n66__vss1 vss1 171.794e-3 W=125e-9
+rk485 vss1 n67__vss1 164.444e-3 W=125e-9
+rk486 n67__vss1 n68__vss1 596.464e-3 W=125e-9
+rk487 n58__vss1 n69__vss1 37.8899 W=100e-9
+rk488 n58__vss1 n70__vss1 37.8899 W=100e-9
+rk489 n59__vss1 n71__vss1 37.8899 W=100e-9
+rk490 n59__vss1 n72__vss1 37.8899 W=100e-9
+rk491 n60__vss1 n73__vss1 37.8899 W=100e-9
+rk492 n60__vss1 n74__vss1 37.8899 W=100e-9
+rk493 n62__vss1 n75__vss1 37.8899 W=100e-9
+rk494 n62__vss1 n76__vss1 37.8899 W=100e-9
+rk495 n63__vss1 n77__vss1 37.8899 W=100e-9
+rk496 n63__vss1 n78__vss1 37.8899 W=100e-9
+rk497 n64__vss1 n79__vss1 37.8899 W=100e-9
+rk498 n64__vss1 n80__vss1 37.8899 W=100e-9
+rk499 n66__vss1 n81__vss1 37.8899 W=100e-9
+rk500 n66__vss1 n82__vss1 37.8899 W=100e-9
+rk501 n67__vss1 n83__vss1 37.8899 W=100e-9
+rk502 n67__vss1 n84__vss1 37.8906 W=90e-9
+rk503 n57__vss1 n61__vss1 3.1 W=100e-9
+rk504 n57__vss1 n65__vss1 3.1 W=100e-9
+rk505 n80__vddio1 n81__vddio1 10.7746 W=125e-9
+rk506 n81__vddio1 vddio1 84.809e-3 W=125e-9
+rk507 vddio1 n82__vddio1 256.329e-3 W=125e-9
+rk508 n82__vddio1 n83__vddio1 341.139e-3 W=125e-9
+rk509 n83__vddio1 n84__vddio1 45.605e-3 W=125e-9
+rk510 n84__vddio1 n85__vddio1 295.534e-3 W=125e-9
+rk511 n85__vddio1 n86__vddio1 341.139e-3 W=125e-9
+rk512 n86__vddio1 n87__vddio1 341.139e-3 W=125e-9
+rk513 n87__vddio1 n88__vddio1 192.622e-3 W=125e-9
+rk514 n88__vddio1 n89__vddio1 63.11e-3 W=125e-9
+rk515 n89__vddio1 n90__vddio1 84.212e-3 W=125e-9
+rk516 n90__vddio1 vddio1 251.429e-3 W=125e-9
+rk517 vddio1 n91__vddio1 84.809e-3 W=125e-9
+rk519 n81__vddio1 n93__vddio1 12.893 W=100e-9
+rk520 n81__vddio1 n94__vddio1 12.893 W=100e-9
+rk521 n82__vddio1 n95__vddio1 12.893 W=100e-9
+rk522 n82__vddio1 n96__vddio1 12.893 W=100e-9
+rk523 n83__vddio1 n97__vddio1 12.893 W=100e-9
+rk524 n83__vddio1 n98__vddio1 12.893 W=100e-9
+rk525 n85__vddio1 n99__vddio1 12.893 W=100e-9
+rk526 n85__vddio1 n100__vddio1 12.893 W=100e-9
+rk527 n86__vddio1 n101__vddio1 12.893 W=100e-9
+rk528 n86__vddio1 n102__vddio1 12.893 W=100e-9
+rk529 n87__vddio1 n103__vddio1 12.893 W=100e-9
+rk530 n87__vddio1 n104__vddio1 12.893 W=100e-9
+rk531 n90__vddio1 n105__vddio1 12.8937 W=90e-9
+rk532 n90__vddio1 n106__vddio1 12.893 W=100e-9
+rk533 n91__vddio1 n107__vddio1 12.893 W=100e-9
+rk534 n91__vddio1 n108__vddio1 12.893 W=100e-9
+rk535 n80__vddio1 n84__vddio1 3.75 W=100e-9
+rk536 n80__vddio1 n88__vddio1 3.75 W=100e-9
+rk537 n85__vss1 n86__vss1 7.80786 W=125e-9
+rk538 n86__vss1 vss1 169.344e-3 W=125e-9
+rk539 vss1 n87__vss1 171.794e-3 W=125e-9
+rk540 n87__vss1 n88__vss1 341.139e-3 W=125e-9
+rk541 n88__vss1 n89__vss1 77.458e-3 W=125e-9
+rk542 n89__vss1 n90__vss1 263.68e-3 W=125e-9
+rk543 n90__vss1 n91__vss1 341.139e-3 W=125e-9
+rk544 n91__vss1 n92__vss1 341.139e-3 W=125e-9
+rk545 n92__vss1 n93__vss1 224.476e-3 W=125e-9
+rk546 n93__vss1 n94__vss1 116.663e-3 W=125e-9
+rk547 n94__vss1 vss1 176.695e-3 W=125e-9
+rk548 vss1 n95__vss1 159.543e-3 W=125e-9
+rk549 n95__vss1 n96__vss1 596.464e-3 W=125e-9
+rk550 n86__vss1 n97__vss1 37.8899 W=100e-9
+rk551 n86__vss1 n98__vss1 37.8899 W=100e-9
+rk552 n87__vss1 n99__vss1 37.8899 W=100e-9
+rk553 n87__vss1 n100__vss1 37.8899 W=100e-9
+rk554 n88__vss1 n101__vss1 37.8899 W=100e-9
+rk555 n88__vss1 n102__vss1 37.8899 W=100e-9
+rk556 n90__vss1 n103__vss1 37.8899 W=100e-9
+rk557 n90__vss1 n104__vss1 37.8899 W=100e-9
+rk558 n91__vss1 n105__vss1 37.8899 W=100e-9
+rk559 n91__vss1 n106__vss1 37.8899 W=100e-9
+rk560 n92__vss1 n107__vss1 37.8899 W=100e-9
+rk561 n92__vss1 n108__vss1 37.8899 W=100e-9
+rk562 n94__vss1 n109__vss1 37.8899 W=100e-9
+rk563 n94__vss1 n110__vss1 37.8899 W=100e-9
+rk564 n95__vss1 n111__vss1 37.8899 W=100e-9
+rk565 n95__vss1 n112__vss1 37.8906 W=90e-9
+rk566 n85__vss1 n89__vss1 3.1 W=100e-9
+rk567 n85__vss1 n93__vss1 3.1 W=100e-9
+rk568 n109__vddio1 n110__vddio1 10.7746 W=125e-9
+rk569 n110__vddio1 vddio1 84.809e-3 W=125e-9
+rk570 vddio1 n111__vddio1 256.329e-3 W=125e-9
+rk571 n111__vddio1 n112__vddio1 341.139e-3 W=125e-9
+rk572 n112__vddio1 n113__vddio1 45.605e-3 W=125e-9
+rk573 n113__vddio1 n114__vddio1 295.534e-3 W=125e-9
+rk574 n114__vddio1 n115__vddio1 341.139e-3 W=125e-9
+rk575 n115__vddio1 n116__vddio1 341.139e-3 W=125e-9
+rk576 n116__vddio1 n117__vddio1 192.622e-3 W=125e-9
+rk577 n117__vddio1 n118__vddio1 63.11e-3 W=125e-9
+rk578 n118__vddio1 n119__vddio1 84.212e-3 W=125e-9
+rk579 n119__vddio1 vddio1 251.429e-3 W=125e-9
+rk580 vddio1 n120__vddio1 84.809e-3 W=125e-9
+rk582 n110__vddio1 n122__vddio1 12.893 W=100e-9
+rk583 n110__vddio1 n123__vddio1 12.893 W=100e-9
+rk584 n111__vddio1 n124__vddio1 12.893 W=100e-9
+rk585 n111__vddio1 n125__vddio1 12.893 W=100e-9
+rk586 n112__vddio1 n126__vddio1 12.893 W=100e-9
+rk587 n112__vddio1 n127__vddio1 12.893 W=100e-9
+rk588 n114__vddio1 n128__vddio1 12.893 W=100e-9
+rk589 n114__vddio1 n129__vddio1 12.893 W=100e-9
+rk590 n115__vddio1 n130__vddio1 12.893 W=100e-9
+rk591 n115__vddio1 n131__vddio1 12.893 W=100e-9
+rk592 n116__vddio1 n132__vddio1 12.893 W=100e-9
+rk593 n116__vddio1 n133__vddio1 12.893 W=100e-9
+rk594 n119__vddio1 n134__vddio1 12.8937 W=90e-9
+rk595 n119__vddio1 n135__vddio1 12.893 W=100e-9
+rk596 n120__vddio1 n136__vddio1 12.893 W=100e-9
+rk597 n120__vddio1 n137__vddio1 12.893 W=100e-9
+rk598 n109__vddio1 n113__vddio1 3.75 W=100e-9
+rk599 n109__vddio1 n117__vddio1 3.75 W=100e-9
+rk600 n113__vss1 n114__vss1 7.80786 W=125e-9
+rk601 n114__vss1 vss1 152.192e-3 W=125e-9
+rk602 vss1 n115__vss1 188.946e-3 W=125e-9
+rk603 n115__vss1 n116__vss1 341.139e-3 W=125e-9
+rk604 n116__vss1 n117__vss1 77.458e-3 W=125e-9
+rk605 n117__vss1 n118__vss1 263.68e-3 W=125e-9
+rk606 n118__vss1 n119__vss1 341.139e-3 W=125e-9
+rk607 n119__vss1 n120__vss1 341.139e-3 W=125e-9
+rk608 n120__vss1 n121__vss1 224.476e-3 W=125e-9
+rk609 n121__vss1 n122__vss1 116.663e-3 W=125e-9
+rk610 n122__vss1 vss1 184.046e-3 W=125e-9
+rk611 vss1 n123__vss1 152.192e-3 W=125e-9
+rk612 n123__vss1 n124__vss1 596.464e-3 W=125e-9
+rk613 n114__vss1 n125__vss1 37.8899 W=100e-9
+rk614 n114__vss1 n126__vss1 37.8899 W=100e-9
+rk615 n115__vss1 n127__vss1 37.8899 W=100e-9
+rk616 n115__vss1 n128__vss1 37.8899 W=100e-9
+rk617 n116__vss1 n129__vss1 37.8899 W=100e-9
+rk618 n116__vss1 n130__vss1 37.8899 W=100e-9
+rk619 n118__vss1 n131__vss1 37.8899 W=100e-9
+rk620 n118__vss1 n132__vss1 37.8899 W=100e-9
+rk621 n119__vss1 n133__vss1 37.8899 W=100e-9
+rk622 n119__vss1 n134__vss1 37.8899 W=100e-9
+rk623 n120__vss1 n135__vss1 37.8899 W=100e-9
+rk624 n120__vss1 n136__vss1 37.8899 W=100e-9
+rk625 n122__vss1 n137__vss1 37.8899 W=100e-9
+rk626 n122__vss1 n138__vss1 37.8899 W=100e-9
+rk627 n123__vss1 n139__vss1 37.8899 W=100e-9
+rk628 n123__vss1 n140__vss1 37.8906 W=90e-9
+rk629 n113__vss1 n117__vss1 3.1 W=100e-9
+rk630 n113__vss1 n121__vss1 3.1 W=100e-9
+rk631 n138__vddio1 n139__vddio1 10.7746 W=125e-9
+rk632 n139__vddio1 vddio1 84.809e-3 W=125e-9
+rk633 vddio1 n140__vddio1 256.329e-3 W=125e-9
+rk634 n140__vddio1 n141__vddio1 341.139e-3 W=125e-9
+rk635 n141__vddio1 n142__vddio1 45.605e-3 W=125e-9
+rk636 n142__vddio1 n143__vddio1 295.534e-3 W=125e-9
+rk637 n143__vddio1 n144__vddio1 341.139e-3 W=125e-9
+rk638 n144__vddio1 n145__vddio1 341.139e-3 W=125e-9
+rk639 n145__vddio1 n146__vddio1 192.622e-3 W=125e-9
+rk640 n146__vddio1 n147__vddio1 63.11e-3 W=125e-9
+rk641 n147__vddio1 n148__vddio1 84.212e-3 W=125e-9
+rk642 n148__vddio1 vddio1 251.429e-3 W=125e-9
+rk643 vddio1 n149__vddio1 84.809e-3 W=125e-9
+rk645 n139__vddio1 n151__vddio1 12.893 W=100e-9
+rk646 n139__vddio1 n152__vddio1 12.893 W=100e-9
+rk647 n140__vddio1 n153__vddio1 12.893 W=100e-9
+rk648 n140__vddio1 n154__vddio1 12.893 W=100e-9
+rk649 n141__vddio1 n155__vddio1 12.893 W=100e-9
+rk650 n141__vddio1 n156__vddio1 12.893 W=100e-9
+rk651 n143__vddio1 n157__vddio1 12.893 W=100e-9
+rk652 n143__vddio1 n158__vddio1 12.893 W=100e-9
+rk653 n144__vddio1 n159__vddio1 12.893 W=100e-9
+rk654 n144__vddio1 n160__vddio1 12.893 W=100e-9
+rk655 n145__vddio1 n161__vddio1 12.893 W=100e-9
+rk656 n145__vddio1 n162__vddio1 12.893 W=100e-9
+rk657 n148__vddio1 n163__vddio1 12.8937 W=90e-9
+rk658 n148__vddio1 n164__vddio1 12.893 W=100e-9
+rk659 n149__vddio1 n165__vddio1 12.893 W=100e-9
+rk660 n149__vddio1 n166__vddio1 12.893 W=100e-9
+rk661 n138__vddio1 n142__vddio1 3.75 W=100e-9
+rk662 n138__vddio1 n146__vddio1 3.75 W=100e-9
+rk663 n141__vss1 n142__vss1 7.80861 W=125e-9
+rk664 n142__vss1 vss1 152.951e-3 W=125e-9
+rk665 vss1 n143__vss1 189.705e-3 W=125e-9
+rk666 n143__vss1 n144__vss1 342.656e-3 W=125e-9
+rk667 n144__vss1 n145__vss1 78.217e-3 W=125e-9
+rk668 n145__vss1 n146__vss1 264.439e-3 W=125e-9
+rk669 n146__vss1 n147__vss1 342.656e-3 W=125e-9
+rk670 n147__vss1 n148__vss1 342.656e-3 W=125e-9
+rk671 n148__vss1 n149__vss1 225.234e-3 W=125e-9
+rk672 n149__vss1 n150__vss1 117.422e-3 W=125e-9
+rk673 n150__vss1 vss1 184.805e-3 W=125e-9
+rk674 vss1 n151__vss1 152.951e-3 W=125e-9
+rk675 n151__vss1 n152__vss1 97.223e-3 W=125e-9
+rk676 n142__vss1 n153__vss1 37.8545 W=100e-9
+rk677 n143__vss1 n154__vss1 37.8545 W=100e-9
+rk678 n144__vss1 n155__vss1 37.8545 W=100e-9
+rk679 n146__vss1 n156__vss1 37.8545 W=100e-9
+rk680 n147__vss1 n157__vss1 37.8545 W=100e-9
+rk681 n148__vss1 n158__vss1 37.8545 W=100e-9
+rk682 n150__vss1 n159__vss1 37.8545 W=100e-9
+rk683 n151__vss1 n160__vss1 37.8552 W=90e-9
+rk684 n141__vss1 n145__vss1 3.1 W=100e-9
+rk685 n141__vss1 n149__vss1 3.1 W=100e-9
+rl1 n1__in n2__in 45.4675 W=144e-9
+rl2 n2__in n3__in 27.6734 W=144e-9
+rl3 n3__in n4__in 31.6429 W=144e-9
+rl4 n4__in n5__in 31.6429 W=144e-9
+rl5 n5__in n6__in 31.6429 W=144e-9
+rl6 n6__in n7__in 31.6429 W=144e-9
+rl7 n7__in n8__in 31.6429 W=144e-9
+rl8 n8__in n9__in 31.6429 W=144e-9
+rl9 n9__in n10__in 31.6429 W=144e-9
+rl10 n10__in n11__in 31.6429 W=144e-9
+rl11 n11__in n12__in 31.6429 W=144e-9
+rl12 n12__in n13__in 31.6429 W=144e-9
+rl13 n13__in n14__in 31.6429 W=144e-9
+rl14 n14__in n15__in 31.6429 W=144e-9
+rl15 n15__in n16__in 33.1301 W=144e-9
+rl16 n16__in n17__in 10.2945 W=114e-9
+rl17 n2__in n18__in 41.8217 W=144e-9
+rl18 n3__in n19__in 40.3006 W=144e-9
+rl19 n3__in n20__in 43.9464 W=144e-9
+rl20 n4__in n21__in 40.3006 W=144e-9
+rl21 n4__in n22__in 43.9464 W=144e-9
+rl22 n5__in n23__in 40.3006 W=144e-9
+rl23 n5__in n24__in 43.9464 W=144e-9
+rl24 n6__in n25__in 40.3006 W=144e-9
+rl25 n6__in n26__in 43.9464 W=144e-9
+rl26 n7__in n27__in 40.3006 W=144e-9
+rl27 n7__in n28__in 43.9464 W=144e-9
+rl28 n8__in n29__in 40.3006 W=144e-9
+rl29 n8__in n30__in 43.9464 W=144e-9
+rl30 n9__in n31__in 40.3006 W=144e-9
+rl31 n9__in n32__in 43.9464 W=144e-9
+rl32 n10__in n33__in 40.3006 W=144e-9
+rl33 n10__in n34__in 43.9464 W=144e-9
+rl34 n11__in n35__in 40.3006 W=144e-9
+rl35 n11__in n36__in 43.9464 W=144e-9
+rl36 n12__in n37__in 40.3006 W=144e-9
+rl37 n12__in n38__in 43.9464 W=144e-9
+rl38 n13__in n39__in 40.3006 W=144e-9
+rl39 n13__in n40__in 43.9464 W=144e-9
+rl40 n14__in n41__in 40.3006 W=144e-9
+rl41 n14__in n42__in 43.9464 W=144e-9
+rl42 n15__in n43__in 40.3006 W=144e-9
+rl43 n15__in n44__in 43.9464 W=144e-9
+rl44 n16__in n45__in 40.3006 W=144e-9
+rl45 n16__in n46__in 43.9464 W=144e-9
+rl46 n47__in n48__in 41.8217 W=144e-9
+rl47 n48__in n49__in 27.6734 W=144e-9
+rl48 n49__in n50__in 31.6429 W=144e-9
+rl49 n50__in n51__in 31.6429 W=144e-9
+rl50 n51__in n52__in 31.6429 W=144e-9
+rl51 n52__in n53__in 31.6429 W=144e-9
+rl52 n53__in n54__in 31.6429 W=144e-9
+rl53 n54__in n55__in 31.6429 W=144e-9
+rl54 n55__in n56__in 31.6429 W=144e-9
+rl55 n56__in n57__in 31.6429 W=144e-9
+rl56 n57__in n58__in 31.6429 W=144e-9
+rl57 n58__in n59__in 31.6429 W=144e-9
+rl58 n59__in n60__in 31.6429 W=144e-9
+rl59 n60__in n61__in 31.6429 W=144e-9
+rl60 n61__in n62__in 33.1301 W=144e-9
+rl61 n62__in n63__in 10.2945 W=114e-9
+rl62 n48__in n64__in 45.4675 W=144e-9
+rl63 n49__in n65__in 43.9464 W=144e-9
+rl64 n49__in n66__in 40.3006 W=144e-9
+rl65 n50__in n67__in 43.9464 W=144e-9
+rl66 n50__in n68__in 40.3006 W=144e-9
+rl67 n51__in n69__in 43.9464 W=144e-9
+rl68 n51__in n70__in 40.3006 W=144e-9
+rl69 n52__in n71__in 43.9464 W=144e-9
+rl70 n52__in n72__in 40.3006 W=144e-9
+rl71 n53__in n73__in 43.9464 W=144e-9
+rl72 n53__in n74__in 40.3006 W=144e-9
+rl73 n54__in n75__in 43.9464 W=144e-9
+rl74 n54__in n76__in 40.3006 W=144e-9
+rl75 n55__in n77__in 43.9464 W=144e-9
+rl76 n55__in n78__in 40.3006 W=144e-9
+rl77 n56__in n79__in 43.9464 W=144e-9
+rl78 n56__in n80__in 40.3006 W=144e-9
+rl79 n57__in n81__in 43.9464 W=144e-9
+rl80 n57__in n82__in 40.3006 W=144e-9
+rl81 n58__in n83__in 43.9464 W=144e-9
+rl82 n58__in n84__in 40.3006 W=144e-9
+rl83 n59__in n85__in 43.9464 W=144e-9
+rl84 n59__in n86__in 40.3006 W=144e-9
+rl85 n60__in n87__in 43.9464 W=144e-9
+rl86 n60__in n88__in 40.3006 W=144e-9
+rl87 n61__in n89__in 43.9464 W=144e-9
+rl88 n61__in n90__in 40.3006 W=144e-9
+rl89 n62__in n91__in 43.9464 W=144e-9
+rl90 n62__in n92__in 40.3006 W=144e-9
+rl91 n93__in n94__in 45.4675 W=144e-9
+rl92 n94__in n95__in 27.6734 W=144e-9
+rl93 n95__in n96__in 31.6429 W=144e-9
+rl94 n96__in n97__in 31.6429 W=144e-9
+rl95 n97__in n98__in 31.6429 W=144e-9
+rl96 n98__in n99__in 31.6429 W=144e-9
+rl97 n99__in n100__in 31.6429 W=144e-9
+rl98 n100__in n101__in 31.6429 W=144e-9
+rl99 n101__in n102__in 31.6429 W=144e-9
+rl100 n102__in n103__in 31.6429 W=144e-9
+rl101 n103__in n104__in 31.6429 W=144e-9
+rl102 n104__in n105__in 31.6429 W=144e-9
+rl103 n105__in n106__in 31.6429 W=144e-9
+rl104 n106__in n107__in 31.6429 W=144e-9
+rl105 n107__in n108__in 33.1301 W=144e-9
+rl106 n108__in n109__in 10.2945 W=114e-9
+rl107 n94__in n110__in 41.8217 W=144e-9
+rl108 n95__in n111__in 40.3006 W=144e-9
+rl109 n95__in n112__in 43.9464 W=144e-9
+rl110 n96__in n113__in 40.3006 W=144e-9
+rl111 n96__in n114__in 43.9464 W=144e-9
+rl112 n97__in n115__in 40.3006 W=144e-9
+rl113 n97__in n116__in 43.9464 W=144e-9
+rl114 n98__in n117__in 40.3006 W=144e-9
+rl115 n98__in n118__in 43.9464 W=144e-9
+rl116 n99__in n119__in 40.3006 W=144e-9
+rl117 n99__in n120__in 43.9464 W=144e-9
+rl118 n100__in n121__in 40.3006 W=144e-9
+rl119 n100__in n122__in 43.9464 W=144e-9
+rl120 n101__in n123__in 40.3006 W=144e-9
+rl121 n101__in n124__in 43.9464 W=144e-9
+rl122 n102__in n125__in 40.3006 W=144e-9
+rl123 n102__in n126__in 43.9464 W=144e-9
+rl124 n103__in n127__in 40.3006 W=144e-9
+rl125 n103__in n128__in 43.9464 W=144e-9
+rl126 n104__in n129__in 40.3006 W=144e-9
+rl127 n104__in n130__in 43.9464 W=144e-9
+rl128 n105__in n131__in 40.3006 W=144e-9
+rl129 n105__in n132__in 43.9464 W=144e-9
+rl130 n106__in n133__in 40.3006 W=144e-9
+rl131 n106__in n134__in 43.9464 W=144e-9
+rl132 n107__in n135__in 40.3006 W=144e-9
+rl133 n107__in n136__in 43.9464 W=144e-9
+rl134 n108__in n137__in 40.3006 W=144e-9
+rl135 n108__in n138__in 43.9464 W=144e-9
+rl136 n139__in n140__in 41.8217 W=144e-9
+rl137 n140__in n141__in 27.6734 W=144e-9
+rl138 n141__in n142__in 31.6429 W=144e-9
+rl139 n142__in n143__in 31.6429 W=144e-9
+rl140 n143__in n144__in 31.6429 W=144e-9
+rl141 n144__in n145__in 31.6429 W=144e-9
+rl142 n145__in n146__in 31.6429 W=144e-9
+rl143 n146__in n147__in 31.6429 W=144e-9
+rl144 n147__in n148__in 31.6429 W=144e-9
+rl145 n148__in n149__in 31.6429 W=144e-9
+rl146 n149__in n150__in 31.6429 W=144e-9
+rl147 n150__in n151__in 31.6429 W=144e-9
+rl148 n151__in n152__in 31.6429 W=144e-9
+rl149 n152__in n153__in 31.6429 W=144e-9
+rl150 n153__in n154__in 33.1301 W=144e-9
+rl151 n154__in n155__in 10.2945 W=114e-9
+rl152 n140__in n156__in 45.4675 W=144e-9
+rl153 n141__in n157__in 43.9464 W=144e-9
+rl154 n141__in n158__in 40.3006 W=144e-9
+rl155 n142__in n159__in 43.9464 W=144e-9
+rl156 n142__in n160__in 40.3006 W=144e-9
+rl157 n143__in n161__in 43.9464 W=144e-9
+rl158 n143__in n162__in 40.3006 W=144e-9
+rl159 n144__in n163__in 43.9464 W=144e-9
+rl160 n144__in n164__in 40.3006 W=144e-9
+rl161 n145__in n165__in 43.9464 W=144e-9
+rl162 n145__in n166__in 40.3006 W=144e-9
+rl163 n146__in n167__in 43.9464 W=144e-9
+rl164 n146__in n168__in 40.3006 W=144e-9
+rl165 n147__in n169__in 43.9464 W=144e-9
+rl166 n147__in n170__in 40.3006 W=144e-9
+rl167 n148__in n171__in 43.9464 W=144e-9
+rl168 n148__in n172__in 40.3006 W=144e-9
+rl169 n149__in n173__in 43.9464 W=144e-9
+rl170 n149__in n174__in 40.3006 W=144e-9
+rl171 n150__in n175__in 43.9464 W=144e-9
+rl172 n150__in n176__in 40.3006 W=144e-9
+rl173 n151__in n177__in 43.9464 W=144e-9
+rl174 n151__in n178__in 40.3006 W=144e-9
+rl175 n152__in n179__in 43.9464 W=144e-9
+rl176 n152__in n180__in 40.3006 W=144e-9
+rl177 n153__in n181__in 43.9464 W=144e-9
+rl178 n153__in n182__in 40.3006 W=144e-9
+rl179 n154__in n183__in 43.9464 W=144e-9
+rl180 n154__in n184__in 40.3006 W=144e-9
+rl181 n185__in n186__in 45.4675 W=144e-9
+rl182 n186__in n187__in 27.6734 W=144e-9
+rl183 n187__in n188__in 31.6429 W=144e-9
+rl184 n188__in n189__in 31.6429 W=144e-9
+rl185 n189__in n190__in 31.6429 W=144e-9
+rl186 n190__in n191__in 31.6429 W=144e-9
+rl187 n191__in n192__in 31.6429 W=144e-9
+rl188 n192__in n193__in 31.6429 W=144e-9
+rl189 n193__in n194__in 31.6429 W=144e-9
+rl190 n194__in n195__in 31.6429 W=144e-9
+rl191 n195__in n196__in 31.6429 W=144e-9
+rl192 n196__in n197__in 31.6429 W=144e-9
+rl193 n197__in n198__in 31.6429 W=144e-9
+rl194 n198__in n199__in 31.6429 W=144e-9
+rl195 n199__in n200__in 33.1301 W=144e-9
+rl196 n200__in n201__in 10.2945 W=114e-9
+rl197 n186__in n202__in 41.8217 W=144e-9
+rl198 n187__in n203__in 40.3006 W=144e-9
+rl199 n187__in n204__in 43.9464 W=144e-9
+rl200 n188__in n205__in 40.3006 W=144e-9
+rl201 n188__in n206__in 43.9464 W=144e-9
+rl202 n189__in n207__in 40.3006 W=144e-9
+rl203 n189__in n208__in 43.9464 W=144e-9
+rl204 n190__in n209__in 40.3006 W=144e-9
+rl205 n190__in n210__in 43.9464 W=144e-9
+rl206 n191__in n211__in 40.3006 W=144e-9
+rl207 n191__in n212__in 43.9464 W=144e-9
+rl208 n192__in n213__in 40.3006 W=144e-9
+rl209 n192__in n214__in 43.9464 W=144e-9
+rl210 n193__in n215__in 40.3006 W=144e-9
+rl211 n193__in n216__in 43.9464 W=144e-9
+rl212 n194__in n217__in 40.3006 W=144e-9
+rl213 n194__in n218__in 43.9464 W=144e-9
+rl214 n195__in n219__in 40.3006 W=144e-9
+rl215 n195__in n220__in 43.9464 W=144e-9
+rl216 n196__in n221__in 40.3006 W=144e-9
+rl217 n196__in n222__in 43.9464 W=144e-9
+rl218 n197__in n223__in 40.3006 W=144e-9
+rl219 n197__in n224__in 43.9464 W=144e-9
+rl220 n198__in n225__in 40.3006 W=144e-9
+rl221 n198__in n226__in 43.9464 W=144e-9
+rl222 n199__in n227__in 40.3006 W=144e-9
+rl223 n199__in n228__in 43.9464 W=144e-9
+rl224 n200__in n229__in 40.3006 W=144e-9
+rl225 n200__in n230__in 43.9464 W=144e-9
+rl226 n231__in n232__in 41.8217 W=144e-9
+rl227 n232__in n233__in 27.6734 W=144e-9
+rl228 n233__in n234__in 31.6429 W=144e-9
+rl229 n234__in n235__in 31.6429 W=144e-9
+rl230 n235__in n236__in 31.6429 W=144e-9
+rl231 n236__in n237__in 31.6429 W=144e-9
+rl232 n237__in n238__in 31.6429 W=144e-9
+rl233 n238__in n239__in 31.6429 W=144e-9
+rl234 n239__in n240__in 31.6429 W=144e-9
+rl235 n240__in n241__in 31.6429 W=144e-9
+rl236 n241__in n242__in 31.6429 W=144e-9
+rl237 n242__in n243__in 31.6429 W=144e-9
+rl238 n243__in n244__in 31.6429 W=144e-9
+rl239 n244__in n245__in 31.6429 W=144e-9
+rl240 n245__in n246__in 33.1301 W=144e-9
+rl241 n246__in n247__in 10.2945 W=114e-9
+rl242 n232__in n248__in 45.4675 W=144e-9
+rl243 n233__in n249__in 43.9464 W=144e-9
+rl244 n233__in n250__in 40.3006 W=144e-9
+rl245 n234__in n251__in 43.9464 W=144e-9
+rl246 n234__in n252__in 40.3006 W=144e-9
+rl247 n235__in n253__in 43.9464 W=144e-9
+rl248 n235__in n254__in 40.3006 W=144e-9
+rl249 n236__in n255__in 43.9464 W=144e-9
+rl250 n236__in n256__in 40.3006 W=144e-9
+rl251 n237__in n257__in 43.9464 W=144e-9
+rl252 n237__in n258__in 40.3006 W=144e-9
+rl253 n238__in n259__in 43.9464 W=144e-9
+rl254 n238__in n260__in 40.3006 W=144e-9
+rl255 n239__in n261__in 43.9464 W=144e-9
+rl256 n239__in n262__in 40.3006 W=144e-9
+rl257 n240__in n263__in 43.9464 W=144e-9
+rl258 n240__in n264__in 40.3006 W=144e-9
+rl259 n241__in n265__in 43.9464 W=144e-9
+rl260 n241__in n266__in 40.3006 W=144e-9
+rl261 n242__in n267__in 43.9464 W=144e-9
+rl262 n242__in n268__in 40.3006 W=144e-9
+rl263 n243__in n269__in 43.9464 W=144e-9
+rl264 n243__in n270__in 40.3006 W=144e-9
+rl265 n244__in n271__in 43.9464 W=144e-9
+rl266 n244__in n272__in 40.3006 W=144e-9
+rl267 n245__in n273__in 43.9464 W=144e-9
+rl268 n245__in n274__in 40.3006 W=144e-9
+rl269 n246__in n275__in 43.9464 W=144e-9
+rl270 n246__in n276__in 40.3006 W=144e-9
+rl271 n277__in n278__in 45.4675 W=144e-9
+rl272 n278__in n279__in 27.6734 W=144e-9
+rl273 n279__in n280__in 31.6429 W=144e-9
+rl274 n280__in n281__in 31.6429 W=144e-9
+rl275 n281__in n282__in 31.6429 W=144e-9
+rl276 n282__in n283__in 31.6429 W=144e-9
+rl277 n283__in n284__in 31.6429 W=144e-9
+rl278 n284__in n285__in 31.6429 W=144e-9
+rl279 n285__in n286__in 31.6429 W=144e-9
+rl280 n286__in n287__in 31.6429 W=144e-9
+rl281 n287__in n288__in 31.6429 W=144e-9
+rl282 n288__in n289__in 31.6429 W=144e-9
+rl283 n289__in n290__in 31.6429 W=144e-9
+rl284 n290__in n291__in 31.6429 W=144e-9
+rl285 n291__in n292__in 33.1301 W=144e-9
+rl286 n292__in n293__in 10.2945 W=114e-9
+rl287 n278__in n294__in 41.8217 W=144e-9
+rl288 n279__in n295__in 40.3006 W=144e-9
+rl289 n279__in n296__in 43.9464 W=144e-9
+rl290 n280__in n297__in 40.3006 W=144e-9
+rl291 n280__in n298__in 43.9464 W=144e-9
+rl292 n281__in n299__in 40.3006 W=144e-9
+rl293 n281__in n300__in 43.9464 W=144e-9
+rl294 n282__in n301__in 40.3006 W=144e-9
+rl295 n282__in n302__in 43.9464 W=144e-9
+rl296 n283__in n303__in 40.3006 W=144e-9
+rl297 n283__in n304__in 43.9464 W=144e-9
+rl298 n284__in n305__in 40.3006 W=144e-9
+rl299 n284__in n306__in 43.9464 W=144e-9
+rl300 n285__in n307__in 40.3006 W=144e-9
+rl301 n285__in n308__in 43.9464 W=144e-9
+rl302 n286__in n309__in 40.3006 W=144e-9
+rl303 n286__in n310__in 43.9464 W=144e-9
+rl304 n287__in n311__in 40.3006 W=144e-9
+rl305 n287__in n312__in 43.9464 W=144e-9
+rl306 n288__in n313__in 40.3006 W=144e-9
+rl307 n288__in n314__in 43.9464 W=144e-9
+rl308 n289__in n315__in 40.3006 W=144e-9
+rl309 n289__in n316__in 43.9464 W=144e-9
+rl310 n290__in n317__in 40.3006 W=144e-9
+rl311 n290__in n318__in 43.9464 W=144e-9
+rl312 n291__in n319__in 40.3006 W=144e-9
+rl313 n291__in n320__in 43.9464 W=144e-9
+rl314 n292__in n321__in 40.3006 W=144e-9
+rl315 n292__in n322__in 43.9464 W=144e-9
+rl316 n323__in n324__in 41.8217 W=144e-9
+rl317 n324__in n325__in 27.6734 W=144e-9
+rl318 n325__in n326__in 31.6429 W=144e-9
+rl319 n326__in n327__in 31.6429 W=144e-9
+rl320 n327__in n328__in 31.6429 W=144e-9
+rl321 n328__in n329__in 31.6429 W=144e-9
+rl322 n329__in n330__in 31.6429 W=144e-9
+rl323 n330__in n331__in 31.6429 W=144e-9
+rl324 n331__in n332__in 31.6429 W=144e-9
+rl325 n332__in n333__in 31.6429 W=144e-9
+rl326 n333__in n334__in 31.6429 W=144e-9
+rl327 n334__in n335__in 31.6429 W=144e-9
+rl328 n335__in n336__in 31.6429 W=144e-9
+rl329 n336__in n337__in 31.6429 W=144e-9
+rl330 n337__in n338__in 33.1301 W=144e-9
+rl331 n338__in n339__in 10.2945 W=114e-9
+rl332 n324__in n340__in 45.4675 W=144e-9
+rl333 n325__in n341__in 43.9464 W=144e-9
+rl334 n325__in n342__in 40.3006 W=144e-9
+rl335 n326__in n343__in 43.9464 W=144e-9
+rl336 n326__in n344__in 40.3006 W=144e-9
+rl337 n327__in n345__in 43.9464 W=144e-9
+rl338 n327__in n346__in 40.3006 W=144e-9
+rl339 n328__in n347__in 43.9464 W=144e-9
+rl340 n328__in n348__in 40.3006 W=144e-9
+rl341 n329__in n349__in 43.9464 W=144e-9
+rl342 n329__in n350__in 40.3006 W=144e-9
+rl343 n330__in n351__in 43.9464 W=144e-9
+rl344 n330__in n352__in 40.3006 W=144e-9
+rl345 n331__in n353__in 43.9464 W=144e-9
+rl346 n331__in n354__in 40.3006 W=144e-9
+rl347 n332__in n355__in 43.9464 W=144e-9
+rl348 n332__in n356__in 40.3006 W=144e-9
+rl349 n333__in n357__in 43.9464 W=144e-9
+rl350 n333__in n358__in 40.3006 W=144e-9
+rl351 n334__in n359__in 43.9464 W=144e-9
+rl352 n334__in n360__in 40.3006 W=144e-9
+rl353 n335__in n361__in 43.9464 W=144e-9
+rl354 n335__in n362__in 40.3006 W=144e-9
+rl355 n336__in n363__in 43.9464 W=144e-9
+rl356 n336__in n364__in 40.3006 W=144e-9
+rl357 n337__in n365__in 43.9464 W=144e-9
+rl358 n337__in n366__in 40.3006 W=144e-9
+rl359 n338__in n367__in 43.9464 W=144e-9
+rl360 n338__in n368__in 40.3006 W=144e-9
+rl361 n369__in n370__in 45.4675 W=144e-9
+rl362 n370__in n371__in 27.6734 W=144e-9
+rl363 n371__in n372__in 31.6429 W=144e-9
+rl364 n372__in n373__in 31.6429 W=144e-9
+rl365 n373__in n374__in 31.6429 W=144e-9
+rl366 n374__in n375__in 31.6429 W=144e-9
+rl367 n375__in n376__in 31.6429 W=144e-9
+rl368 n376__in n377__in 31.6429 W=144e-9
+rl369 n377__in n378__in 31.6429 W=144e-9
+rl370 n378__in n379__in 31.6429 W=144e-9
+rl371 n379__in n380__in 31.6429 W=144e-9
+rl372 n380__in n381__in 31.6429 W=144e-9
+rl373 n381__in n382__in 31.6429 W=144e-9
+rl374 n382__in n383__in 31.6429 W=144e-9
+rl375 n383__in n384__in 33.1301 W=144e-9
+rl376 n384__in n385__in 10.2945 W=114e-9
+rl377 n370__in n386__in 41.8217 W=144e-9
+rl378 n371__in n387__in 40.3006 W=144e-9
+rl379 n371__in n388__in 43.9464 W=144e-9
+rl380 n372__in n389__in 40.3006 W=144e-9
+rl381 n372__in n390__in 43.9464 W=144e-9
+rl382 n373__in n391__in 40.3006 W=144e-9
+rl383 n373__in n392__in 43.9464 W=144e-9
+rl384 n374__in n393__in 40.3006 W=144e-9
+rl385 n374__in n394__in 43.9464 W=144e-9
+rl386 n375__in n395__in 40.3006 W=144e-9
+rl387 n375__in n396__in 43.9464 W=144e-9
+rl388 n376__in n397__in 40.3006 W=144e-9
+rl389 n376__in n398__in 43.9464 W=144e-9
+rl390 n377__in n399__in 40.3006 W=144e-9
+rl391 n377__in n400__in 43.9464 W=144e-9
+rl392 n378__in n401__in 40.3006 W=144e-9
+rl393 n378__in n402__in 43.9464 W=144e-9
+rl394 n379__in n403__in 40.3006 W=144e-9
+rl395 n379__in n404__in 43.9464 W=144e-9
+rl396 n380__in n405__in 40.3006 W=144e-9
+rl397 n380__in n406__in 43.9464 W=144e-9
+rl398 n381__in n407__in 40.3006 W=144e-9
+rl399 n381__in n408__in 43.9464 W=144e-9
+rl400 n382__in n409__in 40.3006 W=144e-9
+rl401 n382__in n410__in 43.9464 W=144e-9
+rl402 n383__in n411__in 40.3006 W=144e-9
+rl403 n383__in n412__in 43.9464 W=144e-9
+rl404 n384__in n413__in 40.3006 W=144e-9
+rl405 n384__in n414__in 43.9464 W=144e-9
+rl406 n415__in n416__in 41.8217 W=144e-9
+rl407 n416__in n417__in 27.6734 W=144e-9
+rl408 n417__in n418__in 31.6429 W=144e-9
+rl409 n418__in n419__in 31.6429 W=144e-9
+rl410 n419__in n420__in 31.6429 W=144e-9
+rl411 n420__in n421__in 31.6429 W=144e-9
+rl412 n421__in n422__in 31.6429 W=144e-9
+rl413 n422__in n423__in 31.6429 W=144e-9
+rl414 n423__in n424__in 31.6429 W=144e-9
+rl415 n424__in n425__in 31.6429 W=144e-9
+rl416 n425__in n426__in 31.6429 W=144e-9
+rl417 n426__in n427__in 31.6429 W=144e-9
+rl418 n427__in n428__in 31.6429 W=144e-9
+rl419 n428__in n429__in 31.6429 W=144e-9
+rl420 n429__in n430__in 33.1301 W=144e-9
+rl421 n430__in n431__in 10.2945 W=114e-9
+rl422 n416__in n432__in 45.4675 W=144e-9
+rl423 n417__in n433__in 43.9464 W=144e-9
+rl424 n417__in n434__in 40.3006 W=144e-9
+rl425 n418__in n435__in 43.9464 W=144e-9
+rl426 n418__in n436__in 40.3006 W=144e-9
+rl427 n419__in n437__in 43.9464 W=144e-9
+rl428 n419__in n438__in 40.3006 W=144e-9
+rl429 n420__in n439__in 43.9464 W=144e-9
+rl430 n420__in n440__in 40.3006 W=144e-9
+rl431 n421__in n441__in 43.9464 W=144e-9
+rl432 n421__in n442__in 40.3006 W=144e-9
+rl433 n422__in n443__in 43.9464 W=144e-9
+rl434 n422__in n444__in 40.3006 W=144e-9
+rl435 n423__in n445__in 43.9464 W=144e-9
+rl436 n423__in n446__in 40.3006 W=144e-9
+rl437 n424__in n447__in 43.9464 W=144e-9
+rl438 n424__in n448__in 40.3006 W=144e-9
+rl439 n425__in n449__in 43.9464 W=144e-9
+rl440 n425__in n450__in 40.3006 W=144e-9
+rl441 n426__in n451__in 43.9464 W=144e-9
+rl442 n426__in n452__in 40.3006 W=144e-9
+rl443 n427__in n453__in 43.9464 W=144e-9
+rl444 n427__in n454__in 40.3006 W=144e-9
+rl445 n428__in n455__in 43.9464 W=144e-9
+rl446 n428__in n456__in 40.3006 W=144e-9
+rl447 n429__in n457__in 43.9464 W=144e-9
+rl448 n429__in n458__in 40.3006 W=144e-9
+rl449 n430__in n459__in 43.9464 W=144e-9
+rl450 n430__in n460__in 40.3006 W=144e-9
+rl451 n461__in n462__in 45.4675 W=144e-9
+rl452 n462__in n463__in 27.6734 W=144e-9
+rl453 n463__in n464__in 31.6429 W=144e-9
+rl454 n464__in n465__in 31.6429 W=144e-9
+rl455 n465__in n466__in 31.6429 W=144e-9
+rl456 n466__in n467__in 31.6429 W=144e-9
+rl457 n467__in n468__in 31.6429 W=144e-9
+rl458 n468__in n469__in 31.6429 W=144e-9
+rl459 n469__in n470__in 31.6429 W=144e-9
+rl460 n470__in n471__in 31.6429 W=144e-9
+rl461 n471__in n472__in 31.6429 W=144e-9
+rl462 n472__in n473__in 31.6429 W=144e-9
+rl463 n473__in n474__in 31.6429 W=144e-9
+rl464 n474__in n475__in 31.6429 W=144e-9
+rl465 n475__in n476__in 33.1301 W=144e-9
+rl466 n476__in n477__in 10.2945 W=114e-9
+rl467 n462__in n478__in 41.8217 W=144e-9
+rl468 n463__in n479__in 40.3006 W=144e-9
+rl469 n463__in n480__in 43.9464 W=144e-9
+rl470 n464__in n481__in 40.3006 W=144e-9
+rl471 n464__in n482__in 43.9464 W=144e-9
+rl472 n465__in n483__in 40.3006 W=144e-9
+rl473 n465__in n484__in 43.9464 W=144e-9
+rl474 n466__in n485__in 40.3006 W=144e-9
+rl475 n466__in n486__in 43.9464 W=144e-9
+rl476 n467__in n487__in 40.3006 W=144e-9
+rl477 n467__in n488__in 43.9464 W=144e-9
+rl478 n468__in n489__in 40.3006 W=144e-9
+rl479 n468__in n490__in 43.9464 W=144e-9
+rl480 n469__in n491__in 40.3006 W=144e-9
+rl481 n469__in n492__in 43.9464 W=144e-9
+rl482 n470__in n493__in 40.3006 W=144e-9
+rl483 n470__in n494__in 43.9464 W=144e-9
+rl484 n471__in n495__in 40.3006 W=144e-9
+rl485 n471__in n496__in 43.9464 W=144e-9
+rl486 n472__in n497__in 40.3006 W=144e-9
+rl487 n472__in n498__in 43.9464 W=144e-9
+rl488 n473__in n499__in 40.3006 W=144e-9
+rl489 n473__in n500__in 43.9464 W=144e-9
+rl490 n474__in n501__in 40.3006 W=144e-9
+rl491 n474__in n502__in 43.9464 W=144e-9
+rl492 n475__in n503__in 40.3006 W=144e-9
+rl493 n475__in n504__in 43.9464 W=144e-9
+rl494 n476__in n505__in 40.3006 W=144e-9
+rl495 n476__in n506__in 43.9464 W=144e-9
+m21_4__rcx n9__out n45__in n28__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=48e-15 PD=1.04e-6 PS=940e-9 NRD=468.75e-3 NRS=468.75e-3 M=1
+m15_5__rcx n9__out n43__in n26__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m15_8__rcx n23__out n41__in n26__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m15_7__rcx n23__out n39__in n24__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m15_9__rcx n21__out n37__in n24__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m14_4__rcx n21__out n35__in n22__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m14_7__rcx n19__out n33__in n22__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m14_6__rcx n19__out n31__in n20__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m14_8__rcx n17__out n29__in n20__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m14 n17__out n27__in n18__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m15_14__rcx n15__out n25__in n18__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m14_2__rcx n15__out n23__in n16__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m14_1__rcx n13__out n21__in n16__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m14_3__rcx n13__out n19__in n14__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m20_1__rcx n10__out n18__in n14__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=48e-15 AS=64e-15 PD=940e-9 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m21_13__rcx n50__out n47__in n13__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=48e-15 AS=64e-15 PD=940e-9 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m13_10__rcx n26__out n66__in n13__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m13_12__rcx n26__out n68__in n15__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m13_4__rcx n40__out n70__in n15__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m13_3__rcx n40__out n72__in n17__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m13_6__rcx n42__out n74__in n17__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m13_5__rcx n42__out n76__in n19__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m13_7__rcx n44__out n78__in n19__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m15_11__rcx n44__out n80__in n21__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m15_10__rcx n46__out n82__in n21__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m15_13__rcx n46__out n84__in n23__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m15_12__rcx n48__out n86__in n23__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m14_5__rcx n48__out n88__in n25__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m15_6__rcx n49__out n90__in n25__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m21_7__rcx n49__out n92__in n27__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=48e-15 PD=1.04e-6 PS=940e-9 NRD=468.75e-3 NRS=468.75e-3 M=1
+m21_10__rcx n61__out n137__in n56__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=48e-15 PD=1.04e-6 PS=940e-9 NRD=468.75e-3 NRS=468.75e-3 M=1
+m20_14__rcx n61__out n135__in n54__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m13 n74__out n133__in n54__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m14_14__rcx n74__out n131__in n52__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m13_2__rcx n72__out n129__in n52__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m13_1__rcx n72__out n127__in n50__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m13_9__rcx n70__out n125__in n50__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m14_10__rcx n70__out n123__in n48__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m14_9__rcx n68__out n121__in n48__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m14_12__rcx n68__out n119__in n46__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m14_11__rcx n66__out n117__in n46__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m14_13__rcx n66__out n115__in n44__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m13_8__rcx n62__out n113__in n44__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m13_11__rcx n62__out n111__in n42__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m21_12__rcx n63__out n110__in n42__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=48e-15 AS=64e-15 PD=940e-9 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m21 n104__out n139__in n41__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=48e-15 AS=64e-15 PD=940e-9 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m15_2__rcx n80__out n158__in n41__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m15_1__rcx n80__out n160__in n43__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m15_4__rcx n94__out n162__in n43__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m17_12__rcx n94__out n164__in n45__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m15 n96__out n166__in n45__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m17_14__rcx n96__out n168__in n47__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m20_11__rcx n98__out n170__in n47__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m20_8__rcx n98__out n172__in n49__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m20_7__rcx n100__out n174__in n49__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m17 n100__out n176__in n51__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m17_3__rcx n102__out n178__in n51__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m20_13__rcx n102__out n180__in n53__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m17_2__rcx n103__out n182__in n53__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m21_11__rcx n103__out n184__in n55__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=48e-15 PD=1.04e-6 PS=940e-9 NRD=468.75e-3 NRS=468.75e-3 M=1
+m20_5__rcx n115__out n229__in n84__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=48e-15 PD=1.04e-6 PS=940e-9 NRD=468.75e-3 NRS=468.75e-3 M=1
+m20_9__rcx n115__out n227__in n82__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m20_10__rcx n128__out n225__in n82__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m17_1__rcx n128__out n223__in n80__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m17_13__rcx n126__out n221__in n80__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m15_3__rcx n126__out n219__in n78__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m17_6__rcx n124__out n217__in n78__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m17_7__rcx n124__out n215__in n76__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m17_8__rcx n122__out n213__in n76__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m17_9__rcx n122__out n211__in n74__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m17_11__rcx n120__out n209__in n74__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m17_10__rcx n120__out n207__in n72__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m17_5__rcx n116__out n205__in n72__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m17_4__rcx n116__out n203__in n70__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m21_1__rcx n117__out n202__in n70__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=48e-15 AS=64e-15 PD=940e-9 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m21_5__rcx n158__out n231__in n69__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=48e-15 AS=64e-15 PD=940e-9 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m6_8__rcx n134__out n250__in n69__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m6_10__rcx n134__out n252__in n71__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m3_7__rcx n148__out n254__in n71__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m3_6__rcx n148__out n256__in n73__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m3_9__rcx n150__out n258__in n73__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m3_8__rcx n150__out n260__in n75__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m0_9__rcx n152__out n262__in n75__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m3_2__rcx n152__out n264__in n77__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m3_1__rcx n154__out n266__in n77__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m3_4__rcx n154__out n268__in n79__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m3_3__rcx n156__out n270__in n79__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m3_5__rcx n156__out n272__in n81__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m20_12__rcx n157__out n274__in n81__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m20_3__rcx n157__out n276__in n83__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=48e-15 PD=1.04e-6 PS=940e-9 NRD=468.75e-3 NRS=468.75e-3 M=1
+m20 n169__out n321__in n112__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=48e-15 PD=1.04e-6 PS=940e-9 NRD=468.75e-3 NRS=468.75e-3 M=1
+m0_14__rcx n169__out n319__in n110__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m0_6__rcx n182__out n317__in n110__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m0_5__rcx n182__out n315__in n108__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m0_8__rcx n180__out n313__in n108__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m0_7__rcx n180__out n311__in n106__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m6_12__rcx n178__out n309__in n106__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m6_11__rcx n178__out n307__in n104__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m6_14__rcx n176__out n305__in n104__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m6_13__rcx n176__out n303__in n102__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m3 n174__out n301__in n102__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m6_7__rcx n174__out n299__in n100__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m6_6__rcx n170__out n297__in n100__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m6_9__rcx n170__out n295__in n98__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m21_6__rcx n171__out n294__in n98__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=48e-15 AS=64e-15 PD=940e-9 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m21_8__rcx n212__out n323__in n97__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=48e-15 AS=64e-15 PD=940e-9 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m0 n188__out n342__in n97__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m0_3__rcx n188__out n344__in n99__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m0_2__rcx n202__out n346__in n99__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m0_4__rcx n202__out n348__in n101__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m3_11__rcx n204__out n350__in n101__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m3_10__rcx n204__out n352__in n103__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m3_13__rcx n206__out n354__in n103__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m3_12__rcx n206__out n356__in n105__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m3_14__rcx n208__out n358__in n105__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m0_11__rcx n208__out n360__in n107__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m0_10__rcx n210__out n362__in n107__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m0_13__rcx n210__out n364__in n109__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m0_12__rcx n211__out n366__in n109__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m21_14__rcx n211__out n368__in n111__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=48e-15 PD=1.04e-6 PS=940e-9 NRD=468.75e-3 NRS=468.75e-3 M=1
+m21_2__rcx n223__out n413__in n140__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=48e-15 PD=1.04e-6 PS=940e-9 NRD=468.75e-3 NRS=468.75e-3 M=1
+m10_1__rcx n223__out n411__in n138__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m10 n236__out n409__in n138__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m10_2__rcx n236__out n407__in n136__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m10_14__rcx n234__out n405__in n136__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m10_13__rcx n234__out n403__in n134__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m7_1__rcx n232__out n401__in n134__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m7 n232__out n399__in n132__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m6_1__rcx n230__out n397__in n132__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m10_9__rcx n230__out n395__in n130__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m10_8__rcx n228__out n393__in n130__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m10_11__rcx n228__out n391__in n128__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m10_10__rcx n224__out n389__in n128__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m10_12__rcx n224__out n387__in n126__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m21_9__rcx n225__out n386__in n126__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=48e-15 AS=64e-15 PD=940e-9 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m20_4__rcx n266__out n415__in n125__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=48e-15 AS=64e-15 PD=940e-9 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m6_4__rcx n242__out n434__in n125__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m0_1__rcx n242__out n436__in n127__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m7_13__rcx n256__out n438__in n127__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m7_12__rcx n256__out n440__in n129__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m6 n258__out n442__in n129__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m7_14__rcx n258__out n444__in n131__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m10_4__rcx n260__out n446__in n131__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m10_3__rcx n260__out n448__in n133__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m10_6__rcx n262__out n450__in n133__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m10_5__rcx n262__out n452__in n135__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m10_7__rcx n264__out n454__in n135__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m13_14__rcx n264__out n456__in n137__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m13_13__rcx n265__out n458__in n137__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m21_3__rcx n265__out n460__in n139__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=48e-15 PD=1.04e-6 PS=940e-9 NRD=468.75e-3 NRS=468.75e-3 M=1
+m20_2__rcx n277__out n505__in n160__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=48e-15 PD=1.04e-6 PS=940e-9 NRD=468.75e-3 NRS=468.75e-3 M=1
+m7_8__rcx n277__out n503__in n159__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m7_7__rcx n291__out n501__in n159__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m7_10__rcx n291__out n499__in n158__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m7_9__rcx n289__out n497__in n158__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m7_11__rcx n289__out n495__in n157__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m7_3__rcx n287__out n493__in n157__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m7_2__rcx n287__out n491__in n156__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m7_5__rcx n285__out n489__in n156__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m7_4__rcx n285__out n487__in n155__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m7_6__rcx n283__out n485__in n155__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m6_3__rcx n283__out n483__in n154__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m6_2__rcx n281__out n481__in n154__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m6_5__rcx n281__out n479__in n153__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=64e-15 AS=64e-15 PD=1.04e-6 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+m20_6__rcx n269__out n478__in n153__vss1 vss1 g45n2svt L=150e-9 W=320e-9 AD=48e-15 AS=64e-15 PD=940e-9 PS=1.04e-6 NRD=468.75e-3 NRS=468.75e-3 M=1
+
+
+
+vSupply VDDIO1 0 1.8
+vGND VSS1 0 0
+vIN IN 0 pulse( 0 1.8 100p 100p 100p 0.5n 1n )
+.dc vIN start=0 stop=1.8 step=0.01
+.tran 0.01p 50n
+.option post
+.end
